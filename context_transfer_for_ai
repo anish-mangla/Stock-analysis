@@ -1,0 +1,75 @@
+I am building a stock news analysis pipeline using an LLM (Claude Sonnet 4.5 via Anthropic API) with structured JSON outputs.
+
+System overview:
+
+* I pass a large prompt containing multiple stock tickers (currently ~12 per call)
+* The model is expected to return STRICT JSON using a schema (structured output enabled)
+* The response includes:
+
+  * categorized tickers
+  * summaries
+  * reasoning
+  * citations
+
+Pipeline details:
+
+* I use a Python module (model_execution.py) to call Claude
+* max_tokens was initially set to 4000 and caused truncation
+* This resulted in:
+
+  * invalid JSON
+  * missing closing braces
+  * partial ticker outputs
+
+Fixes already implemented:
+
+* Reduced ticker count from 15 → 12 per call
+
+* Increased max_tokens to ~6500
+
+* Parsing logic:
+
+  * attempts json.loads
+  * fallback extracts substring between first { and last }
+
+* I confirmed:
+
+  * truncation was the main issue (response cut off mid-output)
+  * after increasing tokens, parsing now works
+
+Known constraints / insights:
+
+* Large outputs (~5k tokens) can easily hit limits
+* Claude may truncate without warning when max_tokens is hit
+* Structured output does NOT guarantee completion if truncated
+* Input size is very large (~350k tokens previously)
+
+Current goals:
+
+* Make system robust against:
+
+  * truncation
+  * malformed JSON
+  * partial outputs
+
+* Improve:
+
+  * reliability (retry, chunking)
+  * performance (token efficiency)
+  * scaling (more tickers safely)
+
+What I may need help with:
+
+* Designing chunking strategies (optimal batch size)
+* Adding retry logic for failed parses
+* Detecting truncation automatically
+* Estimating safe max_tokens dynamically
+* Improving prompt efficiency without losing output quality
+
+Please assume:
+
+* I prefer simple, practical solutions
+* I care about correctness and reliability over elegance
+* I am okay making architectural changes if they improve robustness
+
+Ask for any relevant code if needed.

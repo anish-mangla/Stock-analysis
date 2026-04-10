@@ -1,0 +1,262 @@
+You do not need to become a “quant” in the scary sense to use this well. For your use case, TA is really just a way to describe:
+
+how unusual the drop was
+whether selling looked exhausted
+whether price is stretched relative to its recent behavior
+whether the stock is stabilizing
+
+That is very learnable.
+
+The right mindset for TA in your project
+
+You should not think:
+
+“Can RSI predict stocks?”
+
+You should think:
+
+“Does this technical condition help me estimate whether a +1% bounce within 14 days is more likely?”
+
+That makes it much less intimidating.
+
+You are not trying to invent some fancy hedge fund model.
+You are just asking whether a few interpretable signals improve your bounce-quality framework.
+
+TA is probably useful in 3 ways
+1. Measuring how stretched the move is
+
+A raw -6% day means different things for different stocks.
+
+Useful indicators here:
+
+move relative to ATR
+return z-score vs recent history
+distance below moving averages
+RSI
+
+These help tell you whether a move is genuinely extreme.
+
+2. Detecting exhaustion versus true breakdown
+
+Two stocks can both be down 7%, but:
+
+one looks like panic-selling exhaustion
+one looks like the beginning of a downtrend
+
+Useful signals:
+
+volume spike
+close position within the day’s range
+whether price reclaimed some of the drop by close
+whether it broke major recent support
+whether trend was already weak before the event
+3. Improving entry timing
+
+Even if you keep the same universe, TA may tell you:
+
+enter on the drop day close
+or wait one day for stabilization
+or avoid names still in freefall
+
+That could be huge.
+
+TA concepts that are actually worth learning for you
+
+If I had to teach you only a small set, I’d pick these.
+
+ATR
+
+Average True Range.
+This measures typical daily movement.
+
+Why it matters:
+
+a 4% drop in a stock with 2% normal daily movement is very different from a 4% drop in a stock with 6% normal movement
+
+This is probably one of the most useful things for your project.
+
+Think of:
+
+today_drop / ATR
+
+That gives you a normalized shock size.
+
+RSI
+
+Relative Strength Index.
+This tells you whether recent price action has been heavily skewed toward selling or buying.
+
+People abuse it, but for your project it can be useful as:
+
+a rough “how oversold is this” feature
+
+Not as a trading rule by itself.
+
+Moving averages
+
+Like 10-day, 20-day, 50-day moving averages.
+
+Useful for:
+
+identifying whether the stock was already trending down
+measuring how stretched price is below recent average
+
+For example:
+
+price 8% below 20-day MA after a one-day panic move may matter
+Volume spike
+
+A big red day on huge volume can mean:
+
+capitulation
+or strong informed selling
+
+This is not obvious a priori, which is exactly why it’s a good feature to test.
+
+Close location in range
+
+This one is underrated and very intuitive.
+
+If a stock had a horrible day but closed near the high of the day, that suggests buyers stepped in.
+If it closed near the low of the day, selling pressure may still be active.
+
+This could be very relevant for bounce probability.
+
+TA features I think are most worth testing for your specific goal
+
+If your goal is:
+
+long only
+take +1%
+preferably quickly
+max hope around 14 days
+
+then the best TA features are probably:
+
+drop size relative to ATR
+RSI at event day close
+distance from 20-day MA
+volume spike relative to average
+close position in day range
+prior 5-day trend
+prior 20-day trend
+
+That’s already plenty.
+
+TA features I would avoid at first
+
+Do not get dragged into:
+
+MACD crossovers
+Fibonacci retracements
+Elliott wave nonsense
+dozens of candlestick patterns
+overly complicated indicator soup
+
+That is where it starts feeling fake and overwhelming.
+
+You want:
+
+simple
+interpretable
+testable
+The big question TA can help answer
+
+The key thing TA might improve is not:
+
+“should I buy this stock?”
+
+It is:
+
+“among all drop events, which ones are most likely to produce a clean bounce soon?”
+
+That fits your framework perfectly.
+
+How I’d mentally organize the full future model
+
+You can think of the eventual bounce score as having 3 buckets of information:
+
+1. Price shock features
+percent drop
+ATR-adjusted drop
+relative to market/sector
+2. Technical condition features
+RSI
+moving average stretch
+volume spike
+close in range
+prior trend
+3. Event/news features
+earnings miss
+analyst downgrade
+catastrophic / too bad to touch
+macro sympathy move
+no obvious news
+
+That is actually a very nice system design.
+And notice: you don’t need deep quant math to reason about any of those.
+
+What should scare you versus not scare you
+
+What should not scare you:
+
+computing indicators
+testing historical hit rates
+using TA as features
+building simple scores
+
+What should scare you a bit:
+
+overfitting
+adding too many indicators
+believing a signal before testing it
+mistaking explanation for edge
+
+So your coder mindset is actually an advantage.
+A coder says:
+
+define feature
+compute feature
+backtest feature
+keep only what helps
+
+That is exactly the right attitude.
+
+My honest take
+
+I think some technical analysis is very likely worth learning for this project.
+Not because TA is magic, but because it gives you structured ways to quantify:
+
+oversoldness
+abnormality
+exhaustion
+stabilization
+
+And those are directly relevant to short-horizon mean reversion.
+
+So yes, I would include TA, but in a very constrained way.
+
+If I were teaching you this from scratch
+
+I would teach it in this order:
+
+ATR
+RSI
+moving averages and stretch
+volume spike
+close-in-range / candle structure
+prior trend
+
+That order gives you maximum usefulness with minimum nonsense.
+
+My current recommendation
+
+At the thinking stage, I’d keep this as your working hypothesis:
+
+Technical analysis may be useful not as a standalone strategy, but as a set of features that improves the bounce quality score.
+
+That framing is clean and powerful.
+
+The best part is that this is learnable fast.
+
+I can teach you TA for this project in a very practical way, without turning it into fake-finance guru stuff.

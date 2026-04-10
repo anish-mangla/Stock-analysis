@@ -1,0 +1,13 @@
+i ran everything up until step 3, for step 4 you have these commands:
+launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.anish.stockresearch.plist 2>/dev/null || true
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.anish.stockresearch.plist
+launchctl enable gui/$(id -u)/com.anish.stockresearch
+
+what do they do 
+then you have these commands what do they do:
+launchctl print gui/$(id -u)/com.anish.stockresearch
+launchctl kickstart -k gui/$(id -u)/com.anish.stockresearch
+tail -f /Users/anish/Files/stock_temp/Stock-analysis/logs/launchd_stdout.log
+tail -f /Users/anish/Files/stock_temp/Stock-analysis/logs/launchd_stderr.log
+
+Also in the log folder why are the logs not written seggregated by the date of run just like the output because how would i find out which log is for when and also before i run all these commands how can i quickly make sure that it was all set up properly
