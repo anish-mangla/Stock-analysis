@@ -384,5 +384,3 @@ Orchestrator
 The orchestrator runs the end-to-end workflow, the first component identifies relevant tickers from price action, the second builds a research prompt, the third queries one or more AI models, and the fourth stores the exact responses and metadata for later comparison and backtesting.
 
 The result is a repeatable framework that can be used to compare AI models on a real financial-research task over time.
-
-If you want, I can turn this into a more formal “technical design document” format next, with sections like Purpose, Scope, Inputs, Outputs, Components, Data Contracts, and Execution Flow.
