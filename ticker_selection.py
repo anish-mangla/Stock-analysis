@@ -26,7 +26,7 @@ import yfinance as yf
 # Your stock universe
 TICKERS: List[str] = [
     "AAPL","ABBV","ABT","ACN","ADBE","AIG","AMD","AMGN","AMT","AMZN",
-    "AVGO","AXP","BA","BAC","BK","BKNG","BLK","BMY","BRK.B","C",
+    "AVGO","AXP","BA","BAC","BK","BKNG","BLK","BMY","C",
     "CAT","CL","CMCSA","COF","COP","COST","CRM","CSCO","CVS","CVX",
     "DE","DHR","DIS","DUK","EMR","FDX","GD","GE","GILD","GM",
     "GOOG","GOOGL","GS","HD","HON","IBM","INTC","INTU","ISRG","JNJ",
@@ -46,7 +46,7 @@ DEFAULT_INTERVAL = "1d"
 DEFAULT_DROP_THRESHOLD_PCT = -0.025  # -2.5%
 
 # Optional cap to keep downstream model prompts manageable.
-DEFAULT_MAX_SELECTED = 15
+DEFAULT_MAX_SELECTED = 12
 
 
 @dataclass

@@ -3,12 +3,13 @@ model_execution.py
 
 Executes AI model calls for the stock-news analysis workflow.
 
-Version 1 design:
+Version 2 design:
 - Fully implements Claude via Anthropic SDK
-- Leaves a clean placeholder for OpenAI
+- Uses Structured Outputs for schema-valid JSON
+- Keeps web search enabled
 - Returns:
-    - raw response text
-    - best-effort parsed JSON
+    - raw response text (JSON string when structured output succeeds)
+    - parsed structured JSON
     - metadata
     - error payload if anything fails
 
@@ -32,9 +33,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
 DEFAULT_CLAUDE_MODEL = "claude-sonnet-4-5"
-DEFAULT_MAX_TOKENS = 4000
+DEFAULT_MAX_TOKENS = 6500
 DEFAULT_WEB_SEARCH_MAX_USES = 40
 
 
@@ -46,6 +46,9 @@ def _now_utc_iso() -> str:
 def _extract_text_from_claude_response(response: Any) -> str:
     """
     Extract readable text from Anthropic response content blocks.
+
+    With structured outputs enabled, the response content should contain
+    a text block holding the JSON result as a string.
     """
     text_parts = []
 
@@ -58,20 +61,13 @@ def _extract_text_from_claude_response(response: Any) -> str:
 
 def _best_effort_parse_json(text: str) -> Optional[Dict[str, Any]]:
     """
-    Try to parse JSON from the returned text.
-
-    This is intentionally forgiving:
-    - first tries full-string JSON parse
-    - then tries extracting JSON between first '{' and last '}'
-
-    Returns parsed dict or None.
+    Try to parse JSON from returned text.
     """
     if not text:
         return None
 
     text = text.strip()
 
-    # Try direct parse
     try:
         parsed = json.loads(text)
         if isinstance(parsed, dict):
@@ -79,11 +75,10 @@ def _best_effort_parse_json(text: str) -> Optional[Dict[str, Any]]:
     except Exception:
         pass
 
-    # Try extracting likely JSON object region
     start = text.find("{")
     end = text.rfind("}")
     if start != -1 and end != -1 and end > start:
-        candidate = text[start:end + 1]
+        candidate = text[start : end + 1]
         try:
             parsed = json.loads(candidate)
             if isinstance(parsed, dict):
@@ -100,14 +95,14 @@ def _estimate_claude_cost_usd(
     search_uses: int = 0,
 ) -> float:
     """
-    Rough cost estimate based on public pricing assumptions.
+    Rough cost estimate.
 
-    Assumptions used here:
+    Assumptions:
     - Claude Sonnet input:  $3 / 1M tokens
     - Claude Sonnet output: $15 / 1M tokens
     - Web search:           $10 / 1000 searches = $0.01 / search
 
-    This is only an estimate and may not exactly match Anthropic billing.
+    This is an estimate only.
     """
     input_cost = (input_tokens / 1_000_000) * 3.0
     output_cost = (output_tokens / 1_000_000) * 15.0
@@ -123,13 +118,7 @@ def run_claude(
     web_search_max_uses: int = DEFAULT_WEB_SEARCH_MAX_USES,
 ) -> Dict[str, Any]:
     """
-    Run Claude with web search enabled.
-
-    Returns a standardized result payload with:
-    - raw_text
-    - parsed_output (best effort)
-    - metadata
-    - error
+    Run Claude with web search enabled and Structured Outputs enforced.
     """
     api_key = os.getenv("ANTHROPIC_API_KEY")
     if not api_key:
@@ -145,6 +134,7 @@ def run_claude(
         }
 
     prompt_text = prompt_bundle["prompt_text"]
+    output_schema = prompt_bundle["output_schema"]
 
     client = Anthropic(api_key=api_key)
 
@@ -167,6 +157,12 @@ def run_claude(
                     "content": prompt_text,
                 }
             ],
+            output_config={
+                "format": {
+                    "type": "json_schema",
+                    "schema": output_schema,
+                }
+            },
         )
 
         elapsed_seconds = round(time.time() - start_time, 3)
@@ -178,7 +174,7 @@ def run_claude(
         input_tokens = getattr(usage, "input_tokens", 0) if usage else 0
         output_tokens = getattr(usage, "output_tokens", 0) if usage else 0
 
-        result = {
+        return {
             "model_name": model_name,
             "provider": "anthropic",
             "raw_text": raw_text,
@@ -196,11 +192,12 @@ def run_claude(
                 ),
                 "prompt_version": prompt_bundle.get("prompt_version"),
                 "ticker_count": len(ticker_data.get("tickers", [])),
+                "structured_output_enabled": True,
             },
-            "error": None,
+            "error": None if parsed_output is not None else (
+                "Claude returned a response, but it could not be parsed as JSON."
+            ),
         }
-
-        return result
 
     except Exception as exc:
         return {
@@ -212,6 +209,7 @@ def run_claude(
                 "created_at_utc": _now_utc_iso(),
                 "prompt_version": prompt_bundle.get("prompt_version"),
                 "ticker_count": len(ticker_data.get("tickers", [])),
+                "structured_output_enabled": True,
             },
             "error": f"Claude execution failed: {exc}",
         }
@@ -246,10 +244,6 @@ def run_model(
 ) -> Dict[str, Any]:
     """
     Dispatch to the correct model runner.
-
-    Supported model_name values for v1:
-    - "claude"
-    - "openai"
     """
     normalized = model_name.strip().lower()
 
@@ -295,5 +289,10 @@ if __name__ == "__main__":
         print(f"Output toks: {result['metadata'].get('output_tokens')}")
         print(f"Est. cost:   {result['metadata'].get('estimated_cost_usd')}")
         print()
-        print("Raw text preview:")
-        print(result["raw_text"][:2000] if result["raw_text"] else "[no text returned]")
+
+        if result["parsed_output"] is not None:
+            print("Parsed JSON preview:")
+            print(json.dumps(result["parsed_output"], indent=2)[:3000])
+        else:
+            print("Raw text preview:")
+            print(result["raw_text"][:3000] if result["raw_text"] else "[no text returned]")
