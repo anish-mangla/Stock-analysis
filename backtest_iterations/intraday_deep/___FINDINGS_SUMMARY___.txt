@@ -1,0 +1,121 @@
+INTRADAY DEEP DIVE — FINDINGS SUMMARY
+======================================
+
+Data: 53M 1-minute bars, 100 tickers, 2020-2025, split-adjusted
+Baseline: +102.5% (close entry, +5%/60d, fixed 1/10, no look-ahead biases)
+
+
+BLOCK A: ENTRY TIMING (v01-v07)
+================================
+
+V01 — Entry day is basically flat (open to close = -0.06%). No big consistent dip.
+      Lowest point is 2:27 PM at -0.13%. Winners drift up, losers drift down.
+
+V02 — Best entry time: 2:00 PM (+114.3% vs +102.5% at close = +11.8% improvement)
+      Morning entries (9:35-10:30) are worst at ~87%. Afternoon consistently better.
+
+V03 — VWAP entry (+80.3%) is WORSE than close. 2:00 PM price (+109.5%) confirms V02.
+
+V04 — LIMIT ORDER at open-2% gives +120.3% (+17.8% vs close). Fills 34% of time.
+      When it fills, you get a 2% discount. When it doesn't, you buy at close.
+
+V06 — *** BEST ENTRY STRATEGY ***
+      Wait for 0.5% dip from open, then buy. Fallback to close if no dip.
+      Result: +162.3% (+58% improvement over close baseline!)
+      Dip happens 69% of the time. Higher dip thresholds also work but less often.
+
+V07 — Entry delay: 1-day (+104%) and 2-day (+102.5%) are tied. 0-day worst.
+
+
+BLOCK B: EXIT TIMING (v08)
+============================
+
+V08 — Winners overshoot target by +1.87% on average (median +0.96%).
+      Target hit at 10:56 AM on average, 54% hit in first hour.
+      50% of winners close above target, 50% below.
+      → A trailing stop could capture ~1% extra on winners.
+
+
+BLOCK C: STOP LOSS (v16)
+==========================
+
+V16 — Entry day drawdown: winners -2.02%, losers -2.44%. Difference too small
+      for a reliable intraday stop loss signal.
+
+
+BLOCK D: VOLUME SIGNALS (v17-v20)
+===================================
+
+V17 — Drop day volume is 1.65x normal on average. No strong WR signal from
+      drop-day volume (83% at low vol vs 78% at extreme vol — small spread).
+
+V19 — *** STRONG SIGNAL ***
+      Entry day relative volume predicts success:
+        Quiet (<0.8x): 90.6% WR
+        Normal (0.8-1.2x): 83.1% WR
+        Active (1.2-2x): 76.3% WR
+        Surge (2x+): 63.3% WR
+      → If entry day is quiet, the selling is exhausted. If volume surges, avoid.
+
+V20 — Higher closing auction volume on drop day = better bounce (86% for 20%+
+      vs 77% for <5%). Heavy closing volume = capitulation = good sign.
+
+
+BLOCK E: PATTERN RECOGNITION (v25)
+=====================================
+
+V25 — *** STRONGEST SIGNAL FOUND ***
+      Overnight gap after drop predicts success:
+        T+1 gap up 3%+: 97.5% WR (527 events)
+        T+1 gap up 1-3%: 91.9% WR (1,357 events)
+        T+1 gap down 3%+: 61.1% WR (517 events)
+      
+      T+2 gap (our entry day):
+        Gap up 1%+: 95.0% WR (2,832 events)
+        Gap down 1%+: 65.4% WR (2,451 events)
+      
+      → 30 percentage point spread. This is the single best predictor.
+
+
+BLOCK F: NEWS × INTRADAY (v26-v33)
+=====================================
+
+V26 — Different event types have different intraday shapes:
+        guidance_cut: rallies all day (+0.22% by close)
+        earnings_miss: drops -0.56% by 11:30 then recovers
+        regulatory_legal: rallies all day (+1.00% by close)
+        competitive_threat: pops early then fades
+
+V27 — Optimal entry time varies by event type:
+        earnings_miss: buy at 11:30 (saves 0.43%)
+        guidance_cut: buy at 10:00 (saves 0.31%)
+        regulatory_legal: buy at 10:30 (saves 1.01%)
+
+V29 — High stress days: morning pop (+0.27% at 10:30) then fade to -0.18%.
+      Calm days: basically flat all day.
+
+V31 — No-catalyst drops (80% WR) are flat all day. Catalyst drops (75% WR)
+      show more intraday volatility.
+
+
+TOP ACTIONABLE FINDINGS (ranked by impact)
+============================================
+
+1. OVERNIGHT GAP FILTER (V25): +30pp WR spread. Only trade if T+1 gaps up.
+   This alone could transform the system.
+
+2. DIP ENTRY (V06): +58% return improvement. Wait for 0.5% dip, buy there.
+
+3. ENTRY DAY VOLUME FILTER (V19): +27pp WR spread. Skip if entry day volume > 2x.
+
+4. FIRST HOUR SIGNAL (V05): +10pp WR spread. If first 60 min up 1%+, WR = 88%.
+
+5. LIMIT ORDER (V04): +17.8% improvement. Limit at open-2%, fallback to close.
+
+6. AFTERNOON ENTRY (V02): +11.8% improvement. Buy at 2pm instead of close.
+
+7. EVENT-TYPE TIMING (V27): Different events need different entry times.
+   Earnings miss → 11:30. Guidance cut → 10:00.
+
+
+NEXT STEP: Combine findings 1-4 into a single backtest to see the combined effect.
