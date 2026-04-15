@@ -1,0 +1,19 @@
+TOTAL RETURN: +329.6%
+Trades: 439 | Win rate: 88% | Losers: 55
+Avg hold: 19.4d | Avg capital utilization: 68%
+Avg win: $1445 | Avg loss: $-4097
+
+ANNUAL BREAKDOWN:
+  Year   Return  Trades  Losers  Util%
+----------------------------------------
+  2020   +64.3%     116       9    66%
+  2021   +24.4%      72      15    85%
+  2022    -4.3%      26       2    24%
+  2023   +35.0%      83      11    79%
+  2024    +9.1%      64      11    87%
+  2025   +47.1%      78       7    82%
+  2026    -0.8%       0       0     9%
+
+EXIT REASONS:
+  target: 376 trades, avg PnL $1466
+  max_hold: 63 trades, avg PnL $-3515
