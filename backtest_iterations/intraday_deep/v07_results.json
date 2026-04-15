@@ -1,0 +1,44 @@
+[
+  {
+    "label": "Delay 0d",
+    "return": 74.47,
+    "trades": 570,
+    "wr": 81.6,
+    "losers": 105
+  },
+  {
+    "label": "Delay 1d",
+    "return": 104.04,
+    "trades": 584,
+    "wr": 84.1,
+    "losers": 93
+  },
+  {
+    "label": "Delay 2d",
+    "return": 102.46,
+    "trades": 595,
+    "wr": 83.7,
+    "losers": 97
+  },
+  {
+    "label": "Delay 3d",
+    "return": 99.08,
+    "trades": 586,
+    "wr": 82.6,
+    "losers": 102
+  },
+  {
+    "label": "Delay 4d",
+    "return": 82.01,
+    "trades": 577,
+    "wr": 80.9,
+    "losers": 110
+  },
+  {
+    "label": "Delay 5d",
+    "return": 92.33,
+    "trades": 596,
+    "wr": 81.7,
+    "losers": 109
+  }
+]

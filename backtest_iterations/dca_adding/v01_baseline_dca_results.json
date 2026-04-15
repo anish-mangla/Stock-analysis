@@ -1,0 +1,50 @@
+{
+  "3% drop, add 50%, max 1 add": {
+    "total_return": 293.85,
+    "trades": 367,
+    "win_rate": 87.5,
+    "losers": 46,
+    "dca_trades": 132,
+    "dca_win_rate": 65.9
+  },
+  "5% drop, add 50%, max 1 add": {
+    "total_return": 329.18,
+    "trades": 386,
+    "win_rate": 88.6,
+    "losers": 44,
+    "dca_trades": 100,
+    "dca_win_rate": 58.0
+  },
+  "3% drop, add 100%, max 1 add": {
+    "total_return": 309.32,
+    "trades": 334,
+    "win_rate": 89.2,
+    "losers": 36,
+    "dca_trades": 111,
+    "dca_win_rate": 67.6
+  },
+  "5% drop, add 100%, max 1 add": {
+    "total_return": 282.19,
+    "trades": 344,
+    "win_rate": 89.2,
+    "losers": 37,
+    "dca_trades": 85,
+    "dca_win_rate": 58.8
+  },
+  "3% drop, add 50%, max 2 adds": {
+    "total_return": 265.41,
+    "trades": 341,
+    "win_rate": 88.9,
+    "losers": 38,
+    "dca_trades": 121,
+    "dca_win_rate": 69.4
+  },
+  "5% drop, add 50%, max 2 adds": {
+    "total_return": 341.11,
+    "trades": 378,
+    "win_rate": 90.5,
+    "losers": 36,
+    "dca_trades": 101,
+    "dca_win_rate": 64.4
+  }
+}

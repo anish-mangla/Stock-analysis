@@ -1,0 +1,20 @@
+{
+  "v26_event_types_analyzed": 8,
+  "v27_optimal_times": {
+    "unlabeled": "14:30",
+    "no_clear_catalyst": "12:30",
+    "guidance_cut": "10:00",
+    "demand_weakness": "13:30",
+    "earnings_miss": "11:30",
+    "regulatory_legal": "10:30",
+    "product_service_failure": "13:30",
+    "competitive_threat": "12:30"
+  },
+  "v29_stress_levels": [
+    "none",
+    "low",
+    "medium",
+    "high"
+  ],
+  "v31_no_catalyst_wr": 80.0
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "label": "Buy at CLOSE (current)",
+    "return": 325.38,
+    "trades": 433,
+    "win_rate": 85.9,
+    "losers": 61
+  },
+  {
+    "label": "Buy at OPEN",
+    "return": 6073.67,
+    "trades": 804,
+    "win_rate": 95.8,
+    "losers": 34
+  },
+  {
+    "label": "Buy at MIDPOINT",
+    "return": 258.85,
+    "trades": 411,
+    "win_rate": 85.6,
+    "losers": 59
+  },
+  {
+    "label": "Limit at open-0.5%",
+    "return": 319.14,
+    "trades": 356,
+    "win_rate": 91.6,
+    "losers": 30
+  },
+  {
+    "label": "Limit at open-1.0%",
+    "return": 235.47,
+    "trades": 313,
+    "win_rate": 91.4,
+    "losers": 27
+  },
+  {
+    "label": "Limit at open-1.5%",
+    "return": 156.79,
+    "trades": 264,
+    "win_rate": 92.0,
+    "losers": 21
+  },
+  {
+    "label": "Limit at open-2.0%",
+    "return": 129.81,
+    "trades": 220,
+    "win_rate": 93.2,
+    "losers": 15
+  },
+  {
+    "label": "Limit at open-2.5%",
+    "return": 72.89,
+    "trades": 176,
+    "win_rate": 92.0,
+    "losers": 14
+  },
+  {
+    "label": "Limit at open-3.0%",
+    "return": 66.87,
+    "trades": 146,
+    "win_rate": 91.8,
+    "losers": 12
+  }
+]

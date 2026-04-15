@@ -1,0 +1,82 @@
+[
+  {
+    "label": "Open price (no limit)",
+    "return": 98.3,
+    "trades": 598,
+    "wr": 83.4,
+    "losers": 99,
+    "limit_fills": 598,
+    "close_fills": 0,
+    "fill_rate": 100.0
+  },
+  {
+    "label": "Close (baseline)",
+    "return": 102.46,
+    "trades": 595,
+    "wr": 83.7,
+    "losers": 97,
+    "limit_fills": 0,
+    "close_fills": 595,
+    "fill_rate": 0
+  },
+  {
+    "label": "Limit open-0.5%",
+    "return": 84.1,
+    "trades": 580,
+    "wr": 82.1,
+    "losers": 104,
+    "limit_fills": 447,
+    "close_fills": 133,
+    "fill_rate": 77.1
+  },
+  {
+    "label": "Limit open-1.0%",
+    "return": 102.4,
+    "trades": 582,
+    "wr": 83.2,
+    "losers": 98,
+    "limit_fills": 343,
+    "close_fills": 239,
+    "fill_rate": 58.9
+  },
+  {
+    "label": "Limit open-1.5%",
+    "return": 108.3,
+    "trades": 591,
+    "wr": 83.6,
+    "losers": 97,
+    "limit_fills": 271,
+    "close_fills": 320,
+    "fill_rate": 45.9
+  },
+  {
+    "label": "Limit open-2.0%",
+    "return": 120.3,
+    "trades": 614,
+    "wr": 84.2,
+    "losers": 97,
+    "limit_fills": 208,
+    "close_fills": 406,
+    "fill_rate": 33.9
+  },
+  {
+    "label": "Limit open-2.5%",
+    "return": 112.6,
+    "trades": 611,
+    "wr": 84.0,
+    "losers": 98,
+    "limit_fills": 149,
+    "close_fills": 462,
+    "fill_rate": 24.4
+  },
+  {
+    "label": "Limit open-3.0%",
+    "return": 115.9,
+    "trades": 615,
+    "wr": 84.4,
+    "losers": 96,
+    "limit_fills": 113,
+    "close_fills": 502,
+    "fill_rate": 18.4
+  }
+]

@@ -1,0 +1,118 @@
+{
+  "v09": [
+    {
+      "label": "Dip entry, +3%/30d",
+      "return": 69.6,
+      "trades": 996,
+      "wr": 83.8,
+      "losers": 161,
+      "avg_hold": 9.6,
+      "target_hits": 825
+    },
+    {
+      "label": "Dip entry, +3%/45d",
+      "return": 86.1,
+      "trades": 870,
+      "wr": 87.7,
+      "losers": 107,
+      "avg_hold": 12.1,
+      "target_hits": 754
+    },
+    {
+      "label": "Dip entry, +3%/60d",
+      "return": 62.2,
+      "trades": 770,
+      "wr": 88.6,
+      "losers": 88,
+      "avg_hold": 14.6,
+      "target_hits": 677
+    },
+    {
+      "label": "Dip entry, +5%/30d",
+      "return": 81.3,
+      "trades": 779,
+      "wr": 75.5,
+      "losers": 191,
+      "avg_hold": 14.0,
+      "target_hits": 563
+    },
+    {
+      "label": "Dip entry, +5%/45d",
+      "return": 93.3,
+      "trades": 656,
+      "wr": 79.9,
+      "losers": 132,
+      "avg_hold": 18.1,
+      "target_hits": 506
+    },
+    {
+      "label": "Dip entry, +5%/60d",
+      "return": 84.1,
+      "trades": 580,
+      "wr": 82.1,
+      "losers": 104,
+      "avg_hold": 21.9,
+      "target_hits": 464
+    },
+    {
+      "label": "Dip entry, +7%/30d",
+      "return": 88.5,
+      "trades": 668,
+      "wr": 68.0,
+      "losers": 214,
+      "avg_hold": 17.6,
+      "target_hits": 403
+    },
+    {
+      "label": "Dip entry, +7%/45d",
+      "return": 94.1,
+      "trades": 537,
+      "wr": 73.2,
+      "losers": 144,
+      "avg_hold": 23.2,
+      "target_hits": 366
+    },
+    {
+      "label": "Dip entry, +7%/60d",
+      "return": 90.8,
+      "trades": 463,
+      "wr": 76.7,
+      "losers": 108,
+      "avg_hold": 29.0,
+      "target_hits": 329
+    },
+    {
+      "label": "Dip entry, +10%/30d",
+      "return": 111.4,
+      "trades": 587,
+      "wr": 64.9,
+      "losers": 206,
+      "avg_hold": 21.0,
+      "target_hits": 290
+    },
+    {
+      "label": "Dip entry, +10%/45d",
+      "return": 123.5,
+      "trades": 460,
+      "wr": 69.1,
+      "losers": 142,
+      "avg_hold": 28.2,
+      "target_hits": 271
+    },
+    {
+      "label": "Dip entry, +10%/60d",
+      "return": 111.3,
+      "trades": 391,
+      "wr": 72.1,
+      "losers": 109,
+      "avg_hold": 35.3,
+      "target_hits": 247
+    }
+  ],
+  "v16_drawdown": {
+    "mean_dd": -2.1,
+    "median_dd": -1.5,
+    "winners_dd": -2.02,
+    "losers_dd": -2.44
+  }
+}

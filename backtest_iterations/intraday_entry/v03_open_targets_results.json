@@ -1,0 +1,110 @@
+[
+  {
+    "label": "Open entry, +3% target, 30d hold",
+    "return": 1704.69,
+    "trades": 1098,
+    "wr": 94.9,
+    "losers": 56,
+    "avg_hold": 4.4,
+    "target_hits": 1040
+  },
+  {
+    "label": "Open entry, +3% target, 45d hold",
+    "return": 1829.14,
+    "trades": 1049,
+    "wr": 96.4,
+    "losers": 38,
+    "avg_hold": 5.0,
+    "target_hits": 1008
+  },
+  {
+    "label": "Open entry, +3% target, 60d hold",
+    "return": 1916.59,
+    "trades": 1038,
+    "wr": 97.2,
+    "losers": 29,
+    "avg_hold": 5.5,
+    "target_hits": 1007
+  },
+  {
+    "label": "Open entry, +5% target, 30d hold",
+    "return": 4859.62,
+    "trades": 865,
+    "wr": 91.7,
+    "losers": 72,
+    "avg_hold": 6.7,
+    "target_hits": 783
+  },
+  {
+    "label": "Open entry, +5% target, 45d hold",
+    "return": 6002.03,
+    "trades": 842,
+    "wr": 94.4,
+    "losers": 47,
+    "avg_hold": 7.5,
+    "target_hits": 790
+  },
+  {
+    "label": "Open entry, +5% target, 60d hold",
+    "return": 6073.67,
+    "trades": 804,
+    "wr": 95.8,
+    "losers": 34,
+    "avg_hold": 8.3,
+    "target_hits": 765
+  },
+  {
+    "label": "Open entry, +7% target, 30d hold",
+    "return": 9108.28,
+    "trades": 733,
+    "wr": 89.6,
+    "losers": 76,
+    "avg_hold": 9.1,
+    "target_hits": 630
+  },
+  {
+    "label": "Open entry, +7% target, 45d hold",
+    "return": 8727.3,
+    "trades": 684,
+    "wr": 91.4,
+    "losers": 59,
+    "avg_hold": 10.3,
+    "target_hits": 619
+  },
+  {
+    "label": "Open entry, +7% target, 60d hold",
+    "return": 9088.07,
+    "trades": 652,
+    "wr": 94.0,
+    "losers": 39,
+    "avg_hold": 11.6,
+    "target_hits": 602
+  },
+  {
+    "label": "Open entry, +10% target, 30d hold",
+    "return": 7846.92,
+    "trades": 566,
+    "wr": 85.5,
+    "losers": 82,
+    "avg_hold": 12.9,
+    "target_hits": 426
+  },
+  {
+    "label": "Open entry, +10% target, 45d hold",
+    "return": 6297.72,
+    "trades": 469,
+    "wr": 86.8,
+    "losers": 62,
+    "avg_hold": 15.4,
+    "target_hits": 382
+  },
+  {
+    "label": "Open entry, +10% target, 60d hold",
+    "return": 6154.77,
+    "trades": 455,
+    "wr": 89.9,
+    "losers": 46,
+    "avg_hold": 17.4,
+    "target_hits": 391
+  }
+]

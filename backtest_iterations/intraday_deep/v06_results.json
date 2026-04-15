@@ -1,0 +1,38 @@
+[
+  {
+    "label": "Close (baseline)",
+    "return": 102.46,
+    "trades": 595,
+    "wr": 83.7
+  },
+  {
+    "label": "Dip 0.5% then buy (or close)",
+    "return": 162.3,
+    "trades": 704,
+    "wr": 86.9
+  },
+  {
+    "label": "Dip 1.0% then buy (or close)",
+    "return": 154.5,
+    "trades": 684,
+    "wr": 86.5
+  },
+  {
+    "label": "Dip 1.5% then buy (or close)",
+    "return": 150.5,
+    "trades": 675,
+    "wr": 86.2
+  },
+  {
+    "label": "Dip 2.0% then buy (or close)",
+    "return": 140.4,
+    "trades": 667,
+    "wr": 85.5
+  },
+  {
+    "label": "Buy 30min after intraday low",
+    "return": 125.7,
+    "trades": 643,
+    "wr": 84.4
+  }
+]

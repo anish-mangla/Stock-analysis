@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Close (baseline)",
+    "return": 102.5,
+    "trades": 595,
+    "wr": 83.7,
+    "losers": 97
+  },
+  {
+    "label": "Daily VWAP",
+    "return": 80.3,
+    "trades": 579,
+    "wr": 81.7,
+    "losers": 106
+  },
+  {
+    "label": "2:00 PM price",
+    "return": 109.5,
+    "trades": 597,
+    "wr": 83.8,
+    "losers": 97
+  },
+  {
+    "label": "2:00 PM, only if < VWAP",
+    "return": 75.8,
+    "trades": 490,
+    "wr": 82.9,
+    "losers": 84
+  }
+]

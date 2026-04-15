@@ -1,0 +1,64 @@
+{
+  "total_return": 330.46,
+  "trades": 322,
+  "win_rate": 86.6,
+  "losers": 43,
+  "avg_hold_days": 20.3,
+  "avg_capital_utilization": 70.8,
+  "avg_win": 1918.0,
+  "avg_loss": -4760.0,
+  "annual": {
+    "2020": {
+      "return": 51.777446521385315,
+      "trades": 83,
+      "losers": 9,
+      "utilization": 71.08164967354504
+    },
+    "2021": {
+      "return": 25.45266461581295,
+      "trades": 50,
+      "losers": 9,
+      "utilization": 85.86004468368273
+    },
+    "2022": {
+      "return": -4.893259814784001,
+      "trades": 21,
+      "losers": 2,
+      "utilization": 24.224948326518295
+    },
+    "2023": {
+      "return": 52.06080106234416,
+      "trades": 64,
+      "losers": 8,
+      "utilization": 84.24073035502715
+    },
+    "2024": {
+      "return": 5.757358088364728,
+      "trades": 46,
+      "losers": 8,
+      "utilization": 87.94115064763106
+    },
+    "2025": {
+      "return": 42.133235938546456,
+      "trades": 58,
+      "losers": 7,
+      "utilization": 86.52859049815459
+    },
+    "2026": {
+      "return": 0.9125508207254107,
+      "trades": 0,
+      "losers": 0,
+      "utilization": 7.753054825169828
+    }
+  },
+  "exit_reasons": {
+    "target": {
+      "count": 273,
+      "avg_pnl": 1940.8618808605179
+    },
+    "max_hold": {
+      "count": 49,
+      "avg_pnl": -4069.323444158703
+    }
+  }
+}

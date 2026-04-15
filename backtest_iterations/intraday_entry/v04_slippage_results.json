@@ -1,0 +1,86 @@
+[
+  {
+    "label": "+7%/30d, open+0.0%",
+    "return": 9108.28,
+    "trades": 733,
+    "wr": 89.6
+  },
+  {
+    "label": "+7%/30d, open+0.1%",
+    "return": 7630.42,
+    "trades": 717,
+    "wr": 88.8
+  },
+  {
+    "label": "+7%/30d, open+0.2%",
+    "return": 7226.62,
+    "trades": 714,
+    "wr": 88.5
+  },
+  {
+    "label": "+7%/30d, open+0.3%",
+    "return": 6234.1,
+    "trades": 701,
+    "wr": 87.7
+  },
+  {
+    "label": "+7%/30d, open+0.5%",
+    "return": 5986.7,
+    "trades": 693,
+    "wr": 88.3
+  },
+  {
+    "label": "+7%/30d, open+1.0%",
+    "return": 3757.0,
+    "trades": 674,
+    "wr": 86.8
+  },
+  {
+    "label": "+5%/60d, open+0.0%",
+    "return": 6073.67,
+    "trades": 804,
+    "wr": 95.8
+  },
+  {
+    "label": "+5%/60d, open+0.1%",
+    "return": 4958.84,
+    "trades": 783,
+    "wr": 95.4
+  },
+  {
+    "label": "+5%/60d, open+0.2%",
+    "return": 5004.38,
+    "trades": 784,
+    "wr": 95.3
+  },
+  {
+    "label": "+5%/60d, open+0.3%",
+    "return": 4262.49,
+    "trades": 762,
+    "wr": 95.0
+  },
+  {
+    "label": "+5%/60d, open+0.5%",
+    "return": 3626.85,
+    "trades": 745,
+    "wr": 95.0
+  },
+  {
+    "label": "+5%/60d, open+1.0%",
+    "return": 2405.53,
+    "trades": 713,
+    "wr": 94.1
+  },
+  {
+    "label": "VWAP proxy, +5%/60d",
+    "return": 1115.77,
+    "trades": 568,
+    "wr": 91.5
+  },
+  {
+    "label": "VWAP proxy, +7%/30d",
+    "return": 803.49,
+    "trades": 530,
+    "wr": 80.2
+  }
+]

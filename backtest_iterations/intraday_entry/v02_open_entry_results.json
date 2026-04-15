@@ -1,0 +1,58 @@
+[
+  {
+    "label": "Buy at CLOSE (2d delay)",
+    "return": 325.38,
+    "trades": 433,
+    "win_rate": 85.9,
+    "losers": 61
+  },
+  {
+    "label": "Buy at OPEN (2d delay)",
+    "return": 6073.67,
+    "trades": 804,
+    "win_rate": 95.8,
+    "losers": 34
+  },
+  {
+    "label": "Buy at OPEN+0.1% (2d delay)",
+    "return": 4958.84,
+    "trades": 783,
+    "win_rate": 95.4,
+    "losers": 36
+  },
+  {
+    "label": "Buy at OPEN+0.2% (2d delay)",
+    "return": 5004.38,
+    "trades": 784,
+    "win_rate": 95.3,
+    "losers": 37
+  },
+  {
+    "label": "Buy at OPEN+0.5% (2d delay)",
+    "return": 3626.85,
+    "trades": 745,
+    "win_rate": 95.0,
+    "losers": 37
+  },
+  {
+    "label": "Buy at OPEN+1.0% (2d delay)",
+    "return": 2405.53,
+    "trades": 713,
+    "win_rate": 94.1,
+    "losers": 42
+  },
+  {
+    "label": "Buy at OPEN (1d delay)",
+    "return": 3965.36,
+    "trades": 770,
+    "win_rate": 94.7,
+    "losers": 41
+  },
+  {
+    "label": "Buy at OPEN (0d delay - unrealistic)",
+    "return": 0.0,
+    "trades": 0,
+    "win_rate": 0,
+    "losers": 0
+  }
+]

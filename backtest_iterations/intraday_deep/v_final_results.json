@@ -1,0 +1,10 @@
+[
+  {
+    "label": "1. Baseline (close entry, fixed 1/10)",
+    "total_return": 102.5,
+    "trades": 595,
+    "wr": 83.7,
+    "losers": 97,
+    "avg_hold": 21.2,
+    "annual": {
+      

@@ -1,0 +1,58 @@
+[
+  {
+    "label": "Close entry, +5%/60d, fixed",
+    "return": 193.07,
+    "trades": 638,
+    "wr": 86.2,
+    "losers": 88
+  },
+  {
+    "label": "Open entry, +5%/60d, fixed",
+    "return": 178.04,
+    "trades": 623,
+    "wr": 85.9,
+    "losers": 88
+  },
+  {
+    "label": "Close entry, +7%/45d, fixed",
+    "return": 186.63,
+    "trades": 544,
+    "wr": 76.8,
+    "losers": 126
+  },
+  {
+    "label": "Open entry, +7%/45d, fixed",
+    "return": 213.0,
+    "trades": 566,
+    "wr": 78.4,
+    "losers": 122
+  },
+  {
+    "label": "Close entry, +5%/60d, adaptive",
+    "return": 325.38,
+    "trades": 433,
+    "wr": 85.9,
+    "losers": 61
+  },
+  {
+    "label": "Open entry, +5%/60d, adaptive",
+    "return": 312.63,
+    "trades": 426,
+    "wr": 88.0,
+    "losers": 51
+  },
+  {
+    "label": "Close entry, +7%/45d, adaptive",
+    "return": 131.53,
+    "trades": 343,
+    "wr": 74.1,
+    "losers": 89
+  },
+  {
+    "label": "Open entry, +7%/45d, adaptive",
+    "return": 249.46,
+    "trades": 363,
+    "wr": 75.8,
+    "losers": 88
+  }
+]

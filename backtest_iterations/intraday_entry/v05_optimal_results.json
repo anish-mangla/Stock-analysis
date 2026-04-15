@@ -1,0 +1,66 @@
+[
+  {
+    "label": "+7%/30d, 1/6 bull 1/14 bear",
+    "return": 7226.62,
+    "trades": 714,
+    "wr": 88.5,
+    "losers": 82,
+    "avg_hold": 9.3
+  },
+  {
+    "label": "+7%/45d, 1/6 bull 1/14 bear",
+    "return": 7237.86,
+    "trades": 664,
+    "wr": 90.4,
+    "losers": 64,
+    "avg_hold": 10.7
+  },
+  {
+    "label": "+7%/30d, 1/5 bull 1/12 bear",
+    "return": 7145.53,
+    "trades": 606,
+    "wr": 88.3,
+    "losers": 71,
+    "avg_hold": 9.5
+  },
+  {
+    "label": "+7%/30d, 1/4 bull 1/10 bear",
+    "return": 5478.46,
+    "trades": 482,
+    "wr": 87.6,
+    "losers": 60,
+    "avg_hold": 9.9
+  },
+  {
+    "label": "+5%/45d, 1/6 bull 1/14 bear",
+    "return": 5453.08,
+    "trades": 827,
+    "wr": 94.3,
+    "losers": 47,
+    "avg_hold": 7.8
+  },
+  {
+    "label": "+5%/60d, 1/6 bull 1/14 bear",
+    "return": 5004.38,
+    "trades": 784,
+    "wr": 95.3,
+    "losers": 37,
+    "avg_hold": 8.7
+  },
+  {
+    "label": "+10%/30d, 1/6 bull 1/14 bear",
+    "return": 5446.67,
+    "trades": 549,
+    "wr": 84.2,
+    "losers": 87,
+    "avg_hold": 13.4
+  },
+  {
+    "label": "+10%/45d, 1/6 bull 1/14 bear",
+    "return": 4691.25,
+    "trades": 474,
+    "wr": 84.8,
+    "losers": 72,
+    "avg_hold": 16.3
+  }
+]
