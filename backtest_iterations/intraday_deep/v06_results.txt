@@ -1,0 +1,8 @@
+V06: WAIT FOR INTRADAY DIP
+
+                   Close (baseline):  +102.5% | 595 trades | WR 84%
+       Dip 0.5% then buy (or close):  +162.3% | 704 trades | WR 87%
+       Dip 1.0% then buy (or close):  +154.5% | 684 trades | WR 86%
+       Dip 1.5% then buy (or close):  +150.5% | 675 trades | WR 86%
+       Dip 2.0% then buy (or close):  +140.4% | 667 trades | WR 86%
+       Buy 30min after intraday low:  +125.7% | 643 trades | WR 84%

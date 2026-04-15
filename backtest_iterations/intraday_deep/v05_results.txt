@@ -1,0 +1,6 @@
+V05: FIRST-HOUR SIGNAL ANALYSIS
+
+Events: 6809
+Overall WR: 81.4%
+First 30m UP: 3455 events, WR 83.9%
+First 30m DOWN: 3257 events, WR 78.9%

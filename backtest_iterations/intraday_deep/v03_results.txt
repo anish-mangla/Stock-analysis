@@ -1,0 +1,7 @@
+V03: VWAP ENTRY STRATEGIES
++5%/60d, fixed 1/10, no biases
+
+              Close (baseline):  +102.5% | 595 trades | WR 84% | 97 losers
+                    Daily VWAP:   +80.3% | 579 trades | WR 82% | 106 losers
+                 2:00 PM price:  +109.5% | 597 trades | WR 84% | 97 losers
+       2:00 PM, only if < VWAP:   +75.8% | 490 trades | WR 83% | 84 losers

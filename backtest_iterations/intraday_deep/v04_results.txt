@@ -1,0 +1,13 @@
+V04: LIMIT ORDER STRATEGIES
++5%/60d, fixed 1/10, fallback to close if limit not hit
+
+                 Strategy   Return  Trades    WR  Limit%
+-------------------------------------------------------
+    Open price (no limit)   +98.3%     598   83%    100%
+         Close (baseline)  +102.5%     595   84%      0%
+          Limit open-0.5%   +84.1%     580   82%     77%
+          Limit open-1.0%  +102.4%     582   83%     59%
+          Limit open-1.5%  +108.3%     591   84%     46%
+          Limit open-2.0%  +120.3%     614   84%     34%
+          Limit open-2.5%  +112.6%     611   84%     24%
+          Limit open-3.0%  +115.9%     615   84%     18%
