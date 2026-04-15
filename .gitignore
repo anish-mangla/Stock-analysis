@@ -2,3 +2,24 @@
 __pycache__/
 daily_runs/
 logs/
+state/
+
+# Large data files
+*.parquet
+intraday_data/
+outputs/*.csv
+
+# Virtual env
+.venv/
+.vscode/
+
+# Chat/context files (personal)
+chat_history
+context_transfer_for_ai
+future_ideas
+future_ideas_mine
+run_instructions
+automated_run_instructions
+some_findings
+technical_analysis_related
+market_weekly_context.json
