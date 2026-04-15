@@ -1,0 +1,18 @@
+DCA EXPLORATION V01 - SUMMARY
+Reference (no DCA, V10d best): +401.5%
+
+CONCLUSION: DCA HURTS RETURNS. All configs underperform no-DCA.
+The positions that drop further after entry are disproportionately losers.
+Adding capital to them increases exposure to the worst trades.
+
+RESULTS:
+3% drop, add 50%, max 1 add:  +293.9% | 367 trades | WR 87% | 132 DCA'd (66% WR)
+5% drop, add 50%, max 1 add:  +329.2% | 386 trades | WR 89% | 100 DCA'd (58% WR)
+3% drop, add 100%, max 1 add: +309.3% | 334 trades | WR 89% | 111 DCA'd (68% WR)
+5% drop, add 100%, max 1 add: +282.2% | 344 trades | WR 89% |  85 DCA'd (59% WR)
+3% drop, add 50%, max 2 adds: +265.4% | 341 trades | WR 89% | 121 DCA'd (69% WR)
+5% drop, add 50%, max 2 adds: +341.1% | 378 trades | WR 90% | 101 DCA'd (64% WR)
+
+KEY INSIGHT: DCA'd positions have 58-69% win rate vs 87-90% overall.
+The stocks that drop further after entry are the ones most likely to be real losers.
+Don't throw good money after bad.
