@@ -1,0 +1,10 @@
+INTRADAY V02: OPEN ENTRY DEEP DIVE
+
+Buy at CLOSE (2d delay): +325.4% | 433 trades | WR 86% | 61 losers
+Buy at OPEN (2d delay): +6073.7% | 804 trades | WR 96% | 34 losers
+Buy at OPEN+0.1% (2d delay): +4958.8% | 783 trades | WR 95% | 36 losers
+Buy at OPEN+0.2% (2d delay): +5004.4% | 784 trades | WR 95% | 37 losers
+Buy at OPEN+0.5% (2d delay): +3626.8% | 745 trades | WR 95% | 37 losers
+Buy at OPEN+1.0% (2d delay): +2405.5% | 713 trades | WR 94% | 42 losers
+Buy at OPEN (1d delay): +3965.4% | 770 trades | WR 95% | 41 losers
+Buy at OPEN (0d delay - unrealistic): +0.0% | 0 trades | WR 0% | 0 losers

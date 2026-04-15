@@ -1,0 +1,16 @@
+INTRADAY V04: SLIPPAGE TESTING
+
++7%/30d, open+0.0%: +9108.3% | 733 trades | WR 90%
++7%/30d, open+0.1%: +7630.4% | 717 trades | WR 89%
++7%/30d, open+0.2%: +7226.6% | 714 trades | WR 88%
++7%/30d, open+0.3%: +6234.1% | 701 trades | WR 88%
++7%/30d, open+0.5%: +5986.7% | 693 trades | WR 88%
++7%/30d, open+1.0%: +3757.0% | 674 trades | WR 87%
++5%/60d, open+0.0%: +6073.7% | 804 trades | WR 96%
++5%/60d, open+0.1%: +4958.8% | 783 trades | WR 95%
++5%/60d, open+0.2%: +5004.4% | 784 trades | WR 95%
++5%/60d, open+0.3%: +4262.5% | 762 trades | WR 95%
++5%/60d, open+0.5%: +3626.8% | 745 trades | WR 95%
++5%/60d, open+1.0%: +2405.5% | 713 trades | WR 94%
+VWAP proxy, +5%/60d: +1115.8% | 568 trades | WR 92%
+VWAP proxy, +7%/30d: +803.5% | 530 trades | WR 80%

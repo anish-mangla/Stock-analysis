@@ -1,0 +1,10 @@
+INTRADAY V05: OPTIMAL CONFIG (0.2% slippage)
+
++7%/30d, 1/6 bull 1/14 bear: +7226.6% | 714 trades | WR 88% | hold 9d
++7%/45d, 1/6 bull 1/14 bear: +7237.9% | 664 trades | WR 90% | hold 11d
++7%/30d, 1/5 bull 1/12 bear: +7145.5% | 606 trades | WR 88% | hold 10d
++7%/30d, 1/4 bull 1/10 bear: +5478.5% | 482 trades | WR 88% | hold 10d
++5%/45d, 1/6 bull 1/14 bear: +5453.1% | 827 trades | WR 94% | hold 8d
++5%/60d, 1/6 bull 1/14 bear: +5004.4% | 784 trades | WR 95% | hold 9d
++10%/30d, 1/6 bull 1/14 bear: +5446.7% | 549 trades | WR 84% | hold 13d
++10%/45d, 1/6 bull 1/14 bear: +4691.2% | 474 trades | WR 85% | hold 16d

@@ -1,0 +1,11 @@
+INTRADAY ENTRY OPTIMIZATION V01 - OHLC BASELINE
+
+Buy at CLOSE (current): +325.4% | 433 trades | WR 86% | 61 losers
+Buy at OPEN: +6073.7% | 804 trades | WR 96% | 34 losers
+Buy at MIDPOINT: +258.9% | 411 trades | WR 86% | 59 losers
+Limit at open-0.5%: +319.1% | 356 trades | WR 92% | 30 losers
+Limit at open-1.0%: +235.5% | 313 trades | WR 91% | 27 losers
+Limit at open-1.5%: +156.8% | 264 trades | WR 92% | 21 losers
+Limit at open-2.0%: +129.8% | 220 trades | WR 93% | 15 losers
+Limit at open-2.5%: +72.9% | 176 trades | WR 92% | 14 losers
+Limit at open-3.0%: +66.9% | 146 trades | WR 92% | 12 losers

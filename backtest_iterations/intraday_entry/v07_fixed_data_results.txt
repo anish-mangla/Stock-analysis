@@ -1,0 +1,11 @@
+INTRADAY V07: CORRECTED DATA (open_matrix fixed to match close/high/low)
+Previous V01-V05 results were INVALID due to price adjustment mismatch
+
+Close entry, +5%/60d, fixed: +193.1% | 638 trades | WR 86% | 88 losers
+Open entry, +5%/60d, fixed: +178.0% | 623 trades | WR 86% | 88 losers
+Close entry, +7%/45d, fixed: +186.6% | 544 trades | WR 77% | 126 losers
+Open entry, +7%/45d, fixed: +213.0% | 566 trades | WR 78% | 122 losers
+Close entry, +5%/60d, adaptive: +325.4% | 433 trades | WR 86% | 61 losers
+Open entry, +5%/60d, adaptive: +312.6% | 426 trades | WR 88% | 51 losers
+Close entry, +7%/45d, adaptive: +131.5% | 343 trades | WR 74% | 89 losers
+Open entry, +7%/45d, adaptive: +249.5% | 363 trades | WR 76% | 88 losers

@@ -1,0 +1,14 @@
+INTRADAY V03: OPEN ENTRY + TARGET SWEEP
+
+Open entry, +3% target, 30d hold: +1704.7% | 1098 trades | WR 95% | avg hold 4d
+Open entry, +3% target, 45d hold: +1829.1% | 1049 trades | WR 96% | avg hold 5d
+Open entry, +3% target, 60d hold: +1916.6% | 1038 trades | WR 97% | avg hold 6d
+Open entry, +5% target, 30d hold: +4859.6% | 865 trades | WR 92% | avg hold 7d
+Open entry, +5% target, 45d hold: +6002.0% | 842 trades | WR 94% | avg hold 8d
+Open entry, +5% target, 60d hold: +6073.7% | 804 trades | WR 96% | avg hold 8d
+Open entry, +7% target, 30d hold: +9108.3% | 733 trades | WR 90% | avg hold 9d
+Open entry, +7% target, 45d hold: +8727.3% | 684 trades | WR 91% | avg hold 10d
+Open entry, +7% target, 60d hold: +9088.1% | 652 trades | WR 94% | avg hold 12d
+Open entry, +10% target, 30d hold: +7846.9% | 566 trades | WR 86% | avg hold 13d
+Open entry, +10% target, 45d hold: +6297.7% | 469 trades | WR 87% | avg hold 15d
+Open entry, +10% target, 60d hold: +6154.8% | 455 trades | WR 90% | avg hold 17d
