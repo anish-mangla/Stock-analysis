@@ -1,0 +1,6 @@
+V16: INTRADAY DRAWDOWN ANALYSIS
+
+Entry day drawdown from open:
+  Mean: -2.10%
+  Winners: -2.02%
+  Losers: -2.44%

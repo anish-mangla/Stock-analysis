@@ -1,0 +1,11 @@
+V26-V33: NEWS × INTRADAY ANALYSIS
+
+V27: Optimal entry time by event type:
+  unlabeled: 14:30
+  no_clear_catalyst: 12:30
+  guidance_cut: 10:00
+  demand_weakness: 13:30
+  earnings_miss: 11:30
+  regulatory_legal: 10:30
+  product_service_failure: 13:30
+  competitive_threat: 12:30

@@ -1,0 +1,10 @@
+V17-V20: VOLUME AND VWAP ANALYSIS
+
+V17: Drop day relative volume
+  Mean: 1.65x
+
+V19: Entry day relative volume
+  Events: 7513
+
+V20: Closing auction volume
+  Mean: 7.9%
