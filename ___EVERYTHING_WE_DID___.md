@@ -2,7 +2,57 @@
 Everything we built, ran, and found — from start to finish.
 
 
-## PHASE 1: SYSTEM DESIGN & DATA LABELING
+## PHASE 0: WORKSTREAM 1 — DAILY AI RESEARCH PIPELINE (pre-existing)
+
+This was built before the current conversation. It's a daily pipeline that scans
+S&P 100 stocks for recent price weakness, sends them to Claude for news research,
+and stores structured results for later evaluation.
+
+### 0.1 Ticker Selection
+What: Scans 101 S&P 100 tickers, downloads recent daily bars via yfinance, computes
+5-day Typical Price (TP = (High+Low+Close)/3) change, filters stocks with TP change
+<= -2.5%. Returns ranked list of weakest performers (max 12).
+Files: `ticker_selection.py`
+
+### 0.2 Prompt Composition
+What: Takes selected tickers and builds a structured research prompt for AI models.
+Instructs the model to classify each ticker into: clear_negative_recent_news,
+mixed_medium_negatives, or mostly_neutral_or_weak_news. Asks for explanation_strength
+(strongly/partially/weakly explained) and likely_mean_reversion_candidate (yes/maybe/no).
+Includes JSON schema for structured output.
+Files: `prompt_composition.py`
+
+### 0.3 Model Execution
+What: Sends prompt to Claude (Sonnet) via Anthropic SDK with web search enabled
+(max 40 searches) and structured JSON output. Parses response, tracks tokens,
+estimates cost (~$3/1M input, $15/1M output, $0.01/search). Placeholder for
+OpenAI adapter.
+Files: `model_execution.py`
+
+### 0.4 Response Storage
+What: Saves all outputs to `daily_runs/YYYY-MM-DD/` with: input_tickers.json,
+prompt.txt, and per-model folders containing raw.txt, parsed.json, metadata.json,
+snapshot.json. Designed for auditability and future backtesting.
+Files: `response_storage.py`
+
+### 0.5 Orchestrator
+What: Thin orchestrator connecting all 4 components: select tickers → compose
+prompt → run model(s) → save outputs. Model-agnostic design.
+Files: `main.py`
+
+### 0.6 Automation
+What: macOS launchd automation to run the pipeline daily after 5 PM PT on weekdays.
+Tracks last successful run date to avoid duplicates. Activates venv, runs main.py,
+logs to `logs/run.log`.
+Files: `launchd_entrypoint.sh`, `run_pipeline.sh`
+
+### 0.7 Project Design
+What: Comprehensive README documenting the system architecture, 4-component design,
+data flow, storage structure, model-agnostic principles, and future evaluation plan.
+Files: `README.md`
+
+
+## PHASE 1: SYSTEM DESIGN & DATA LABELING (Workstream 2)
 
 ### 1.1 System Blueprint & Event Taxonomy
 What: Designed a 3-layer mean-reversion system (quantitative + news + lookup table) with a 20-type event taxonomy across stock/sector/market levels.
