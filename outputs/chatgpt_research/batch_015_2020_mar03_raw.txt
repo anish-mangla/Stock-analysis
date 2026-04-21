@@ -1,0 +1,25 @@
+BATCH 015 — 2020-03-03 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Fed emergency 50bp cut to 1.00-1.25% (first since 2008). Market sold off anyway — all 11 S&P sectors lower. Reuters: IT sector fell 3.8%, bank stocks fell 3.4%. Interpreted as confirmation problem was worse than expected.
+
+ORCL Mar3: No stock-specific catalyst. Broad software/tech selloff after Fed cut and worsening COVID fears. Enterprise software spending concern. Confidence: Medium.
+JNJ Mar3: No stock-specific catalyst. Broad market de-risking tied to COVID. Fell less than cyclicals suggesting market-wide risk-off not stock-specific. Confidence: Medium.
+AVGO Mar3: No stock-specific catalyst. Semiconductor sector weakness on COVID supply-chain and demand fears. Pre-earnings caution and tech multiple compression. Confidence: Medium.
+INTC Mar3: No stock-specific catalyst. Chip-sector selloff tied to coronavirus supply-chain fears. Concern global slowdown would hurt PC/server/corporate demand. Confidence: Medium.
+INTU Mar3: No stock-specific catalyst in 3-day window. $7.1B Credit Karma deal announced Feb 24 (outside window). Software/growth-stock selloff after Fed move. Confidence: Medium-low.
+AAPL Mar3: No brand-new Apple-specific headline in window. Reuters named Apple among large tech losers. Continuing concern over China manufacturing and demand exposure. Confidence: Medium.
+ABT Mar3: No stock-specific catalyst. Major COVID testing announcements came later (Mar 18, Mar 27). Broad market liquidation. Confidence: Medium.
+ACN Mar3: No stock-specific catalyst. IT-services/enterprise-spending fears within broader tech selloff. Concern clients would defer consulting work. Confidence: Medium.
+ADBE Mar3: No stock-specific catalyst. High-multiple software selloff amid recession fears. Drop close to broader tech decline suggesting sector move. Confidence: Medium.
+AMGN Mar3: No stock-specific catalyst. Broad market risk-off selling. Biopharma not spared during early pandemic liquidation. Confidence: Medium.
+AXP Mar3: Travel-and-spending exposure plus financial-sector pressure after Fed cut. Reuters later reported AmEx saw spending volumes weaken from late Feb into March. Both rate sensitivity AND travel/T&E exposure. Confidence: High.
+BAC Mar3: Fed emergency cut main event. Reuters: bank stocks dropped 3.4% on Mar 3. Margin compression from surprise rate cut plus rising credit loss fears. Confidence: High.
+BK Mar3: No BK-specific release. Financial-sector repricing after emergency rate cut. More fee/custody driven than plain lender but still traded like financial stock. Confidence: Medium-high.
+AMAT Mar3: No stock-specific catalyst. Semiconductor-capex/supply-chain selloff tied to COVID. Reuters showed investors focused on China disruptions. Confidence: Medium.
+C Mar3: Emergency Fed rate cut and bank/financial selloff. Globally exposed — sensitive to synchronized international downturn. Reuters: bank stocks fell 3.4%. Confidence: High.
+COF Mar3: No Capital One-specific headline. Consumer-credit risk repricing on recession fears. Both financial-sector exposure and heavier consumer-credit sensitivity. Confidence: High.
+CRM Mar3: No stock-specific catalyst. Enterprise software de-rating on recession fears. Dropped more than IT sector but no clean company catalyst. Confidence: Medium.
+DE Mar3: No new Mar 1-3 headline but Reuters had reported Deere temporarily closed China facilities. Industrial/cyclical selloff tied to COVID supply-chain and global growth fears. Confidence: Medium.
+EMR Mar3: No stock-specific catalyst. Global industrial slowdown fears from COVID. Cyclical-industrial reaction to worsening virus fears. Confidence: Medium.
+FDX Mar3: No fresh FedEx-specific headline. Global trade/logistics slowdown fears from COVID. Classic economic bellwether hit harder than market. Confidence: Medium-high.

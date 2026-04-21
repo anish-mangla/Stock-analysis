@@ -1,0 +1,23 @@
+BATCH 044 — 2020-03-20 (20 events). Source: ChatGPT. Date: 2026-04-18.
+Context: Mar 20 S&P/Dow down ~2-4%. NY joined CA in stay-at-home orders. Worst week since 2008. Fed and central banks boosted dollar-liquidity operations.
+
+MS Mar20: Mar 15 biggest U.S. banks including MS suspended share buybacks. Sector-wide banking stress — recession/credit fears plus near-zero rates and frozen markets. Buyback suspension signaled capital preservation. Confidence: Medium.
+PFE Mar20: No negative Pfizer-specific development Mar 17-19. Broad market liquidation/defensive-name selloff. Confidence: Low-Medium.
+SCHW Mar20: No major Schwab-specific press release Mar 17-19. Fed slashed rates to near zero squeezing net interest revenue. Rate-shock impact on Schwab NIM. Confidence: Medium.
+PM Mar20: No clear PM-specific negative Mar 17-19. Rapid global closure of retail channels and mobility restrictions. Global COVID disruption to distribution and consumer channels. EM/currency exposure. Confidence: Low-Medium.
+WMT Mar20: STOCK-SPECIFIC context. Mar 19 Walmart announced special cash bonuses for U.S. hourly associates totaling nearly $550M ($300 full-time $150 part-time). Ramping hiring. Margin-pressure worries from surging labor and operating costs despite strong sales demand. Confidence: High.
+WFC Mar20: STOCK-SPECIFIC context. Mar 21 Reuters reported Wells asked Fed to lift $1.95T asset cap. Banks halted buybacks Mar 15. Banking-sector stress plus Wells-specific regulatory overhang from asset cap. Confidence: High.
+VZ Mar20: Verizon said temporarily closing a number of U.S. stores. COVID-related retail disruption — pressure on in-store activations and handset sales. Confidence: Medium-High.
+V Mar20: No Mar 17-19 Visa release. Later Visa disclosed transaction volumes fell in second half of March. Cross-border travel-related spending deteriorated rapidly. Collapse in travel and cross-border payment volumes. Confidence: High.
+UNP Mar20: No specific UNP release Mar 17-19. Rail volumes under visible pressure from collapsing industrial activity and intermodal demand. Expected freight-volume contraction. Confidence: Medium.
+UNH Mar20: UnitedHealth highlighted COVID-related support measures. Mar 19 U.S. senators pressing major insurers including UnitedHealth to waive broader cost-sharing tied to coronavirus treatment. Fear of rising medical-cost exposure and political/regulatory pressure. Confidence: Medium-High.
+PG Mar20: P&G already warned Feb about coronavirus disruptions. By March investors weighing supply-chain strain against pantry-loading demand. Margin and supply-chain concerns not demand weakness. Confidence: Medium-High.
+TXN Mar20: No TXN-specific Mar 17-19 release. Reuters connected TI to broad electronics and smartphone supply-chain disruption. Semiconductor demand and supply-chain worries. Confidence: Medium.
+T Mar20: STOCK-SPECIFIC. Reuters Mar 18 reported AT&T closing 40% of company-owned U.S. retail stores and cutting store hours. Large-scale retail-store closures and near-term wireless sales disruption. Confidence: High.
+SPG Mar20: STOCK-SPECIFIC. Mar 18 Reuters and Simon reported company would temporarily close all U.S. retail properties including malls Premium Outlets and Mills through Mar 29. Complete shutdown of domestic mall operations. Confidence: Very High.
+SO Mar20: No major Southern-specific negative Mar 17-19. Utility-sector derating. Investors raised cash. Worried about commercial/industrial load weakness. Broad utility-sector liquidation/funding-stress selloff. Confidence: Low-Medium.
+LMT Mar20: No negative Lockheed-specific announcement Mar 17-19. One Mar 17 release was actually operationally routine/positive on Sentinel A4 radar. Macro liquidation of industrial/defense exposure. Confidence: Low-Medium.
+SBUX Mar20: Governments tightening restrictions on restaurants cafes public movement globally. By early April Starbucks confirmed U.S. same-store sales started declining Mar 12 and worsened steadily. Sharp expected collapse in cafe traffic from lockdowns. Confidence: High.
+QCOM Mar20: Reuters earlier in March reported Qualcomm said coronavirus threatened disruption to phone industry. Maintained 2020 5G handset view initially. Smartphone demand/supply-chain fears from COVID shock. Confidence: High.
+TMUS Mar20: STOCK-SPECIFIC. T-Mobile said stores in malls would close starting Mar 16. Closing about 80% of corporate-owned retail stores starting Mar 17 until at least Mar 31. Aggressive retail-store closures. Confidence: High.
+LLY Mar20: No Lilly-specific negative Mar 17-19. Later COVID-antibody work was positive but not yet Mar 20 catalyst. Broad healthcare/defensive liquidation. Confidence: Low-Medium.

@@ -1,0 +1,25 @@
+BATCH 026 — 2020-03-11 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 11 WHO declared COVID-19 pandemic. Trump announced 30-day European travel ban. NBA suspended season. Dow entered bear market. Italy nationwide lockdown day before. 10-year Treasury had fallen below 1% for first time ever on Mar 3.
+
+XOM Mar11: Saudi Arabia launched oil-price war after OPEC+ breakdown. Crude plunged ~25% on Mar 9. Saudi Aramco said would raise output to 12.3M bpd from 9.7M bpd in April. Oil-price-war shock hitting Exxon earnings/cash-flow outlook. Confidence: High.
+WMT Mar11: Walmart posted Mar 10 coronavirus response update. No negative Walmart-specific announcement. Broad market liquidation on pandemic fears. Concern panic buying offset by labor, cleaning, stocking, supply-chain strain. Confidence: Medium.
+WFC Mar11: No fresh Wells-specific release. Collapsing yields, recession fear, margin pressure for banks. 10-year below 1% for first time ever. Reuters: S&P financials fell 3.7% because low rates hurt bank profitability. Confidence: High.
+V Mar11: No fresh Visa-specific release. Travel demand deteriorating fast, Italy locked down, cross-border spending obvious exposure. Later Visa confirmed rapid deterioration in cross-border travel-related spend. Confidence: Medium-High.
+USB Mar11: No USB-specific catalyst. Same bank-sector rate/recession shock as WFC. Yields collapsing below historic lows. Regionals and money-center banks alike repriced sharply lower. Confidence: High.
+UPS Mar11: No fresh UPS announcement. Rapidly worsening freight, air-travel, cross-border disruption. Fear of global shipping and B2B volume disruption. Market still treating parcel carriers as cyclical logistics names not pandemic winners. Confidence: Medium.
+UNP Mar11: No fresh Union Pacific announcement. Industrial-volume and freight-demand fears from COVID slowdown. Railroads repriced for lower carloads. Confidence: Medium.
+PEP Mar11: No PepsiCo-specific negative. Broad-market de-risking with some concern over away-from-home consumption. Restaurants, travel venues, convenience channels under pressure. Confidence: Medium-Low.
+UBER Mar11: Mar 7 Uber said would compensate drivers/delivery workers diagnosed with COVID-19 or quarantined for up to 14 days. Expected plunge in ride-hailing demand. Reuters later reported demand down as much as 70% in some U.S. cities. Confidence: High.
+T Mar11: No fresh AT&T-specific negative. Broad market/pandemic selloff. Concern about WarnerMedia advertising and entertainment exposure. Confidence: Medium-Low.
+SPG Mar11: No Simon press release in prior 3 days. Mall landlords obvious COVID casualties as lockdowns spread. Expected collapse in mall foot traffic and tenant sales/rent collections. Simon formally shut U.S. properties Mar 18. Confidence: High.
+SO Mar11: No Southern Company-specific negative. Indiscriminate risk-off selling. Utility sensitivity to funding conditions and broad equity deleveraging. Confidence: Medium-Low.
+SBUX Mar11: Already warned in January virus would hurt results. Closed 2000+ China stores. No new company release Mar 9-10. Investors extrapolating China-style disruption globally. Fear of global store traffic collapse and closures. Confidence: High.
+RTX Mar11: No fresh Raytheon/UTC merger headline. Aerospace exposure especially commercial aviation repriced sharply lower. Flights canceled, borders tightened, travel collapsed. Confidence: Medium-High.
+QCOM Mar11: Mar 2 Qualcomm said China virus threatened phone-industry disruption. Kept 2020 5G handset estimate at 175M-225M. Smartphone-demand/supply-chain disruption fears. Confidence: High.
+PM Mar11: No fresh Philip Morris-specific catalyst. Broad market liquidation with concern about international distribution/disruption. EM/currency exposure. Confidence: Medium-Low.
+PG Mar11: STOCK-SPECIFIC context. Feb 20 P&G said coronavirus would hurt current-quarter revenue and profit from supply-chain disruption and weaker China demand. Prior virus warning being repriced more aggressively as outbreak globalized. Confidence: High.
+TXN Mar11: No fresh Texas Instruments-specific announcement. Cyclical semiconductor derating on recession fears. Heavily tied to broad industrial and electronics demand. Confidence: Medium.
+ISRG Mar11: No March 9-10 Intuitive Surgical release. Expected slowdown in elective procedures using da Vinci systems. Later confirmed procedures fell to ~65% of earlier Q1 weekly levels in last half of March. Confidence: Medium.
+INTU Mar11: No fresh Intuit-specific release. Mostly broad-market selloff. Emerging concern SMB customers would weaken. Tax deadline extension and SMB pressure became clearer later. Relatively smaller 3.2% decline. Confidence: Medium-Low.

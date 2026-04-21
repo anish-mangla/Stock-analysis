@@ -1,0 +1,25 @@
+BATCH 022 — 2020-03-09 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Crash Monday — Saudi oil-price war, Brent -23.88%, WTI -25.1%, S&P 500 circuit breaker, 10-year ~0.318%, 2-year ~0.285%, SOX -8.3%. Italy locked down Lombardy. Markets even discussing possibility of negative U.S. rates.
+
+SCHW Mar9: No discrete company announcement. Clearest victim of rate collapse — earnings depend heavily on net interest revenue and sweep cash economics. 10-year ~0.318%, 2-year ~0.285%. Negative-rate talk. Confidence: High.
+SBUX Mar9: Already disclosed 2,000+ China stores closed and hurt China traffic. Virus spread beyond China — Italy lockdown. COVID demand disruption to store traffic especially international/urban. Confidence: High.
+RTX Mar9: No fresh RTX-specific release. Commercial aerospace exposure through pending Raytheon-UTC combination (Pratt & Whitney, Collins). Travel demand cratering. Confidence: Medium.
+QCOM Mar9: STOCK-SPECIFIC. Mar 2 Qualcomm said coronavirus threatened phone industry — forecast handset demand/supply disruptions would hurt quarter. Shares fell in after-hours. SOX -8.3% on Mar 9 amplified. Confidence: High.
+PG Mar9: Feb 20 P&G warned coronavirus would hurt current-quarter revenue/profit via supply-chain disruption and weaker China demand. No new Mar 6-9 update. Previously disclosed hit plus macro liquidation. Confidence: Medium-high.
+PFE Mar9: No clear Pfizer-specific negative catalyst. Broad market and healthcare ETF/liquidity selling. Relatively modest decline. Confidence: Medium.
+NVDA Mar9: No discrete Nvidia announcement. SOX fell 8.3%. Semiconductor sector selloff tied to COVID/recession fears. China exposure and hardware-cycle sensitivity. Confidence: Medium.
+ISRG Mar9: No company press release. Hospitals moving toward postponing elective procedures. Direct risk to procedure-driven medtech. Business depends on procedure volume. Confidence: Medium.
+TXN Mar9: No TXN-specific corporate event. Semiconductor/industrial demand shock. Especially exposed to analog demand from industrial and auto customers. SOX -8.3%. Confidence: Medium.
+INTC Mar9: No fresh Intel-specific announcement. Semiconductor-sector de-rating on COVID supply/demand fears. Semis one of most aggressively de-risked groups. Confidence: Medium.
+CAT Mar9: No new CAT-specific filing. Classic global-growth bellwether hit by recession panic AND oil crash. Sits at intersection of construction, mining, industrial activity, energy spending. Oil crashed ~24-25%. Confidence: High.
+C Mar9: No Citi-specific negative announcement. Collapse in Treasury yields and panic around economic growth. 10-year ~0.318% crushed earnings outlook. Bank NIM pressure plus credit/recession fears. Confidence: High.
+BRK-B Mar9: No Berkshire-specific announcement. Look-through exposure to economically sensitive holdings — financials, industrials, travel. Cash and defensive qualities limited downside vs banks. Confidence: Medium.
+BMY Mar9: No clear Bristol-specific negative catalyst. Broad market liquidation. Less downside than cyclical sectors — pharma relatively defensive. Confidence: Medium.
+BLK Mar9: No fresh BlackRock company event. Asset-manager sensitivity to market declines — sharp drop in global asset values threatens fee revenue. Financials weakness and client de-risking. Confidence: Medium-high.
+BKNG Mar9: STOCK-SPECIFIC. Mar 9 Booking withdrew Q1 guidance because of worsening COVID travel demand. By Mar 6 travel industry already experiencing collapsing bookings. Italy lockdown. Confidence: High.
+BK Mar9: No BNY Mellon-specific announcement. Financial-sector selloff from collapsing rates and recession fear. Fee/AUC sensitivity to falling markets and systemic liquidity stress. Confidence: Medium-high.
+BAC Mar9: No fresh BofA-specific release. Severe yield-curve collapse hitting bank earnings power. 10-year briefly 0.318%. Negative-rate scenarios discussed. NIM expectations marked down aggressively. Confidence: High.
+BA Mar9: STOCK-SPECIFIC. Reuters reported FAA rejected Boeing's proposal to leave certain 737 MAX wiring bundles in place — potentially delaying return to service. Plus pandemic shock to airlines/aerospace. Confidence: Very high.
+AXP Mar9: No Mar 6-9 company release. Unusually exposed to rapid collapse in travel and entertainment spending. Anticipated hit to billed business from T&E spending collapse. Confidence: Medium-high.

@@ -1,0 +1,25 @@
+BATCH 029 — 2020-03-11 to 2020-03-12 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 11 WHO pandemic declaration, Trump Europe travel ban, NBA suspended. Mar 12 even bigger shock — S&P 500 and Nasdaq each fell ~9.5%, Dow worst day since 1987. ECB response disappointed. Oil already collapsed after Saudi-Russia price war.
+
+CRM Mar11: No material negative Salesforce-specific development. Had reported strong Q4 Feb 25 — revenue $4.85B, raised FY21 guidance to ~$21.0-21.1B. Macro COVID panic not company news. High-multiple enterprise software de-risking. Confidence: Medium-High.
+COST Mar11: No material negative Costco-specific headline. Relative defensive retailer. Concern panic-buying offset by supply-chain strain and higher operating costs. Broad market selloff. Confidence: Medium.
+MRK Mar12: No material Merck-specific negative in Mar 9-12 window. Later in April Merck said COVID would hit 2020 sales by ~$2.1B from fewer doctor visits affecting Keytruda etc. March 12 market crash. Confidence: Medium.
+MS Mar12: Bank stocks hit by collapsing rates, recession fears, credit concerns. Morgan Stanley research shifting recession/Fed views. Mar 12 travel-ban shock and full-blown liquidation day. Financials-specific panic. Confidence: High.
+MSFT Mar12: Already warned Feb 26 More Personal Computing segment would miss guidance from China supply-chain disruption. Mar 12 market crash amplified pre-existing COVID supply-chain concerns. Confidence: High.
+MU Mar12: No discrete Micron-specific negative. Memory/semis viewed as highly cyclical with supply-chain dislocation plus weakening end demand. Semiconductor cyclical selloff during Mar 12 crash. Confidence: Medium-High.
+NKE Mar12: Substantial China exposure in sourcing and sales. No fresh Nike-specific bombshell in Mar 9-12. Later confirmed COVID hit wholesale and store traffic hard. Pandemic shock to global retail demand and supply chains. Confidence: Medium-High.
+NFLX Mar12: No material Netflix-specific negative. Contemporaneous analysis saw Netflix as relatively resilient. Marketwide forced selling on Mar 12. Profit-taking in prior winners. Content production disruption risk. Confidence: Medium.
+NOW Mar12: No material ServiceNow-specific negative. Later marketed COVID-response workflow tools (after drop). Enterprise software multiple compression in Mar 12 crash. Confidence: Medium.
+MO Mar12: No new Altria-specific headline. Not obviously vaping-rule day. Broad market liquidation. Leverage/credit sensitivity. 10.0% drop too large for normal tobacco defensiveness — forced de-risking. Confidence: Medium.
+NEE Mar12: No specific NextEra corporate headline. Utilities hit surprisingly hard — factor unwinds, leverage concerns, indiscriminate selling. 13.4% decline much larger than normal utility move. Violent de-leveraging/factor unwind in bond proxy utilities. Confidence: Medium.
+MMM Mar12: No fresh negative MMM-specific headline. Central to mask/N95 discussion but as industrial highly exposed to recession and global manufacturing disruption. Cyclical industrial recession fears. Market cared more about collapsing industrial demand than mask benefit. Confidence: Medium-High.
+LIN Mar12: No distinct Linde-specific negative. Exposed to industrial production, energy, manufacturing, healthcare. Later commentary showed COVID dented volumes. Industrial recession fears. Confidence: Medium.
+MDT Mar12: No major Medtronic-specific negative in Mar 9-12. Later said COVID would hurt fiscal Q4 results. Key issue: expected postponement of elective procedures. Confidence: High.
+MDLZ Mar12: Had already said late January coronavirus would hurt Q1 sales. No new bombshell in Mar 9-12. Broad March 12 crash. Existing coronavirus sales headwind. Confidence: Medium-High.
+MCD Mar12: No fresh McDonald's-specific closure headline by Mar 12. Bigger U.S. dine-in restrictions came few days later. Market clearly pricing severe restaurant traffic disruption. Anticipated collapse in restaurant traffic. Confidence: High.
+MA Mar12: No Mastercard-specific release in Mar 9-12 window. Payments model had clear exposure to travel and cross-border spend — exact categories getting crushed. Later Visa confirmed rapid deterioration. Travel and cross-border payments exposure during Mar 12 travel-ban shock. Confidence: High.
+LRCX Mar12: No verified Lam-specific negative. Later withdrew guidance due to coronavirus-related site closings. Semicap names especially exposed to global fab/customer capex uncertainty. High-beta semiconductor equipment selloff. Confidence: Medium-High.
+LOW Mar12: No new Lowe's-specific negative. Market had not yet embraced home improvement beneficiary thesis. Consumer discretionary selloff during Mar 12 crash. Fear of store traffic declines and housing uncertainty. Confidence: Medium.
+LMT Mar12: Week earlier Reuters reported F-35 assembly facility in Japan paused for a week due to coronavirus. Mar 12 crash plus emerging concern COVID would disrupt defense production/supply chains. Confidence: Medium-High.

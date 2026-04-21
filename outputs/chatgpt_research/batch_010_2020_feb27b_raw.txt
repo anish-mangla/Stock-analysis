@@ -1,0 +1,25 @@
+BATCH 010 — 2020-02-27 continued (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: S&P 500 fastest correction on record. Oil at 13-month low. Treasury yields collapsing.
+
+PG: No fresh headline but Feb 20 warning that COVID would hit Q revenue/profit from China supply chain still weighing. 5.5% steep for defensive. Confidence: Medium.
+JNJ: No stock-specific catalyst. Broad COVID selloff. Only -3.2% (less than cyclicals). Confidence: Low-Medium.
+XOM: Oil at one-year/13-month low. COVID demand destruction. Confidence: High.
+WFC: No stock-specific catalyst. Treasury yields collapsing. Bank margin expectations crushed. Confidence: High.
+VZ: No stock-specific catalyst. MWC cancellation as sector backdrop. Broad selloff. Confidence: Low-Medium.
+USB: No stock-specific catalyst. Rates collapse pressuring bank margins. Confidence: High.
+UPS: No stock-specific catalyst. Transport/global commerce demand fears. Confidence: Medium.
+UNP: No stock-specific catalyst. Rail volume fears from economic slowdown. Confidence: Medium.
+UNH: No stock-specific catalyst. Broad market selloff. Managed care not immune. Confidence: Low-Medium.
+PEP: No stock-specific catalyst. Broad COVID selloff. Away-from-home demand concern. Confidence: Low-Medium.
+UBER: No stock-specific catalyst. Ride demand/travel disruption fears. High-beta. Confidence: Medium.
+TSLA: MarketWatch tied weakness to COVID China fears. Shanghai factory/supply chain risk. Confidence: High.
+TXN: No stock-specific catalyst. Semiconductor demand/supply chain fears. Confidence: Medium.
+TMO: No stock-specific catalyst. Broad market liquidation. Later benefited from COVID testing. Confidence: Low-Medium.
+T: No stock-specific catalyst. MWC cancellation as sector backdrop. Broad selloff. Confidence: Low-Medium.
+SPG: No stock-specific filing. Mall traffic/physical retail footfall collapse fears. Confidence: Medium.
+SCHW: No stock-specific headline. Rates collapse especially relevant for SCHW's NII model. Confidence: High.
+SBUX: Late Jan warned 2000+ China stores closed. Feb 27 Reuters: 85% back open but damage done. Ongoing China traffic risk. Confidence: High.
+RTX: No stock-specific catalyst. Aerospace/industrial COVID repricing. Travel/airline demand fears. Confidence: Medium.
+QCOM: MWC cancellation overhang. Handset demand/5G launch cadence fears. Confidence: Medium.

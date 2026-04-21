@@ -1,0 +1,25 @@
+BATCH 025 — 2020-03-11 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 11 WHO declared COVID-19 pandemic. Trump announced 30-day European travel ban. NBA suspended season. Dow entered bear market. Italy had imposed nationwide lockdown day before. Reuters reported Dow entered bear market as WHO declared pandemic.
+
+NEE Mar11: No material NextEra-specific negative. Macro panic — Dow confirmed bear market. Utilities not immune to liquidity unwind. Rate volatility and indiscriminate selling. Confidence: Medium.
+MU Mar11: No Micron-specific negative corporate release. Semiconductor cyclicality into pandemic shock. Memory names vulnerable to fears of weaker end-demand in consumer electronics, servers, industrial supply chains. Confidence: Medium.
+MSFT Mar11: No new Microsoft-specific negative. Broad market selloff. Teams usage surge reported later (after drop). Large-cap tech derating and enterprise/customer spending concern. Confidence: Medium.
+MS Mar11: No major Morgan Stanley-specific earnings/guidance cut. Financial-sector stress from recession fears and bank-rate sensitivity. Reuters noted bank shares among hardest-hit groups. COVID case tied to MS Purchase NY office also reported around this period. Confidence: High.
+NKE Mar11: Nike China disruption and store-traffic concerns already part of COVID narrative. No discrete Nike-specific negative in prior 3 days. COVID hit to discretionary retail demand and store traffic. Supply-chain disruption concerns. Confidence: Medium-high.
+MDLZ Mar11: Reuters Mar 11 reported Mondelez added new $2.5B credit facility on top of $1.5B agreement less than two weeks earlier. No separate operational miss. Broad market panic with liquidity-conservation behavior as secondary signal. Confidence: Medium.
+MMM Mar11: Actually associated with strong mask demand — not negative company-specific shock. Worsening global industrial outlook as Europe locked down. Global industrial/recession exposure. Confidence: Medium-high.
+META Mar11: No fresh Facebook-specific corporate shock. COVID beginning to trigger sharp pullbacks in advertising budgets especially travel, retail, entertainment. Anticipated digital ad spending slowdown. Confidence: Medium.
+MDT Mar11: No material negative Medtronic-specific release. Ventilator production updates came after Mar 11. Broad market and med-tech risk-off. Concern hospitals would defer non-urgent procedures. Confidence: Medium.
+MCD Mar11: No fresh MCD-specific corporate release. Europe lockdown escalation highly relevant for international restaurant traffic. Later McDonald's materials discussed restaurants partly/fully closed. Pandemic-driven restaurant traffic collapse risk. Confidence: High.
+MA Mar11: STOCK-SPECIFIC. Mastercard updated investors Mar 11 — COVID caused "further deterioration" in cross-border, switched volume, switched transaction metrics. Q1 net revenue growth now only low-single digits. Suspended 2020 outlook. Confidence: Very high.
+LRCX Mar11: No Lam Research-specific negative. Global semiconductor selloff — fears about fab spending, equipment demand, supply-chain continuity. Semiconductor equipment exposure to global capex shock. Confidence: Medium.
+LOW Mar11: No Lowe's-specific negative. Consumer-retail recession fears. Spreading pandemic could hit store traffic, consumer confidence, discretionary big-ticket spending. Confidence: Medium.
+NVDA Mar11: No fresh Nvidia-specific negative. Same pressures hitting semis broadly — demand uncertainty, supply-chain risk, sharp de-rating of growth tech. Semiconductor/growth-tech de-risking. Confidence: Medium.
+JPM Mar11: No JPMorgan-specific negative corporate release. Bank-sector stress from recession and credit fears. Reuters noted bank shares among hardest hit. Yield-curve/rate volatility. Confidence: High.
+MO Mar11: No material Altria-specific negative. Broad market/liquidity selloff. Even traditionally defensive consumer names sold. Confidence: Medium.
+ORCL Mar11: Oracle reported fiscal Q3 results Mar 12 — revenue $9.8B up 2%, non-GAAP EPS $0.97, board added $15B to buybacks. Pre-earnings caution in brutal tech tape with macro stress amplifying. Confidence: Medium-high.
+TMO Mar11: No negative Thermo Fisher-specific release. FDA emergency use authorization for COVID-19 diagnostic test came Mar 13 (after drop). Broad market panic and med-tech de-risking. Confidence: Medium-high.
+PFE Mar11: No fresh negative Pfizer-specific release. Five-point plan and BioNTech vaccine collaboration published after Mar 11. Broad market selloff. Rotation out of even large defensive pharma. Confidence: Medium.
+JNJ Mar11: No negative J&J-specific announcement. Vaccine-development update issued Mar 13 (after drop). Broad market liquidation and healthcare de-risking. Dow entered bear market. Confidence: Medium.

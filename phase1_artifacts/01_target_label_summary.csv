@@ -1,0 +1,7 @@
+label,rate,count
+hit_5_60 (hit +5% in 60d),81.2%,6357
+hit_5_20 (hit +5% in 20d),81.2%,6357
+never_down_8 (never -8% drawdown),71.5%,5596
+"good_trade (hit +5%, dd>-8%, day60>=0)",65.8%,5150
+bad_loser (did not hit +5%),18.8%,1474
+ugly_loser (day60<-10% or dd<-12%),17.0%,1333

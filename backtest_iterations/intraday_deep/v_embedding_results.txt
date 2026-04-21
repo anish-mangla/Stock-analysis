@@ -1,0 +1,12 @@
+EMBEDDING PROTOTYPE RESULTS
+
+Events: 336
+Success rate: 76.2%
+
+Best AUC numeric: 0.599
+Best AUC embeddings: 0.549
+Best AUC combined: 0.533
+Improvement: -0.066
+
+Numeric importance: 0.3%
+Embedding importance: 99.7%

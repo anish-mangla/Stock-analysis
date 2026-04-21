@@ -1,0 +1,21 @@
+BATCH 037 — 2020-03-16 (20 events). Source: ChatGPT. Date: 2026-04-18. Context: Same as batch 036. S&P -12%, worst since 1987. Fed 0-0.25%. Brent down 10%+ on Mar 16.
+AVGO: STOCK-SPECIFIC. Reported fiscal Q1 Mar 12 and withdrew annual guidance — "visibility lacking demand uncertainty intensifying." Expected ~$5.7B current-quarter revenue below prior Street. Confidence: High.
+AMZN: STOCK-SPECIFIC context. Mar 16 announced hiring 100,000 warehouse/delivery workers and $2/hr raise. Demand-positive but mixed for margins. Broad-market selling. Confidence: Medium.
+AMT: No material AMT-specific negative Mar 13-15. Sector-wide REIT/liquidity/rate panic. Forced deleveraging. Confidence: Medium-low.
+AMGN: No major Amgen-specific negative. Amgen Foundation $12.5M relief. Mar 10 five-year Aimovig data. Broad market drawdown. Confidence: Medium-low.
+AMD: No major AMD-specific negative Mar 13-15. Semiconductor complex under pressure. Sector-wide repricing. Confidence: Medium.
+ADBE: STOCK-SPECIFIC context. Reported Q1 Mar 12 — record revenue $3.09B but Q2 target ~$3.175B. Management said customers in harder-hit countries reducing spending. $0.07/share hit from canceled events. Confidence: High.
+ACN: Accenture reported fiscal Q2 Mar 19 — updated FY2020 outlook to reflect expected coronavirus impact. Revenue $11.14B EPS $1.91. Fear COVID would hurt consulting/discretionary enterprise spending. Confidence: Medium-high.
+ABT: No negative Abbott-specific catalyst. Major COVID testing announcements came later. Broad-market and medtech/utilization fear. Confidence: Medium.
+ABBV: No major AbbVie-specific negative Mar 13-15. Allergan deal old news. Risk-off selling with deal/leverage overhang. Confidence: Medium-low.
+AAPL: STOCK-SPECIFIC. Apple announced Mar 14 would close all retail stores outside Greater China until Mar 27. Already warned Feb about missing guidance. Store closures and COVID demand/supply disruption. Confidence: High.
+JNJ: Actually POSITIVE news — Mar 13 announced Janssen collaboration with Beth Israel to accelerate COVID-19 vaccine candidate. Broad market selloff not company-specific negative. Confidence: Medium-high.
+CL: No clear Colgate-specific negative Mar 13-15. Indiscriminate consumer staples selling during liquidity panic. EM/FX concerns. Confidence: Medium-low.
+CMCSA: STOCK-SPECIFIC context. Comcast announced COVID-response steps Mar 16 including making current movies available at home. Later said COVID would materially impact results. NBCUniversal/theme-park/film exposure. Confidence: High.
+AMAT: No Mar 13-15 company release. Later Mar 23 withdrew Q2 guidance. Semiconductor equipment supply-chain shock expectations. Confidence: Medium-high.
+COST: Costco reported Feb adjusted comp sales rose 11.7% from virus-driven buying. Not about weak demand — broad-market selling plus concern about operating strain/costs. Confidence: Medium.
+INTU: No fresh Mar 13-15 earnings release. Highly exposed to small-business health. Later filings said mid-March COVID began negatively affecting small-business results. Fear of sudden SMB recession. Confidence: Medium-high.
+COP: SECTOR-SPECIFIC. Reuters: Brent settled $34.36 WTI $31.13 on Mar 9 after 24-25% collapse. Mar 16 Brent tumbled 10%+. Oil price collapse. Confidence: High.
+INTC: Intel published Mar 13 coronavirus update on employee safety. Mar 24 Reuters reported Intel suspended buybacks and warned coronavirus would likely hurt results. Semiconductor sector selloff plus growing concern results would be hit. Confidence: Medium-high.
+HON: Honeywell reaffirmed Q1 and full-year forecasts Mar 10. Seeing surge in demand for protective face masks. Macro/industrial recession fears. Aerospace and industrial exposure overwhelming positive mask-demand angle. Confidence: Medium-high.
+HD: No strong HD-specific negative Mar 13-15. Consumer discretionary and physical retail shutdown fear. Near-20% drop. Confidence: Medium.

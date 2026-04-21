@@ -1,0 +1,25 @@
+BATCH 018 — 2020-03-05 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Dow fell ~970 points, S&P 500 back into correction territory, 10-year Treasury yield hit record low ~0.899%. IATA raised airline revenue damage estimate to $63B-$113B (vs ~$30B previously). Flybe collapsed. RSA conference pullouts. Major conferences being canceled.
+
+AVGO Mar5: No AVGO-specific headline. Semiconductor/supplier de-risking tied to Apple/China coronavirus disruption. Reuters flagged Broadcom as key iPhone supplier, Apple ~20% of fiscal 2019 revenue, supply agreement worth up to $15B. Confidence: Medium.
+AXP Mar5: No fresh AXP-specific release. Expected hit to travel and card spending especially T&E-heavy AmEx volumes. Lower Treasury yields hurting financials. Reuters later reported payment firms including AmEx seeing slowing growth. Confidence: High.
+BA Mar5: STOCK-SPECIFIC context. Airlines openly warning COVID crushing demand. IATA raised revenue damage estimate to $63B-$113B vs ~$30B previously. 737 MAX still grounded. Existing company problem hit by new sector shock. Confidence: High.
+BAC Mar5: Fed emergency 50bp cut Mar 3, 10-year yield record low ~0.899%. Reuters: financials hit hard, S&P 500 bank index down 4.7% on Mar 6 and 8%+ for week. NIM compression plus recession fears. Confidence: High.
+BLK Mar5: No BlackRock-specific release. Market and credit-market stress reducing asset values and threatening fee/AUM sentiment. Reuters IFR Mar 5 described coronavirus slump as major test for bond-market liquidity. Confidence: Medium.
+C Mar5: Same banking setup as BAC. Emergency Fed cut, record-low yields. Citi global card/corporate exposure made it especially exposed to cross-border slowdown. Confidence: High.
+CAT Mar5: No fresh CAT-specific release. Global industrial slowdown/China demand fears. Reuters later described CAT as vulnerable to slowing China demand and supply-chain disruption. Macro bellwether for construction mining and heavy equipment. Confidence: Medium-High.
+CL Mar5: No CL-specific catalyst. Broad market liquidation — unusual for defensive staples. Concern about supply-chain disruption and emerging-market exposure. Confidence: Low-Medium.
+BKNG Mar5: Reuters Mar 2 reported travel companies including Booking abandoning guidance. Mar 9 Booking formally withdrew Q1 guidance. Flybe collapsed Mar 5. Collapsing travel demand and surging cancellations. Confidence: High.
+COF Mar5: No COF-specific headline. Consumer credit-cycle fears plus lower rates. Vulnerable both as lender and card issuer — lower profitability from rates and higher expected loan losses. Confidence: High.
+GS Mar5: No Goldman-specific headline. Financial-sector selloff driven by recession fears, lower yields, stressed credit/liquidity conditions. Weaker deal activity and capital markets expectations. Confidence: Medium-High.
+GOOGL Mar5: No clean stock-specific catalyst. Rising fear travel and brand advertisers would pull back. Reuters later quantified ad spending pressure. Anticipated ad-spending slowdown. Confidence: Medium.
+CMCSA Mar5: No Comcast filing in prior 3 days. Rising concern about Tokyo Olympics and advertising/event exposure. Mar 3 Comcast management said Olympics plans still "full steam ahead" implying market already focused on that risk. NBC advertising, theme parks, filmed entertainment, Olympic programming all exposed. Confidence: Medium.
+GM Mar5: No GM-specific press release. China auto demand and supply-chain fears mounting. China vehicle sales collapsing and manufacturers warning about part shortages. Double hit: weaker sales plus parts/logistics disruption. Confidence: Medium-High.
+GE Mar5: No GE-specific filing but GE Aviation exposure was key. IATA estimated hit jumped to $63B-$113B on Mar 5. Market extrapolated to engine orders, aftermarket service revenue, GE Aviation cash flow. Already-fragile balance sheet amplified move. 7.9% drop much steeper than average industrial. Confidence: High.
+FDX Mar5: No fresh FedEx-specific announcement. Rapidly worsening global freight and supply-chain disruption especially air freight and Asia-linked trade lanes. Fear of international shipping disruption and weaker global trade. Confidence: Medium-High.
+GOOG Mar5: Same as GOOGL. Rising fear of ad weakness from travel/brand advertisers. No better GOOG-specific headline. Confidence: Medium.
+DHR Mar5: No strong Danaher-specific headline. Broad de-risking in industrial/life-science tools. Danaher's eventual COVID upside through bioprocessing not yet market narrative in early March. Confidence: Low-Medium.
+CSCO Mar5: No fresh Cisco-specific filing. Enterprise-tech risk-off tied to conference/travel disruption and broader spending fears. Reuters Feb 21 reported multiple companies pulling out of RSA due to coronavirus. Confidence: Medium.
+CRM Mar5: No negative Salesforce-specific item. Broad software/enterprise-tech de-risking. Concern sales cycles events and corporate IT decision-making would slow. Fell less than many cyclicals. Confidence: Medium.

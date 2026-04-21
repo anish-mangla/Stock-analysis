@@ -1,7 +1,5 @@
 #!/bin/zsh
-cd /Users/anish/Files/stock_temp/Stock-analysis || exit 1
+PROJECT_DIR="${0:A:h}"
+cd "$PROJECT_DIR" || exit 1
 
-# Optional: activate virtual environment
-source .venv/bin/activate
-
-python3 main.py >> logs/run.log 2>&1
+.venv/bin/python3 daily_pipeline.py >> logs/run.log 2>&1

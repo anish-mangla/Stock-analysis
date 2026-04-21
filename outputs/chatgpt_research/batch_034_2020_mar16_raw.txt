@@ -1,0 +1,24 @@
+BATCH 034 — 2020-03-16 (20 events)
+Source: ChatGPT. Date researched: 2026-04-18
+Market context: Mar 15 Fed cut rates to 0-0.25% and launched $700B QE — failed to calm investors. CDC recommended canceling gatherings of 50+ for 8 weeks. Shutdowns of restaurants and leisure accelerated. S&P 500 fell ~12% with circuit-breaker halt at open. Worst U.S. equity day since 1987. Trump Mar 13 national emergency.
+
+MSFT Mar16: No clear Microsoft-specific negative. Teams usage surged later in week (positive). Broad-market liquidation in mega-cap tech after Fed emergency move failed. Fear of weaker enterprise IT budgets. Confidence: Medium.
+MU Mar16: No major Micron-specific negative. Severe semiconductor selloff on recession and supply-chain fears. Memory names viewed as highly cyclical. Pre-earnings anxiety ahead of late-March report. Confidence: Medium.
+NEE Mar16: No material NextEra-specific negative. Liquidity-driven selling even in defensive utilities. Recession fears around commercial/industrial electricity demand. Cross-asset scramble for cash. Confidence: Medium-low.
+ORCL Mar16: Oracle reported fiscal Q3 Mar 12 — non-GAAP EPS $0.97 up 11%. Not earnings-driven. Overwhelmed by Mar 16 market panic. Concern enterprise software bookings would weaken. Confidence: High.
+NKE Mar16: STOCK-SPECIFIC. Nike said Mar 15 would close all stores in U.S. and several other markets Mar 16-27. Nike store closures and broader collapse in retail foot traffic. Confidence: High.
+NOW Mar16: No clear negative ServiceNow-specific announcement. De-rating of high-multiple software amid forced selling. Concern new enterprise deals and implementation cycles would slow. Confidence: Medium.
+MRK Mar16: No major Merck-specific negative. Broad healthcare selloff during market-wide liquidation. Fear fewer doctor visits and procedure delays would weigh on pharma demand. Confidence: Medium-low.
+NVDA Mar16: No major Nvidia-specific negative. Earlier shifted GTC to online-only Mar 2. Semiconductor/high-beta tech liquidation. Fear of data-center capex caution, gaming demand disruption, supply-chain interruptions. Confidence: Medium.
+NFLX Mar16: No Netflix-specific negative. Indiscriminate equity liquidation. Temporary concern about production disruption. In hindsight stay-at-home beneficiary but market not rewarding nuanced winners on Mar 16. Confidence: Medium.
+MO Mar16: No meaningful new Altria-specific negative. Broad-market selloff. Continued vaping/Juul overhang. Relatively modest 4.6% decline fits defensive staple. Confidence: Medium-low.
+MCD Mar16: STOCK-SPECIFIC context. Reuters reported McDonald's and Starbucks closing dine-in areas at many U.S. stores shifting to takeaway/delivery. Local and state restrictions on restaurants intensifying. Direct hit to restaurant traffic from dine-in shutdowns. Confidence: High.
+META Mar16: No fresh Facebook-specific negative. Reuters confirmation COVID hurting advertising came later Mar 24. Anticipation that small-business advertising budgets would crater in shutdown economy. Broad tech liquidation. Confidence: Medium.
+MDT Mar16: STOCK-SPECIFIC context. Kaiser Permanente announced Mar 16 would postpone all elective or non-urgent surgeries and procedures. Directly relevant to Medtronic device volumes. Rapid postponement of elective procedures. Confidence: High.
+MDLZ Mar16: No major fresh Mondelez-specific negative. Earlier Reuters in January flagged Chinese factory closures and Q1 pressure. Broad consumer-staples selloff in market-wide cash scramble. Confidence: Medium-low.
+MA Mar16: No direct Mastercard warning in prior 3 days but travel bans, restaurant shutdowns, social-distancing orders already implying severe hit to cross-border and discretionary card spending. Expected collapse in travel-related and discretionary payment volumes. Confidence: High-medium.
+LRCX Mar16: No Lam-specific negative. Semiconductor equipment crash on fears of capex retrenchment and supply-chain disruption. China/global fab uncertainty. Confidence: Medium.
+LOW Mar16: No Lowe's-specific negative. Extreme brick-and-mortar retail panic as shutdowns spread. Market not yet appreciating home improvement would later prove resilient. 24.8% drop one of hardest-hit. Confidence: Medium.
+LMT Mar16: No Lockheed-specific negative. Industrial/defense selloff inside broad liquidity event. Concern about supply-chain disruption. Indiscriminate selling of large-cap industrials. Confidence: Medium-low.
+LLY Mar16: Actually POSITIVE news — Lilly and AbCellera announced Mar 12 would co-develop antibody therapies for COVID-19. Broad healthcare/market selloff not stock-specific bad news. Confidence: High.
+LIN Mar16: No major Linde-specific negative. Recession repricing for industrial gases and manufacturing-linked demand. Global industrial shutdown fears. Confidence: Medium.

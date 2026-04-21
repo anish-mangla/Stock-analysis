@@ -1,0 +1,25 @@
+BATCH 008 — 2020-02-25 continued (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: Second straight day of COVID panic. Dow/S&P each -3%. 10yr yield ~1.31-1.33%. CDC warned U.S. spread inevitable.
+
+ABBV: No stock-specific catalyst. Pending $63B Allergan acquisition overhang but not new. Broad COVID selloff. Confidence: Low-Medium.
+CMCSA: No stock-specific catalyst. Media/entertainment COVID exposure (NBCUniversal parks, ad demand). Confidence: Medium-Low.
+COF: No stock-specific catalyst. Consumer-credit-sensitive financial. 10yr yield collapsed to ~1.31-1.33%. Recession/credit-loss fears. Confidence: Medium.
+COP: No stock-specific catalyst. Crude-price decline on COVID demand fears. OPEC had already lowered 2020 demand outlook. Confidence: High.
+CVS: No stock-specific catalyst. Managed-care/PBM/retail-health complexity. Outsized 5.3% drop. Confidence: Medium-Low.
+CVX: Oil-price decline. Venezuela license uncertainty as secondary. Confidence: High.
+DE: STOCK-SPECIFIC context. Feb 21 earnings: EPS $1.63, rev $7.63B. Warned COVID would hit Q2 sales/earnings. Stock initially surged 9.7% to ATH then gave back. Confidence: High.
+DIS: COVID parks/travel/consumer exposure. Bob Iger step-down announced AFTER close (not cause of day-session drop). Confidence: High.
+DUK: No stock-specific catalyst. Broad equity liquidation even hitting utilities. Confidence: Low-Medium.
+EMR: No stock-specific catalyst. Industrial/cyclical selloff on virus growth fears. Confidence: Medium-Low.
+FDX: No stock-specific catalyst. Global trade/shipping exposure to COVID shock. Confidence: Medium.
+GD: No stock-specific catalyst. Broad industrial/aerospace risk-off. Confidence: Low-Medium.
+GE: No specific headline. Aviation-heavy profit mix made it natural COVID casualty. Later confirmed GE Aviation most damaged. Confidence: Medium.
+HD: STOCK-SPECIFIC context. Reported Feb 25: EPS $2.28 vs $2.10 expected. Raised dividend 10%. Was up 2.5% premarket. But market overwhelmed good report. Confidence: High.
+LRCX: No stock-specific catalyst. Semi equipment supply-chain/capex fears. Confidence: Medium.
+MET: No stock-specific catalyst. Rate-sensitive insurance selloff. 10yr yield ~1.31-1.33%. Reinvestment economics hurt. Confidence: High.
+MO: No clear catalyst. Juul halted Indonesia sales (Reuters Feb 24) as minor secondary. Broad selloff. Confidence: Medium-Low.
+MRK: No stock-specific catalyst. Broad market liquidation hitting even defensive healthcare. Confidence: Low-Medium.
+MS: No stock-specific catalyst. Financial sector selloff on lower yields/recession fears. Confidence: High.
+MSFT: No stock-specific catalyst YET. Microsoft's own COVID warning came Feb 26 (More Personal Computing segment miss). Feb 25 was anticipatory. Confidence: High.

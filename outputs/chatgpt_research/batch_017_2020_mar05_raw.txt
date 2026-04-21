@@ -1,0 +1,25 @@
+BATCH 017 — 2020-03-05 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 5 fear intensified again, 10-year Treasury yield fell to record low ~0.9%, financials hit especially hard. Oil-sensitive names pressured by coronavirus demand destruction and Mar 5-6 OPEC+ meeting where OPEC pushed for deeper cuts while Russia's stance uncertain. IEA said Q1 oil demand set to fall YoY for first time since 2009.
+
+XOM Mar5: No Exxon-specific corporate event. Collapsing oil-demand expectations plus OPEC+ uncertainty. IEA said Q1 oil demand would fall YoY first time since 2009. OPEC seeking additional 1.5M bpd cut, Russia not yet agreed. Confidence: High.
+SCHW Mar5: No Schwab-specific headline. Margin compression fears from lower short rates and plunging yields. Reuters noted yields weighed heavily on financials, S&P banks index fell 4.7% on Mar 6. Near-zero-rate fears especially damaging for broker/bank hybrid. Confidence: High.
+TMO Mar5: STOCK-SPECIFIC. Mar 3 Thermo Fisher agreed to buy Qiagen for ~$11.5B including debt. Deal-related pressure layered on market selloff. Investors often punish acquirers initially on financing/integration/price concerns. Confidence: Medium-high.
+TMUS Mar5: No strong TMUS-specific headline. Sprint merger still pending (closed Apr 1). Broad market selloff with some merger-risk overhang. Confidence: Medium.
+TSLA Mar5: No definitive Tesla-specific negative announcement. Later COVID factory shutdown news came Mar 19. High-beta growth-stock selloff amid renewed COVID panic. Confidence: Medium.
+TXN Mar5: No TXN-specific announcement. Semiconductor/industrial-demand fears tied to COVID. Apple Feb warning reinforced broader tech hardware supply/demand scare. TXN bellwether for industrial and analog chip demand. Confidence: Medium-high.
+UBER Mar5: No exact-date Uber headline but travel-demand warnings intensifying rapidly. Core business directly exposed to reduced airport trips, commuting, nightlife. Still-fragile profitability profile. Standing AB5/contractor-model overhang. Confidence: Medium-high.
+USB Mar5: Same banking backdrop — emergency Fed cut, record-low yields. Reuters: drop in Treasury yields weighed heavily on financials. Repricing both earnings power and credit quality. Confidence: High.
+V Mar5: Rapid deterioration in travel expectations. Cross-border travel-related spending hardest-hit part of Visa business. Travel associations warning about sharp decline in international travel to U.S. Confidence: Medium-high.
+WFC Mar5: Same financial-sector pressure. Rate-cut/yield-collapse damage to bank earnings outlook. Wells already weaker bank story entering COVID shock. No new company-specific headline. Confidence: High.
+KO Mar5: No KO-specific headline. Away-from-home beverage consumption fears — restaurants, theaters, sports venues, travel. Reuters later quantified these channels as about half of Coca-Cola revenue. Confidence: Medium.
+QCOM Mar5: No QCOM-specific headline. Smartphone supply-chain and demand fears from COVID. Apple Feb warning major read-through for handset-linked suppliers. Confidence: Medium-high.
+JPM Mar5: Same financial macro — emergency cut, record-low yields, recession fears. Reuters directly linked yield drop to heavy weakness in financial shares. Confidence: High.
+BRK-B Mar5: No new Berkshire-specific headline. Look-through exposure to cyclical holdings being repriced — airlines, financials, industrials, Apple. Confidence: Medium-high.
+HON Mar5: No Honeywell-specific headline. Aerospace and industrial demand fears. Reuters later showed aerospace business was major COVID-hit segment. Confidence: Medium.
+IBM Mar5: No IBM-specific headline. Broad-market weakness and enterprise IT spending concerns. Legacy tech cyclically exposed. Confidence: Medium.
+AAPL Mar5: Ongoing reassessment of Feb 18 warning about missing March-quarter guidance. COVID damage to supply chain and iPhone demand. Reuters: major assembler expected Apple March-quarter orders to fall ~18% YoY. Confidence: High.
+ACN Mar5: No Accenture-specific headline. Macro risk-off and anticipated slowdown in enterprise discretionary spending. Consulting/digital-transformation budgets expected to be delayed. Confidence: Medium.
+ADBE Mar5: No Adobe-specific headline. Broad software/growth-stock de-risking. Multiple compression in premium software names. Confidence: Medium.
+AMD Mar5: No AMD-specific headline. Semiconductor-sector de-rating on COVID disruption fears. AMD's high-beta profile made move larger than some peers. Confidence: Medium-high.

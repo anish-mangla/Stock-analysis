@@ -1,0 +1,25 @@
+BATCH 013 — 2020-02-27 to 2020-02-28 (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: Feb 27 Dow -1,191. Feb 28 Powell "act as appropriate." S&P fastest correction on record. 10yr yields record lows.
+
+DIS Feb27: STOCK-SPECIFIC. Bob Iger replaced by Bob Chapek Feb 25-26. Needham questioned Chapek's content experience. Plus COVID parks/cruises exposure. Confidence: High.
+DUK Feb27: No stock-specific catalyst. Broad COVID panic. Indiscriminate selling even in defensives. Confidence: Medium.
+DHR Feb27: No stock-specific catalyst. Broad market selloff. Fell less than cyclicals. Confidence: Low-Medium.
+COST Feb27: No stock-specific catalyst. Panic buying actually starting (Reuters showed Costco hoarding). Market-driven. Confidence: Medium.
+JPM Feb28: No stock-specific catalyst. Treasury yields record lows. Powell "act as appropriate." Bank margin fears. Confidence: High.
+WFC Feb28: No stock-specific catalyst. Same bank/rates setup as JPM. Margin-sensitive. Confidence: High.
+SO Feb28: No stock-specific catalyst. Broad liquidation even in defensives. Confidence: Medium.
+PEP Feb28: No stock-specific catalyst. Broad COVID selloff. Away-from-home channel concern. Confidence: Low-Medium.
+MDLZ Feb28: STOCK-SPECIFIC context. Jan 29 had warned COVID would hurt Q1 revenue, closed 2 factories, China ~4.5% of sales. Getting repriced more aggressively. Confidence: High.
+MCD Feb28: STOCK-SPECIFIC context. Had closed several hundred of ~3,300 China outlets. Management said "fairly small" if contained to China — but no longer contained. Confidence: Medium-High.
+LMT Feb28: No stock-specific catalyst. Broad market selloff. Defense sold alongside everything. Confidence: Low.
+JNJ Feb28: No stock-specific catalyst. Broad market selloff. Defensive healthcare still hit. Confidence: Low-Medium.
+GILD Feb28: POSITIVE news (Feb 26 announced two Phase 3 remdesivir studies ~1,000 patients). But stock still fell 4.5%. Market overwhelmed positive catalyst. Confidence: High.
+GD Feb28: No stock-specific catalyst. Broad market selloff. Gulfstream/business-jet concern. Confidence: Low.
+DUK Feb28: No stock-specific catalyst. Continuing broad liquidation. Second straight day. Confidence: Medium.
+COST Feb28: No stock-specific catalyst. Reuters showed hoarding/lines at Costco. Operationally favorable but stock still fell. Confidence: High.
+CL Feb28: No stock-specific catalyst. Broad market selloff. Global sourcing/supply chain concern. Confidence: Low-Medium.
+BA Feb28: STOCK-SPECIFIC context. Airlines extending China/HK flight cancellations through April. IATA warned 4.7% demand decline. 737 MAX crisis compounding. Confidence: High.
+ACN Feb28: No stock-specific catalyst. Broad market selloff. Enterprise consulting/project demand concern. Confidence: Low-Medium.
+HD Feb28: No stock-specific catalyst. Broad market selloff. Smaller decline than cyclicals. Confidence: Medium.

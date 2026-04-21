@@ -1,0 +1,25 @@
+BATCH 050 — 2020-03-27 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 27 reversal after stimulus rally. House moving toward $2T CARES package. Mar 26 record 3.28M weekly jobless claims shocked investors. Fed and central banks boosted dollar-liquidity operations but markets still finished week with Dow/S&P/Nasdaq down ~4% on the day facing worst week since 2008.
+
+LIN Mar27: No meaningful Linde-specific negative Mar 24-27. Later commentary showed COVID shifted demand away from industrial end markets toward medical gases. Likely macro/industrial-demand fear. Confidence: Low-Medium.
+LRCX Mar27: No clear Lam-specific negative Mar 24-27. Renewed concern COVID shutdown would hit semiconductor equipment demand and customer capex. Semis giving back part of prior stimulus-driven rebound. Confidence: Low.
+MA Mar27: STOCK-SPECIFIC. Mastercard withdrew 2020 outlook and cut near-term expectations as cross-border and travel spending collapsed. Visa data days later showed rapid deterioration in cross-border travel-related spending. Collapse in cross-border/travel spending. Confidence: High.
+META Mar27: No major Facebook-specific negative Mar 24-27. Mounting fear advertisers slashing budgets into late March. Reversal in high-beta tech after stimulus rally. Confidence: Low-Medium.
+MS Mar27: U.S. banks preserving capital and suspending buybacks. Morgan Stanley voluntarily suspended share repurchases along with other largest U.S. banks. Bank-capital and recession worries. Confidence: Medium.
+NOW Mar27: No specific negative ServiceNow release Mar 24-27. Software multiple compression trade. Investors worried enterprise customers would slow spending. Sharp rotation out of richly valued software names. Confidence: Low.
+GS Mar27: Like peers Goldman caught in March capital-preservation/stress-test mindset. Buyback suspensions across major U.S. banks. Financial-sector recession and capital concerns. Confidence: Medium.
+QCOM Mar27: No clear Qualcomm-specific negative Mar 24-27. Concern global smartphone demand would weaken sharply as lockdowns spread. Broader semiconductor weakness. Confidence: Low.
+SBUX Mar27: STOCK-SPECIFIC context. Starbucks had moved to restrict most U.S. stores to drive-thru and delivery. Reports emphasized employee-safety pressure catastrophe pay and reduced store operations. COVID disruption to store traffic and operations. Confidence: High.
+SPG Mar27: STOCK-SPECIFIC. Simon had already announced all U.S. malls premium outlets and mills would close from Mar 18 through at least Mar 29. Forced mall closures crushing rent/traffic expectations. Tenant solvency worries. Confidence: High.
+TMO Mar27: No 3-day negative company-specific catalyst. Thermo Fisher had agreed to buy Qiagen (strategically positive). Likely broad market/healthcare rotation. Confidence: Low.
+TMUS Mar27: Sprint merger nearing closing. CA regulatory and integration questions still hanging over combined business before Apr 1 close. Mix of merger/integration overhang plus broad market reversal. Confidence: Low-Medium.
+TXN Mar27: No fresh TI-specific negative Mar 24-27. Concern shutdown would hammer industrial and automotive semiconductor demand. Broad semiconductor selloff. Confidence: Medium.
+UNH Mar27: No meaningful UnitedHealth-specific negative Mar 24-27. Broad healthcare-insurer uncertainty around utilization procedure deferrals and recession-driven membership/employer disruption. Confidence: Low.
+V Mar27: Visa disclosed shortly after that March payment volumes weakening — 4% decline in March-to-date U.S. payments volume and rapid deterioration in cross-border travel-related spending. Collapse in cross-border and travel-linked payment activity. Confidence: High.
+XOM Mar27: Oil majors repriced amid crude-price collapse and sweeping 2020 capex cuts. Reuters later quantified global oil-company capex cuts at more than $62B. Oil-price collapse and demand destruction from COVID. Confidence: High.
+MSFT Mar27: No obvious negative Microsoft-specific operating headline Mar 24-27. Teams usage surging. Likely profit-taking/broad tech de-risking after prior rally. Confidence: Medium.
+GOOGL Mar27: No fresh Alphabet-specific Mar 24-27 release. Market increasingly pricing in advertising slowdown. Later Alphabet reported March ad weakness and warned Q2 would be difficult. Expected ad-spending deterioration. Confidence: Medium.
+RTX Mar27: Raytheon-United Technologies merger closing into aerospace market rapidly worsening as air travel collapsed. Shortly afterward Reuters tied RTX weakness to withdrawing 2020 outlook for aerospace units. Civil aerospace demand shock. Confidence: Medium-High.
+GM Mar27: STOCK-SPECIFIC context. Reuters later reported GM CFO told employees Mar 26 that "significant austerity measures" were needed to avoid serious long-term damage after plant shutdowns and extreme uncertainty around demand and liquidity. Cash-burn and shutdown fears. Confidence: High.

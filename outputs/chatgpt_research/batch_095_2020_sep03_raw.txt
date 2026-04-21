@@ -1,0 +1,25 @@
+BATCH 095 — 2020-09-03 to 2020-09-03 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-19
+Market context: Sept 3 2020 was a violent tech/growth washout with the Nasdaq falling nearly 5% and S&P 500 down 3.51%. Apple and Tesla had just surged after stock splits. Later reporting tied part of the preceding melt-up and volatility to very large tech-option activity. This was one of the sharpest single-day tech selloffs of 2020.
+
+MA Sep03: No material Mastercard-specific negative in prior 3 days. Broad market de-risking especially out of high-multiple growth and payments. Slow travel recovery and sympathy with Visa/payment peers. Confidence: Moderate.
+NKE Sep03: No negative Nike-specific headline in prior 3 days. Broad growth/consumer discretionary selloff. Profit-taking ahead of September earnings and general retail demand uncertainty. Confidence: Moderate-low.
+ISRG Sep03: No meaningful Intuitive Surgical-specific negative in prior 3 days. Broad selloff in expensive quality growth and med-tech names. Ongoing COVID procedure volume uncertainty. Confidence: Moderate-low.
+NVDA Sep03: Nvidia unveiled GeForce RTX 30 Series GPUs on Sept 1 which was positive not negative. Stock coming off enormous run. Violent reversal in crowded semiconductor/momentum positioning after massive run-up. Profit-taking after Ampere launch and high sensitivity to broader tech/options unwind. Confidence: High.
+ORCL Sep03: Reuters reported Sept 2 TikTok buyers including Oracle exploring multiple deal structures after Beijing complicated sale worth around $30 billion. TikTok deal uncertainty increased. Broad tech selloff with TikTok deal uncertainty as secondary factor. Confidence: Moderate.
+QCOM Sep03: Qualcomm had positive product news Sept 2-3 launching Snapdragon 8cx Gen 2 5G compute platform and lower-cost 5G Snapdragon 4 for phones priced $125-$250. Also lobbying to sell chips to Huawei. Semiconductor selloff not product announcements. Huawei/export-control overhang. Confidence: High.
+TMO Sep03: Thermo Fisher announced Aug 27 virtual analyst meeting for Sept 10 which was neutral. No fresh negative TMO-specific news in 3-day window. Broad growth/healthcare selloff. Confidence: Moderate-low.
+TMUS Sep03: No fresh negative T-Mobile headline in prior 3 days. Main backdrop was Sprint integration and becoming No. 2 U.S. wireless carrier. Broad market selloff. Post-merger integration overhang. Confidence: Moderate-low.
+TSLA Sep03: Tesla 5-for-1 split took effect Aug 31 with shares surging 70% since announcement. Sept 1 Tesla announced $5 billion stock offering. Split-driven euphoria reversed into profit-taking amplified by broader tech selloff. Dilution from $5B offering and sensitivity to options-fueled unwind. Confidence: High.
+TXN Sep03: No fresh negative Texas Instruments headline in prior 3 days. Semiconductor-sector selloff. General cyclical sensitivity and sympathy with NVDA/QCOM/INTC. Confidence: Moderate.
+UPS Sep03: No UPS-specific negative news in prior 3 days. Broad risk-off move hitting cyclicals and expensive pandemic demand beneficiaries. Profit-taking after strong e-commerce/package performance. Confidence: Moderate-low.
+V Sep03: No fresh Visa-specific negative headline in prior 3 days. Broad selloff in premium-multiple payments/growth stocks. Ongoing drag from weak travel and cross-border volumes. Confidence: Moderate.
+NOW Sep03: No fresh ServiceNow-specific negative headline in prior 3 days. Software/SaaS multiple compression during Sept 3 growth unwind. Heavy momentum ownership and elevated valuation. Confidence: Moderate.
+INTU Sep03: No meaningful Intuit-specific negative news in prior 3 days. Broad software/growth selloff. Profit-taking after strong pre-drop run and valuation sensitivity. Confidence: Moderate.
+ABT Sep03: Abbott received U.S. authorization Aug 26 for $5 BinaxNOW rapid COVID-19 antigen test which was positive. Broad market/healthcare de-risking. Some giveback after rapid-test authorization enthusiasm. Confidence: High.
+HON Sep03: Honeywell announced Aug 24 as new Dow component effective Aug 31 which was positive. Broad market/industrial selloff. Post-index-inclusion giveback and general risk-off. Confidence: High.
+AAPL Sep03: Apple 4-for-1 split took effect Aug 31 with stock climbing 30%+ since July 30 announcement. Reversal of split-fueled momentum and profit-taking in mega-cap tech. Broader unwind in options-heavy tech positioning and Epic/App Store antitrust noise. Confidence: High.
+INTC Sep03: No fresh Intel-specific negative headline in prior 3 days. Sector-wide semiconductor selloff. Existing skepticism about Intel competitive position after earlier manufacturing concerns. Confidence: Moderate.
+ACN Sep03: No material Accenture-specific negative headline in prior 3 days. Broad selloff in high-quality IT services and growth names. Read-through from software/cloud weakness. Confidence: Moderate-low.
+ADBE Sep03: No fresh Adobe-specific negative headline in prior 3 days. Broad software/growth selloff. Valuation and momentum exposure ahead of later-September earnings. Confidence: Moderate.

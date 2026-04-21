@@ -1,0 +1,25 @@
+BATCH 007 — 2020-02-25 continued (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: Dow/S&P each -3%. Treasury yields plunged. Fed cuts being priced. CDC warned U.S. spread inevitable.
+
+USB: No stock-specific catalyst. Rate-sensitive bank selloff. Yields collapsed. Confidence: Medium-High.
+V: No Visa-specific release. Cross-border payments/travel spending fear. Later confirmed. Confidence: Medium.
+HON: Singapore Airshow withdrawal. Aerospace exposure. IATA warned 4.7% air travel decline, $29.3B revenue hit. Confidence: Medium-High.
+ORCL: No stock-specific catalyst. Broad enterprise software/tech de-risking. Confidence: Medium-Low.
+GS: No stock-specific catalyst. Financial sector de-risking on lower rates. Goldman had warned Feb 20 about COVID complacency. Confidence: Medium.
+AMAT: No stock-specific release. Semi equipment China supply chain fears. Apple warning read-through. Confidence: Medium.
+GILD: No stock-specific catalyst. Broad biotech/pharma risk-off. Remdesivir swings came later. Confidence: Low-Medium.
+GM: No GM-specific catalyst. South Korea cases jumped to 833. Hyundai had halted Korea output on parts shortages. Auto supply chain fears. Confidence: Medium.
+AAPL: STOCK-SPECIFIC. Feb 17 revenue warning still dominant overhang. Would miss March-quarter guidance. China demand could fall by half in Q1. Confidence: High.
+ABT: No stock-specific catalyst. Broad medtech/healthcare risk-off. Confidence: Low-Medium.
+ACN: No stock-specific catalyst. IT services/consulting project delay fears. Later cut outlook in March. Confidence: Medium.
+AMD: No stock-specific catalyst. Semiconductor selloff. Apple warning increased concern. Confidence: Medium.
+AMGN: No stock-specific catalyst. Broad healthcare/biotech risk-off. Confidence: Low.
+AVGO: STOCK-SPECIFIC context. Reuters noted Apple = 20% of Broadcom FY2019 revenue. Apple's warning made AVGO obvious sympathy casualty. Confidence: High.
+AXP: No fresh release. Travel/entertainment card spend exposure. Revenue mix more directly exposed than banks. Confidence: Medium-High.
+BA: No single new headline. COVID hammering airline demand. IATA warned 4.7% passenger decline. 737 MAX overhang compounding. Confidence: High.
+BAC: No stock-specific catalyst. Lower rates/recession fears. Classic bank trade unwind. Confidence: High.
+BK: No stock-specific catalyst. Financial sector risk-off. Custody/servicing/market activity fees threatened. Confidence: Medium-High.
+BKNG: No new release. Travel shutdown story. Airlines suspending routes. IATA demand forecast negative first time in decade. Confidence: High.
+BLK: No stock-specific catalyst. Asset manager selloff. AUM-linked fees fall when markets fall. Later described "vast de-risking." Confidence: Medium-High.

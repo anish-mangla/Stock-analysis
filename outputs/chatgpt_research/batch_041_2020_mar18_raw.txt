@@ -1,0 +1,21 @@
+BATCH 041 — 2020-03-18 (20 events). Source: ChatGPT. Date: 2026-04-18. Context: Same as batch 040. Mar 18 renewed historic selloff. Investors sold Treasuries for cash.
+AMT Mar18: No material AMT-specific negative Mar 15-18. Sector-wide REIT/liquidity panic. Forced deleveraging. Confidence: Medium-low.
+AVGO Mar18: No fresh AVGO-specific negative beyond Mar 12 guidance withdrawal. Semiconductor-wide COVID demand/supply fears. Already withdrew annual guidance Mar 12. Confidence: High.
+AXP Mar18: No AXP-specific Mar 15-18 headline. Travel-ban and travel-collapse directly relevant. Collapse in T&E spending expectations. Consumer-credit worries. Confidence: High.
+BA Mar18: STOCK-SPECIFIC. Boeing already said Mar 11 would draw down $13.8B loan and freeze hiring/overtime. Airlines slashing capacity seeking aid. COVID-driven airline and aviation collapse layered on 737 MAX crisis. Confidence: High.
+BAC Mar18: Big U.S. banks including BofA suspended buybacks Mar 15. Fed cut to 0-0.25%. Bank earnings repricing from zero rates. Buyback halt. Confidence: High.
+BK Mar18: BNY Mellon affected by industrywide buyback suspension Mar 15. Zero-rate shock. Financial-sector stress. Confidence: Medium-High.
+BLK Mar18: No major BlackRock announcement. Asset-manager exposure to collapsing markets. AUM-markdown and outflow fears. Confidence: Medium.
+BMY Mar18: No BMY-specific negative. Broad market selloff. Defensive healthcare sold for cash. Confidence: Medium.
+BRK-B Mar18: No Berkshire-specific announcement. Giant exposure to economically sensitive holdings. Conglomerate exposure to broad COVID recession. Confidence: Medium-High.
+C Mar18: Big U.S. banks including Citi suspended buybacks Mar 15. Fed cut to 0-0.25%. Banking-sector stress from collapsing rates and recession/credit fears. Confidence: High.
+BKNG Mar18: Travel-demand collapse from COVID. Trump Europe travel ban. Airlines scrambled to cut flights. Rising cancellations refund risk. Confidence: High.
+CMCSA Mar18: NBCUniversal theme-park film advertising exposure vulnerable to shutdowns. Later said COVID would materially impact results. Repricing of NBCUniversal/consumer-media exposure. Confidence: Medium-High.
+INTC Mar18: No fresh Intel-specific negative. Semiconductor sector selloff. Growing concern results would be hit. Later Mar 24 Reuters confirmed Intel expected likely hit. Confidence: Medium-high.
+HON Mar18: Honeywell reaffirmed outlook Mar 10 but reassurance did not hold. Airlines cutting capex. Investors repricing aerospace business for severe aviation downturn. Confidence: Medium-high.
+HD Mar18: No HD-specific negative. Consumer discretionary and physical retail shutdown fear. Concern about store traffic project deferrals contractor demand. Confidence: Medium.
+CL Mar18: No Colgate-specific negative. Indiscriminate consumer staples selling. EM/FX concerns. Confidence: Medium-low.
+GM Mar18: STOCK-SPECIFIC. Detroit Three shutting U.S. plants Mar 18. GM confirmed orderly suspension of North American manufacturing through at least Mar 30. UAW pressure. Confidence: High.
+GE Mar18: No GE-specific announcement. Aviation and industrial end markets imploding. GE Aviation exposure to airline collapse. Leverage/turnaround concerns. Confidence: Medium-High.
+GD Mar18: No major GD-specific negative. Gulfstream business-jet exposure to travel and corporate-spending collapse. Repricing of business-aviation exposure. Confidence: Medium.
+GS Mar18: No Goldman-specific negative. Financial-sector stress. Liquidity panic. Exposure to trading underwriting and credit-market dislocation. Confidence: Medium-High.

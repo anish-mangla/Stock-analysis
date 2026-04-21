@@ -1,0 +1,25 @@
+BATCH 092 — 2020-07-28 to 2020-07-31 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-19
+Market context: July 28-31 was dominated by the advance GDP report showing a 32.9% annualized Q2 contraction, the worst on record. Energy stocks suffered with oil below $40. Banks faced renewed credit-loss fears. Big-tech earnings began with Alphabet posting its first-ever revenue decline. GE reported a bad Q2 miss earlier in the week and continued repricing.
+
+TSLA Jul28: Post-earnings profit-taking with no new fundamental negative. Stock continued to cool after massive pre-earnings run-up and sell-the-news reaction. Confidence: Medium.
+GE Jul29: Q2 adjusted EPS loss of $0.15 vs $0.10 expected with revenue down 24% to $17.75B. Industrial free cash flow was negative $2.1B. Aviation segment hit hardest by pandemic. Confidence: High.
+XOM Jul30: Oil below $40 with refiners posting worst Q2 in a decade and GDP collapsed 32.9% annualized. Broad energy sector weakness. Confidence: Medium.
+WFC Jul30: Macro credit-risk fears amplified by 32.9% GDP collapse hitting already-fragile banks. Sector-wide financial weakness. Confidence: Medium.
+SPG Jul30: Pandemic mall-rent fears worsened by GDP contraction data. General REIT/retail-property sentiment deterioration. Confidence: Medium.
+RTX Jul30: Commercial aerospace weakness with GDP shock amplifying concerns about airline travel recovery. Confidence: Medium-Low.
+NOW Jul30: Q2 subscription revenue $1.016B up 30% year-over-year but sell-the-news reaction despite solid results. High valuation left little room for error. Confidence: Medium-High.
+MS Jul30: Bank-sector pullback on recession data from GDP report. Not Morgan Stanley-specific. Confidence: Medium.
+GE Jul30: Continuing post-earnings repricing after weak Q2 results reported July 29. Extended earnings fallout. Confidence: High.
+HON Jul30: Cyclical industrial/aerospace weakness amplified by GDP shock data. Broad industrial selloff. Confidence: Medium.
+CVX Jul30: Oil below $40 with refining demand fears and GDP collapse weighing on integrated energy names. Confidence: Medium.
+COP Jul30: Purer upstream exposure made ConocoPhillips more sensitive to crude weakness with GDP shock amplifying demand fears. Confidence: Medium-High.
+C Jul30: Renewed credit-loss fear after 32.9% GDP contraction data. Bank sector broadly lower. Confidence: Medium-High.
+AMT Jul30: Q2 revenue up 1.2% but American Tower lowered midpoint of 2020 outlook raising concerns about growth trajectory. Confidence: High.
+LLY Jul30: Q2 revenue fell 2% with approximately $250M COVID impact on elective procedures despite raised EPS guidance. Mixed signals confused investors. Confidence: High.
+GE Jul31: Extended earnings fallout from weak Q2 results compounded by continuing weak macro environment. Third consecutive down day post-earnings. Confidence: High.
+GILD Jul31: Profit-taking and fading remdesivir enthusiasm as Merck announced competing antiviral trials. Treatment narrative losing momentum. Confidence: Medium-Low.
+GOOG Jul31: Alphabet Q2 revenue fell 2% marking first-ever sales decline despite beating lowered expectations. Profit-taking after results. Confidence: High.
+GOOGL Jul31: Same as GOOG. Alphabet's first-ever revenue decline despite earnings beat triggered sell-the-news reaction. Confidence: High.
+TSLA Jul31: South Korea safety probe into Tesla vehicles plus momentum cooling after massive run. Regulatory headline added to ongoing profit-taking. Confidence: Medium.

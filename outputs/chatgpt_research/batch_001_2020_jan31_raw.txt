@@ -1,0 +1,70 @@
+BATCH 001 — 2020-01-31 (20 events, first 10 researched by ChatGPT)
+Date researched: 2026-04-17
+Prompt version: v2 (improved, forced 10+ sources)
+
+=== CHATGPT RAW RESPONSE (first attempt, basic prompt) ===
+
+The main backdrop on Friday, January 31, 2020 was a broad early-COVID risk-off selloff. The Dow fell about 603 points / 2.1%, the S&P 500 about 1.8%, and the Nasdaq about 1.6% as investors grew more worried about the coronavirus hit to China and global growth. Reuters also noted the Treasury curve inverted on January 28 as virus fears intensified, and Reuters/Axios highlighted that oil had already fallen sharply and copper was on a long losing streak, which mattered for energy, financials, industrials, and China-exposed tech.
+
+AAPL — I did not find a negative Apple-specific surprise on Jan. 31 itself. In fact, Apple had just reported a strong quarter on Jan. 28: revenue of $91.8B vs. estimates of $88.5B, EPS of $4.99 vs. $4.55, and March-quarter revenue guidance of $63B-$67B, above estimates. But Reuters also said Apple was bracing for coronavirus impact, and later reporting confirmed Apple had given a wider-than-usual revenue range because of virus uncertainty and had suppliers tied to China. So this looks like a case where a good earnings report got overwhelmed by a fast repricing of Apple's China supply-chain and demand exposure.
+
+XOM — There was a clear stock-specific catalyst. Exxon reported on Jan. 31 that Q4 profit fell 5.2%, hurt by weaker refining and chemical margins. Reuters also said Exxon and Chevron results pointed to a tough year ahead as weaker crude and gas prices hit results. On top of that, oil was already sliding because the virus was threatening demand, so Exxon got hit by both a company-specific earnings disappointment and the commodity backdrop.
+
+V (Visa) — I did find a mild stock-specific issue: Reuters said Visa's quarterly revenue, reported the night before, slightly missed analyst estimates. But I do not see a major standalone blow-up. The more likely explanation is that the slight revenue miss combined with the market suddenly discounting a virus hit to travel and cross-border spending, which is important for card networks. So I'd classify Visa's drop as mostly market/sector-driven with a modest earnings miss in the background.
+
+UPS — This one was clearly stock-specific. Reuters reported on Jan. 30 that UPS forecast 2020 adjusted EPS of $7.76 to $8.06, with the midpoint just below consensus, and said e-commerce projects were weighing on profit. Reuters also emphasized investor worries about costs tied to UPS's network investments and about pressure from Amazon's delivery push. The Jan. 31 drop looks like a continuation of that earnings/guidance reaction.
+
+TXN — I could not find a fresh TXN-specific negative catalyst on Jan. 31 itself. This looks mostly like a semiconductor/China-exposure selloff.
+
+SCHW — I did not find a clean Schwab-specific news item in the prior 1-2 days. The best explanation I found is broader financial-sector pressure from falling yields and recession fears.
+
+NVDA — I found no Nvidia-specific corporate news on Jan. 31. This looks like a sector move.
+
+MU — Same story as Nvidia. I did not find a Micron-specific negative headline in the prior 1-2 days.
+
+META (Facebook) — This one had a very clear stock-specific reason. Reuters reported after the Jan. 29 results that Facebook warned revenue growth would continue to slow as the business matured, while quarterly expenses surged.
+
+LRCX — I did not find a Lam Research-specific bad headline on Jan. 31. Same chip-equipment / China exposure trade.
+
+UNH — I did not find a convincing UnitedHealth-specific catalyst. Broad market selloff.
+
+GD — General Dynamics reported strong Q4 on Jan. 29. Decline was market-wide risk-off.
+
+DHR — Danaher reported strong Q4 on Jan. 30. Decline was broad-market.
+
+CVX — Very clear stock-specific reason. Chevron posted a Q4 loss after taking a $10.4 billion impairment charge.
+
+C (Citigroup) — No Citigroup-specific headline. Broad financials selloff.
+
+AVGO — No Broadcom-specific negative catalyst. Semiconductor / China-exposure decline.
+
+INTC — No Intel-specific negative event. Broad semiconductor de-rating.
+
+AMGN — Mixed company-specific news. Revenue fell 2%, GAAP Q4 EPS fell 5%, soft guidance.
+
+AMD — No AMD-specific bad headline. Chip-sector / China exposure selloff.
+
+AMAT — No Applied Materials-specific negative catalyst. Semiconductor equipment selloff.
+
+
+=== CHATGPT RAW RESPONSE (second attempt, improved prompt) ===
+
+AAPL — Primary cause: coronavirus-driven supply-chain fear after strong earnings (revenue $91.8B vs $88.5B est). Apple had given wider-than-usual revenue range due to virus uncertainty. Confidence: High.
+
+XOM — Primary cause: weak-quality Q4 earnings ($5.7B included $3.7B Norway divestment gain, masking weak operations) plus collapsing oil-demand tape. Confidence: High.
+
+V (Visa) — Primary cause: No stock-specific catalyst found. Market discounting virus hit to cross-border volumes and travel spend. Confidence: Medium.
+
+UPS — Primary cause: Weak 2020 guidance (EPS $7.76-$8.06, midpoint below consensus $8.07). Confidence: High.
+
+TXN — Primary cause: No stock-specific catalyst. Semiconductor/China-demand risk trade. Confidence: Medium.
+
+SCHW — Primary cause: No stock-specific catalyst. Macro/rates move hitting brokerages with NII exposure. Confidence: Medium-low.
+
+NVDA — Primary cause: No stock-specific catalyst. Semiconductor/China-exposure selloff. Confidence: Medium.
+
+MU — Primary cause: No stock-specific catalyst. Semiconductor cyclicality plus China-demand fears. Confidence: Medium.
+
+META — Primary cause: Post-earnings digestion (Q4 strong but costs rising, revenue growth slowing warning). Not a hard miss. Confidence: Medium-high.
+
+LRCX — Primary cause: No stock-specific catalyst. Sector-wide semi equipment weakness. Confidence: Medium-low.

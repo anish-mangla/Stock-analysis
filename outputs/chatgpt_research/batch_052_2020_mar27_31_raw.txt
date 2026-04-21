@@ -1,0 +1,25 @@
+BATCH 052 — 2020-03-27 to 2020-03-31 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 27 crude fell ~5% logging fifth straight weekly loss. Mar 30 Boeing/SPG continued pressure. Mar 31 U.S. consumer confidence dropped to 120.0 from 132.6 (lowest since Jul 2017). Quarter-end positioning and rotation. Record 3.3M jobless claims still reverberating.
+
+COP Mar27: Crude fell ~5% on Mar 27 logging fifth straight weekly loss. No major ConocoPhillips-specific negative release. Renewed oil-price collapse. COP basically trading as oil beta. Confidence: High.
+COF Mar27: Mar 26 U.S. jobless-claims report showed record 3.3M initial claims intensifying fears of credit-card delinquencies and consumer loan losses. No fresh Capital One-specific release. Worsening expected consumer credit losses. Confidence: Medium-high.
+CSCO Mar27: No Cisco press release or Reuters item in prior 3 days. Worsening enterprise-spending concern. Anticipated slowdown in enterprise/networking spend. Confidence: Medium-low.
+BA Mar30: Boeing still dealing with simultaneous COVID air-travel collapse and unresolved 737 MAX damage. Market focused on Boeing push for government support and liquidity. Boeing Mar 27 release was benign. Ongoing liquidity and demand fears. Confidence: Medium.
+SPG Mar30: Simon had already temporarily closed all U.S. properties Mar 18. Mall REITs remained under pressure from rent-collection and tenant-survival fears. Ongoing mall-closure and tenant-default risk. Confidence: Medium-high.
+MA Mar31: STOCK-SPECIFIC. Mastercard had already updated Q1 outlook Mar 24 saying COVID causing further deterioration in cross-border volumes switched volumes and transaction metrics. Collapse in cross-border payment volume from global travel shutdowns. Confidence: High.
+PEP Mar31: No PepsiCo-specific negative in prior 3 days. Mar 31 consumer confidence dropped to 120.0 from 132.6. Deteriorating consumer and restaurant/channel outlook. Quarter-end rotation out of defensives. Confidence: Medium.
+LRCX Mar31: Lam had provided business update Mar 17 warning COVID-19 affecting supply chain and demand visibility. No better company-specific Mar 28-30 headline. Semiconductor-equipment demand and supply-chain uncertainty. Confidence: Medium-high.
+NKE Mar31: STOCK-SPECIFIC. Nike had closed stores outside Asia-Pacific beginning Mar 15. Store closures and collapsing discretionary retail demand. Supply-chain disruption. Confidence: High.
+ORCL Mar31: No fresh Oracle-specific announcement in prior 3 days. Renewed selling in enterprise software tied to recession fears after Mar 31 consumer-confidence miss. Expected slowdown in enterprise software spending. Confidence: Medium-low.
+PG Mar31: No fresh P&G-specific negative. Mar 31 consumer confidence at lowest since Jul 2017. Macro and positioning rather than company news. Quarter-end rebalancing. Confidence: Medium.
+USB Mar31: Record Mar 26 jobless-claims spike and deepening recession fears. No unique U.S. Bancorp headline. Expected credit losses and margin pressure. Zero-rate environment. Confidence: Medium-high.
+SBUX Mar31: STOCK-SPECIFIC. Starbucks had shifted most U.S. stores to drive-thru-only and closed cafe access. Store-operating restrictions and demand disruption. Labor-cost commitments. Confidence: High.
+SO Mar31: No Southern-specific negative in prior 3 days. Violent rotation and de-risking in utilities amid quarter-end positioning. Sector rotation/market structure not issuer news. Confidence: Low.
+T Mar31: No AT&T release in prior 3 days. Advertising and media environment deteriorating sharply. Reuters estimating U.S. ad industry could lose nearly $26B or 10.6%. Worsening ad/media outlook. Confidence: Medium.
+UPS Mar31: Freight and logistics networks facing major COVID disruptions especially in air cargo and international transport. No UPS-specific Mar 28-30 announcement. Worsening global shipping and operational disruption outlook. Confidence: Medium.
+JPM Mar31: Record jobless claims and collapsing economic outlook. No fresh JPMorgan-specific headline. Rising credit-loss expectations. Zero-rate NIM pressure. Confidence: Medium-high.
+WFC Mar31: Record 3.3M claims print and deteriorating macro backdrop. Wells Fargo weaker relative positioning. Escalating credit-loss fears. Low-rate pressure legacy operational constraints. Confidence: High.
+RTX Mar31: STOCK-SPECIFIC context. Mar 30 Raytheon and United Technologies said all regulatory approvals obtained and merger would close after Carrier and Otis separations on Apr 3. Nominally positive but stock fell as aerospace demand fears overwhelmed merger milestone. Civil-aerospace collapse. Confidence: High.
+INTU Mar31: No fresh Intuit-specific negative in prior 3 days. Severe stress on small businesses — surveys showing 96% of small business owners feeling negative COVID effects. Worsening outlook for Intuit small-business ecosystem exposure. Confidence: Medium.

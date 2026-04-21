@@ -1,0 +1,33 @@
+BATCH 001 — 2020-01-31 (20 events)
+Source: Claude (deep dive, second pass with web search)
+Date researched: 2026-04-17
+
+[Full Claude output preserved — see below]
+
+MARKET CONTEXT: WHO declared COVID-19 global emergency Jan 30. U.S. declared public health emergency Jan 31. S&P 500 -1.8%, Dow -603 points. Oil $51.61 (down from $54.21). Gold surged to $1,592.70.
+
+TIER 1 — DUAL/TRIPLE CATALYSTS (company-specific + COVID):
+DHR -4.8%: Q1 EPS guidance below consensus ($1.075 vs $1.10-1.15) + China Life Sciences exposure
+AMGN -4.5%: FY2020 non-GAAP EPS guidance $0.70 below consensus ($15.22 vs $15.80-16.00) + Otezla costs
+AAPL -4.4%: Wide COVID Q2 guidance range ($63-67B, normally $2B range) + China supply chain
+V -4.4%: CEO warned COVID hurting cross-border volumes on Jan 30 call + Q2 guidance excluded COVID
+XOM -4.1%: Same-day Q4 adj EPS miss (41c vs 43c) + chemicals $355M loss vs $174M expected + oil demand
+UPS -4.1%: FY2020 EPS guidance midpoint $7.91 below consensus $7.98 + Asia trade lane weakness
+CVX -3.8%: Same-day revenue miss ($36.35B vs $38.64B) + $6.6B loss + 44% reserve replacement
+META -3.6%: Revenue decel guidance (Q1 growth 19-24% vs Q4 25%) + costs +51% YoY + privacy headwinds
+AMD -3.6%: Q1 revenue guidance $1.8B vs $1.86B consensus + semi-custom segment miss
+GD -3.2%: 2020 EPS guidance $12.35-12.60 vs consensus ~$12.80-13.00 + Gulfstream China exposure
+
+TIER 2 — COVID + CHINA REVENUE AMPLIFIER:
+LRCX -4.1%: China ~30-35% of revenue, fab construction freeze risk
+NVDA -3.8%: China ~22% of revenue, gaming/DC + Mellanox deal approval risk
+INTC -3.8%: China ~22% of revenue, PC OEM + data center digestion phase
+AMAT -3.8%: China ~27-30% of revenue, fab construction freeze
+MU -3.5%: China ~50% via electronics chain, memory demand destruction
+AVGO -3.2%: Huawei + Apple supply chain exposure
+
+TIER 3 — PURE MACRO:
+C -3.9%: Rate cut fears (30yr below 2%), Asia banking, credit reserves
+SCHW -3.5%: Rate cut fears compressing NIM, TD Ameritrade deal uncertainty
+TXN -3.0%: China ~22% but Q1 guidance already well-received
+UNH -3.0%: Defensive healthcare, ambiguous COVID impact, no China exposure

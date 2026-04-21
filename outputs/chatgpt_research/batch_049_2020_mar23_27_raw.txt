@@ -1,0 +1,25 @@
+BATCH 049 — 2020-03-23 to 2020-03-27 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 23 market bottom day — Fed announced open-ended asset purchases and new credit facilities but stocks still fell. Mar 24 historic rebound (+9.4% S&P). Mar 25 reversal as recession worries resurfaced. Mar 27 another down day — 3.28M weekly jobless claims on Mar 26 shocked investors. CARES Act moving through Congress.
+
+CVX Mar23: Oil markets digesting Saudi-Russia price war and COVID demand collapse. Reuters Mar 18 noted Chevron aiming to trim spending. Mar 24 Chevron cut 2020 capex by $4B and suspended buybacks. Shell cut $5B and suspended $25B buyback. Collapse in crude demand and oil-price expectations. Confidence: High.
+EMR Mar23: No major EMR-specific negative Mar 20-23. Later disclosed March trailing three-month underlying orders down 1% with instrumentation down 9% from COVID-19 and oil-demand deterioration. By Mar 31 withdrew guidance. Severe cyclical repricing of industrials tied to oil automation and capex exposure. Confidence: Medium.
+ORCL Mar25: No fresh major Oracle-specific negative Mar 22-25. Post-rally reversal after Mar 24 surge. Oracle still trading under shadow of recent earnings disappointment and weaker cloud/services numbers. Confidence: Medium-low.
+WMT Mar25: Walmart announced Mar 19 would hire 150,000+ hourly U.S. workers. Mar 24 corporate updates emphasized health/safety steps. Reuters reported Flipkart suspended services in India. Profit-taking/defensive rotation out of staples after huge safe-haven run. Not deteriorating demand. Confidence: Medium.
+TXN Mar25: No clear TXN-specific negative Mar 22-25. Renewed fear of broad semiconductor demand slowdown tied to global shutdowns. Post-rally reversal in cyclicals/tech hardware. Confidence: Low-medium.
+TMO Mar25: No strong Thermo Fisher-specific negative Mar 22-25. Market reversal/profit-taking after defensive and healthcare names held up relatively well. Uncertainty over lab/instrument demand timing. Confidence: Low-medium.
+QCOM Mar25: No Qualcomm-specific negative release Mar 22-25. Concern over handset and 5G device demand amid global lockdowns. March 25 reversal after stimulus-fueled relief rally. Confidence: Low-medium.
+NFLX Mar25: No Netflix-specific negative Mar 22-25. Profit-taking after Netflix outperformed sharply as stay-at-home beneficiary. Broad market reversal and rotation out of recent winners. Confidence: Low-medium.
+GILD Mar25: Reuters Mar 24 stock-movers said Gilead up 1.1% after potential COVID-19 drug got FDA orphan drug status. Unwind of event-driven optimism around remdesivir after initial positive reaction. Confidence: Medium.
+CRM Mar25: No material Salesforce-specific negative Mar 22-25. Reversal in software shares after Mar 24 bounce. Investors reassessing enterprise spending risk. Confidence: Low-medium.
+CMCSA Mar25: Comcast announced multiple COVID-response steps in mid-March including broader connectivity support. NBCUniversal moved films to home release. Worries over NBCUniversal/theme-park/advertising exposure despite resilient broadband demand. Confidence: Medium.
+AMGN Mar25: No clear Amgen-specific negative Mar 22-25. Broad market reversal and de-risking in large-cap biotech after relative resilience. Confidence: Low.
+AMD Mar25: No AMD-specific negative Mar 22-25. Semiconductor/electronics demand uncertainty and market reversal. Investors taking risk off after huge Mar 24 bounce. Confidence: Low-medium.
+ACN Mar25: No new Accenture-specific negative Mar 22-25. Concern enterprise consulting and discretionary IT projects would be delayed or canceled. Post-rally reversal. Confidence: Low-medium.
+HON Mar27: No major Honeywell-specific negative Mar 24-27. Cyclical industrial/aviation exposure as March rebound snapped on Mar 27. Doubts about speed of economic reopening. Confidence: Medium-low.
+IBM Mar27: IBM announced Mar 25 free tools using trusted data to track COVID-19 cases. Broad market reversal not negative IBM-specific news. Enterprise-spending uncertainty. Confidence: Medium.
+INTC Mar27: No strong Intel-specific negative Mar 24-27. Renewed concern over semiconductor demand and global supply-chain disruption. Market-wide reversal after three-day surge. Confidence: Medium-low.
+INTU Mar27: STOCK-SPECIFIC context. IRS extended 2019 filing deadline from Apr 15 to Jul 15 shifting revenue from fiscal Q3 to Q4. Also said COVID began affecting small-business customers in mid-March. Tax-season disruption from IRS deadline extension. Confidence: High.
+JPM Mar27: STOCK-SPECIFIC context. Mar 27 large U.S. banks agreed to suspend share buybacks through Q2 2020 after discussions with Federal Reserve. Bank-specific capital-return pressure and worsening credit-loss expectations. U.S. case count passed 100,000. Confidence: High.
+KO Mar27: No KO-specific negative Mar 24-27. Restaurant cinema travel and away-from-home beverage channels under severe pressure. Concern over away-from-home volume destruction despite KO defensive profile. Rotation out of staples. Confidence: Medium.

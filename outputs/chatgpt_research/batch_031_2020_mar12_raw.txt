@@ -1,0 +1,24 @@
+BATCH 031 — 2020-03-12 (20 events)
+Source: ChatGPT. Date researched: 2026-04-18
+Market context: Same as batch 030. S&P 500 -9.5%, Dow worst day since 1987. WHO pandemic, Trump Europe travel ban, ECB disappointed.
+
+SPG Mar12: No material SPG-specific press release. COVID demand shock hitting physical retail real estate. Mall traffic, tenant sales, rent collection threatened. Simon later closed all U.S. malls Mar 18. Confidence: Medium.
+SO Mar12: No clear Southern-specific negative. Broad panic selling/forced de-risking. Utilities treated as bond proxies but March 12 was liquidity event. Confidence: Low-Medium.
+SCHW Mar12: Banks/brokers under intense pressure from Treasury yield collapse. Mar 11 big bank CEOs told Trump system was sound. Reuters Mar 13: Schwab had record trading and $45.3B net new assets Jan-Feb. Rate-collapse/NIM fears not poor Schwab fundamentals. TD Ameritrade merger overhang. Confidence: High.
+SBUX Mar12: Already closed 2000+ China stores and delayed 2020 outlook update. Pandemic declaration and collapsing mobility made investors extrapolate larger global sales hit. COVID traffic collapse hitting global cafe demand. Confidence: High.
+RTX Mar12: Airlines Mar 12 appealed for government aid and rushed to cut Europe flying after travel restrictions. Commercial aerospace/air-travel shock. Defense business cushioned decline. Confidence: High.
+QCOM Mar12: Reuters reported Qualcomm warned coronavirus outbreak in China posed threat to mobile-phone industry. Warning already out Mar 2 and remained highly relevant. Smartphone demand and supply-chain risk. Confidence: High.
+PM Mar12: No major Philip Morris-specific release. International travel and duty-free channels threatened by Europe travel ban. Global risk-off plus duty-free/travel-related tobacco sales concern. Confidence: Medium.
+PG Mar12: P&G said Feb 20 coronavirus would hurt current-quarter revenue and profit through China supply-chain disruption. Earlier warning repriced more aggressively as outbreak globalized. Confidence: High.
+PEP Mar12: No major PepsiCo-specific announcement. Exposure to restaurants, entertainment venues, away-from-home beverage consumption. Reuters later confirmed those channels materially hit. Confidence: Medium.
+JNJ Mar12: No JNJ-specific negative. Primarily broad market move partly offset by healthcare defensiveness. Smaller 4.8% decline vs S&P 9.5%. Confidence: Medium-High.
+AMD Mar12: No AMD-specific negative Reuters item. Semiconductor beta to global recession/supply-chain shock. High multiple, cyclicality, indiscriminate selling. Confidence: Medium.
+INTU Mar12: No Intuit-specific negative corporate news. Mar 11 Reuters: White House met with tech officials on coronavirus response. Broad software/market selloff. SMB formation/payroll activity worries. Confidence: Medium.
+CL Mar12: No clear Colgate-specific negative. Marketwide liquidation. Global distribution, FX, cash-raising sales hit even defensive staples. Confidence: Medium-High.
+CAT Mar12: No CAT-specific Mar 9-12 corporate warning. Highly exposed to global industrial activity and China demand. Global growth/industrial recession fears. Confidence: Medium-High.
+C Mar12: Reuters Mar 6 Citigroup would waive some fees and offer assistance for U.S. consumers/small businesses hit by coronavirus. Banking-sector stress from collapsing rates and recession/credit fears. Confidence: High.
+BRK-B Mar12: No Berkshire-specific announcement. Giant exposure to economically sensitive holdings — financials, industrials, energy, airlines. Conglomerate exposure to broad COVID recession. Confidence: Medium-High.
+BMY Mar12: No BMY-specific negative. Reuters Mar 23 piece about delaying clinical trials was outside window. Broad market selloff. Defensive-healthcare stock sold in marketwide liquidation. Confidence: Medium.
+BLK Mar12: No major BlackRock operating announcement. Mar 11 reporting: traders at BlackRock, MS, Barclays tested positive, firm deep-cleaned offices. AUM-markdown/outflow fears in market crash. Confidence: Medium-High.
+BKNG Mar12: Trump Mar 11 Europe travel ban. Airlines scrambled to cut Europe flights. Travel-demand collapse from COVID and Europe travel ban. Rising cancellations, refund risk. Confidence: High.
+BK Mar12: No BNY Mellon-specific corporate disclosure. Same forces crushing financials: collapsing yields, recession fears, systemic stress. Financial-sector/rate shock. Confidence: Medium-High.

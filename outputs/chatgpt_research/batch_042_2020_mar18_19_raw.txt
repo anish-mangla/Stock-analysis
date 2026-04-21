@@ -1,0 +1,23 @@
+BATCH 042 — 2020-03-18 to 2020-03-19 (20 events). Source: ChatGPT. Date: 2026-04-18.
+Context: Mar 18 "cash is king" session amid ongoing liquidity stress. Mar 19 still driven by recession and liquidity stress.
+
+DUK Mar18: No clear Duke-specific headline Mar 15-17. Forced liquidation/liquidity panic overwhelming defensive utilities. Reuters described Mar 18 as "cash is king" session. Confidence: Medium-low.
+DIS Mar18: Core businesses directly exposed to COVID shutdowns — parks resorts theaters live sports/advertising through ESPN. Reuters later noted parks swung from profit to expected multibillion-dollar loss. Confidence: Medium.
+DE Mar18: No fresh Deere-specific headline Mar 15-17. Cyclical industrial/recession exposure. Later withdrew 2020 guidance Mar 23. Confidence: Medium-low.
+CVX Mar18: Oil in simultaneous demand collapse + Saudi/Russia price war. Reuters called it dual supply-and-demand shock. Brent/WTI cratered. Confidence: High.
+COP Mar18: Same energy shock as CVX. Pure upstream producer — more direct crude-price exposure than integrated majors. Confidence: High.
+COF Mar18: No fresh Capital One-specific headline Mar 15-17. Market aggressively repricing consumer lenders for recession, rising unemployment, lower rates, expected credit losses. Confidence: Medium.
+EMR Mar18: No fresh Emerson-specific headline Mar 15-17. Continued collapse in economically sensitive industrial and capital-goods names. Recession-driven selloff in industrial automation/capital spending. Energy exposure. Confidence: Medium-low.
+LLY Mar19: No negative Lilly-specific headline Mar 16-18. Broad de-risking/liquidation. Profit-taking in defensives. Confidence: Low.
+LMT Mar19: No Lockheed-specific Mar 16-18 headline. Later Reuters confirmed COVID disrupted F-35 supply chain. Broad industrial/defense de-risking. Confidence: Low-medium.
+MO Mar19: No fresh Altria-specific headline Mar 16-18. Modest move consistent with broad consumer-staples liquidation. Confidence: Low.
+ORCL Mar19: No fresh Mar 16-18 Oracle-specific headline. Earnings were Mar 12 (outside window). Broad tech selloff/liquidity stress. Confidence: Medium-low.
+T Mar19: Reuters Mar 20 reported AT&T withdrew planned $4B share repurchase. Market likely already pricing same pressures on WarnerMedia/advertising and capital allocation. Confidence: Medium.
+PG Mar19: P&G already warned Feb about coronavirus hurting quarterly revenue/profit. No fresh Mar 16-18 headline. Broad market liquidation of defensives. Confidence: Medium-low.
+UPS Mar19: No fresh UPS-specific Mar 16-18 headline. Macro slowdown fears affecting parcel and international logistics demand. Confidence: Low-medium.
+KO Mar19: No fresh KO-specific headline Mar 16-18. Reuters later made clear away-from-home channels highly exposed — restaurants theaters sports venues shutting down. Confidence: Medium.
+PFE Mar19: Pfizer and BioNTech announced vaccine collaboration Mar 17 — but very early-stage. No negative Pfizer-specific headline. Broad-market liquidation. Confidence: Low-medium.
+JNJ Mar19: No negative J&J-specific headline Mar 16-18. Broad-market/liquidity-driven selloff. Confidence: Low.
+INTU Mar19: U.S. tax filing deadline pushed from Apr 15 to Jul 15 announced Mar 20 — market may have been anticipating. Tax-season disruption from COVID. Confidence: Medium.
+INTC Mar19: No fresh Intel-specific Mar 16-18 headline. General semis/tech de-risking. Confidence: Medium-low.
+IBM Mar19: No fresh IBM-specific Mar 16-18 headline. Broad enterprise-tech de-risking amid COVID recession fears. Confidence: Medium-low.

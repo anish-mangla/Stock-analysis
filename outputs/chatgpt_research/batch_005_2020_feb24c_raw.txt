@@ -1,0 +1,25 @@
+BATCH 005 — 2020-02-24 continued (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: Same day. Dow -1,030, S&P -3.3%, Nasdaq -3.7%. COVID Italy/Korea/Iran.
+
+BK: No stock-specific catalyst. Rate/yield compression. 30yr Treasury hit all-time low yield Feb 21. Confidence: Medium.
+BKNG: STOCK-SPECIFIC context. IATA Feb 21 warned first annual air-travel decline in 11 years, $29.3B airline revenue hit. Italy outbreak. Confidence: High.
+C: No Citi-specific catalyst. Global bank selloff on collapsing yields and recession fears. High international exposure. Confidence: Medium-High.
+CAT: No stock-specific release. Global industrial slowdown fears. China demand/supply chain. Macro bellwether. Confidence: Medium.
+CL: No stock-specific catalyst. Broad market selloff hitting even defensive staples. Smaller drop than cyclicals. Confidence: Medium.
+COP: No stock-specific catalyst. Oil-price/demand shock from COVID. Oil already down ~15% YTD. Confidence: High.
+COST: No stock-specific catalyst. Broad market selloff. Before panic-buying narrative. Confidence: Medium.
+CRM: No stock-specific catalyst. Earnings not until Feb 25 after close. Broad tech/software selling. Confidence: Medium.
+CVX: No stock-specific catalyst. Oil-price weakness on COVID demand fears. Same as COP. Confidence: High.
+DE: STOCK-SPECIFIC. Feb 21 fiscal Q1: EPS $1.63 vs $1.54 prior year. But warned COVID would affect next sales/profit report. Initially hit ATH then sold. Confidence: High.
+DIS: No stock-specific release. Theme parks/cruises/travel exposure. COVID leisure/travel selloff. Confidence: Medium-High.
+FDX: STOCK-SPECIFIC context. Feb 19 Reuters: FedEx seeing only slow China pickup, exec said magnitude much greater than SARS. Confidence: High.
+GD: No stock-specific catalyst. Aerospace/Gulfstream demand concerns. Singapore Airshow cancellations. Confidence: Medium.
+GE: STOCK-SPECIFIC context. Bloomberg ~Feb 21: three GE Hubei sites still closed, other China sites not full staffing. Aviation exposure. Confidence: Medium-High.
+GS: No stock-specific catalyst. Financial sector selloff on lower yields/recession fears. Confidence: Medium.
+HD: No stock-specific catalyst. Earnings Feb 25 (next day). Broad cyclical retail de-risking. Confidence: Medium.
+HON: No stock-specific catalyst. Aerospace/industrial macro selloff. Singapore Airshow disrupted. Confidence: Medium.
+INTU: STOCK-SPECIFIC. Feb 24 Reuters: Intuit to buy Credit Karma for ~$7.1B cash+stock. Acquisition pressure. Confidence: High.
+ISRG: STOCK-SPECIFIC context. Feb 21 Axios: COVID delaying surgeries in China, device companies bracing for sales hit. Procedure volume fears. Confidence: High.
+JPM: No stock-specific catalyst. Bank sector repricing on lower yields/recession fears. Fell less than Citi. Confidence: Medium-High.

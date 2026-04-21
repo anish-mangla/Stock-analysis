@@ -1,0 +1,23 @@
+BATCH 043 — 2020-03-19 to 2020-03-20 (20 events). Source: ChatGPT. Date: 2026-04-18.
+Context: Mar 19-20 still severe COVID panic. Mar 20 NY joined CA in ordering stay-at-home. Dow/S&P/Nasdaq down ~4% on Mar 20. Worst week since 2008.
+
+DUK Mar19: Duke announced Mar 19 new COVID-19 customer relief measures — waiving fees suspending disconnections. Not clearly negative. Defensive utilities still being sold for liquidity. Bad-debt risk from paused shutoffs. Confidence: Medium.
+DHR Mar19: Mar 19 Danaher said received FTC clearance for GE Biopharma acquisition ($21.4B). Superficially positive but investors focused on transaction execution and balance-sheet risk during global shutdown. Confidence: Medium.
+CVS Mar19: No clearly negative CVS-specific announcement. Pharmacy/essential retail resilience vs Aetna utilization visibility, front-store traffic mix, labor costs, supply shortages. Confidence: Medium-low.
+BKNG Mar19: Already withdrew Q1 guidance Mar 9. Border closures and travel restrictions kept intensifying. Collapsing global travel demand. Confidence: High.
+BA Mar19: STOCK-SPECIFIC. Reuters Mar 17 reported Boeing seeking "tens of billions" in U.S. government loan guarantees. Boeing backed at least $60B in liquidity support for aerospace industry. Acute liquidity stress and bailout risk. Confidence: High.
+AMT Mar19: No material AMT-specific negative. REIT/liquidity selling. Investors sold liquid winners to raise cash. Confidence: Medium-low.
+ABT Mar19: STOCK-SPECIFIC context. Abbott announced Mar 18 received FDA EUA for molecular COVID-19 test — would ship 150,000 tests immediately. Despite positive test news, stock sold off on broad med-tech de-risking and concern non-COVID procedures/diagnostics would weaken. Confidence: Medium.
+XOM Mar20: STOCK-SPECIFIC. Exxon said Mar 16 evaluating significant near-term capex and opex reductions because of COVID and commodity-price declines. Oil-demand collapse plus management explicit acknowledgment spending cuts coming. Confidence: High.
+NVDA Mar20: No significant Nvidia-specific negative. Semiconductor de-risking on fears of global demand destruction and supply-chain disruption. Confidence: Medium-low.
+NOW Mar20: Mar 16 ServiceNow released four COVID-19 emergency response apps for free. No negative news. High-multiple software de-rating during liquidity panic. Confidence: Medium.
+NKE Mar20: STOCK-SPECIFIC. Reuters reported Nike closing all stores in U.S. and several other markets. Adidas announced similar closures Mar 17. Direct revenue hit from store closures. Confidence: High.
+NEE Mar20: No new clearly negative NextEra-specific release. Yieldcos/utilities/renewables sold as funding-sensitive long-duration assets during credit shock. Feb 19 $2.5B equity units sale. Confidence: Medium-low.
+MSFT Mar20: No negative Microsoft-specific release. Windows 10 reached 1B monthly active devices Mar 18. Teams and cloud usage surging. Large-cap tech de-risking. Confidence: Medium.
+MA Mar20: International travel restrictions escalated sharply — U.S.-Canada border measures, State Department warning against international travel. Collapse in cross-border and travel-related payment volumes. Confidence: High.
+MO Mar20: No negative Altria-specific headline. FDA authorized IQOS 3 (positive). Defensive consumer names still being liquidated. Confidence: Medium-low.
+MMM Mar20: No fresh directly negative 3M announcement. Later Apr embroiled in mask/export controversies. Investors focused on broad industrial and cyclical exposure not just N95 upside. Confidence: Medium.
+MDLZ Mar20: No new negative Mondelez-specific release. Prior disclosure coronavirus hurting operations in China — two factories closed 10 days. Concern global supply-chain and EM exposure would outweigh pantry-loading. Confidence: Medium-low.
+PEP Mar20: Mar 20 PepsiCo announced enhanced employee benefits and extra frontline compensation. No negative headline. Investors repriced for sharp hit to higher-margin away-from-home channels. Added labor/operating costs. Confidence: Medium.
+LRCX Mar20: Lam Research issued business update for fiscal quarter ending Mar 29 on Mar 17. Semiconductor equipment names repriced for fab/customer capex risk. Confidence: Medium.
+LOW Mar20: Mar 20 Lowe's committed $25M and said would reduce store hours starting Mar 23. Rising operating disruption and margin pressure from pandemic response measures. Confidence: Medium.

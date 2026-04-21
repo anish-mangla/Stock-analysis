@@ -1,0 +1,25 @@
+BATCH 014 — 2020-03-02 to 2020-03-03 (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: Mar 3 Fed emergency 50bp cut (first since 2008) to 1.00-1.25%. Market fell AFTER the cut — interpreted as confirmation of serious economic danger. Oil demand collapse: Axios cited 3.8M bpd Q1 decline (record).
+
+UBER Mar2: No stock-specific catalyst. Early repricing of ride-hailing/mobility demand destruction. Later ride demand fell 70% in some cities. Confidence: Medium-low.
+META Mar3: No stock-specific catalyst. Emerging fear COVID would hit digital ad demand from travel/events/local commerce advertisers. Confidence: Medium.
+MMM Mar3: No stock-specific catalyst. Industrial/cyclical selloff. Mask demand too small to offset broader industrial pressure. Confidence: Medium-low.
+MS Mar3: Fed emergency 50bp cut. Banks among clearest losers — lower NIMs + recession signal. Confidence: High.
+MSFT Mar3: STOCK-SPECIFIC. Feb 26 warned More Personal Computing segment would miss guidance. China supply chain slower than expected. Confidence: High.
+MU Mar3: No stock-specific catalyst. Semi sector sympathy after MSFT warning. PC/electronics supply chain fears. Confidence: Medium.
+MA Mar3: STOCK-SPECIFIC. Feb 24 warned Q1 net revenue 2-3pp hit from COVID. Cross-border travel/e-commerce weakness. Confidence: High.
+NFLX Mar3: No stock-specific catalyst. Broad growth-stock risk-off. Not yet treated as lockdown beneficiary. Confidence: Medium-low.
+NOW Mar3: No stock-specific catalyst. High-multiple software selloff. Enterprise spending concern. Confidence: Medium-low.
+NVDA Mar3: No stock-specific catalyst. Semi sector selloff on COVID supply chain/demand fears. MSFT warning read-through. Confidence: Medium.
+TXN Mar3: No stock-specific catalyst. Semi/industrial electronics risk-off. Confidence: Medium-low.
+SBUX Mar3: STOCK-SPECIFIC context. Late Jan warned 2,000+ China stores closed. Feb 27 said 85% reopened. Ongoing China traffic risk. Confidence: High.
+SPG Mar3: No stock-specific catalyst. Mall traffic/tenant risk repricing from COVID. Confidence: Medium-low.
+TMUS Mar3: No stock-specific catalyst. Merger litigation cleared but close not until April 1. Broad selloff. Confidence: Medium-low.
+UNH Mar3: Political risk — Sanders/Medicare for All still live threat. Later rallied sharply when Sanders exited. Confidence: Medium.
+USB Mar3: Fed emergency 50bp cut. Regional bank margin compression. Confidence: High.
+V Mar3: No clean same-window warning like MA. But same cross-border/travel payments thesis. Spillover from MA warning. Confidence: Medium.
+WFC Mar3: Fed emergency 50bp cut. Already operationally constrained and rate-sensitive. Confidence: High.
+XOM Mar3: Oil demand collapse. Axios: record 3.8M bpd Q1 demand decline. OPEC+ uncertainty. Confidence: High.
+JPM Mar3: Fed emergency 50bp cut. Interpreted as confirmation of serious economic danger. Confidence: High.

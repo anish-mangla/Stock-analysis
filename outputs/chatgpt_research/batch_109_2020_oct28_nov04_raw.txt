@@ -1,0 +1,25 @@
+BATCH 109 — 2020-10-28 to 2020-11-04
+Source: ChatGPT
+Date researched: 2025-04-20
+Market context: Late Oct to early Nov 2020 featured severe market stress from COVID surges, European lockdowns, stalled stimulus, and pre-election anxiety. Oct 28 S&P 500 fell 3.5% with VIX at 40.28. Oct 30 saw Big Tech earnings reactions. Nov 3 was election day with intense cross-currents.
+
+GOOGL Oct28: No major Alphabet-specific announcement Oct 25-28. DOJ antitrust suit filed Oct 20 was key overhang but outside 3-day window. Broad large-cap tech/risk-off selloff with lingering antitrust overhang from DOJ case. Confidence: Medium.
+DIS Oct28: No clear negative Disney-specific item Oct 25-28. Oct 13 restructuring to prioritize streaming was received positively. Broad market selloff with concern renewed COVID restrictions would pressure parks/theaters/ad-sensitive media. Confidence: Medium.
+DHR Oct28: Danaher reported strong Q3 Oct 22: revenue up 34.5% to $5.9B, adjusted EPS up 62% to $1.72, operating cash flow up 93%. No negative news in 3 days. Broad Oct 28 market liquidation; stock fell despite solid fundamentals. Confidence: High that drop was not company-specific.
+CVX Oct28: No Chevron-specific negative in Oct 25-28; quarterly report came later Oct 30. Sector backdrop was weak fuel-demand expectations. Energy-sector weakness from renewed demand fears ahead of earnings. Confidence: Medium.
+CSCO Oct28: No material Cisco-specific announcement in prior 3 days. Broad tech/risk-off move with enterprise-tech names pressured by macro concerns. Confidence: Medium.
+FDX Oct28: No fresh FedEx-specific negative in Oct 25-28 window. Broad market selloff with transports hit by worsening growth expectations. Lingering concern about lower-margin residential shipping mix. Confidence: Medium-Low.
+NFLX Oct30: Oct 29 Netflix raised U.S. prices: standard plan +$1 to $14, premium +$2 to $18; shares initially jumped 4.8%. Oct 30 became broad tech unwind. Market-wide selloff in richly valued tech/growth not price hike itself. Confidence: High.
+TSLA Oct30: No clear Tesla-specific negative in Oct 27-30 window. Broad de-risking in high-valuation tech/growth on Oct 30. Tesla's extreme multiple and volatility amplified the move. Confidence: Medium.
+PLTR Oct30: No major Palantir-specific negative in Oct 27-30. Had only recently gone public via direct listing Sept 30, still in volatile price-discovery. Broad growth-stock selloff with post-listing volatility and profit-taking. Confidence: Medium-Low.
+NVDA Oct30: No fresh Nvidia-specific negative in Oct 27-30. Sector-wide tech/semiconductor selloff on Oct 30. Sympathy move with large-cap tech and chip names. Confidence: Medium.
+META Oct30: Facebook reported Oct 29 and beat quarterly revenue but warned of significant 2021 uncertainty citing Apple privacy changes and potential reversal of pandemic e-commerce shift. Reuters noted FB fell ~6.2% on Oct 30. Weak forward outlook after earnings. Confidence: High.
+AMD Oct30: AMD announced $35B all-stock Xilinx acquisition Oct 27. Strategically broadened data-center/FPGA reach but all-stock deal created dilution/arbitrage pressure. Post-deal digestion combined with Oct 30 semi/tech selloff. Confidence: Medium-High.
+INTU Oct30: No major new Intuit-specific headline Oct 27-30. $7.1B Credit Karma acquisition pending but no new regulatory resolution until late Nov. Broad software/tech selloff with M&A execution overhang. Confidence: Medium.
+AMZN Oct30: Amazon reported strong Q3 but warned holiday-quarter COVID costs could jump to $4B from $2.5B prior quarter. Reuters tied stock drop to forecast cost jump. Earnings-driven concern over holiday profitability despite booming sales. Confidence: High.
+ADBE Oct30: No material Adobe-specific negative in Oct 27-30. Broad software/tech weakness on Oct 30. Collateral damage from growth-tech rotation. Confidence: Medium.
+AAPL Oct30: Apple reported steepest quarterly iPhone sales drop in at least 2-3 years after delayed iPhone 12 launch caused purchase deferrals. Reuters said move temporarily wiped ~$100B off market value. Earnings reaction from delayed 5G iPhone launch and weaker iPhone sales. Confidence: High.
+LRCX Oct30: No fresh Lam Research-specific negative in Oct 27-30. Semiconductor/growth-stock selloff with valuation compression across chip equipment. Confidence: Medium.
+NOW Nov02: ServiceNow reported strong Q3 Oct 28: subscription revenue $1.091B up 31% with raised guidance. No bad headline before Nov 2. Pre-election de-risking and profit-taking in high-multiple software despite strong earnings. Confidence: Medium-High.
+COP Nov03: Major nearby event was Oct 19 Concho acquisition but outside 3-day window. Nov 2 oil prices rebounded ~3% after days of losses. Residual energy-sector volatility from weak demand fears and election uncertainty, not fresh COP-specific headline. Confidence: Medium.
+USB Nov04: Nov 4 was election-result day with intense cross-currents. Reuters said markets welcomed signs of divided government but financial executives worried about too-close vote. Bank-sector volatility from election uncertainty and rate/regulatory expectations. Confidence: Medium.

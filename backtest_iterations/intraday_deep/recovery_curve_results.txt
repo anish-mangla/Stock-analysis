@@ -1,0 +1,9 @@
+RECOVERY CURVE ANALYSIS
+Events: 7831
+
+Overall avg close return from drop-day close:
+  D+1: +0.281%
+  D+2: +0.104%
+  D+3: +0.324%
+  D+4: +0.787%
+  D+5: +0.634%

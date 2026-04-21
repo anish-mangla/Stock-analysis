@@ -1,0 +1,25 @@
+BATCH 011 — 2020-02-27 continued (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: S&P 500 fastest correction on record. MSFT warned Feb 26 on More Personal Computing. Semis/airlines/China-exposed groups hit hardest.
+
+INTU: Credit Karma $7.1B deal announced Feb 24 as secondary overhang. Mostly broad COVID selloff. Confidence: Medium.
+MDLZ: No stock-specific catalyst. Global packaged-food with international exposure. Confidence: Low-Medium.
+IBM: No stock-specific catalyst. Spillover from MSFT warning and enterprise tech concerns. Confidence: Medium.
+CL: No stock-specific catalyst. Broad multinational consumer selloff. FX/international exposure. Confidence: Low-Medium.
+CAT: No stock-specific catalyst. China/global industrial demand fears. Macro bellwether. Confidence: Medium.
+C: No stock-specific catalyst. Bank selloff from falling rates/recession/credit fears. 5.5% larger than index. Confidence: High.
+BRK-B: No stock-specific catalyst. Equity portfolio and cyclical operating business exposure. Confidence: Medium.
+BMY: No stock-specific catalyst. Broad risk-off/healthcare selloff. Celgene integration overhang but not new. Confidence: Low-Medium.
+BLK: No stock-specific catalyst. AUM-linked earnings power marked down as markets plunged. 6.4% severe. Confidence: High.
+BAC: No stock-specific catalyst. Bank selloff from lower rates/credit-loss fears. Confidence: High.
+BA: STOCK-SPECIFIC context. 737 MAX crisis + fresh COVID travel-demand shock. Airlines suspending routes. Uniquely vulnerable. Confidence: High.
+COF: No stock-specific catalyst. Consumer-credit-sensitive lender. Rising credit loss concerns. Confidence: Medium-High.
+AXP: No fresh release. Travel/T&E spending exposure. More exposed than plain-vanilla banks. Confidence: High.
+AMZN: No stock-specific catalyst in Feb 24-27. Had withdrawn from MWC. Broad mega-cap tech selloff. Confidence: Medium.
+AMT: No stock-specific catalyst. Broad risk-off/REIT deleveraging. Confidence: Low-Medium.
+AMGN: No fresh catalyst but Jan 30 soft 2020 guidance ($15.51-16.85 vs Street ~$16.68) still overhang. Confidence: Medium.
+AMD: No stock-specific catalyst. Semiconductor derating after MSFT Feb 26 warning. High-beta. 7.3% steep. Confidence: High.
+AMAT: No stock-specific catalyst. Semi equipment selloff on China supply chain/capex fears. MSFT warning amplified. Confidence: High.
+ADBE: No stock-specific catalyst. Broad software/tech selloff. Valuation compression. Confidence: Medium.
+ABBV: No stock-specific catalyst. Broad market/pharma selloff. Allergan deal overhang but not new. Confidence: Low-Medium.

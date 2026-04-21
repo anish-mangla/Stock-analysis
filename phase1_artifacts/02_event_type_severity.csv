@@ -1,0 +1,11 @@
+event_type,severity,count,hit_5_60,good_trade,ugly_loser_rate,median_days_to_5,median_day60_return
+demand_weakness,medium,26,84.6%,65.4%,7.7%,1.0,2.3%
+demand_weakness,high,28,82.1%,64.3%,25.0%,1.0,1.7%
+earnings_miss,medium,14,85.7%,78.6%,0.0%,1.0,1.6%
+guidance_cut,medium,18,94.4%,83.3%,5.6%,2.0,2.3%
+guidance_cut,high,68,64.7%,54.4%,8.8%,1.0,1.3%
+no_clear_catalyst,low,64,78.1%,59.4%,21.9%,1.0,2.1%
+no_clear_catalyst,medium,28,78.6%,42.9%,35.7%,2.0,2.2%
+product_service_failure,high,13,46.2%,38.5%,15.4%,2.0,-0.8%
+regulatory_legal,high,14,85.7%,71.4%,0.0%,1.0,2.4%
+unlabeled,unlabeled,7495,81.4%,66.0%,17.1%,2.0,2.0%

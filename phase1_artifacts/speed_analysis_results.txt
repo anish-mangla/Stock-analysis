@@ -1,0 +1,108 @@
+SPEED LANE VALIDATION & TWO-SLEEVE SYSTEM RESULTS
+====================================================
+
+1. S1 SANITY CHECKS (ATR < 0.8 + droppers [61,93])
+----------------------------------------------------
+n = 255 events
+
+A. Year-by-year stability:
+   2020: n=231, 97.0% FAST, 0.0% LOSE
+   2022: n=8,   50.0% FAST, 25.0% LOSE
+   2025: n=16,  56.2% FAST, 0.0% LOSE
+   VERDICT: Overwhelmingly 2020 COVID crash. Regime trigger, not stock-level predictor.
+
+B. Date concentration:
+   Only 10 unique dates across all 255 events
+   Top 3 dates (Mar 18, Mar 20, Apr 1 2020) = 198/255 = 78%
+   100% of events come from top 10 dates
+   VERDICT: Extreme date concentration. This is a regime trigger.
+
+C. Sector concentration:
+   Well diversified: XLF 16.5%, SMH 14.9%, XLI 14.1%, XLY 10.6%, XLK 9.8%
+   No single sector dominates.
+   VERDICT: When regime fires, it's broad-based. Good.
+
+D. Screener intersection:
+   49.4% of S1 events are VETO'd (mostly D+1 < 0)
+   21.2% CONFIDENT_YES, 13.3% SMALLER_YES, 16.1% NO
+   CRITICAL: VETO'd events perform BETTER than tradable ones in crisis mode.
+
+
+2. CRISIS SNAPBACK TRADE-LEVEL RESULTS
+---------------------------------------
+S1 events with Exit C (+5%/-6%/10d):
+  All S1:      n=255, 73.3% win, +2.07% avg ret, 1.6d avg hold
+  Tradable:    n=88,  80.7% win, +2.88% avg ret, 2.0d avg hold
+  VETO'd only: n=126, 81.7% win, +2.99% avg ret, 1.3d avg hold
+
+The D+1<0 veto is actively harmful during crisis — stocks that gap down
+on D+1 during broad flush snap back hardest.
+
+
+3. NORMAL-REGIME SPEED ANALYSIS (excluding crisis dates)
+---------------------------------------------------------
+S2_SPEED (ATR < 1.0, tradable, non-crisis): NEGATIVE EV
+  All exit configs tested: -0.66% to -0.75% avg return
+  The "easy target" filter selects different population, not better one.
+  ATR < 1.0 alone does not predict fast winners in normal conditions.
+
+However, ATR < 1.0 as an EXIT OPTIMIZER on core trades works:
+  CORE_FAST (ATR<1.0, 15d max hold): 68.1% win, +0.91% avg, 3.8d hold
+  vs CORE standard (60d max hold): 69.6% win, +1.17% avg, 12.0d hold
+  Shorter hold frees capital faster for recycling.
+
+
+4. OPTIMIZED PORTFOLIO RESULTS ($100K start, 5.9 years)
+---------------------------------------------------------
+Config                                    Final    CAGR    MaxDD   Trades
+Baseline (core 60d, no crisis)          $219K    14.2%   -14.5%    871
++ Crisis override only                  $232K    15.3%   -13.9%    917
++ Adaptive exits (15d for ATR<1)        $233K    15.4%   -13.9%    918
++ 25% position size                     $255K    17.1%   -15.7%    918
++ 15 positions instead                  $242K    16.2%   -12.7%   1222
+
+Year-by-year (Config: Crisis + Adaptive + 25% size):
+  2020: 222 trades, 72.1% win, +1.56% avg, $38K PnL
+  2021: 109 trades, 70.6% win, +1.40% avg, $20K PnL
+  2022: 188 trades, 64.9% win, +0.48% avg, $11K PnL
+  2023: 117 trades, 68.4% win, +1.03% avg, $18K PnL
+  2024: 123 trades, 70.7% win, +1.26% avg, $29K PnL
+  2025: 159 trades, 69.2% win, +1.21% avg, $39K PnL
+
+
+5. KEY ARCHITECTURAL DECISIONS
+-------------------------------
+a) Two-sleeve system (speed gets priority slots) = REJECTED
+   - Normal-regime speed sleeve is negative EV
+   - Wastes portfolio slots on bad trades
+
+b) Adaptive exits + crisis override = ADOPTED
+   - Crisis mode: bypass D+1<0 veto, short exits, separate risk budget
+   - Normal mode: shorter exits for easy-target trades (ATR<1.0)
+   - Score-weighted sizing improves capital efficiency
+
+c) Crisis sleeve value:
+   - 58-81 trades over 5.9 years (rare but profitable)
+   - 69% win rate, +1.59% avg return, 1.5d avg hold
+   - Adds ~1% CAGR and reduces max DD by ~1%
+
+
+6. PRODUCTION SYSTEM ARCHITECTURE
+-----------------------------------
+Step 1: Regime check
+  - If num_droppers_3pct in [61,93]: activate crisis mode
+  - Else: normal mode
+
+Step 2: Crisis mode
+  - Entry: all events with ATR < 0.8 (bypass D+1<0 veto)
+  - Exit: +5%/-6%/10d
+  - Sizing: same as core
+
+Step 3: Normal mode
+  - Entry: current screener (CONFIDENT_YES or SMALLER_YES)
+  - Exit: if ATR < 1.0 → +5%/-8%/15d; else → +5%/-8%/60d
+  - Sizing: score-weighted (1.25x for score>=10, 1.0x for >=8, 0.75x else)
+
+Step 4: Admission priority
+  - Crisis trades first (when active)
+  - Then core trades by score (descending)

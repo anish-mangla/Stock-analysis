@@ -1,0 +1,25 @@
+BATCH 024 — 2020-03-09 to 2020-03-11 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 9 Crash Monday — Saudi-Russia oil-price war, crude down ~25%, circuit breaker, 10-year ~0.32%, Italy lockdown. Mar 11 WHO declared COVID-19 pandemic, Trump announced 30-day European travel ban, NBA suspended season. S&P 500 fell 4.9% on Mar 11.
+
+GOOG Mar9: No clear company-specific negative. Cancelled in-person Google Cloud Next event. Broad market selloff tied to COVID/oil shock. Concern travel/brand advertisers would cut spend. Confidence: Medium.
+GM Mar9: Reuters Mar 9 reported analysts warning about U.S. auto sales slowdown from coronavirus. Directly exposed to collapsing consumer demand expectations. COVID-driven fear of sharp auto demand downturn. Confidence: High.
+GILD Mar9: No material negative Gilead-specific headline. Remdesivir story still speculative positive/uncertain. Broad market liquidation. Profit-taking after earlier remdesivir enthusiasm. Confidence: Medium.
+GE Mar9: No single GE-specific headline but major exposure to aviation and energy — two areas under severe pressure. Combined shock to aviation (collapsing travel) and energy (oil crash). Balance-sheet sensitivity. Confidence: High.
+GD Mar9: No major negative company-specific headline. Meaningful business-jet exposure through Gulfstream vulnerable to sudden stop in travel/corporate spending. Broad COVID/recession selloff. Confidence: Medium.
+HON Mar9: Honeywell said Mar 10 it was reaffirming Q1 and full-year forecasts. No company-specific negative warning before Mar 9. Broad market selloff hitting cyclical industrials. Aerospace, manufacturing, energy exposure. Confidence: High.
+EMR Mar9: No discrete Emerson-specific negative release. Highly exposed to oil, gas, process automation, industrial capex — exactly areas oil-price collapse threatened most. 19% drop one of clearest oil-beta reactions. Confidence: High.
+FDX Mar9: No fresh FedEx-specific negative. Directly exposed to global trade/transport disruption. Reuters later suspended FedEx FY2020 outlook citing "significant impact" of coronavirus. Anticipation of severe global shipping disruption. Confidence: Medium-High.
+CRM Mar9: No material Salesforce-specific negative. Broad risk-off in high-multiple software. Concern enterprise deal cycles and sales execution could slow. Confidence: Medium.
+CSCO Mar9: Had already withdrawn from Mobile World Congress over coronavirus. Broad tech selloff plus COVID-related concerns about networking demand. Enterprise and carrier spending freeze fears. Confidence: High.
+CVS Mar9: CVS announced Mar 6 COVID-19 resources for Aetna members including no-copay diagnostic testing and telemedicine. Operationally supportive but signaled pandemic-related cost/utilization uncertainty. Broad market decline. Confidence: Medium.
+COST Mar9: Reuters Mar 14 described widespread panic buying at Costco. Demand surge was positive for sales but came with supply-chain strain. Broad market liquidation. Small 3.0% drop — much less than market. Confidence: High.
+DE Mar9: STOCK-SPECIFIC context. Deere warned with Feb 21 earnings that coronavirus would hit Q2 sales and earnings. Existing company-specific warning plus Crash Monday recession fears. Confidence: High.
+DHR Mar9: No clear negative Danaher-specific headline. Cytiva acquisition still pending (closed Mar 31). Broad market and healthcare/industrial de-risking. Smaller drawdown relative to heavy cyclicals. Confidence: Medium.
+DIS Mar9: Businesses directly exposed — theme parks, cruises, box office, mass gatherings. China disruption already hurting film releases. Within days would close major U.S. parks. COVID threat to parks, theatrical, travel/leisure. Confidence: High.
+DUK Mar9: No meaningful Duke-specific negative. Broad market selloff. Utilities safer than cyclicals but still fell in circuit-breaker session. Confidence: Medium-High.
+CVX Mar9: SECTOR-SPECIFIC. Oil prices biggest daily rout since 1991 Gulf War. Saudi-Russia price war. Crude down ~25%, intraday declines as large as ~33%. Direct hit from oil price war. Confidence: Very High.
+NOW Mar11: No material ServiceNow-specific negative. WHO pandemic declaration, Trump European travel restrictions. De-rating of high-multiple software. Enterprise IT spending and deal timing fears. Confidence: Medium.
+MRK Mar11: No significant Merck-specific negative catalyst. Broad market/pandemic selloff. Modest defensive outperformance — pharma seen as safer. Relatively small 3.4% decline. Confidence: High.
+NFLX Mar11: No company-specific negative. Marketwide pandemic shock. Stay-at-home winner thesis not yet fully embraced. Production disruption risk existed. Fell less than market. Confidence: High.

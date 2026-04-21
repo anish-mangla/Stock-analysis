@@ -1,0 +1,25 @@
+BATCH 006 — 2020-02-25 (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: CDC warned U.S. spread inevitable. Stocks/oil/yields all fell sharply. Continuation of Feb 24 selloff.
+
+MA: STOCK-SPECIFIC. Feb 24 warned Q1 net revenue 2-3pp hit from COVID. Growth now 9-10% vs prior trajectory. Cross-border spending weakened. Confidence: High.
+LOW: No stock-specific catalyst. Broad cyclical/consumer selloff. Confidence: Low-Medium.
+JPM: No stock-specific catalyst. Yield collapse and recession fears. Fed cuts being priced (~50bps by year-end). Confidence: Medium.
+LIN: No stock-specific catalyst. Global industrial-growth scare. Confidence: Medium-Low.
+ISRG: No fresh stock-specific item. Early repricing of elective-procedure risk after CDC warning. Confidence: Medium-Low.
+INTC: MWC pullout/cancellation as supporting signal. Semiconductor/tech selloff. Confidence: Medium.
+IBM: No stock-specific catalyst. Broad tech/enterprise spending repricing. Confidence: Low-Medium.
+LMT: No stock-specific catalyst. Broad market liquidation. Less commercial-aero exposure than RTX. Confidence: Low.
+NVDA: No fresh stock-specific catalyst. MWC cancellation + semiconductor sector selloff. Confidence: Medium.
+XOM: Oil fell hard again. Reuters: China increasing fuel exports because domestic demand slumped. Confidence: High.
+QCOM: MWC cancellation mattered (major mobile industry venue). Smartphone/telecom ecosystem disruption. Confidence: Medium-High.
+RTX: No fresh headline but commercial-aerospace exposure through UTC (Pratt & Whitney, Collins). Confidence: Medium.
+SCHW: No stock-specific headline. Most rate-sensitive financial. Treasury yields hit record lows. Confidence: High.
+SPG: No stock-specific release. Mall REIT foot-traffic/tourism risk from COVID. Confidence: Medium-High.
+TMO: No stock-specific catalyst. Despite developing COVID tests. Broad healthcare/life-science tools selloff. Confidence: Low-Medium.
+TSLA: STOCK-SPECIFIC context. Reuters: Tesla warned Shanghai Model 3 ramp delayed 1-1.5 weeks. Feb China car sales plunged ~80%. Confidence: Medium-High.
+UBER: No stock-specific headline. Travel/mobility demand shock. Airport rides, urban activity. Confidence: Medium.
+UNH: No stock-specific catalyst. CDC U.S. spread warning. Healthcare utilization/cost uncertainty. Confidence: Low-Medium.
+UNP: Reuters Feb 6: China outbreak disrupting global container shipping. Freight volume fears. Confidence: Medium.
+UPS: Reuters: China outbreak throwing container-shipping "out of sync." Global logistics disruption. Confidence: Medium.

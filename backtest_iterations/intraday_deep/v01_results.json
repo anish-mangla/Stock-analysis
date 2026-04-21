@@ -1,8 +1,8 @@
 {
-  "events_analyzed": 7503,
-  "observations": 2828884,
+  "total_events": 1113,
+  "total_observations": 2828884,
   "best_minute": 297,
-  "best_minute_pct": -0.129,
-  "close_pct": -0.061,
-  "potential_savings_pct": 0.068
+  "best_minute_avg": -0.0012895087368962894,
+  "close_avg": -0.0006137233344836497,
+  "potential_savings_pct": 0.06757854024126397
 }

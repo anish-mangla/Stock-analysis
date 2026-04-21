@@ -1,0 +1,25 @@
+BATCH 012 — 2020-02-27 continued (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: Dow -1,191 pts. S&P entered correction territory. Treasury yields record lows. Oil 13-month lows. Brent $52.18, WTI $47.09.
+
+AAPL: STOCK-SPECIFIC. Feb 18 warned would miss March-quarter revenue guidance. Feb 26 Reuters: Foxconn delayed reopening, only ~50% Chinese production by end-Feb. Confidence: High.
+AVGO: No stock-specific release. Semi sector derating. China/handset exposure. Later said Q1 no material COVID impact but visibility poor. Confidence: Medium.
+COP: No stock-specific news. Oil collapse: Brent $52.18, WTI $47.09, lowest in 13 months. Confidence: High.
+ACN: No stock-specific catalyst. Later cut FY2020 revenue growth to 3-6% from 6-8% on March 19. Anticipatory. Confidence: Medium.
+CRM: POSITIVE earnings Feb 25: Q4 rev $4.85B (+35% YoY), raised FY21 guidance to $21.0-21.1B. Drop was market-led not company-specific. Confidence: High.
+HON: No stock-specific catalyst. Industrial/aerospace cyclical selloff. Later reaffirmed outlook March 10. Confidence: Medium.
+HD: POSITIVE earnings Feb 25: EPS $2.28 vs $2.10 expected. Raised dividend 10%. Drop was market overwhelming good report. Confidence: High.
+GS: No operational negative. Goldman itself cut 2020 US earnings growth forecast to zero on Feb 27. Bank sector selloff. Confidence: Medium-High.
+GOOGL: No stock-specific catalyst. Digital-ad exposure repricing. Travel/entertainment advertisers expected to pull back. Confidence: Medium.
+GOOG: Same as GOOGL. Confidence: Medium.
+GE: No specific headline. Aviation-heavy profit mix. Extremely exposed to air travel demand collapse. Confidence: Medium.
+GD: No stock-specific catalyst. Gulfstream business-jet demand concerns. Confidence: Low-Medium.
+FDX: No stock-specific release. Later suspended 2020 profit outlook March 17. Global trade/air freight fears. Confidence: Medium.
+EMR: No stock-specific catalyst. Industrial capex/manufacturing slowdown fears. Confidence: Low-Medium.
+DIS: STOCK-SPECIFIC context. Shanghai Disney and Hong Kong Disneyland already shut in late January. Park/travel/film disruption. Confidence: High.
+DUK: No stock-specific catalyst. General market liquidation even in defensives. Confidence: Low.
+DE: No fresh headline but had just issued 2020 guidance. Later withdrew it March 23. Cyclical ag/construction fears. Confidence: Medium.
+CVX: No stock-specific catalyst. Oil collapse: Brent $52.18, WTI $47.09. Confidence: High.
+CVS: No stock-specific catalyst. Broad market selloff. Emerging store-level outbreak pressure. Confidence: Low-Medium.
+CSCO: No stock-specific release. Had withdrawn from MWC. Enterprise tech hardware/networking derating. Confidence: Medium.

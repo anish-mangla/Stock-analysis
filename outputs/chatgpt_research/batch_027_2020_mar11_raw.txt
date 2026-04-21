@@ -1,0 +1,25 @@
+BATCH 027 — 2020-03-11 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 11 WHO declared COVID-19 pandemic. Trump announced 30-day European travel ban. NBA suspended season. Dow entered bear market.
+
+INTC Mar11: No material Intel-specific announcement. Macro tech selloff tied to COVID supply-chain/demand fears. Apple earlier supply warning read-through for semis. 10-year briefly ~0.318% on Mar 9. Confidence: Medium.
+CAT Mar11: No CAT-specific announcement. Global recession fears hitting cyclicals. Energy capex pressure after crude ~25% plunge on Mar 9. Construction, mining, energy spending exposure. Confidence: Medium.
+C Mar11: No Citi-specific corporate announcement. Bank-sector repricing on lower rates plus expected credit losses. 10-year crashed toward 0.318%. Sector move first not Citi-specific. Confidence: Medium-High.
+BRK-B Mar11: No Berkshire corporate announcement. Large exposure to economically sensitive holdings — financials and airlines under intense pressure. Mark-to-market fear around portfolio. Confidence: Medium.
+BLK Mar11: No BlackRock-specific negative. Extreme market volatility threatened AUM levels and fee revenue. Expected AUM and fee pressure from market turmoil. Confidence: Medium.
+BKNG Mar11: STOCK-SPECIFIC. Booking withdrew Q1 2020 guidance on Mar 9 due to worsening COVID travel demand. IATA warned Mar 5 airlines could lose $63B-$113B passenger revenue. Confidence: High.
+BK Mar11: No BNY Mellon-specific announcement. Rates/recession-driven financials selloff. Fee pressure on lower asset values and lower net interest revenue. Confidence: Medium-High.
+BAC Mar11: No fresh Bank of America-specific announcement. Treasury yield collapse, oil-shock recession fears. Lower rates and expected credit deterioration. Milder than Citi. Confidence: Medium-High.
+BA Mar11: STOCK-SPECIFIC. Boeing said Mar 11 freezing new hiring and most overtime to preserve cash. COVID compounded 737 MAX damage. IATA warned $63B-$113B airline revenue loss. Confidence: Very High.
+CL Mar11: No Colgate-specific negative. Broad equity de-risking. Supply-chain uncertainty. Smaller drop than cyclicals — defensive staples profile. Confidence: Medium.
+AXP Mar11: No AXP corporate release. IATA warned Mar 5 of $63B-$113B airline revenue hit. Expected collapse in travel-and-entertainment card spending. Travel-payments hybrid move. Confidence: High.
+AMT Mar11: No meaningful American Tower-specific negative. Broad market liquidation. Temporary factor unwind. Concern tenant financing/global rollout could slow. Confidence: Low-Medium.
+AMGN Mar11: No major Amgen-specific negative. Broad March 11 risk-off after WHO pandemic declaration. Biotech/pharma basket selling despite relative defensiveness. Confidence: Medium.
+AMAT Mar11: No Applied Materials-specific negative. Semiconductor capital-equipment selloff on COVID uncertainty. Apple earlier warning primed market. Fabs could delay deliveries and capex. Confidence: Medium.
+ADBE Mar11: No fresh Adobe-specific negative. Due to report earnings Mar 12. Pre-earnings derisking inside marketwide growth-stock selloff. Concern business spending would slow. Confidence: Medium.
+ACN Mar11: No Accenture-specific release. Later warned Mar 19 coronavirus would pressure quarterly revenue. Expected slowdown in consulting/discretionary client spending. Market front-running real earnings headwind. Confidence: Medium.
+ABT Mar11: No Abbott-specific negative. EUA for molecular COVID test not until Mar 18. Broad market liquidation. Relatively modest decline — more defensive. Confidence: Medium.
+ABBV Mar11: No meaningful AbbVie-specific negative. Allergan acquisition still pending. Marketwide selling. General risk-off and merger-arbitrage/financing sensitivity. Confidence: Low-Medium.
+AAPL Mar11: STOCK-SPECIFIC context. Already warned Feb 18 would miss March-quarter revenue guidance. Tim Cook allowed most staff to work from home. Ongoing fallout from virus-related supply-and-demand warning. Supply chains recovering more slowly than hoped. Confidence: High.
+AMZN Mar11: No materially negative Amazon-specific announcement. Broad mega-cap tech selloff. Uncertainty around logistics/labor disruption vs higher e-commerce demand. Both positives and negatives from COVID. Confidence: Medium.

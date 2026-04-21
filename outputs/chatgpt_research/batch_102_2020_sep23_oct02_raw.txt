@@ -1,0 +1,25 @@
+BATCH 102 — 2020-09-23 to 2020-10-02 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-20
+Market context: Sept 23 continued September tech correction with valuation unwind in megacap growth. Oil remained weak from Sept 21 plunge on COVID demand fears and Libyan supply. FinCEN Files continued pressuring banks. Sept 29 saw oil fall over 3% to two-week low on worsening COVID demand outlook. Oct 1 oil dropped about 3% on weak demand plus rising OPEC/Libya output. Oct 2 featured Trump positive COVID test and weaker-than-expected jobs report (661K vs expectations).
+
+GOOGL Sep23: No clear Alphabet-specific announcement in prior 3 days. Another leg of September tech correction with investors rotating out of richly valued megacap growth. Election and stimulus uncertainty. Confidence: Medium-low.
+COP Sep23: Oil dropped about 5% on Sept 21 as rising COVID cases hurt demand expectations and Libyan supply return threatened oversupply. By Sept 23 crude only stabilized modestly with Brent at $41.77 and WTI at $39.93. Confidence: High.
+DIS Sep23: No clean Disney-specific headline in prior 3 days. Parks business still heavily impaired by COVID with Disneyland still shut and reopening uncertainty. Reopening/travel/leisure risk-off. Confidence: Medium-low.
+AAPL Sep23: No decisive Apple-specific announcement in prior 3 days. Caught in same September correction hitting biggest tech winners after extremely strong summer run. Megacap tech correction/valuation compression. Confidence: Medium.
+AMD Sep23: No clear AMD-specific negative headline in prior 3 days. Traded with semis/high-beta tech during September correction. Semiconductor/high-beta tech selloff. Confidence: Medium-low.
+AMZN Sep23: No strong Amazon-specific catalyst in prior 3 days. Broad selling in largest consumer-internet and cloud winners as Nasdaq correction extended. Megacap growth unwind. Confidence: Medium.
+BA Sep23: U.S. House report released Sept 16 said both Boeing and FAA were to blame for 737 MAX crashes. Remained live overhang into Sept 23. 737 MAX regulatory/safety overhang. General cyclical/travel weakness. Confidence: Medium-high.
+ADBE Sep23: No new Adobe-specific negative headline in prior 3 days. Drop fits broader software/growth retreat. Software multiple compression. Confidence: Medium-low.
+GOOG Sep23: Same read as GOOGL. Broad megacap tech correction. Growth-stock de-risking and macro uncertainty. No obvious Google-specific trigger. Confidence: Medium-low.
+CRM Sep23: No Salesforce-specific negative headline in prior 3 days. Traded with high-multiple software as investors cut exposure. Software-sector selloff. Confidence: Medium-low.
+CVX Sep23: Same oil backdrop as COP. Sept 21 crude sank about 5% on worsening demand and possible Libyan supply return. Sept 23 slight stabilization did not fix bearish setup. Confidence: High.
+C Sep23: Reuters reported Sept 20/21 FinCEN Files showed banks had moved illicit funds despite prior warnings creating industry-wide AML/compliance overhang. Citi not main headline name but revelations hit bank sentiment broadly. Confidence: Medium-high.
+BA Sep24: Still same 737 MAX overhang. No stronger new Boeing-specific negative catalyst on Sept 21-24 than continuing fallout from House report and regulatory uncertainty. Ongoing MAX recertification/regulatory risk. Confidence: Medium.
+COP Sep29: Reuters reported oil fell over 3% to two-week low on Sept 29 as rising COVID cases worsened fuel-demand outlook. Major trading houses forecast only tepid oil-demand recovery and flat prices. Confidence: High.
+XOM Oct01: Reuters reported Oct 1 oil fell about 3% on weak demand outlook higher OPEC output and Libya lifting production to 270000 bpd. Oil-price drop from demand weakness plus rising supply. Confidence: High.
+LRCX Oct02: No Lam-specific negative headline in prior 3 days. Market sold off on Trump positive COVID test and weaker-than-expected jobs report showing only 661000 jobs. Macro-led semiconductor selloff. Confidence: Medium.
+QCOM Oct02: No convincing Qualcomm-specific catalyst in prior 3 days. Traded with semis/high-beta tech during Oct 2 risk-off session. Trump COVID diagnosis and soft payrolls data. Confidence: Medium-low.
+NVDA Oct02: Nvidia $40B Arm deal announced Sept 13-14 had triggered industry and geopolitical backlash with opposition from rivals and scrutiny risk in China. Oct 2 that existing deal risk met macro tech selloff from Trump COVID diagnosis and weak jobs. Confidence: Medium-high.
+NFLX Oct02: No Netflix-specific negative headline in prior 3 days. Same Oct 2 risk-off trade hitting large-cap tech and stay-at-home winners. Trump COVID test and disappointing payroll growth. Confidence: Medium-low.
+INTU Oct02: No new Intuit-specific negative headline in prior 3 days. Credit Karma deal still pending regulatory review but no sharp event in window. Macro/software selloff from Trump COVID diagnosis and weak jobs. Confidence: Medium-low.

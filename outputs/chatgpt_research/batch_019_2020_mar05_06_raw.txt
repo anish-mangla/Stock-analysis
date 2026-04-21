@@ -1,0 +1,25 @@
+BATCH 019 — 2020-03-05 to 2020-03-06 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 5 Dow fell ~970 points, S&P 500 back into correction, 10-year yield record low ~0.899%. Mar 6 Russia refused to back deeper OPEC+ cuts blowing up hopes for coordinated support. S&P banks index down 4.7% on Mar 6. China passenger-car sales had plunged ~92% in early February.
+
+COP Mar5: No COP-specific headline. Falling crude expectations tied to COVID demand shock and OPEC+/Russia uncertainty. Wood Mackenzie estimated global oil demand could fall ~2.7M bpd YoY. OPEC considering additional 1.5M bpd cut, Russia cooperation uncertain. Confidence: High.
+DIS Mar5: No new Disney-specific press release. Travel/leisure sentiment deteriorated sharply, Flybe collapsed Mar 5. COVID-driven fear of hit to parks cruises theatrical releases and ESPN ad demand. Exposure trade not Disney-specific event. Confidence: Medium-High.
+GM Mar6: No fresh GM-specific filing. China passenger-car sales plunged ~92% in early February. COVID-related global auto demand/supply-chain fears. Highly cyclical manufacturer with big fixed costs and international exposure. Confidence: Medium.
+WFC Mar6: Emergency Fed 50bp cut Mar 3, 10-year yield broke below 1% for first time. Reuters: financials hit hard, S&P banks index down 4.7% on Mar 6. Yield collapse compressing NIM expectations. No Wells-specific headline. Confidence: High.
+USB Mar6: Same banking backdrop. Emergency Fed cut, historic Treasury rally. Lower-rate/flatter-curve pressure on bank earnings. Classic regional-bank NIM move. Confidence: High.
+NOW Mar6: No ServiceNow-specific announcement. Broad growth/software multiple compression during coronavirus selloff. No company-specific negative catalyst found. Confidence: Medium.
+MU Mar6: No fresh Micron filing. Semiconductor-cycle and end-demand fears tied to COVID. Memory pricing, electronics demand, global supply chains all under pressure. Confidence: Medium.
+LIN Mar6: No Linde-specific negative news. Had been hitting record highs in mid-Feb on upbeat growth commentary. Macro industrial slowdown fears from COVID. Tied to industrial production, manufacturing, energy, healthcare demand. Confidence: Medium.
+JPM Mar6: Emergency Fed cut, 10-year below 1%, Reuters: financials hit hard, S&P banks index down 4.7%. Yield collapse after emergency Fed action. No JPM-specific bombshell. Confidence: High.
+INTU Mar6: No meaningful Intuit-specific headline. Broad software/growth multiple compression in risk-off trading. Indiscriminate cutting of premium-multiple tech/software names. Confidence: Medium.
+GE Mar6: No GE-specific filing but aviation business especially vulnerable. Global air travel demand collapsing. Reuters later described GE Aviation under pressure as pandemic hammered air travel and aircraft production. Drop larger than many industrial peers. Confidence: Medium-High.
+XOM Mar6: Same oil backdrop as COP. Falling demand expectations and OPEC+/Russia agreement uncertain. OPEC+ debating additional 1.5M bpd cut while demand estimates collapsing. Before full Saudi-Russia price war erupted after close Mar 6. Confidence: High.
+CRM Mar6: No new Salesforce-specific development. Broad software multiple compression and macro uncertainty. Risk-off selling in software and growth equities. Confidence: Medium.
+COP Mar6: SECTOR-SPECIFIC. Mar 6 Russia refused to back deeper OPEC+ cuts. Breakdown of OPEC+/Russia talks. With demand already weakening sharply, collapse of cooperation made crude outlook materially worse. Confidence: High.
+COF Mar6: No Capital One-specific headline. Consumer-credit and recession fears plus lower-rate pressure. Pricing lower funding spreads and possible deterioration in card/consumer loan credit. Confidence: Medium-High.
+C Mar6: Same large-bank backdrop. Emergency Fed cut, sub-1% 10-year, bank-index weakness. Rate/yield collapse hurting bank earnings outlook. No new Citi-only event. Confidence: High.
+BLK Mar6: No BlackRock-specific negative release. Renewed sharp equity selloff pressuring AUM-sensitive asset managers through market depreciation and risk-off flows. Confidence: Medium.
+BK Mar6: No BNY Mellon-specific catalyst. Financial-sector downdraft from collapsing yields, recession fears. Less pure-credit-sensitive but still exposed to lower rates and weaker market activity. Confidence: Medium.
+BAC Mar6: Emergency Fed cut Mar 3, record-low Treasury yields by Mar 6. Reuters: long-dated yield declines hammering financials. NIM compression from falling yields. No BAC-specific headline. Confidence: High.
+ADBE Mar6: No fresh Adobe-specific catalyst. Broad software/growth multiple compression as coronavirus fears intensified. Classic early-COVID de-rating of premium software. Confidence: Medium.

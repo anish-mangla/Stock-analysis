@@ -1,0 +1,6090 @@
+# Event Labeling Workflow Tracker
+
+## What This Is
+We are labeling 7,495 stock drop events with news research to build a rich dataset.
+For each event (a stock that dropped 3%+ in a single day), we want to know WHY it dropped.
+The human copies a prompt into ChatGPT, gets research back, pastes it to Kiro.
+Kiro classifies each event, saves the raw response and structured CSV, then updates this file.
+
+## The Process
+1. Kiro reads this file, finds the next unchecked batch
+2. Kiro verbally gives the human the prompt with those events
+3. Human pastes prompt into ChatGPT, gets response, pastes it back to Kiro
+4. Kiro saves raw response to `outputs/chatgpt_research/batch_NNN_raw.txt`
+5. Kiro classifies events into `outputs/stock_level_labels_v2/batch_NNN_classified.csv`
+6. Kiro checks off the batch in this file and gives the next prompt
+
+## The Prompt Template
+Use this template, replacing [EVENTS] with the numbered list from the batch:
+
+"You are a financial research analyst. For each stock below, search the web and tell me what happened on or in the 3 days before the drop. I need: (1) Every piece of relevant news, (2) The most likely PRIMARY cause, (3) Any SECONDARY factors, (4) A 2-3 sentence detailed description with specific numbers, (5) Your confidence level. Do NOT be lazy. Do NOT default to broad market selloff without first exhausting stock-specific explanations."
+
+Then list the events like: "1. AAPL — Jan 31, 2020 — dropped 4.4%"
+
+## CSV Schema
+ticker, event_date, drop_pct, stock_event_type, stock_event_severity, classification_confidence, primary_cause, secondary_factors, company_specific_factor, earnings_beat_miss, guidance_direction, store_description
+
+## Event Types
+1. earnings_miss — reported numbers below expectations
+2. guidance_cut — company lowered its own future forecast
+3. demand_weakness — signs that customers are buying less
+4. product_service_failure — recall, outage, safety issue
+5. competitive_threat — a rival did something that hurts them
+6. regulatory_legal — lawsuit, fine, government action
+7. management_governance — CEO fired, scandal, board fight
+8. capital_structure — debt problems, dilution, credit downgrade
+9. analyst_downgrade — Wall Street cut their rating
+10. macro_sensitivity — stock dropped because sensitive to rates/oil/etc
+11. no_clear_catalyst — dropped but no specific reason found
+
+## Severity: low / medium / high
+
+---
+
+## Batch Checklist
+
+- [x] **Batch 1** (20 events, 2020-01-31 to 2020-01-31)
+
+- [x] **Batch 2** (20 events, 2020-02-04 to 2020-02-24)
+
+- [x] **Batch 3** (20 events, 2020-02-24 to 2020-02-24)
+
+- [x] **Batch 4** (20 events, 2020-02-24 to 2020-02-24)
+
+- [x] **Batch 5** (20 events, 2020-02-24 to 2020-02-25)
+
+- [x] **Batch 6** (20 events, 2020-02-25 to 2020-02-25)
+
+- [x] **Batch 7** (20 events, 2020-02-25 to 2020-02-25)
+
+- [x] **Batch 8** (20 events, 2020-02-25 to 2020-02-26)
+
+- [x] **Batch 9** (20 events, 2020-02-27 to 2020-02-27)
+
+- [x] **Batch 10** (20 events, 2020-02-27 to 2020-02-27)
+
+- [x] **Batch 11** (20 events, 2020-02-27 to 2020-02-27)
+
+- [x] **Batch 12** (20 events, 2020-02-27 to 2020-02-27)
+
+- [x] **Batch 13** (20 events, 2020-02-27 to 2020-02-28)
+
+- [x] **Batch 14** (20 events, 2020-03-02 to 2020-03-03) ✅
+
+- [x] **Batch 15** (20 events, 2020-03-03 to 2020-03-03) ✅
+
+- [x] **Batch 16** (20 events, 2020-03-03 to 2020-03-05) ✅
+
+- [x] **Batch 17** (20 events, 2020-03-05 to 2020-03-05) ✅
+
+- [x] **Batch 18** (20 events, 2020-03-05 to 2020-03-05) ✅
+
+- [x] **Batch 19** (20 events, 2020-03-05 to 2020-03-06) ✅
+
+- [x] **Batch 20** (20 events, 2020-03-06 to 2020-03-09) ✅
+
+- [x] **Batch 21** (20 events, 2020-03-09 to 2020-03-09) ✅
+
+- [x] **Batch 22** (20 events, 2020-03-09 to 2020-03-09) ✅
+
+- [x] **Batch 23** (20 events, 2020-03-09 to 2020-03-09) ✅
+
+- [x] **Batch 24** (20 events, 2020-03-09 to 2020-03-11) ✅
+
+- [x] **Batch 25** (20 events, 2020-03-11 to 2020-03-11) ✅
+
+- [x] **Batch 26** (20 events, 2020-03-11 to 2020-03-11) ✅
+
+- [x] **Batch 27** (20 events, 2020-03-11 to 2020-03-11) ✅
+
+- [x] **Batch 28** (20 events, 2020-03-11 to 2020-03-11) ✅
+
+- [x] **Batch 29** (20 events, 2020-03-11 to 2020-03-12) ✅
+
+- [x] **Batch 30** (20 events, 2020-03-12 to 2020-03-12) ✅
+
+- [x] **Batch 31** (20 events, 2020-03-12 to 2020-03-12) ✅
+
+- [x] **Batch 32** (20 events, 2020-03-12 to 2020-03-12) ✅
+
+- [x] **Batch 33** (20 events, 2020-03-12 to 2020-03-16) ✅
+
+- [x] **Batch 34** (20 events, 2020-03-16 to 2020-03-16) ✅
+
+- [x] **Batch 35** (20 events, 2020-03-16 to 2020-03-16) ✅
+
+- [x] **Batch 36** (20 events, 2020-03-16 to 2020-03-16) ✅
+
+- [x] **Batch 37** (20 events, 2020-03-16 to 2020-03-16) ✅
+
+- [x] **Batch 38** (20 events, 2020-03-16 to 2020-03-17) ✅
+
+- [x] **Batch 39** (20 events, 2020-03-17 to 2020-03-18) ✅
+
+- [x] **Batch 40** (20 events, 2020-03-18 to 2020-03-18) ✅
+
+- [x] **Batch 41** (20 events, 2020-03-18 to 2020-03-18) ✅
+
+- [x] **Batch 42** (20 events, 2020-03-18 to 2020-03-19) ✅
+
+- [x] **Batch 43** (20 events, 2020-03-19 to 2020-03-20) ✅
+
+- [x] **Batch 44** (20 events, 2020-03-20 to 2020-03-20) ✅
+
+- [x] **Batch 45** (20 events, 2020-03-20 to 2020-03-20) ✅
+
+- [x] **Batch 46** (20 events, 2020-03-20 to 2020-03-23) ✅
+
+- [x] **Batch 47** (20 events, 2020-03-23 to 2020-03-23) ✅
+
+- [x] **Batch 48** (20 events, 2020-03-23 to 2020-03-23) ✅
+
+- [x] **Batch 49** (20 events, 2020-03-23 to 2020-03-27) ✅
+
+- [x] **Batch 50** (20 events, 2020-03-27 to 2020-03-27) ✅
+
+- [x] **Batch 51** (20 events, 2020-03-27 to 2020-03-27) ✅
+
+- [x] **Batch 52** (20 events, 2020-03-27 to 2020-03-31) ✅
+
+- [x] **Batch 53** (20 events, 2020-03-31 to 2020-04-01) ✅
+
+- [x] **Batch 54** (20 events, 2020-04-01 to 2020-04-01) ✅
+
+- [x] **Batch 55** (20 events, 2020-04-01 to 2020-04-01) ✅
+
+- [x] **Batch 56** (20 events, 2020-04-01 to 2020-04-01) ✅
+
+- [x] **Batch 57** (20 events, 2020-04-01 to 2020-04-03) ✅
+
+- [x] **Batch 58** (20 events, 2020-04-03 to 2020-04-03) ✅
+
+- [x] **Batch 59** (20 events, 2020-04-03 to 2020-04-13) ✅
+
+- [x] **Batch 60** (20 events, 2020-04-13 to 2020-04-15) ✅
+
+- [x] **Batch 61** (20 events, 2020-04-15 to 2020-04-15) ✅
+
+- [x] **Batch 62** (20 events, 2020-04-15 to 2020-04-16) ✅
+
+- [x] **Batch 63** (20 events, 2020-04-16 to 2020-04-20) ✅
+
+- [x] **Batch 64** (20 events, 2020-04-20 to 2020-04-21) ✅
+
+- [x] **Batch 65** (20 events, 2020-04-21 to 2020-04-21) ✅
+
+- [x] **Batch 66** (20 events, 2020-04-21 to 2020-04-21) ✅
+
+- [x] **Batch 67** (20 events, 2020-04-21 to 2020-04-28) ✅
+
+- [x] **Batch 68** (20 events, 2020-04-28 to 2020-04-30) ✅
+
+- [x] **Batch 69** (20 events, 2020-04-30 to 2020-05-01) ✅
+
+- [x] **Batch 70** (20 events, 2020-05-01 to 2020-05-01) ✅
+
+- [x] **Batch 71** (20 events, 2020-05-01 to 2020-05-05) ✅
+
+- [x] **Batch 72** (20 events, 2020-05-05 to 2020-05-11) ✅
+
+- [x] **Batch 73** (20 events, 2020-05-11 to 2020-05-12) ✅
+
+- [x] **Batch 74** (20 events, 2020-05-12 to 2020-05-13) ✅
+
+- [x] **Batch 75** (20 events, 2020-05-13 to 2020-05-19) ✅
+
+- [x] **Batch 76** (20 events, 2020-05-19 to 2020-05-26) ✅
+
+- [x] **Batch 77** (20 events, 2020-05-26 to 2020-05-29) ✅
+
+- [x] **Batch 78** (20 events, 2020-05-29 to 2020-06-10) ✅
+
+- [x] **Batch 79** (20 events, 2020-06-10 to 2020-06-11) ✅
+
+- [x] **Batch 80** (20 events, 2020-06-11 to 2020-06-11) ✅
+
+- [x] **Batch 81** (20 events, 2020-06-11 to 2020-06-11) ✅
+
+- [x] **Batch 82** (20 events, 2020-06-11 to 2020-06-11) ✅
+
+- [x] **Batch 83** (20 events, 2020-06-11 to 2020-06-11) ✅
+
+- [x] **Batch 84** (20 events, 2020-06-11 to 2020-06-19) ✅
+
+- [x] **Batch 85** (20 events, 2020-06-24 to 2020-06-24) ✅
+
+- [x] **Batch 86** (20 events, 2020-06-24 to 2020-06-26) ✅
+
+- [x] **Batch 87** (20 events, 2020-06-26 to 2020-06-26) ✅
+
+- [x] **Batch 88** (20 events, 2020-06-26 to 2020-07-07) ✅
+
+- [x] **Batch 89** (20 events, 2020-07-07 to 2020-07-13) ✅
+
+- [x] **Batch 90** (20 events, 2020-07-13 to 2020-07-17) ✅
+
+- [x] **Batch 91** (20 events, 2020-07-17 to 2020-07-28) ✅
+
+- [x] **Batch 92** (20 events, 2020-07-28 to 2020-07-31) ✅
+
+- [x] **Batch 93** (20 events, 2020-08-06 to 2020-08-20) ✅
+
+- [x] **Batch 94** (20 events, 2020-08-20 to 2020-09-03) ✅
+
+- [x] **Batch 95** (20 events, 2020-09-03 to 2020-09-03) ✅
+
+- [x] **Batch 96** (20 events, 2020-09-03 to 2020-09-04) ✅
+
+- [x] **Batch 97** (20 events, 2020-09-04 to 2020-09-08) ✅
+
+- [x] **Batch 98** (20 events, 2020-09-08 to 2020-09-10) ✅
+
+- [x] **Batch 99** (20 events, 2020-09-10 to 2020-09-17) ✅
+
+- [x] **Batch 100** (20 events, 2020-09-17 to 2020-09-21) ✅
+
+- [x] **Batch 101** (20 events, 2020-09-21 to 2020-09-23) ✅
+
+- [x] **Batch 102** (20 events, 2020-09-23 to 2020-10-02) ✅
+
+- [x] **Batch 103** (20 events, 2020-10-02 to 2020-10-14) ✅
+
+- [x] **Batch 104** (20 events, 2020-10-14 to 2020-10-26) ✅
+
+- [x] **Batch 105** (20 events, 2020-10-26 to 2020-10-27) ✅
+
+- [x] **Batch 106** (20 events, 2020-10-27 to 2020-10-28) ✅
+
+- [x] **Batch 107** (20 events, 2020-10-28 to 2020-10-28) ✅
+
+- [x] **Batch 108** (20 events, 2020-10-28 to 2020-10-28) ✅
+
+- [x] **Batch 109** (20 events, 2020-10-28 to 2020-11-04) ✅
+
+- [x] **Batch 110** (20 events, 2020-11-04 to 2020-11-09) ✅
+
+- [ ] **Batch 111** (20 events, 2020-11-09 to 2020-11-10)
+  - 1. DHR — 2020-11-09 — dropped 4.8%
+  - 2. COST — 2020-11-09 — dropped 5.4%
+  - 3. AMZN — 2020-11-09 — dropped 5.1%
+  - 4. AMD — 2020-11-09 — dropped 3.2%
+  - 5. ABT — 2020-11-09 — dropped 4.4%
+  - 6. HD — 2020-11-09 — dropped 5.0%
+  - 7. TXN — 2020-11-10 — dropped 3.0%
+  - 8. TMO — 2020-11-10 — dropped 3.4%
+  - 9. PLTR — 2020-11-10 — dropped 4.6%
+  - 10. NVDA — 2020-11-10 — dropped 6.3%
+  - 11. NOW — 2020-11-10 — dropped 4.1%
+  - 12. MSFT — 2020-11-10 — dropped 3.4%
+  - 13. ISRG — 2020-11-10 — dropped 3.1%
+  - 14. CRM — 2020-11-10 — dropped 4.5%
+  - 15. DHR — 2020-11-10 — dropped 3.4%
+  - 16. BKNG — 2020-11-10 — dropped 5.2%
+  - 17. AVGO — 2020-11-10 — dropped 3.3%
+  - 18. AMZN — 2020-11-10 — dropped 3.5%
+  - 19. AMD — 2020-11-10 — dropped 6.2%
+  - 20. ADBE — 2020-11-10 — dropped 4.1%
+
+- [ ] **Batch 112** (20 events, 2020-11-10 to 2020-11-18)
+  - 1. INTU — 2020-11-10 — dropped 5.0%
+  - 2. SPG — 2020-11-11 — dropped 6.9%
+  - 3. RTX — 2020-11-11 — dropped 3.0%
+  - 4. MDT — 2020-11-11 — dropped 3.8%
+  - 5. BA — 2020-11-11 — dropped 3.5%
+  - 6. DIS — 2020-11-11 — dropped 3.0%
+  - 7. AXP — 2020-11-11 — dropped 4.2%
+  - 8. EMR — 2020-11-11 — dropped 3.3%
+  - 9. COP — 2020-11-12 — dropped 3.6%
+  - 10. DUK — 2020-11-12 — dropped 3.1%
+  - 11. GM — 2020-11-12 — dropped 3.1%
+  - 12. INTC — 2020-11-12 — dropped 3.0%
+  - 13. SCHW — 2020-11-12 — dropped 3.3%
+  - 14. SPG — 2020-11-12 — dropped 5.8%
+  - 15. XOM — 2020-11-12 — dropped 3.4%
+  - 16. PFE — 2020-11-16 — dropped 3.3%
+  - 17. BA — 2020-11-18 — dropped 3.2%
+  - 18. BMY — 2020-11-18 — dropped 3.6%
+  - 19. CVX — 2020-11-18 — dropped 3.2%
+  - 20. TMO — 2020-11-18 — dropped 5.2%
+
+- [ ] **Batch 113** (20 events, 2020-11-18 to 2020-12-09)
+  - 1. XOM — 2020-11-18 — dropped 3.8%
+  - 2. INTU — 2020-11-20 — dropped 3.8%
+  - 3. MA — 2020-11-20 — dropped 3.3%
+  - 4. PLTR — 2020-11-20 — dropped 4.4%
+  - 5. CRM — 2020-11-25 — dropped 5.4%
+  - 6. CVX — 2020-11-25 — dropped 3.6%
+  - 7. PLTR — 2020-11-27 — dropped 4.8%
+  - 8. CVX — 2020-11-30 — dropped 4.5%
+  - 9. MS — 2020-11-30 — dropped 3.1%
+  - 10. SPG — 2020-11-30 — dropped 3.5%
+  - 11. TSLA — 2020-11-30 — dropped 3.1%
+  - 12. WFC — 2020-11-30 — dropped 3.9%
+  - 13. XOM — 2020-11-30 — dropped 5.1%
+  - 14. PLTR — 2020-12-01 — dropped 5.3%
+  - 15. LIN — 2020-12-02 — dropped 3.1%
+  - 16. COP — 2020-12-07 — dropped 3.3%
+  - 17. INTC — 2020-12-07 — dropped 3.4%
+  - 18. SPG — 2020-12-07 — dropped 4.8%
+  - 19. TSLA — 2020-12-09 — dropped 7.0%
+  - 20. PLTR — 2020-12-09 — dropped 6.9%
+
+- [ ] **Batch 114** (20 events, 2020-12-09 to 2020-12-24)
+  - 1. NVDA — 2020-12-09 — dropped 3.1%
+  - 2. LRCX — 2020-12-09 — dropped 3.5%
+  - 3. CRM — 2020-12-09 — dropped 3.2%
+  - 4. AMD — 2020-12-09 — dropped 3.3%
+  - 5. NFLX — 2020-12-09 — dropped 3.7%
+  - 6. GM — 2020-12-10 — dropped 3.5%
+  - 7. UBER — 2020-12-11 — dropped 3.2%
+  - 8. CVX — 2020-12-14 — dropped 3.3%
+  - 9. DIS — 2020-12-14 — dropped 3.7%
+  - 10. MRK — 2020-12-14 — dropped 3.2%
+  - 11. PFE — 2020-12-14 — dropped 4.6%
+  - 12. XOM — 2020-12-14 — dropped 3.6%
+  - 13. SPG — 2020-12-18 — dropped 4.0%
+  - 14. PLTR — 2020-12-18 — dropped 4.6%
+  - 15. INTC — 2020-12-18 — dropped 6.3%
+  - 16. FDX — 2020-12-18 — dropped 5.7%
+  - 17. TSLA — 2020-12-21 — dropped 6.5%
+  - 18. C — 2020-12-22 — dropped 3.2%
+  - 19. COP — 2020-12-22 — dropped 3.0%
+  - 20. PLTR — 2020-12-24 — dropped 3.3%
+
+- [ ] **Batch 115** (20 events, 2020-12-29 to 2021-01-06)
+  - 1. PLTR — 2020-12-29 — dropped 3.8%
+  - 2. PLTR — 2020-12-31 — dropped 6.2%
+  - 3. UBER — 2020-12-31 — dropped 4.0%
+  - 4. SO — 2021-01-04 — dropped 3.4%
+  - 5. SBUX — 2021-01-04 — dropped 3.6%
+  - 6. RTX — 2021-01-04 — dropped 4.3%
+  - 7. NOW — 2021-01-04 — dropped 4.3%
+  - 8. NFLX — 2021-01-04 — dropped 3.3%
+  - 9. NEE — 2021-01-04 — dropped 3.8%
+  - 10. KO — 2021-01-04 — dropped 3.8%
+  - 11. GE — 2021-01-04 — dropped 3.1%
+  - 12. CMCSA — 2021-01-04 — dropped 3.6%
+  - 13. BA — 2021-01-04 — dropped 5.3%
+  - 14. AAPL — 2021-01-06 — dropped 3.4%
+  - 15. ADBE — 2021-01-06 — dropped 4.0%
+  - 16. KO — 2021-01-06 — dropped 3.2%
+  - 17. NFLX — 2021-01-06 — dropped 3.9%
+  - 18. NOW — 2021-01-06 — dropped 4.6%
+  - 19. NVDA — 2021-01-06 — dropped 5.9%
+  - 20. PLTR — 2021-01-06 — dropped 4.3%
+
+- [ ] **Batch 116** (20 events, 2021-01-08 to 2021-01-21)
+  - 1. UBER — 2021-01-08 — dropped 5.1%
+  - 2. AMT — 2021-01-11 — dropped 3.3%
+  - 3. META — 2021-01-11 — dropped 4.0%
+  - 4. SPG — 2021-01-11 — dropped 3.9%
+  - 5. ISRG — 2021-01-12 — dropped 3.1%
+  - 6. LLY — 2021-01-12 — dropped 3.8%
+  - 7. SO — 2021-01-12 — dropped 3.9%
+  - 8. TMUS — 2021-01-12 — dropped 3.2%
+  - 9. AMD — 2021-01-13 — dropped 3.8%
+  - 10. BLK — 2021-01-14 — dropped 4.6%
+  - 11. MA — 2021-01-14 — dropped 5.6%
+  - 12. UBER — 2021-01-14 — dropped 4.2%
+  - 13. V — 2021-01-14 — dropped 3.6%
+  - 14. XOM — 2021-01-15 — dropped 4.8%
+  - 15. GM — 2021-01-15 — dropped 3.0%
+  - 16. COP — 2021-01-15 — dropped 5.7%
+  - 17. C — 2021-01-15 — dropped 6.9%
+  - 18. CVX — 2021-01-15 — dropped 3.6%
+  - 19. USB — 2021-01-20 — dropped 5.2%
+  - 20. BMY — 2021-01-21 — dropped 3.1%
+
+- [ ] **Batch 117** (20 events, 2021-01-21 to 2021-01-27)
+  - 1. COP — 2021-01-21 — dropped 4.8%
+  - 2. CVX — 2021-01-21 — dropped 3.5%
+  - 3. UNP — 2021-01-21 — dropped 4.7%
+  - 4. ISRG — 2021-01-22 — dropped 6.8%
+  - 5. MU — 2021-01-22 — dropped 3.2%
+  - 6. AXP — 2021-01-25 — dropped 4.0%
+  - 7. GM — 2021-01-25 — dropped 3.6%
+  - 8. VZ — 2021-01-26 — dropped 3.2%
+  - 9. UNP — 2021-01-26 — dropped 3.1%
+  - 10. AXP — 2021-01-26 — dropped 4.1%
+  - 11. LMT — 2021-01-26 — dropped 3.7%
+  - 12. UBER — 2021-01-26 — dropped 4.4%
+  - 13. MA — 2021-01-27 — dropped 3.7%
+  - 14. MDT — 2021-01-27 — dropped 4.5%
+  - 15. META — 2021-01-27 — dropped 3.5%
+  - 16. MRK — 2021-01-27 — dropped 4.0%
+  - 17. MS — 2021-01-27 — dropped 3.9%
+  - 18. MU — 2021-01-27 — dropped 5.6%
+  - 19. NEE — 2021-01-27 — dropped 5.9%
+  - 20. NFLX — 2021-01-27 — dropped 6.9%
+
+- [ ] **Batch 118** (20 events, 2021-01-27 to 2021-01-27)
+  - 1. NKE — 2021-01-27 — dropped 3.0%
+  - 2. NVDA — 2021-01-27 — dropped 3.9%
+  - 3. PG — 2021-01-27 — dropped 3.5%
+  - 4. SBUX — 2021-01-27 — dropped 6.5%
+  - 5. SCHW — 2021-01-27 — dropped 5.2%
+  - 6. TMO — 2021-01-27 — dropped 5.0%
+  - 7. TMUS — 2021-01-27 — dropped 6.2%
+  - 8. TXN — 2021-01-27 — dropped 5.0%
+  - 9. USB — 2021-01-27 — dropped 5.3%
+  - 10. V — 2021-01-27 — dropped 3.5%
+  - 11. WFC — 2021-01-27 — dropped 3.9%
+  - 12. LRCX — 2021-01-27 — dropped 6.8%
+  - 13. QCOM — 2021-01-27 — dropped 5.5%
+  - 14. LOW — 2021-01-27 — dropped 3.4%
+  - 15. MCD — 2021-01-27 — dropped 3.9%
+  - 16. INTU — 2021-01-27 — dropped 3.1%
+  - 17. ABBV — 2021-01-27 — dropped 5.5%
+  - 18. ADBE — 2021-01-27 — dropped 3.4%
+  - 19. AMAT — 2021-01-27 — dropped 6.6%
+  - 20. AMD — 2021-01-27 — dropped 6.2%
+
+- [ ] **Batch 119** (20 events, 2021-01-27 to 2021-01-29)
+  - 1. AVGO — 2021-01-27 — dropped 4.1%
+  - 2. BAC — 2021-01-27 — dropped 3.6%
+  - 3. BK — 2021-01-27 — dropped 3.7%
+  - 4. BKNG — 2021-01-27 — dropped 4.9%
+  - 5. BLK — 2021-01-27 — dropped 3.3%
+  - 6. BMY — 2021-01-27 — dropped 3.8%
+  - 7. BA — 2021-01-27 — dropped 4.0%
+  - 8. CMCSA — 2021-01-27 — dropped 3.3%
+  - 9. DE — 2021-01-27 — dropped 5.2%
+  - 10. DHR — 2021-01-27 — dropped 5.0%
+  - 11. DIS — 2021-01-27 — dropped 3.9%
+  - 12. GM — 2021-01-27 — dropped 5.2%
+  - 13. GOOG — 2021-01-27 — dropped 4.5%
+  - 14. GOOGL — 2021-01-27 — dropped 4.7%
+  - 15. LIN — 2021-01-27 — dropped 5.1%
+  - 16. HD — 2021-01-27 — dropped 3.0%
+  - 17. CAT — 2021-01-27 — dropped 3.5%
+  - 18. TSLA — 2021-01-28 — dropped 3.3%
+  - 19. AAPL — 2021-01-28 — dropped 3.5%
+  - 20. WFC — 2021-01-29 — dropped 3.0%
+
+- [ ] **Batch 120** (20 events, 2021-01-29 to 2021-02-03)
+  - 1. TSLA — 2021-01-29 — dropped 5.0%
+  - 2. SPG — 2021-01-29 — dropped 4.7%
+  - 3. SCHW — 2021-01-29 — dropped 4.1%
+  - 4. MS — 2021-01-29 — dropped 3.3%
+  - 5. MO — 2021-01-29 — dropped 3.7%
+  - 6. MMM — 2021-01-29 — dropped 4.2%
+  - 7. LRCX — 2021-01-29 — dropped 4.6%
+  - 8. LOW — 2021-01-29 — dropped 3.2%
+  - 9. CMCSA — 2021-01-29 — dropped 3.9%
+  - 10. HON — 2021-01-29 — dropped 3.7%
+  - 11. GE — 2021-01-29 — dropped 3.7%
+  - 12. FDX — 2021-01-29 — dropped 3.1%
+  - 13. CVX — 2021-01-29 — dropped 4.3%
+  - 14. C — 2021-01-29 — dropped 3.9%
+  - 15. BKNG — 2021-01-29 — dropped 4.4%
+  - 16. AMAT — 2021-01-29 — dropped 4.4%
+  - 17. AAPL — 2021-01-29 — dropped 3.7%
+  - 18. JNJ — 2021-01-29 — dropped 3.6%
+  - 19. PLTR — 2021-02-01 — dropped 3.5%
+  - 20. TXN — 2021-02-03 — dropped 3.5%
+
+- [ ] **Batch 121** (20 events, 2021-02-03 to 2021-02-22)
+  - 1. TMO — 2021-02-03 — dropped 3.5%
+  - 2. MU — 2021-02-03 — dropped 3.1%
+  - 3. AMAT — 2021-02-03 — dropped 3.6%
+  - 4. TMUS — 2021-02-05 — dropped 4.1%
+  - 5. PLTR — 2021-02-10 — dropped 6.5%
+  - 6. TSLA — 2021-02-10 — dropped 5.3%
+  - 7. DUK — 2021-02-11 — dropped 3.5%
+  - 8. UBER — 2021-02-11 — dropped 3.9%
+  - 9. PLTR — 2021-02-12 — dropped 3.6%
+  - 10. CVS — 2021-02-16 — dropped 5.0%
+  - 11. GILD — 2021-02-16 — dropped 3.1%
+  - 12. WMT — 2021-02-18 — dropped 6.5%
+  - 13. DE — 2021-02-18 — dropped 3.8%
+  - 14. COP — 2021-02-18 — dropped 3.4%
+  - 15. BA — 2021-02-18 — dropped 3.3%
+  - 16. MDLZ — 2021-02-19 — dropped 3.2%
+  - 17. NEE — 2021-02-19 — dropped 3.3%
+  - 18. TMO — 2021-02-22 — dropped 3.3%
+  - 19. QCOM — 2021-02-22 — dropped 3.8%
+  - 20. PLTR — 2021-02-22 — dropped 3.4%
+
+- [ ] **Batch 122** (20 events, 2021-02-22 to 2021-02-25)
+  - 1. NVDA — 2021-02-22 — dropped 3.8%
+  - 2. NOW — 2021-02-22 — dropped 3.6%
+  - 3. NKE — 2021-02-22 — dropped 3.8%
+  - 4. NEE — 2021-02-22 — dropped 3.8%
+  - 5. MU — 2021-02-22 — dropped 5.1%
+  - 6. LRCX — 2021-02-22 — dropped 5.1%
+  - 7. INTC — 2021-02-22 — dropped 3.7%
+  - 8. AMD — 2021-02-22 — dropped 4.7%
+  - 9. AMAT — 2021-02-22 — dropped 3.5%
+  - 10. UBER — 2021-02-22 — dropped 5.3%
+  - 11. PLTR — 2021-02-23 — dropped 4.5%
+  - 12. HD — 2021-02-23 — dropped 3.1%
+  - 13. LOW — 2021-02-24 — dropped 3.7%
+  - 14. UBER — 2021-02-24 — dropped 3.7%
+  - 15. UBER — 2021-02-25 — dropped 4.6%
+  - 16. TXN — 2021-02-25 — dropped 4.9%
+  - 17. TSLA — 2021-02-25 — dropped 8.1%
+  - 18. SPG — 2021-02-25 — dropped 3.5%
+  - 19. RTX — 2021-02-25 — dropped 5.6%
+  - 20. QCOM — 2021-02-25 — dropped 3.9%
+
+- [ ] **Batch 123** (20 events, 2021-02-25 to 2021-02-25)
+  - 1. PLTR — 2021-02-25 — dropped 9.2%
+  - 2. NVDA — 2021-02-25 — dropped 8.2%
+  - 3. NOW — 2021-02-25 — dropped 4.2%
+  - 4. MU — 2021-02-25 — dropped 4.8%
+  - 5. META — 2021-02-25 — dropped 3.6%
+  - 6. MA — 2021-02-25 — dropped 3.5%
+  - 7. LRCX — 2021-02-25 — dropped 8.3%
+  - 8. INTU — 2021-02-25 — dropped 6.1%
+  - 9. COF — 2021-02-25 — dropped 4.2%
+  - 10. GOOGL — 2021-02-25 — dropped 3.3%
+  - 11. AAPL — 2021-02-25 — dropped 3.5%
+  - 12. ADBE — 2021-02-25 — dropped 3.7%
+  - 13. AMAT — 2021-02-25 — dropped 7.2%
+  - 14. INTC — 2021-02-25 — dropped 4.4%
+  - 15. AMZN — 2021-02-25 — dropped 3.2%
+  - 16. AVGO — 2021-02-25 — dropped 4.9%
+  - 17. AMD — 2021-02-25 — dropped 5.2%
+  - 18. BKNG — 2021-02-25 — dropped 7.0%
+  - 19. CRM — 2021-02-25 — dropped 3.9%
+  - 20. DIS — 2021-02-25 — dropped 3.3%
+
+- [ ] **Batch 124** (20 events, 2021-02-25 to 2021-03-03)
+  - 1. GM — 2021-02-25 — dropped 4.3%
+  - 2. GOOG — 2021-02-25 — dropped 3.0%
+  - 3. BA — 2021-02-25 — dropped 5.6%
+  - 4. AMT — 2021-02-26 — dropped 3.8%
+  - 5. BAC — 2021-02-26 — dropped 3.4%
+  - 6. CRM — 2021-02-26 — dropped 6.3%
+  - 7. LMT — 2021-02-26 — dropped 3.3%
+  - 8. USB — 2021-02-26 — dropped 3.2%
+  - 9. WFC — 2021-02-26 — dropped 3.7%
+  - 10. TSLA — 2021-03-02 — dropped 4.5%
+  - 11. NVDA — 2021-03-02 — dropped 3.1%
+  - 12. LRCX — 2021-03-02 — dropped 4.3%
+  - 13. MU — 2021-03-02 — dropped 3.9%
+  - 14. AMAT — 2021-03-02 — dropped 3.9%
+  - 15. TSLA — 2021-03-03 — dropped 4.8%
+  - 16. QCOM — 2021-03-03 — dropped 3.9%
+  - 17. PLTR — 2021-03-03 — dropped 3.6%
+  - 18. NVDA — 2021-03-03 — dropped 4.5%
+  - 19. NOW — 2021-03-03 — dropped 6.1%
+  - 20. NEE — 2021-03-03 — dropped 4.0%
+
+- [ ] **Batch 125** (20 events, 2021-03-03 to 2021-03-04)
+  - 1. NFLX — 2021-03-03 — dropped 5.0%
+  - 2. ISRG — 2021-03-03 — dropped 3.0%
+  - 3. INTU — 2021-03-03 — dropped 3.2%
+  - 4. CRM — 2021-03-03 — dropped 3.5%
+  - 5. AVGO — 2021-03-03 — dropped 3.6%
+  - 6. AMD — 2021-03-03 — dropped 3.9%
+  - 7. ADBE — 2021-03-03 — dropped 3.9%
+  - 8. LRCX — 2021-03-03 — dropped 3.9%
+  - 9. NOW — 2021-03-04 — dropped 4.9%
+  - 10. UBER — 2021-03-04 — dropped 5.4%
+  - 11. TSLA — 2021-03-04 — dropped 4.9%
+  - 12. SPG — 2021-03-04 — dropped 3.4%
+  - 13. NVDA — 2021-03-04 — dropped 3.4%
+  - 14. MU — 2021-03-04 — dropped 5.4%
+  - 15. TXN — 2021-03-04 — dropped 4.3%
+  - 16. INTU — 2021-03-04 — dropped 3.2%
+  - 17. AMAT — 2021-03-04 — dropped 6.2%
+  - 18. AMD — 2021-03-04 — dropped 3.8%
+  - 19. LRCX — 2021-03-04 — dropped 4.1%
+  - 20. FDX — 2021-03-04 — dropped 3.3%
+
+- [ ] **Batch 126** (20 events, 2021-03-04 to 2021-03-08)
+  - 1. AVGO — 2021-03-04 — dropped 4.2%
+  - 2. PLTR — 2021-03-05 — dropped 3.2%
+  - 3. TSLA — 2021-03-05 — dropped 3.8%
+  - 4. UBER — 2021-03-08 — dropped 4.2%
+  - 5. MU — 2021-03-08 — dropped 4.4%
+  - 6. TSLA — 2021-03-08 — dropped 5.8%
+  - 7. QCOM — 2021-03-08 — dropped 5.0%
+  - 8. PLTR — 2021-03-08 — dropped 6.0%
+  - 9. NVDA — 2021-03-08 — dropped 7.0%
+  - 10. NOW — 2021-03-08 — dropped 4.7%
+  - 11. NFLX — 2021-03-08 — dropped 4.5%
+  - 12. TXN — 2021-03-08 — dropped 3.5%
+  - 13. ISRG — 2021-03-08 — dropped 4.0%
+  - 14. INTU — 2021-03-08 — dropped 3.1%
+  - 15. GOOGL — 2021-03-08 — dropped 4.3%
+  - 16. GOOG — 2021-03-08 — dropped 4.0%
+  - 17. AVGO — 2021-03-08 — dropped 6.4%
+  - 18. AMD — 2021-03-08 — dropped 5.8%
+  - 19. AMAT — 2021-03-08 — dropped 6.8%
+  - 20. ADBE — 2021-03-08 — dropped 4.5%
+
+- [ ] **Batch 127** (20 events, 2021-03-08 to 2021-03-18)
+  - 1. AAPL — 2021-03-08 — dropped 4.2%
+  - 2. META — 2021-03-08 — dropped 3.4%
+  - 3. AXP — 2021-03-09 — dropped 3.4%
+  - 4. DIS — 2021-03-09 — dropped 3.7%
+  - 5. MU — 2021-03-10 — dropped 4.4%
+  - 6. GE — 2021-03-10 — dropped 5.4%
+  - 7. LRCX — 2021-03-10 — dropped 4.6%
+  - 8. NOW — 2021-03-10 — dropped 3.1%
+  - 9. ORCL — 2021-03-11 — dropped 6.5%
+  - 10. UPS — 2021-03-15 — dropped 3.0%
+  - 11. BA — 2021-03-16 — dropped 3.9%
+  - 12. COF — 2021-03-16 — dropped 3.1%
+  - 13. PLTR — 2021-03-16 — dropped 4.4%
+  - 14. SPG — 2021-03-16 — dropped 3.2%
+  - 15. TSLA — 2021-03-16 — dropped 4.4%
+  - 16. NEE — 2021-03-17 — dropped 3.2%
+  - 17. UBER — 2021-03-17 — dropped 4.2%
+  - 18. ABBV — 2021-03-17 — dropped 5.2%
+  - 19. MA — 2021-03-18 — dropped 3.1%
+  - 20. XOM — 2021-03-18 — dropped 4.3%
+
+- [ ] **Batch 128** (20 events, 2021-03-18 to 2021-03-19)
+  - 1. TSLA — 2021-03-18 — dropped 6.9%
+  - 2. PLTR — 2021-03-18 — dropped 4.9%
+  - 3. NVDA — 2021-03-18 — dropped 4.6%
+  - 4. NOW — 2021-03-18 — dropped 3.9%
+  - 5. NFLX — 2021-03-18 — dropped 3.7%
+  - 6. MU — 2021-03-18 — dropped 5.2%
+  - 7. ISRG — 2021-03-18 — dropped 3.5%
+  - 8. QCOM — 2021-03-18 — dropped 3.1%
+  - 9. INTC — 2021-03-18 — dropped 3.1%
+  - 10. AAPL — 2021-03-18 — dropped 3.4%
+  - 11. AMD — 2021-03-18 — dropped 5.5%
+  - 12. AMZN — 2021-03-18 — dropped 3.4%
+  - 13. AMAT — 2021-03-18 — dropped 4.7%
+  - 14. BKNG — 2021-03-18 — dropped 4.7%
+  - 15. COP — 2021-03-18 — dropped 6.1%
+  - 16. CVX — 2021-03-18 — dropped 3.6%
+  - 17. AVGO — 2021-03-18 — dropped 4.0%
+  - 18. INTU — 2021-03-18 — dropped 4.5%
+  - 19. NKE — 2021-03-19 — dropped 4.0%
+  - 20. V — 2021-03-19 — dropped 6.2%
+
+- [ ] **Batch 129** (20 events, 2021-03-23 to 2021-03-29)
+  - 1. UBER — 2021-03-23 — dropped 4.0%
+  - 2. MS — 2021-03-23 — dropped 3.4%
+  - 3. SPG — 2021-03-23 — dropped 4.2%
+  - 4. PLTR — 2021-03-23 — dropped 4.0%
+  - 5. MU — 2021-03-23 — dropped 6.4%
+  - 6. INTC — 2021-03-23 — dropped 3.3%
+  - 7. GE — 2021-03-23 — dropped 3.6%
+  - 8. DE — 2021-03-23 — dropped 3.8%
+  - 9. CAT — 2021-03-23 — dropped 3.4%
+  - 10. BA — 2021-03-23 — dropped 4.0%
+  - 11. GM — 2021-03-23 — dropped 3.3%
+  - 12. QCOM — 2021-03-24 — dropped 4.0%
+  - 13. TSLA — 2021-03-24 — dropped 4.8%
+  - 14. NVDA — 2021-03-24 — dropped 3.3%
+  - 15. PLTR — 2021-03-24 — dropped 5.9%
+  - 16. NFLX — 2021-03-25 — dropped 3.4%
+  - 17. NKE — 2021-03-25 — dropped 3.4%
+  - 18. TSLA — 2021-03-26 — dropped 3.4%
+  - 19. PLTR — 2021-03-29 — dropped 3.8%
+  - 20. WFC — 2021-03-29 — dropped 3.3%
+
+- [ ] **Batch 130** (20 events, 2021-03-30 to 2021-04-20)
+  - 1. AVGO — 2021-03-30 — dropped 3.5%
+  - 2. COP — 2021-04-05 — dropped 3.4%
+  - 3. T — 2021-04-08 — dropped 3.0%
+  - 4. INTC — 2021-04-12 — dropped 4.2%
+  - 5. AMD — 2021-04-12 — dropped 5.1%
+  - 6. MU — 2021-04-13 — dropped 3.6%
+  - 7. TSLA — 2021-04-14 — dropped 3.9%
+  - 8. PLTR — 2021-04-14 — dropped 6.8%
+  - 9. BK — 2021-04-16 — dropped 4.0%
+  - 10. AVGO — 2021-04-19 — dropped 3.5%
+  - 11. INTU — 2021-04-19 — dropped 3.3%
+  - 12. LRCX — 2021-04-19 — dropped 3.4%
+  - 13. MO — 2021-04-19 — dropped 6.2%
+  - 14. NVDA — 2021-04-19 — dropped 3.5%
+  - 15. TSLA — 2021-04-19 — dropped 3.4%
+  - 16. UBER — 2021-04-19 — dropped 4.1%
+  - 17. WFC — 2021-04-20 — dropped 3.1%
+  - 18. UBER — 2021-04-20 — dropped 4.1%
+  - 19. SCHW — 2021-04-20 — dropped 3.3%
+  - 20. NKE — 2021-04-20 — dropped 4.1%
+
+- [ ] **Batch 131** (20 events, 2021-04-20 to 2021-04-28)
+  - 1. MS — 2021-04-20 — dropped 3.4%
+  - 2. MO — 2021-04-20 — dropped 3.9%
+  - 3. GS — 2021-04-20 — dropped 3.3%
+  - 4. GM — 2021-04-20 — dropped 3.6%
+  - 5. COP — 2021-04-20 — dropped 4.4%
+  - 6. C — 2021-04-20 — dropped 3.2%
+  - 7. BKNG — 2021-04-20 — dropped 4.5%
+  - 8. BA — 2021-04-20 — dropped 4.1%
+  - 9. ABT — 2021-04-20 — dropped 3.6%
+  - 10. NEE — 2021-04-21 — dropped 3.2%
+  - 11. ORCL — 2021-04-21 — dropped 3.3%
+  - 12. AMD — 2021-04-22 — dropped 3.1%
+  - 13. ISRG — 2021-04-22 — dropped 3.6%
+  - 14. LRCX — 2021-04-22 — dropped 4.2%
+  - 15. MU — 2021-04-22 — dropped 5.3%
+  - 16. NVDA — 2021-04-22 — dropped 3.3%
+  - 17. TSLA — 2021-04-22 — dropped 3.3%
+  - 18. INTC — 2021-04-23 — dropped 5.3%
+  - 19. TSLA — 2021-04-27 — dropped 4.5%
+  - 20. MU — 2021-04-28 — dropped 3.8%
+
+- [ ] **Batch 132** (20 events, 2021-04-28 to 2021-05-04)
+  - 1. SBUX — 2021-04-28 — dropped 3.2%
+  - 2. TXN — 2021-04-28 — dropped 4.4%
+  - 3. BMY — 2021-04-29 — dropped 4.8%
+  - 4. GM — 2021-04-29 — dropped 3.4%
+  - 5. MRK — 2021-04-29 — dropped 4.4%
+  - 6. TMO — 2021-04-29 — dropped 4.4%
+  - 7. UBER — 2021-04-29 — dropped 6.0%
+  - 8. C — 2021-04-30 — dropped 3.5%
+  - 9. COP — 2021-04-30 — dropped 3.7%
+  - 10. CVX — 2021-04-30 — dropped 3.6%
+  - 11. LRCX — 2021-04-30 — dropped 3.2%
+  - 12. PLTR — 2021-05-03 — dropped 3.2%
+  - 13. TSLA — 2021-05-03 — dropped 3.5%
+  - 14. AMD — 2021-05-03 — dropped 3.8%
+  - 15. NOW — 2021-05-03 — dropped 3.2%
+  - 16. AAPL — 2021-05-04 — dropped 3.5%
+  - 17. AMAT — 2021-05-04 — dropped 3.1%
+  - 18. GM — 2021-05-04 — dropped 3.2%
+  - 19. INTU — 2021-05-04 — dropped 3.3%
+  - 20. NVDA — 2021-05-04 — dropped 3.3%
+
+- [ ] **Batch 133** (20 events, 2021-05-04 to 2021-05-11)
+  - 1. UBER — 2021-05-04 — dropped 3.4%
+  - 2. UBER — 2021-05-05 — dropped 3.4%
+  - 3. PLTR — 2021-05-06 — dropped 5.0%
+  - 4. TXN — 2021-05-10 — dropped 3.0%
+  - 5. TSLA — 2021-05-10 — dropped 6.4%
+  - 6. QCOM — 2021-05-10 — dropped 6.5%
+  - 7. PLTR — 2021-05-10 — dropped 6.5%
+  - 8. NVDA — 2021-05-10 — dropped 3.7%
+  - 9. NOW — 2021-05-10 — dropped 3.5%
+  - 10. NFLX — 2021-05-10 — dropped 3.4%
+  - 11. AMD — 2021-05-10 — dropped 3.6%
+  - 12. META — 2021-05-10 — dropped 4.1%
+  - 13. LRCX — 2021-05-10 — dropped 7.0%
+  - 14. AVGO — 2021-05-10 — dropped 3.6%
+  - 15. AMZN — 2021-05-10 — dropped 3.1%
+  - 16. MU — 2021-05-10 — dropped 6.0%
+  - 17. AMAT — 2021-05-10 — dropped 6.2%
+  - 18. SPG — 2021-05-11 — dropped 3.2%
+  - 19. XOM — 2021-05-11 — dropped 3.2%
+  - 20. HD — 2021-05-11 — dropped 3.1%
+
+- [ ] **Batch 134** (20 events, 2021-05-11 to 2021-05-12)
+  - 1. ORCL — 2021-05-11 — dropped 3.1%
+  - 2. MU — 2021-05-12 — dropped 4.8%
+  - 3. TXN — 2021-05-12 — dropped 3.6%
+  - 4. TSLA — 2021-05-12 — dropped 4.4%
+  - 5. SPG — 2021-05-12 — dropped 4.1%
+  - 6. SBUX — 2021-05-12 — dropped 3.3%
+  - 7. UBER — 2021-05-12 — dropped 5.2%
+  - 8. NVDA — 2021-05-12 — dropped 3.8%
+  - 9. NOW — 2021-05-12 — dropped 3.5%
+  - 10. NEE — 2021-05-12 — dropped 3.4%
+  - 11. LRCX — 2021-05-12 — dropped 5.9%
+  - 12. PLTR — 2021-05-12 — dropped 6.5%
+  - 13. HON — 2021-05-12 — dropped 4.0%
+  - 14. HD — 2021-05-12 — dropped 4.1%
+  - 15. GOOGL — 2021-05-12 — dropped 3.1%
+  - 16. GOOG — 2021-05-12 — dropped 3.0%
+  - 17. GM — 2021-05-12 — dropped 3.5%
+  - 18. FDX — 2021-05-12 — dropped 3.2%
+  - 19. BKNG — 2021-05-12 — dropped 3.4%
+  - 20. BA — 2021-05-12 — dropped 3.5%
+
+- [ ] **Batch 135** (20 events, 2021-05-12 to 2021-06-10)
+  - 1. AVGO — 2021-05-12 — dropped 4.0%
+  - 2. LOW — 2021-05-12 — dropped 4.8%
+  - 3. TSLA — 2021-05-13 — dropped 3.1%
+  - 4. CMCSA — 2021-05-17 — dropped 5.5%
+  - 5. T — 2021-05-18 — dropped 5.8%
+  - 6. TMUS — 2021-05-18 — dropped 3.7%
+  - 7. CVX — 2021-05-18 — dropped 4.2%
+  - 8. DE — 2021-05-18 — dropped 3.6%
+  - 9. DE — 2021-05-19 — dropped 3.0%
+  - 10. DHR — 2021-06-01 — dropped 4.3%
+  - 11. TMO — 2021-06-01 — dropped 4.8%
+  - 12. TSLA — 2021-06-02 — dropped 3.0%
+  - 13. TSLA — 2021-06-03 — dropped 5.3%
+  - 14. UBER — 2021-06-03 — dropped 4.1%
+  - 15. PLTR — 2021-06-03 — dropped 3.4%
+  - 16. MU — 2021-06-08 — dropped 4.2%
+  - 17. FDX — 2021-06-09 — dropped 3.1%
+  - 18. SCHW — 2021-06-09 — dropped 3.0%
+  - 19. UPS — 2021-06-09 — dropped 4.1%
+  - 20. CAT — 2021-06-10 — dropped 3.8%
+
+- [ ] **Batch 136** (20 events, 2021-06-11 to 2021-06-18)
+  - 1. LLY — 2021-06-11 — dropped 4.0%
+  - 2. MO — 2021-06-14 — dropped 3.4%
+  - 3. ORCL — 2021-06-16 — dropped 5.6%
+  - 4. C — 2021-06-16 — dropped 3.2%
+  - 5. BAC — 2021-06-17 — dropped 4.4%
+  - 6. BK — 2021-06-17 — dropped 3.4%
+  - 7. C — 2021-06-17 — dropped 3.6%
+  - 8. CAT — 2021-06-17 — dropped 3.6%
+  - 9. COF — 2021-06-17 — dropped 5.3%
+  - 10. COP — 2021-06-17 — dropped 3.5%
+  - 11. EMR — 2021-06-17 — dropped 4.3%
+  - 12. GE — 2021-06-17 — dropped 3.3%
+  - 13. MS — 2021-06-17 — dropped 3.5%
+  - 14. USB — 2021-06-17 — dropped 4.7%
+  - 15. WFC — 2021-06-17 — dropped 6.1%
+  - 16. XOM — 2021-06-17 — dropped 3.3%
+  - 17. SCHW — 2021-06-18 — dropped 3.2%
+  - 18. MU — 2021-06-18 — dropped 4.6%
+  - 19. MS — 2021-06-18 — dropped 4.3%
+  - 20. LRCX — 2021-06-18 — dropped 4.2%
+
+- [ ] **Batch 137** (20 events, 2021-06-18 to 2021-07-06)
+  - 1. BLK — 2021-06-18 — dropped 3.2%
+  - 2. CVX — 2021-06-18 — dropped 3.8%
+  - 3. AMAT — 2021-06-18 — dropped 4.4%
+  - 4. GS — 2021-06-18 — dropped 3.5%
+  - 5. UBER — 2021-06-21 — dropped 3.2%
+  - 6. CMCSA — 2021-06-23 — dropped 3.7%
+  - 7. FDX — 2021-06-25 — dropped 3.9%
+  - 8. MA — 2021-06-28 — dropped 3.1%
+  - 9. BA — 2021-06-28 — dropped 3.4%
+  - 10. BKNG — 2021-06-28 — dropped 3.4%
+  - 11. CVX — 2021-06-28 — dropped 3.1%
+  - 12. PLTR — 2021-07-01 — dropped 6.2%
+  - 13. MU — 2021-07-01 — dropped 5.7%
+  - 14. AMAT — 2021-07-01 — dropped 3.1%
+  - 15. IBM — 2021-07-02 — dropped 4.6%
+  - 16. BK — 2021-07-06 — dropped 3.4%
+  - 17. C — 2021-07-06 — dropped 3.1%
+  - 18. COP — 2021-07-06 — dropped 3.9%
+  - 19. GE — 2021-07-06 — dropped 3.3%
+  - 20. WFC — 2021-07-06 — dropped 3.5%
+
+- [ ] **Batch 138** (20 events, 2021-07-07 to 2021-07-19)
+  - 1. AMD — 2021-07-07 — dropped 4.2%
+  - 2. MU — 2021-07-07 — dropped 3.5%
+  - 3. UBER — 2021-07-07 — dropped 4.2%
+  - 4. SCHW — 2021-07-08 — dropped 3.0%
+  - 5. UNP — 2021-07-08 — dropped 4.4%
+  - 6. BA — 2021-07-13 — dropped 4.2%
+  - 7. PLTR — 2021-07-14 — dropped 4.0%
+  - 8. COP — 2021-07-14 — dropped 3.0%
+  - 9. BLK — 2021-07-14 — dropped 3.1%
+  - 10. NVDA — 2021-07-15 — dropped 4.4%
+  - 11. AMAT — 2021-07-16 — dropped 3.8%
+  - 12. LRCX — 2021-07-16 — dropped 3.6%
+  - 13. NVDA — 2021-07-16 — dropped 4.2%
+  - 14. XOM — 2021-07-19 — dropped 3.4%
+  - 15. V — 2021-07-19 — dropped 3.1%
+  - 16. USB — 2021-07-19 — dropped 4.7%
+  - 17. TMUS — 2021-07-19 — dropped 3.2%
+  - 18. SPG — 2021-07-19 — dropped 5.9%
+  - 19. SCHW — 2021-07-19 — dropped 3.2%
+  - 20. MA — 2021-07-19 — dropped 5.6%
+
+- [ ] **Batch 139** (20 events, 2021-07-19 to 2021-07-27)
+  - 1. JPM — 2021-07-19 — dropped 3.3%
+  - 2. HON — 2021-07-19 — dropped 4.2%
+  - 3. EMR — 2021-07-19 — dropped 3.5%
+  - 4. DIS — 2021-07-19 — dropped 3.5%
+  - 5. COP — 2021-07-19 — dropped 3.2%
+  - 6. BLK — 2021-07-19 — dropped 3.4%
+  - 7. BKNG — 2021-07-19 — dropped 3.6%
+  - 8. BK — 2021-07-19 — dropped 3.6%
+  - 9. BA — 2021-07-19 — dropped 4.9%
+  - 10. AXP — 2021-07-19 — dropped 4.2%
+  - 11. GE — 2021-07-19 — dropped 4.4%
+  - 12. PM — 2021-07-20 — dropped 3.1%
+  - 13. NFLX — 2021-07-21 — dropped 3.3%
+  - 14. TXN — 2021-07-22 — dropped 5.3%
+  - 15. SCHW — 2021-07-22 — dropped 3.3%
+  - 16. ORCL — 2021-07-23 — dropped 3.3%
+  - 17. INTC — 2021-07-23 — dropped 5.3%
+  - 18. LMT — 2021-07-26 — dropped 3.3%
+  - 19. FDX — 2021-07-27 — dropped 5.0%
+  - 20. UPS — 2021-07-27 — dropped 7.0%
+
+- [ ] **Batch 140** (20 events, 2021-07-29 to 2021-08-18)
+  - 1. META — 2021-07-29 — dropped 4.0%
+  - 2. UBER — 2021-07-29 — dropped 3.1%
+  - 3. CL — 2021-07-30 — dropped 4.8%
+  - 4. AMGN — 2021-08-04 — dropped 6.5%
+  - 5. COP — 2021-08-04 — dropped 3.0%
+  - 6. AMD — 2021-08-05 — dropped 5.4%
+  - 7. PLTR — 2021-08-06 — dropped 3.1%
+  - 8. LRCX — 2021-08-10 — dropped 3.6%
+  - 9. ISRG — 2021-08-10 — dropped 3.5%
+  - 10. MU — 2021-08-10 — dropped 5.4%
+  - 11. PFE — 2021-08-11 — dropped 3.9%
+  - 12. AMAT — 2021-08-12 — dropped 4.2%
+  - 13. LRCX — 2021-08-12 — dropped 4.1%
+  - 14. MU — 2021-08-12 — dropped 6.4%
+  - 15. BKNG — 2021-08-16 — dropped 3.3%
+  - 16. TSLA — 2021-08-16 — dropped 4.3%
+  - 17. GM — 2021-08-17 — dropped 4.7%
+  - 18. HD — 2021-08-17 — dropped 4.3%
+  - 19. LOW — 2021-08-17 — dropped 5.8%
+  - 20. AMD — 2021-08-18 — dropped 3.8%
+
+- [ ] **Batch 141** (20 events, 2021-08-18 to 2021-09-14)
+  - 1. CVX — 2021-08-18 — dropped 4.0%
+  - 2. XOM — 2021-08-19 — dropped 3.1%
+  - 3. PLTR — 2021-08-19 — dropped 4.4%
+  - 4. DE — 2021-08-19 — dropped 3.4%
+  - 5. BA — 2021-08-19 — dropped 3.1%
+  - 6. GM — 2021-08-19 — dropped 3.5%
+  - 7. PFE — 2021-08-24 — dropped 3.1%
+  - 8. COF — 2021-08-30 — dropped 6.0%
+  - 9. SCHW — 2021-08-30 — dropped 3.2%
+  - 10. WFC — 2021-08-31 — dropped 5.6%
+  - 11. WFC — 2021-09-01 — dropped 4.9%
+  - 12. DE — 2021-09-07 — dropped 4.5%
+  - 13. MMM — 2021-09-07 — dropped 4.5%
+  - 14. PLTR — 2021-09-08 — dropped 4.2%
+  - 15. LLY — 2021-09-09 — dropped 5.8%
+  - 16. ISRG — 2021-09-10 — dropped 4.3%
+  - 17. AAPL — 2021-09-10 — dropped 3.3%
+  - 18. MO — 2021-09-14 — dropped 3.4%
+  - 19. SCHW — 2021-09-14 — dropped 3.0%
+  - 20. GE — 2021-09-14 — dropped 3.9%
+
+- [ ] **Batch 142** (20 events, 2021-09-15 to 2021-09-27)
+  - 1. SBUX — 2021-09-15 — dropped 3.6%
+  - 2. QCOM — 2021-09-17 — dropped 3.5%
+  - 3. AMAT — 2021-09-20 — dropped 3.7%
+  - 4. AMZN — 2021-09-20 — dropped 3.1%
+  - 5. BAC — 2021-09-20 — dropped 3.4%
+  - 6. BK — 2021-09-20 — dropped 3.0%
+  - 7. C — 2021-09-20 — dropped 3.8%
+  - 8. CAT — 2021-09-20 — dropped 4.5%
+  - 9. COP — 2021-09-20 — dropped 3.1%
+  - 10. GM — 2021-09-20 — dropped 3.8%
+  - 11. GS — 2021-09-20 — dropped 3.4%
+  - 12. LRCX — 2021-09-20 — dropped 3.1%
+  - 13. MS — 2021-09-20 — dropped 3.1%
+  - 14. NVDA — 2021-09-20 — dropped 3.6%
+  - 15. TSLA — 2021-09-20 — dropped 3.9%
+  - 16. DIS — 2021-09-21 — dropped 4.2%
+  - 17. ADBE — 2021-09-22 — dropped 3.1%
+  - 18. META — 2021-09-22 — dropped 4.0%
+  - 19. NKE — 2021-09-24 — dropped 6.3%
+  - 20. ABT — 2021-09-27 — dropped 3.0%
+
+- [ ] **Batch 143** (20 events, 2021-09-27 to 2021-09-29)
+  - 1. ADBE — 2021-09-27 — dropped 3.1%
+  - 2. PLTR — 2021-09-27 — dropped 3.8%
+  - 3. WFC — 2021-09-28 — dropped 3.4%
+  - 4. TMO — 2021-09-28 — dropped 3.1%
+  - 5. PM — 2021-09-28 — dropped 4.0%
+  - 6. NVDA — 2021-09-28 — dropped 4.4%
+  - 7. NOW — 2021-09-28 — dropped 5.7%
+  - 8. MSFT — 2021-09-28 — dropped 3.6%
+  - 9. META — 2021-09-28 — dropped 3.7%
+  - 10. LRCX — 2021-09-28 — dropped 5.0%
+  - 11. LIN — 2021-09-28 — dropped 3.0%
+  - 12. INTU — 2021-09-28 — dropped 3.9%
+  - 13. GOOGL — 2021-09-28 — dropped 3.7%
+  - 14. GOOG — 2021-09-28 — dropped 3.8%
+  - 15. DHR — 2021-09-28 — dropped 3.8%
+  - 16. AMD — 2021-09-28 — dropped 6.1%
+  - 17. AMAT — 2021-09-28 — dropped 6.9%
+  - 18. ADBE — 2021-09-28 — dropped 4.1%
+  - 19. ACN — 2021-09-28 — dropped 3.1%
+  - 20. AMAT — 2021-09-29 — dropped 3.5%
+
+- [ ] **Batch 144** (20 events, 2021-09-29 to 2021-10-08)
+  - 1. LRCX — 2021-09-29 — dropped 3.2%
+  - 2. PLTR — 2021-09-29 — dropped 3.2%
+  - 3. UBER — 2021-09-29 — dropped 3.2%
+  - 4. SCHW — 2021-09-30 — dropped 3.4%
+  - 5. PM — 2021-09-30 — dropped 4.7%
+  - 6. ORCL — 2021-09-30 — dropped 4.5%
+  - 7. MMM — 2021-09-30 — dropped 3.0%
+  - 8. GE — 2021-09-30 — dropped 3.1%
+  - 9. DE — 2021-09-30 — dropped 4.5%
+  - 10. MO — 2021-09-30 — dropped 6.6%
+  - 11. PLTR — 2021-10-04 — dropped 4.8%
+  - 12. ADBE — 2021-10-04 — dropped 3.3%
+  - 13. AMAT — 2021-10-04 — dropped 3.0%
+  - 14. INTU — 2021-10-04 — dropped 3.4%
+  - 15. ISRG — 2021-10-04 — dropped 3.9%
+  - 16. LRCX — 2021-10-04 — dropped 3.4%
+  - 17. MA — 2021-10-04 — dropped 4.4%
+  - 18. META — 2021-10-04 — dropped 4.9%
+  - 19. NVDA — 2021-10-04 — dropped 4.9%
+  - 20. NOW — 2021-10-08 — dropped 3.2%
+
+- [ ] **Batch 145** (20 events, 2021-10-08 to 2021-10-27)
+  - 1. CMCSA — 2021-10-08 — dropped 4.7%
+  - 2. CMCSA — 2021-10-11 — dropped 4.5%
+  - 3. DE — 2021-10-11 — dropped 3.1%
+  - 4. TMUS — 2021-10-11 — dropped 3.3%
+  - 5. UBER — 2021-10-11 — dropped 3.1%
+  - 6. MU — 2021-10-12 — dropped 3.6%
+  - 7. AXP — 2021-10-13 — dropped 3.5%
+  - 8. COF — 2021-10-13 — dropped 3.3%
+  - 9. DIS — 2021-10-18 — dropped 3.0%
+  - 10. MDT — 2021-10-18 — dropped 5.5%
+  - 11. BKNG — 2021-10-20 — dropped 3.2%
+  - 12. COF — 2021-10-21 — dropped 4.4%
+  - 13. TMUS — 2021-10-21 — dropped 4.2%
+  - 14. HON — 2021-10-22 — dropped 3.2%
+  - 15. META — 2021-10-22 — dropped 5.1%
+  - 16. GOOGL — 2021-10-22 — dropped 3.0%
+  - 17. DE — 2021-10-26 — dropped 3.3%
+  - 18. META — 2021-10-26 — dropped 3.9%
+  - 19. BMY — 2021-10-27 — dropped 3.0%
+  - 20. COP — 2021-10-27 — dropped 3.4%
+
+- [ ] **Batch 146** (20 events, 2021-10-27 to 2021-11-08)
+  - 1. GE — 2021-10-27 — dropped 3.3%
+  - 2. GM — 2021-10-27 — dropped 5.4%
+  - 3. MA — 2021-10-27 — dropped 6.0%
+  - 4. TXN — 2021-10-27 — dropped 5.0%
+  - 5. USB — 2021-10-27 — dropped 3.5%
+  - 6. V — 2021-10-27 — dropped 6.9%
+  - 7. MO — 2021-10-28 — dropped 6.1%
+  - 8. SBUX — 2021-10-29 — dropped 6.3%
+  - 9. GILD — 2021-10-29 — dropped 3.7%
+  - 10. GOOGL — 2021-11-01 — dropped 3.1%
+  - 11. GOOG — 2021-11-01 — dropped 3.0%
+  - 12. TSLA — 2021-11-02 — dropped 3.0%
+  - 13. UBER — 2021-11-02 — dropped 3.3%
+  - 14. DE — 2021-11-03 — dropped 3.4%
+  - 15. EMR — 2021-11-03 — dropped 4.9%
+  - 16. ABT — 2021-11-05 — dropped 3.7%
+  - 17. DHR — 2021-11-05 — dropped 4.5%
+  - 18. NFLX — 2021-11-05 — dropped 3.4%
+  - 19. TMO — 2021-11-05 — dropped 3.6%
+  - 20. NKE — 2021-11-08 — dropped 3.2%
+
+- [ ] **Batch 147** (20 events, 2021-11-08 to 2021-11-17)
+  - 1. TSLA — 2021-11-08 — dropped 4.8%
+  - 2. V — 2021-11-09 — dropped 3.2%
+  - 3. XOM — 2021-11-10 — dropped 3.3%
+  - 4. UBER — 2021-11-10 — dropped 4.7%
+  - 5. QCOM — 2021-11-10 — dropped 4.2%
+  - 6. NVDA — 2021-11-10 — dropped 3.9%
+  - 7. NKE — 2021-11-10 — dropped 3.2%
+  - 8. AMD — 2021-11-10 — dropped 6.1%
+  - 9. COP — 2021-11-10 — dropped 3.6%
+  - 10. AMAT — 2021-11-10 — dropped 3.8%
+  - 11. ADBE — 2021-11-10 — dropped 3.1%
+  - 12. CRM — 2021-11-10 — dropped 3.2%
+  - 13. BKNG — 2021-11-11 — dropped 3.5%
+  - 14. AMT — 2021-11-15 — dropped 4.3%
+  - 15. UBER — 2021-11-15 — dropped 3.3%
+  - 16. GE — 2021-11-16 — dropped 3.1%
+  - 17. BA — 2021-11-16 — dropped 3.1%
+  - 18. V — 2021-11-17 — dropped 4.7%
+  - 19. UBER — 2021-11-17 — dropped 3.6%
+  - 20. NVDA — 2021-11-17 — dropped 3.1%
+
+- [ ] **Batch 148** (20 events, 2021-11-18 to 2021-11-26)
+  - 1. CSCO — 2021-11-18 — dropped 5.5%
+  - 2. GM — 2021-11-18 — dropped 3.5%
+  - 3. MA — 2021-11-18 — dropped 3.0%
+  - 4. PLTR — 2021-11-18 — dropped 4.4%
+  - 5. AMAT — 2021-11-19 — dropped 5.5%
+  - 6. BA — 2021-11-19 — dropped 5.8%
+  - 7. COP — 2021-11-19 — dropped 4.3%
+  - 8. DE — 2021-11-19 — dropped 3.1%
+  - 9. XOM — 2021-11-19 — dropped 4.6%
+  - 10. INTU — 2021-11-22 — dropped 4.4%
+  - 11. MA — 2021-11-22 — dropped 5.4%
+  - 12. NVDA — 2021-11-22 — dropped 3.1%
+  - 13. PLTR — 2021-11-22 — dropped 3.5%
+  - 14. UBER — 2021-11-22 — dropped 3.7%
+  - 15. TSLA — 2021-11-23 — dropped 4.1%
+  - 16. MDT — 2021-11-23 — dropped 3.0%
+  - 17. XOM — 2021-11-26 — dropped 3.5%
+  - 18. WFC — 2021-11-26 — dropped 5.6%
+  - 19. USB — 2021-11-26 — dropped 3.9%
+  - 20. UBER — 2021-11-26 — dropped 3.7%
+
+- [ ] **Batch 149** (20 events, 2021-11-26 to 2021-11-26)
+  - 1. TSLA — 2021-11-26 — dropped 3.1%
+  - 2. SPG — 2021-11-26 — dropped 5.1%
+  - 3. SCHW — 2021-11-26 — dropped 4.8%
+  - 4. RTX — 2021-11-26 — dropped 4.8%
+  - 5. NVDA — 2021-11-26 — dropped 3.6%
+  - 6. MU — 2021-11-26 — dropped 3.2%
+  - 7. MS — 2021-11-26 — dropped 3.2%
+  - 8. MRK — 2021-11-26 — dropped 3.8%
+  - 9. MA — 2021-11-26 — dropped 4.7%
+  - 10. KO — 2021-11-26 — dropped 3.1%
+  - 11. JPM — 2021-11-26 — dropped 3.0%
+  - 12. ISRG — 2021-11-26 — dropped 3.0%
+  - 13. GM — 2021-11-26 — dropped 3.2%
+  - 14. GE — 2021-11-26 — dropped 4.3%
+  - 15. EMR — 2021-11-26 — dropped 4.2%
+  - 16. COP — 2021-11-26 — dropped 4.5%
+  - 17. COF — 2021-11-26 — dropped 4.3%
+  - 18. CAT — 2021-11-26 — dropped 4.0%
+  - 19. BLK — 2021-11-26 — dropped 3.1%
+  - 20. BK — 2021-11-26 — dropped 3.7%
+
+- [ ] **Batch 150** (20 events, 2021-11-26 to 2021-11-30)
+  - 1. BAC — 2021-11-26 — dropped 3.9%
+  - 2. BA — 2021-11-26 — dropped 5.4%
+  - 3. AMAT — 2021-11-26 — dropped 3.8%
+  - 4. AAPL — 2021-11-26 — dropped 3.2%
+  - 5. MRK — 2021-11-29 — dropped 5.4%
+  - 6. DE — 2021-11-29 — dropped 3.1%
+  - 7. BMY — 2021-11-29 — dropped 3.3%
+  - 8. USB — 2021-11-30 — dropped 3.6%
+  - 9. UPS — 2021-11-30 — dropped 3.1%
+  - 10. UBER — 2021-11-30 — dropped 4.3%
+  - 11. TMUS — 2021-11-30 — dropped 4.0%
+  - 12. T — 2021-11-30 — dropped 4.4%
+  - 13. SPG — 2021-11-30 — dropped 4.4%
+  - 14. SCHW — 2021-11-30 — dropped 3.4%
+  - 15. NOW — 2021-11-30 — dropped 3.7%
+  - 16. NFLX — 2021-11-30 — dropped 3.3%
+  - 17. MMM — 2021-11-30 — dropped 3.5%
+  - 18. META — 2021-11-30 — dropped 4.0%
+  - 19. MDT — 2021-11-30 — dropped 3.2%
+  - 20. KO — 2021-11-30 — dropped 3.9%
+
+- [ ] **Batch 151** (20 events, 2021-11-30 to 2021-12-01)
+  - 1. ISRG — 2021-11-30 — dropped 3.1%
+  - 2. FDX — 2021-11-30 — dropped 4.2%
+  - 3. GM — 2021-11-30 — dropped 3.3%
+  - 4. AXP — 2021-11-30 — dropped 3.5%
+  - 5. BK — 2021-11-30 — dropped 3.9%
+  - 6. BKNG — 2021-11-30 — dropped 3.7%
+  - 7. CL — 2021-11-30 — dropped 3.5%
+  - 8. CMCSA — 2021-11-30 — dropped 3.0%
+  - 9. COF — 2021-11-30 — dropped 4.4%
+  - 10. INTU — 2021-11-30 — dropped 6.1%
+  - 11. CVS — 2021-11-30 — dropped 3.2%
+  - 12. DUK — 2021-11-30 — dropped 3.2%
+  - 13. EMR — 2021-11-30 — dropped 3.3%
+  - 14. GE — 2021-11-30 — dropped 3.5%
+  - 15. CRM — 2021-11-30 — dropped 4.0%
+  - 16. UBER — 2021-12-01 — dropped 5.2%
+  - 17. TSLA — 2021-12-01 — dropped 4.3%
+  - 18. SPG — 2021-12-01 — dropped 3.3%
+  - 19. PLTR — 2021-12-01 — dropped 6.2%
+  - 20. NVDA — 2021-12-01 — dropped 3.8%
+
+- [ ] **Batch 152** (20 events, 2021-12-01 to 2021-12-09)
+  - 1. META — 2021-12-01 — dropped 4.3%
+  - 2. BA — 2021-12-01 — dropped 4.9%
+  - 3. NFLX — 2021-12-01 — dropped 3.8%
+  - 4. AMD — 2021-12-01 — dropped 5.8%
+  - 5. AMAT — 2021-12-02 — dropped 3.4%
+  - 6. LRCX — 2021-12-02 — dropped 4.6%
+  - 7. PLTR — 2021-12-03 — dropped 3.6%
+  - 8. UBER — 2021-12-03 — dropped 6.0%
+  - 9. TSLA — 2021-12-03 — dropped 6.4%
+  - 10. NVDA — 2021-12-03 — dropped 4.5%
+  - 11. AMD — 2021-12-03 — dropped 4.4%
+  - 12. INTU — 2021-12-03 — dropped 3.6%
+  - 13. AMD — 2021-12-06 — dropped 3.4%
+  - 14. PFE — 2021-12-06 — dropped 5.1%
+  - 15. CMCSA — 2021-12-07 — dropped 5.3%
+  - 16. TSLA — 2021-12-09 — dropped 6.1%
+  - 17. SPG — 2021-12-09 — dropped 3.3%
+  - 18. PLTR — 2021-12-09 — dropped 3.1%
+  - 19. UBER — 2021-12-09 — dropped 3.3%
+  - 20. NOW — 2021-12-09 — dropped 3.6%
+
+- [ ] **Batch 153** (20 events, 2021-12-09 to 2021-12-14)
+  - 1. AMD — 2021-12-09 — dropped 4.9%
+  - 2. ADBE — 2021-12-09 — dropped 3.1%
+  - 3. NVDA — 2021-12-09 — dropped 4.2%
+  - 4. WFC — 2021-12-13 — dropped 3.3%
+  - 5. TSLA — 2021-12-13 — dropped 5.0%
+  - 6. NVDA — 2021-12-13 — dropped 6.7%
+  - 7. GM — 2021-12-13 — dropped 6.5%
+  - 8. GE — 2021-12-13 — dropped 3.9%
+  - 9. COP — 2021-12-13 — dropped 3.4%
+  - 10. BA — 2021-12-13 — dropped 3.7%
+  - 11. AMD — 2021-12-13 — dropped 3.4%
+  - 12. AMAT — 2021-12-13 — dropped 3.7%
+  - 13. BKNG — 2021-12-13 — dropped 3.9%
+  - 14. MSFT — 2021-12-14 — dropped 3.3%
+  - 15. NOW — 2021-12-14 — dropped 4.8%
+  - 16. INTU — 2021-12-14 — dropped 4.4%
+  - 17. ISRG — 2021-12-14 — dropped 3.6%
+  - 18. DHR — 2021-12-14 — dropped 3.4%
+  - 19. CRM — 2021-12-14 — dropped 3.8%
+  - 20. ADBE — 2021-12-14 — dropped 6.6%
+
+- [ ] **Batch 154** (20 events, 2021-12-15 to 2021-12-17)
+  - 1. MDT — 2021-12-15 — dropped 6.0%
+  - 2. TSLA — 2021-12-16 — dropped 5.0%
+  - 3. QCOM — 2021-12-16 — dropped 5.9%
+  - 4. NVDA — 2021-12-16 — dropped 6.8%
+  - 5. NOW — 2021-12-16 — dropped 5.9%
+  - 6. MU — 2021-12-16 — dropped 3.5%
+  - 7. LRCX — 2021-12-16 — dropped 3.7%
+  - 8. AMD — 2021-12-16 — dropped 5.4%
+  - 9. AMAT — 2021-12-16 — dropped 4.5%
+  - 10. AAPL — 2021-12-16 — dropped 3.9%
+  - 11. WFC — 2021-12-17 — dropped 4.7%
+  - 12. SBUX — 2021-12-17 — dropped 4.4%
+  - 13. ORCL — 2021-12-17 — dropped 6.4%
+  - 14. MS — 2021-12-17 — dropped 3.2%
+  - 15. WMT — 2021-12-17 — dropped 3.2%
+  - 16. GS — 2021-12-17 — dropped 3.9%
+  - 17. GM — 2021-12-17 — dropped 5.5%
+  - 18. EMR — 2021-12-17 — dropped 3.4%
+  - 19. COP — 2021-12-17 — dropped 4.3%
+  - 20. LLY — 2021-12-17 — dropped 4.2%
+
+- [ ] **Batch 155** (20 events, 2021-12-20 to 2022-01-05)
+  - 1. COF — 2021-12-20 — dropped 4.0%
+  - 2. MA — 2021-12-20 — dropped 3.5%
+  - 3. ORCL — 2021-12-20 — dropped 5.2%
+  - 4. PLTR — 2021-12-20 — dropped 5.8%
+  - 5. TSLA — 2021-12-20 — dropped 3.5%
+  - 6. PFE — 2021-12-21 — dropped 3.4%
+  - 7. AMD — 2021-12-29 — dropped 3.2%
+  - 8. TMO — 2022-01-03 — dropped 3.3%
+  - 9. PFE — 2022-01-03 — dropped 4.1%
+  - 10. DHR — 2022-01-03 — dropped 4.0%
+  - 11. AMD — 2022-01-04 — dropped 3.9%
+  - 12. CSCO — 2022-01-04 — dropped 3.0%
+  - 13. NOW — 2022-01-04 — dropped 4.2%
+  - 14. PFE — 2022-01-04 — dropped 3.7%
+  - 15. TMO — 2022-01-04 — dropped 4.2%
+  - 16. TSLA — 2022-01-04 — dropped 4.2%
+  - 17. MSFT — 2022-01-05 — dropped 3.8%
+  - 18. TSLA — 2022-01-05 — dropped 5.3%
+  - 19. PLTR — 2022-01-05 — dropped 6.7%
+  - 20. NVDA — 2022-01-05 — dropped 5.8%
+
+- [ ] **Batch 156** (20 events, 2022-01-05 to 2022-01-07)
+  - 1. NOW — 2022-01-05 — dropped 5.2%
+  - 2. NFLX — 2022-01-05 — dropped 4.0%
+  - 3. META — 2022-01-05 — dropped 3.7%
+  - 4. SBUX — 2022-01-05 — dropped 3.3%
+  - 5. INTU — 2022-01-05 — dropped 4.0%
+  - 6. GOOGL — 2022-01-05 — dropped 4.6%
+  - 7. GOOG — 2022-01-05 — dropped 4.7%
+  - 8. GM — 2022-01-05 — dropped 4.6%
+  - 9. AVGO — 2022-01-05 — dropped 4.2%
+  - 10. AMT — 2022-01-05 — dropped 6.4%
+  - 11. ISRG — 2022-01-05 — dropped 3.6%
+  - 12. AMD — 2022-01-05 — dropped 5.7%
+  - 13. UNH — 2022-01-06 — dropped 4.1%
+  - 14. NEE — 2022-01-06 — dropped 4.4%
+  - 15. ACN — 2022-01-06 — dropped 4.8%
+  - 16. CVS — 2022-01-06 — dropped 3.0%
+  - 17. AMAT — 2022-01-07 — dropped 3.5%
+  - 18. AMD — 2022-01-07 — dropped 3.1%
+  - 19. INTU — 2022-01-07 — dropped 3.2%
+  - 20. LRCX — 2022-01-07 — dropped 4.6%
+
+- [ ] **Batch 157** (20 events, 2022-01-07 to 2022-01-13)
+  - 1. NVDA — 2022-01-07 — dropped 3.3%
+  - 2. SBUX — 2022-01-07 — dropped 3.2%
+  - 3. TMUS — 2022-01-07 — dropped 5.0%
+  - 4. TSLA — 2022-01-07 — dropped 3.5%
+  - 5. TXN — 2022-01-07 — dropped 3.9%
+  - 6. COST — 2022-01-10 — dropped 3.2%
+  - 7. NKE — 2022-01-10 — dropped 4.2%
+  - 8. TMUS — 2022-01-10 — dropped 3.6%
+  - 9. GS — 2022-01-12 — dropped 3.2%
+  - 10. NFLX — 2022-01-13 — dropped 3.4%
+  - 11. PLTR — 2022-01-13 — dropped 4.2%
+  - 12. NVDA — 2022-01-13 — dropped 5.1%
+  - 13. TSLA — 2022-01-13 — dropped 6.7%
+  - 14. MSFT — 2022-01-13 — dropped 4.2%
+  - 15. TMO — 2022-01-13 — dropped 3.9%
+  - 16. ISRG — 2022-01-13 — dropped 3.1%
+  - 17. DHR — 2022-01-13 — dropped 4.7%
+  - 18. CRM — 2022-01-13 — dropped 3.9%
+  - 19. AVGO — 2022-01-13 — dropped 4.0%
+  - 20. AMD — 2022-01-13 — dropped 3.4%
+
+- [ ] **Batch 158** (20 events, 2022-01-13 to 2022-01-18)
+  - 1. ACN — 2022-01-13 — dropped 4.2%
+  - 2. ABT — 2022-01-13 — dropped 3.0%
+  - 3. INTU — 2022-01-13 — dropped 4.2%
+  - 4. SPG — 2022-01-14 — dropped 4.5%
+  - 5. HD — 2022-01-14 — dropped 3.9%
+  - 6. JPM — 2022-01-14 — dropped 6.1%
+  - 7. MS — 2022-01-14 — dropped 3.6%
+  - 8. UBER — 2022-01-14 — dropped 3.2%
+  - 9. MU — 2022-01-18 — dropped 4.6%
+  - 10. NVDA — 2022-01-18 — dropped 3.9%
+  - 11. PLTR — 2022-01-18 — dropped 6.5%
+  - 12. UNP — 2022-01-18 — dropped 3.3%
+  - 13. SCHW — 2022-01-18 — dropped 3.5%
+  - 14. MS — 2022-01-18 — dropped 4.9%
+  - 15. QCOM — 2022-01-18 — dropped 5.2%
+  - 16. META — 2022-01-18 — dropped 4.1%
+  - 17. BAC — 2022-01-18 — dropped 3.4%
+  - 18. JPM — 2022-01-18 — dropped 4.2%
+  - 19. ISRG — 2022-01-18 — dropped 4.0%
+  - 20. GS — 2022-01-18 — dropped 7.0%
+
+- [ ] **Batch 159** (20 events, 2022-01-18 to 2022-01-20)
+  - 1. GM — 2022-01-18 — dropped 3.8%
+  - 2. AVGO — 2022-01-18 — dropped 3.1%
+  - 3. AMD — 2022-01-18 — dropped 3.6%
+  - 4. LRCX — 2022-01-18 — dropped 7.0%
+  - 5. QCOM — 2022-01-19 — dropped 3.6%
+  - 6. SPG — 2022-01-19 — dropped 3.4%
+  - 7. NVDA — 2022-01-19 — dropped 3.2%
+  - 8. TSLA — 2022-01-19 — dropped 3.4%
+  - 9. MU — 2022-01-19 — dropped 3.1%
+  - 10. LRCX — 2022-01-19 — dropped 5.3%
+  - 11. GM — 2022-01-19 — dropped 4.3%
+  - 12. COF — 2022-01-19 — dropped 3.5%
+  - 13. CAT — 2022-01-19 — dropped 3.6%
+  - 14. BK — 2022-01-19 — dropped 5.8%
+  - 15. BA — 2022-01-19 — dropped 3.5%
+  - 16. AMAT — 2022-01-19 — dropped 6.1%
+  - 17. QCOM — 2022-01-20 — dropped 3.5%
+  - 18. NVDA — 2022-01-20 — dropped 3.7%
+  - 19. MU — 2022-01-20 — dropped 5.5%
+  - 20. LOW — 2022-01-20 — dropped 4.6%
+
+- [ ] **Batch 160** (20 events, 2022-01-20 to 2022-01-25)
+  - 1. AMD — 2022-01-20 — dropped 5.0%
+  - 2. LRCX — 2022-01-20 — dropped 3.6%
+  - 3. MU — 2022-01-21 — dropped 3.7%
+  - 4. USB — 2022-01-21 — dropped 3.2%
+  - 5. UBER — 2022-01-21 — dropped 5.0%
+  - 6. TSLA — 2022-01-21 — dropped 5.3%
+  - 7. PLTR — 2022-01-21 — dropped 7.5%
+  - 8. NVDA — 2022-01-21 — dropped 3.2%
+  - 9. NFLX — 2022-01-21 — dropped 21.8%
+  - 10. META — 2022-01-21 — dropped 4.2%
+  - 11. V — 2022-01-21 — dropped 3.9%
+  - 12. DIS — 2022-01-21 — dropped 6.9%
+  - 13. COP — 2022-01-21 — dropped 3.4%
+  - 14. BLK — 2022-01-21 — dropped 3.1%
+  - 15. BKNG — 2022-01-21 — dropped 3.6%
+  - 16. BK — 2022-01-21 — dropped 4.6%
+  - 17. BA — 2022-01-21 — dropped 4.1%
+  - 18. AMZN — 2022-01-21 — dropped 6.0%
+  - 19. ISRG — 2022-01-21 — dropped 7.9%
+  - 20. UBER — 2022-01-25 — dropped 4.0%
+
+- [ ] **Batch 161** (20 events, 2022-01-25 to 2022-01-27)
+  - 1. NVDA — 2022-01-25 — dropped 4.5%
+  - 2. NOW — 2022-01-25 — dropped 5.8%
+  - 3. MA — 2022-01-25 — dropped 3.1%
+  - 4. LRCX — 2022-01-25 — dropped 5.4%
+  - 5. INTU — 2022-01-25 — dropped 3.5%
+  - 6. NFLX — 2022-01-25 — dropped 5.4%
+  - 7. CRM — 2022-01-25 — dropped 3.4%
+  - 8. AMZN — 2022-01-25 — dropped 3.2%
+  - 9. AMD — 2022-01-25 — dropped 4.6%
+  - 10. AMAT — 2022-01-25 — dropped 4.5%
+  - 11. ADBE — 2022-01-25 — dropped 3.3%
+  - 12. GE — 2022-01-25 — dropped 6.0%
+  - 13. NEE — 2022-01-26 — dropped 3.3%
+  - 14. COF — 2022-01-26 — dropped 4.8%
+  - 15. VZ — 2022-01-26 — dropped 3.6%
+  - 16. AMT — 2022-01-26 — dropped 3.2%
+  - 17. BA — 2022-01-26 — dropped 4.8%
+  - 18. AMAT — 2022-01-27 — dropped 4.0%
+  - 19. AMD — 2022-01-27 — dropped 7.3%
+  - 20. INTC — 2022-01-27 — dropped 7.0%
+
+- [ ] **Batch 162** (20 events, 2022-01-27 to 2022-02-03)
+  - 1. LRCX — 2022-01-27 — dropped 6.9%
+  - 2. MU — 2022-01-27 — dropped 4.0%
+  - 3. NVDA — 2022-01-27 — dropped 3.6%
+  - 4. PLTR — 2022-01-27 — dropped 3.7%
+  - 5. QCOM — 2022-01-27 — dropped 3.5%
+  - 6. TSLA — 2022-01-27 — dropped 11.6%
+  - 7. MMM — 2022-01-28 — dropped 4.1%
+  - 8. CVX — 2022-01-28 — dropped 3.5%
+  - 9. CAT — 2022-01-28 — dropped 5.2%
+  - 10. PFE — 2022-01-31 — dropped 3.0%
+  - 11. T — 2022-02-01 — dropped 4.2%
+  - 12. CRM — 2022-02-02 — dropped 3.1%
+  - 13. GILD — 2022-02-02 — dropped 3.9%
+  - 14. NFLX — 2022-02-02 — dropped 6.0%
+  - 15. PLTR — 2022-02-02 — dropped 6.2%
+  - 16. UBER — 2022-02-02 — dropped 3.7%
+  - 17. NVDA — 2022-02-03 — dropped 5.1%
+  - 18. MSFT — 2022-02-03 — dropped 3.9%
+  - 19. MU — 2022-02-03 — dropped 3.0%
+  - 20. NFLX — 2022-02-03 — dropped 5.6%
+
+- [ ] **Batch 163** (20 events, 2022-02-03 to 2022-02-04)
+  - 1. NOW — 2022-02-03 — dropped 3.5%
+  - 2. TXN — 2022-02-03 — dropped 6.5%
+  - 3. QCOM — 2022-02-03 — dropped 4.8%
+  - 4. META — 2022-02-03 — dropped 26.4%
+  - 5. UBER — 2022-02-03 — dropped 7.1%
+  - 6. PLTR — 2022-02-03 — dropped 6.5%
+  - 7. LRCX — 2022-02-03 — dropped 3.8%
+  - 8. MRK — 2022-02-03 — dropped 3.7%
+  - 9. INTU — 2022-02-03 — dropped 4.8%
+  - 10. HON — 2022-02-03 — dropped 7.6%
+  - 11. GOOGL — 2022-02-03 — dropped 3.3%
+  - 12. GOOG — 2022-02-03 — dropped 3.6%
+  - 13. CRM — 2022-02-03 — dropped 5.4%
+  - 14. AVGO — 2022-02-03 — dropped 3.7%
+  - 15. AMZN — 2022-02-03 — dropped 7.8%
+  - 16. AMAT — 2022-02-03 — dropped 3.0%
+  - 17. ADBE — 2022-02-03 — dropped 4.2%
+  - 18. ACN — 2022-02-03 — dropped 3.9%
+  - 19. LIN — 2022-02-03 — dropped 3.3%
+  - 20. LIN — 2022-02-04 — dropped 4.4%
+
+- [ ] **Batch 164** (20 events, 2022-02-04 to 2022-02-10)
+  - 1. GM — 2022-02-04 — dropped 3.4%
+  - 2. META — 2022-02-07 — dropped 5.1%
+  - 3. SPG — 2022-02-08 — dropped 4.6%
+  - 4. CVS — 2022-02-09 — dropped 5.4%
+  - 5. TXN — 2022-02-10 — dropped 3.4%
+  - 6. SO — 2022-02-10 — dropped 3.1%
+  - 7. QCOM — 2022-02-10 — dropped 5.4%
+  - 8. NVDA — 2022-02-10 — dropped 3.3%
+  - 9. INTU — 2022-02-10 — dropped 3.8%
+  - 10. IBM — 2022-02-10 — dropped 3.1%
+  - 11. DUK — 2022-02-10 — dropped 4.7%
+  - 12. UBER — 2022-02-10 — dropped 6.1%
+  - 13. BLK — 2022-02-10 — dropped 4.3%
+  - 14. AVGO — 2022-02-10 — dropped 3.3%
+  - 15. AMGN — 2022-02-10 — dropped 3.5%
+  - 16. AMD — 2022-02-10 — dropped 5.3%
+  - 17. AMAT — 2022-02-10 — dropped 3.1%
+  - 18. ADBE — 2022-02-10 — dropped 5.1%
+  - 19. ACN — 2022-02-10 — dropped 3.7%
+  - 20. DHR — 2022-02-10 — dropped 3.4%
+
+- [ ] **Batch 165** (20 events, 2022-02-11 to 2022-02-11)
+  - 1. NKE — 2022-02-11 — dropped 3.2%
+  - 2. NOW — 2022-02-11 — dropped 4.4%
+  - 3. META — 2022-02-11 — dropped 3.7%
+  - 4. NFLX — 2022-02-11 — dropped 3.7%
+  - 5. PLTR — 2022-02-11 — dropped 3.2%
+  - 6. LRCX — 2022-02-11 — dropped 5.9%
+  - 7. SCHW — 2022-02-11 — dropped 4.0%
+  - 8. TSLA — 2022-02-11 — dropped 4.9%
+  - 9. TXN — 2022-02-11 — dropped 3.7%
+  - 10. UBER — 2022-02-11 — dropped 6.5%
+  - 11. UPS — 2022-02-11 — dropped 3.3%
+  - 12. QCOM — 2022-02-11 — dropped 5.4%
+  - 13. LIN — 2022-02-11 — dropped 4.6%
+  - 14. BKNG — 2022-02-11 — dropped 3.7%
+  - 15. INTU — 2022-02-11 — dropped 3.9%
+  - 16. GOOGL — 2022-02-11 — dropped 3.1%
+  - 17. GOOG — 2022-02-11 — dropped 3.2%
+  - 18. FDX — 2022-02-11 — dropped 3.4%
+  - 19. DHR — 2022-02-11 — dropped 3.4%
+  - 20. CRM — 2022-02-11 — dropped 4.5%
+
+- [ ] **Batch 166** (20 events, 2022-02-11 to 2022-02-17)
+  - 1. ISRG — 2022-02-11 — dropped 3.2%
+  - 2. AVGO — 2022-02-11 — dropped 3.0%
+  - 3. AMZN — 2022-02-11 — dropped 3.6%
+  - 4. AMAT — 2022-02-11 — dropped 5.2%
+  - 5. ADBE — 2022-02-11 — dropped 4.3%
+  - 6. ACN — 2022-02-11 — dropped 3.9%
+  - 7. AMD — 2022-02-16 — dropped 3.1%
+  - 8. WFC — 2022-02-17 — dropped 3.4%
+  - 9. TSLA — 2022-02-17 — dropped 5.1%
+  - 10. SCHW — 2022-02-17 — dropped 3.7%
+  - 11. QCOM — 2022-02-17 — dropped 3.4%
+  - 12. PLTR — 2022-02-17 — dropped 15.7%
+  - 13. ORCL — 2022-02-17 — dropped 4.6%
+  - 14. NVDA — 2022-02-17 — dropped 7.6%
+  - 15. NOW — 2022-02-17 — dropped 4.3%
+  - 16. MS — 2022-02-17 — dropped 4.9%
+  - 17. MMM — 2022-02-17 — dropped 4.5%
+  - 18. META — 2022-02-17 — dropped 4.1%
+  - 19. INTU — 2022-02-17 — dropped 6.1%
+  - 20. IBM — 2022-02-17 — dropped 3.3%
+
+- [ ] **Batch 167** (20 events, 2022-02-17 to 2022-02-18)
+  - 1. GS — 2022-02-17 — dropped 3.1%
+  - 2. GOOGL — 2022-02-17 — dropped 3.8%
+  - 3. ADBE — 2022-02-17 — dropped 4.2%
+  - 4. AMAT — 2022-02-17 — dropped 3.2%
+  - 5. AMD — 2022-02-17 — dropped 4.5%
+  - 6. AVGO — 2022-02-17 — dropped 3.0%
+  - 7. BAC — 2022-02-17 — dropped 3.4%
+  - 8. ACN — 2022-02-17 — dropped 3.2%
+  - 9. C — 2022-02-17 — dropped 3.3%
+  - 10. CAT — 2022-02-17 — dropped 4.4%
+  - 11. CRM — 2022-02-17 — dropped 5.5%
+  - 12. GM — 2022-02-17 — dropped 3.2%
+  - 13. GOOG — 2022-02-17 — dropped 3.8%
+  - 14. BK — 2022-02-17 — dropped 8.2%
+  - 15. PLTR — 2022-02-18 — dropped 6.4%
+  - 16. NVDA — 2022-02-18 — dropped 3.5%
+  - 17. MU — 2022-02-18 — dropped 3.1%
+  - 18. INTU — 2022-02-18 — dropped 3.0%
+  - 19. GE — 2022-02-18 — dropped 5.9%
+  - 20. DE — 2022-02-18 — dropped 3.0%
+
+- [ ] **Batch 168** (20 events, 2022-02-18 to 2022-02-23)
+  - 1. ADBE — 2022-02-18 — dropped 3.3%
+  - 2. ABT — 2022-02-18 — dropped 3.1%
+  - 3. INTC — 2022-02-18 — dropped 5.3%
+  - 4. NFLX — 2022-02-22 — dropped 3.6%
+  - 5. PLTR — 2022-02-22 — dropped 4.9%
+  - 6. NKE — 2022-02-22 — dropped 3.3%
+  - 7. LOW — 2022-02-22 — dropped 3.6%
+  - 8. TSLA — 2022-02-22 — dropped 4.1%
+  - 9. GM — 2022-02-22 — dropped 3.8%
+  - 10. DE — 2022-02-22 — dropped 4.2%
+  - 11. BKNG — 2022-02-22 — dropped 3.8%
+  - 12. BA — 2022-02-22 — dropped 4.9%
+  - 13. LIN — 2022-02-22 — dropped 3.1%
+  - 14. UBER — 2022-02-23 — dropped 3.8%
+  - 15. TSLA — 2022-02-23 — dropped 7.0%
+  - 16. SBUX — 2022-02-23 — dropped 3.7%
+  - 17. NVDA — 2022-02-23 — dropped 4.3%
+  - 18. NOW — 2022-02-23 — dropped 4.6%
+  - 19. MU — 2022-02-23 — dropped 3.6%
+  - 20. LRCX — 2022-02-23 — dropped 3.1%
+
+- [ ] **Batch 169** (20 events, 2022-02-23 to 2022-03-01)
+  - 1. DE — 2022-02-23 — dropped 4.6%
+  - 2. CSCO — 2022-02-23 — dropped 3.3%
+  - 3. CMCSA — 2022-02-23 — dropped 3.9%
+  - 4. BK — 2022-02-23 — dropped 4.1%
+  - 5. AMZN — 2022-02-23 — dropped 3.6%
+  - 6. AMD — 2022-02-23 — dropped 5.1%
+  - 7. INTU — 2022-02-23 — dropped 3.4%
+  - 8. PM — 2022-02-24 — dropped 5.3%
+  - 9. MRK — 2022-02-24 — dropped 3.1%
+  - 10. MO — 2022-02-24 — dropped 4.6%
+  - 11. CL — 2022-02-24 — dropped 3.9%
+  - 12. C — 2022-02-24 — dropped 4.0%
+  - 13. PLTR — 2022-02-25 — dropped 3.0%
+  - 14. BKNG — 2022-02-28 — dropped 4.8%
+  - 15. C — 2022-02-28 — dropped 4.4%
+  - 16. JPM — 2022-02-28 — dropped 4.2%
+  - 17. MS — 2022-02-28 — dropped 4.0%
+  - 18. PM — 2022-02-28 — dropped 4.0%
+  - 19. LRCX — 2022-03-01 — dropped 3.7%
+  - 20. MA — 2022-03-01 — dropped 4.5%
+
+- [ ] **Batch 170** (20 events, 2022-03-01 to 2022-03-01)
+  - 1. META — 2022-03-01 — dropped 3.6%
+  - 2. MS — 2022-03-01 — dropped 3.4%
+  - 3. NKE — 2022-03-01 — dropped 3.2%
+  - 4. NVDA — 2022-03-01 — dropped 3.7%
+  - 5. USB — 2022-03-01 — dropped 4.7%
+  - 6. SCHW — 2022-03-01 — dropped 7.8%
+  - 7. UBER — 2022-03-01 — dropped 5.9%
+  - 8. LIN — 2022-03-01 — dropped 3.6%
+  - 9. WFC — 2022-03-01 — dropped 5.8%
+  - 10. V — 2022-03-01 — dropped 3.3%
+  - 11. QCOM — 2022-03-01 — dropped 4.8%
+  - 12. JPM — 2022-03-01 — dropped 3.8%
+  - 13. AMD — 2022-03-01 — dropped 7.7%
+  - 14. GS — 2022-03-01 — dropped 3.8%
+  - 15. AMAT — 2022-03-01 — dropped 3.4%
+  - 16. AXP — 2022-03-01 — dropped 8.5%
+  - 17. BA — 2022-03-01 — dropped 5.1%
+  - 18. HON — 2022-03-01 — dropped 3.2%
+  - 19. BK — 2022-03-01 — dropped 4.8%
+  - 20. BKNG — 2022-03-01 — dropped 4.6%
+
+- [ ] **Batch 171** (20 events, 2022-03-01 to 2022-03-04)
+  - 1. BAC — 2022-03-01 — dropped 3.9%
+  - 2. COF — 2022-03-01 — dropped 8.2%
+  - 3. EMR — 2022-03-01 — dropped 3.7%
+  - 4. FDX — 2022-03-01 — dropped 3.3%
+  - 5. GE — 2022-03-01 — dropped 3.3%
+  - 6. GM — 2022-03-01 — dropped 4.7%
+  - 7. BLK — 2022-03-01 — dropped 3.9%
+  - 8. NOW — 2022-03-03 — dropped 4.2%
+  - 9. UBER — 2022-03-03 — dropped 6.8%
+  - 10. TSLA — 2022-03-03 — dropped 4.6%
+  - 11. PLTR — 2022-03-03 — dropped 6.0%
+  - 12. NFLX — 2022-03-03 — dropped 3.1%
+  - 13. AMD — 2022-03-03 — dropped 5.3%
+  - 14. GM — 2022-03-03 — dropped 3.1%
+  - 15. C — 2022-03-03 — dropped 3.3%
+  - 16. BA — 2022-03-03 — dropped 4.5%
+  - 17. MU — 2022-03-03 — dropped 4.4%
+  - 18. V — 2022-03-04 — dropped 3.3%
+  - 19. UBER — 2022-03-04 — dropped 6.0%
+  - 20. PLTR — 2022-03-04 — dropped 3.4%
+
+- [ ] **Batch 172** (20 events, 2022-03-04 to 2022-03-07)
+  - 1. NVDA — 2022-03-04 — dropped 3.3%
+  - 2. MA — 2022-03-04 — dropped 3.0%
+  - 3. LRCX — 2022-03-04 — dropped 3.3%
+  - 4. GM — 2022-03-04 — dropped 5.6%
+  - 5. GE — 2022-03-04 — dropped 3.6%
+  - 6. FDX — 2022-03-04 — dropped 3.1%
+  - 7. WFC — 2022-03-04 — dropped 4.8%
+  - 8. COF — 2022-03-04 — dropped 3.2%
+  - 9. BLK — 2022-03-04 — dropped 5.6%
+  - 10. BKNG — 2022-03-04 — dropped 5.6%
+  - 11. BAC — 2022-03-04 — dropped 3.6%
+  - 12. BA — 2022-03-04 — dropped 4.2%
+  - 13. AXP — 2022-03-04 — dropped 3.9%
+  - 14. AMD — 2022-03-04 — dropped 3.2%
+  - 15. AMAT — 2022-03-04 — dropped 3.8%
+  - 16. DIS — 2022-03-04 — dropped 3.3%
+  - 17. NKE — 2022-03-07 — dropped 5.1%
+  - 18. WFC — 2022-03-07 — dropped 6.1%
+  - 19. MU — 2022-03-07 — dropped 7.6%
+  - 20. MCD — 2022-03-07 — dropped 4.9%
+
+- [ ] **Batch 173** (20 events, 2022-03-07 to 2022-03-07)
+  - 1. MS — 2022-03-07 — dropped 3.4%
+  - 2. META — 2022-03-07 — dropped 6.3%
+  - 3. NOW — 2022-03-07 — dropped 5.0%
+  - 4. MA — 2022-03-07 — dropped 5.4%
+  - 5. MSFT — 2022-03-07 — dropped 3.8%
+  - 6. NVDA — 2022-03-07 — dropped 6.9%
+  - 7. SCHW — 2022-03-07 — dropped 3.6%
+  - 8. QCOM — 2022-03-07 — dropped 7.5%
+  - 9. SBUX — 2022-03-07 — dropped 6.2%
+  - 10. SPG — 2022-03-07 — dropped 6.3%
+  - 11. TSLA — 2022-03-07 — dropped 4.0%
+  - 12. UBER — 2022-03-07 — dropped 4.2%
+  - 13. UPS — 2022-03-07 — dropped 4.4%
+  - 14. USB — 2022-03-07 — dropped 3.9%
+  - 15. V — 2022-03-07 — dropped 4.8%
+  - 16. LRCX — 2022-03-07 — dropped 7.0%
+  - 17. PM — 2022-03-07 — dropped 6.6%
+  - 18. LIN — 2022-03-07 — dropped 3.7%
+  - 19. NFLX — 2022-03-07 — dropped 3.2%
+  - 20. ISRG — 2022-03-07 — dropped 3.2%
+
+- [ ] **Batch 174** (20 events, 2022-03-07 to 2022-03-07)
+  - 1. JPM — 2022-03-07 — dropped 3.9%
+  - 2. ADBE — 2022-03-07 — dropped 3.1%
+  - 3. AMAT — 2022-03-07 — dropped 5.2%
+  - 4. AMD — 2022-03-07 — dropped 5.0%
+  - 5. AMZN — 2022-03-07 — dropped 5.6%
+  - 6. AXP — 2022-03-07 — dropped 8.0%
+  - 7. BA — 2022-03-07 — dropped 6.5%
+  - 8. BAC — 2022-03-07 — dropped 6.4%
+  - 9. BKNG — 2022-03-07 — dropped 8.5%
+  - 10. COF — 2022-03-07 — dropped 6.9%
+  - 11. AVGO — 2022-03-07 — dropped 4.2%
+  - 12. DE — 2022-03-07 — dropped 5.4%
+  - 13. DHR — 2022-03-07 — dropped 3.5%
+  - 14. DIS — 2022-03-07 — dropped 5.1%
+  - 15. FDX — 2022-03-07 — dropped 6.3%
+  - 16. INTU — 2022-03-07 — dropped 5.9%
+  - 17. GE — 2022-03-07 — dropped 4.2%
+  - 18. GM — 2022-03-07 — dropped 6.1%
+  - 19. GOOG — 2022-03-07 — dropped 4.3%
+  - 20. GOOGL — 2022-03-07 — dropped 4.2%
+
+- [ ] **Batch 175** (20 events, 2022-03-07 to 2022-03-11)
+  - 1. CRM — 2022-03-07 — dropped 3.3%
+  - 2. UNP — 2022-03-08 — dropped 3.1%
+  - 3. RTX — 2022-03-08 — dropped 3.4%
+  - 4. PG — 2022-03-08 — dropped 4.0%
+  - 5. GD — 2022-03-08 — dropped 4.8%
+  - 6. LMT — 2022-03-08 — dropped 3.7%
+  - 7. KO — 2022-03-08 — dropped 4.0%
+  - 8. MO — 2022-03-08 — dropped 3.7%
+  - 9. XOM — 2022-03-09 — dropped 5.7%
+  - 10. UBER — 2022-03-10 — dropped 3.5%
+  - 11. NOW — 2022-03-10 — dropped 4.6%
+  - 12. MU — 2022-03-10 — dropped 4.7%
+  - 13. AMD — 2022-03-10 — dropped 4.1%
+  - 14. LIN — 2022-03-10 — dropped 3.2%
+  - 15. BK — 2022-03-10 — dropped 4.2%
+  - 16. LRCX — 2022-03-10 — dropped 3.9%
+  - 17. TSLA — 2022-03-11 — dropped 5.1%
+  - 18. SBUX — 2022-03-11 — dropped 5.1%
+  - 19. PM — 2022-03-11 — dropped 3.3%
+  - 20. NOW — 2022-03-11 — dropped 4.0%
+
+- [ ] **Batch 176** (20 events, 2022-03-11 to 2022-03-16)
+  - 1. PLTR — 2022-03-11 — dropped 4.0%
+  - 2. MU — 2022-03-11 — dropped 3.8%
+  - 3. META — 2022-03-11 — dropped 3.9%
+  - 4. ADBE — 2022-03-11 — dropped 5.1%
+  - 5. NFLX — 2022-03-11 — dropped 4.6%
+  - 6. NVDA — 2022-03-14 — dropped 3.5%
+  - 7. UBER — 2022-03-14 — dropped 4.8%
+  - 8. XOM — 2022-03-14 — dropped 3.6%
+  - 9. TSLA — 2022-03-14 — dropped 3.6%
+  - 10. SBUX — 2022-03-14 — dropped 4.2%
+  - 11. NOW — 2022-03-14 — dropped 3.3%
+  - 12. INTC — 2022-03-14 — dropped 3.1%
+  - 13. MU — 2022-03-14 — dropped 4.7%
+  - 14. ISRG — 2022-03-14 — dropped 3.6%
+  - 15. INTU — 2022-03-14 — dropped 3.3%
+  - 16. GOOGL — 2022-03-14 — dropped 3.0%
+  - 17. NKE — 2022-03-14 — dropped 4.1%
+  - 18. CVX — 2022-03-15 — dropped 5.1%
+  - 19. XOM — 2022-03-15 — dropped 5.7%
+  - 20. GD — 2022-03-16 — dropped 4.2%
+
+- [ ] **Batch 177** (20 events, 2022-03-16 to 2022-03-23)
+  - 1. LMT — 2022-03-16 — dropped 6.1%
+  - 2. AMD — 2022-03-17 — dropped 3.2%
+  - 3. CL — 2022-03-18 — dropped 3.9%
+  - 4. FDX — 2022-03-18 — dropped 4.0%
+  - 5. BA — 2022-03-21 — dropped 3.6%
+  - 6. HD — 2022-03-21 — dropped 3.3%
+  - 7. LOW — 2022-03-21 — dropped 3.4%
+  - 8. SBUX — 2022-03-21 — dropped 3.1%
+  - 9. UBER — 2022-03-21 — dropped 4.1%
+  - 10. WFC — 2022-03-23 — dropped 4.3%
+  - 11. QCOM — 2022-03-23 — dropped 3.0%
+  - 12. NVDA — 2022-03-23 — dropped 3.4%
+  - 13. NOW — 2022-03-23 — dropped 3.5%
+  - 14. MU — 2022-03-23 — dropped 4.4%
+  - 15. LOW — 2022-03-23 — dropped 3.3%
+  - 16. ISRG — 2022-03-23 — dropped 3.9%
+  - 17. INTU — 2022-03-23 — dropped 3.1%
+  - 18. HD — 2022-03-23 — dropped 3.8%
+  - 19. CSCO — 2022-03-23 — dropped 3.0%
+  - 20. CRM — 2022-03-23 — dropped 3.3%
+
+- [ ] **Batch 178** (20 events, 2022-03-23 to 2022-03-31)
+  - 1. COF — 2022-03-23 — dropped 3.0%
+  - 2. ABT — 2022-03-23 — dropped 4.1%
+  - 3. NOW — 2022-03-25 — dropped 3.3%
+  - 4. PLTR — 2022-03-25 — dropped 3.1%
+  - 5. COP — 2022-03-28 — dropped 3.7%
+  - 6. CVS — 2022-03-29 — dropped 3.1%
+  - 7. DE — 2022-03-29 — dropped 4.6%
+  - 8. QCOM — 2022-03-30 — dropped 5.2%
+  - 9. NVDA — 2022-03-30 — dropped 3.4%
+  - 10. NOW — 2022-03-30 — dropped 4.0%
+  - 11. MU — 2022-03-30 — dropped 3.5%
+  - 12. LOW — 2022-03-30 — dropped 4.6%
+  - 13. AMD — 2022-03-30 — dropped 3.3%
+  - 14. AMAT — 2022-03-30 — dropped 4.0%
+  - 15. LRCX — 2022-03-30 — dropped 3.6%
+  - 16. WFC — 2022-03-31 — dropped 3.3%
+  - 17. USB — 2022-03-31 — dropped 3.7%
+  - 18. SCHW — 2022-03-31 — dropped 5.0%
+  - 19. LOW — 2022-03-31 — dropped 3.5%
+  - 20. JPM — 2022-03-31 — dropped 3.0%
+
+- [ ] **Batch 179** (20 events, 2022-03-31 to 2022-04-05)
+  - 1. MS — 2022-03-31 — dropped 3.2%
+  - 2. GM — 2022-03-31 — dropped 3.3%
+  - 3. GE — 2022-03-31 — dropped 3.3%
+  - 4. BK — 2022-03-31 — dropped 4.3%
+  - 5. BAC — 2022-03-31 — dropped 4.1%
+  - 6. INTC — 2022-03-31 — dropped 3.6%
+  - 7. AMAT — 2022-04-01 — dropped 3.3%
+  - 8. FDX — 2022-04-01 — dropped 4.4%
+  - 9. QCOM — 2022-04-01 — dropped 3.8%
+  - 10. UNP — 2022-04-01 — dropped 4.8%
+  - 11. UPS — 2022-04-01 — dropped 3.6%
+  - 12. SBUX — 2022-04-04 — dropped 3.7%
+  - 13. QCOM — 2022-04-05 — dropped 5.4%
+  - 14. PLTR — 2022-04-05 — dropped 5.1%
+  - 15. SBUX — 2022-04-05 — dropped 4.5%
+  - 16. NVDA — 2022-04-05 — dropped 5.2%
+  - 17. TXN — 2022-04-05 — dropped 3.0%
+  - 18. UBER — 2022-04-05 — dropped 4.2%
+  - 19. UPS — 2022-04-05 — dropped 3.9%
+  - 20. TSLA — 2022-04-05 — dropped 4.7%
+
+- [ ] **Batch 180** (20 events, 2022-04-05 to 2022-04-06)
+  - 1. NOW — 2022-04-05 — dropped 3.8%
+  - 2. CRM — 2022-04-05 — dropped 4.0%
+  - 3. LRCX — 2022-04-05 — dropped 6.0%
+  - 4. AMD — 2022-04-05 — dropped 3.4%
+  - 5. AVGO — 2022-04-05 — dropped 3.3%
+  - 6. BA — 2022-04-05 — dropped 4.5%
+  - 7. AMAT — 2022-04-05 — dropped 6.0%
+  - 8. MU — 2022-04-05 — dropped 3.9%
+  - 9. FDX — 2022-04-05 — dropped 3.2%
+  - 10. GM — 2022-04-05 — dropped 4.1%
+  - 11. BKNG — 2022-04-05 — dropped 3.2%
+  - 12. NOW — 2022-04-06 — dropped 4.6%
+  - 13. UNP — 2022-04-06 — dropped 3.6%
+  - 14. UBER — 2022-04-06 — dropped 4.4%
+  - 15. TSLA — 2022-04-06 — dropped 4.2%
+  - 16. QCOM — 2022-04-06 — dropped 4.2%
+  - 17. PLTR — 2022-04-06 — dropped 6.4%
+  - 18. NVDA — 2022-04-06 — dropped 5.9%
+  - 19. NFLX — 2022-04-06 — dropped 3.1%
+  - 20. V — 2022-04-06 — dropped 3.1%
+
+- [ ] **Batch 181** (20 events, 2022-04-06 to 2022-04-11)
+  - 1. META — 2022-04-06 — dropped 3.7%
+  - 2. GM — 2022-04-06 — dropped 4.6%
+  - 3. FDX — 2022-04-06 — dropped 3.3%
+  - 4. CRM — 2022-04-06 — dropped 4.4%
+  - 5. BKNG — 2022-04-06 — dropped 3.3%
+  - 6. AMZN — 2022-04-06 — dropped 3.2%
+  - 7. ADBE — 2022-04-06 — dropped 3.1%
+  - 8. MSFT — 2022-04-06 — dropped 3.7%
+  - 9. UBER — 2022-04-07 — dropped 3.4%
+  - 10. NVDA — 2022-04-08 — dropped 4.5%
+  - 11. TSLA — 2022-04-08 — dropped 3.0%
+  - 12. TSLA — 2022-04-11 — dropped 4.8%
+  - 13. TMO — 2022-04-11 — dropped 3.8%
+  - 14. NVDA — 2022-04-11 — dropped 5.2%
+  - 15. MSFT — 2022-04-11 — dropped 3.9%
+  - 16. LRCX — 2022-04-11 — dropped 3.2%
+  - 17. XOM — 2022-04-11 — dropped 3.4%
+  - 18. ISRG — 2022-04-11 — dropped 3.8%
+  - 19. GOOG — 2022-04-11 — dropped 3.1%
+  - 20. COP — 2022-04-11 — dropped 4.9%
+
+- [ ] **Batch 182** (20 events, 2022-04-11 to 2022-04-14)
+  - 1. AXP — 2022-04-11 — dropped 3.3%
+  - 2. AMD — 2022-04-11 — dropped 3.6%
+  - 3. AMAT — 2022-04-11 — dropped 3.1%
+  - 4. ACN — 2022-04-11 — dropped 3.4%
+  - 5. GOOGL — 2022-04-11 — dropped 3.3%
+  - 6. DHR — 2022-04-12 — dropped 3.6%
+  - 7. ABBV — 2022-04-13 — dropped 5.0%
+  - 8. JPM — 2022-04-13 — dropped 3.2%
+  - 9. NVDA — 2022-04-14 — dropped 4.3%
+  - 10. WFC — 2022-04-14 — dropped 4.5%
+  - 11. TSLA — 2022-04-14 — dropped 3.7%
+  - 12. PLTR — 2022-04-14 — dropped 3.7%
+  - 13. MU — 2022-04-14 — dropped 3.1%
+  - 14. NOW — 2022-04-14 — dropped 3.6%
+  - 15. CRM — 2022-04-14 — dropped 3.2%
+  - 16. LRCX — 2022-04-14 — dropped 3.5%
+  - 17. BLK — 2022-04-14 — dropped 3.9%
+  - 18. BAC — 2022-04-14 — dropped 3.2%
+  - 19. AVGO — 2022-04-14 — dropped 3.2%
+  - 20. AMD — 2022-04-14 — dropped 4.8%
+
+- [ ] **Batch 183** (20 events, 2022-04-19 to 2022-04-21)
+  - 1. PFE — 2022-04-19 — dropped 3.2%
+  - 2. TSLA — 2022-04-20 — dropped 5.0%
+  - 3. NVDA — 2022-04-20 — dropped 3.2%
+  - 4. AMD — 2022-04-20 — dropped 3.0%
+  - 5. DIS — 2022-04-20 — dropped 5.6%
+  - 6. NEE — 2022-04-21 — dropped 6.5%
+  - 7. UBER — 2022-04-21 — dropped 4.6%
+  - 8. SCHW — 2022-04-21 — dropped 4.2%
+  - 9. RTX — 2022-04-21 — dropped 3.1%
+  - 10. QCOM — 2022-04-21 — dropped 3.0%
+  - 11. NVDA — 2022-04-21 — dropped 6.0%
+  - 12. NFLX — 2022-04-21 — dropped 3.5%
+  - 13. MU — 2022-04-21 — dropped 3.1%
+  - 14. PLTR — 2022-04-21 — dropped 3.6%
+  - 15. LMT — 2022-04-21 — dropped 3.2%
+  - 16. INTU — 2022-04-21 — dropped 3.4%
+  - 17. CVX — 2022-04-21 — dropped 4.6%
+  - 18. CRM — 2022-04-21 — dropped 4.8%
+  - 19. COP — 2022-04-21 — dropped 3.9%
+  - 20. AMZN — 2022-04-21 — dropped 3.7%
+
+- [ ] **Batch 184** (20 events, 2022-04-21 to 2022-04-22)
+  - 1. AMD — 2022-04-21 — dropped 4.4%
+  - 2. META — 2022-04-21 — dropped 6.2%
+  - 3. MA — 2022-04-22 — dropped 3.6%
+  - 4. MDT — 2022-04-22 — dropped 4.7%
+  - 5. MS — 2022-04-22 — dropped 4.7%
+  - 6. NKE — 2022-04-22 — dropped 4.7%
+  - 7. NOW — 2022-04-22 — dropped 4.1%
+  - 8. NVDA — 2022-04-22 — dropped 3.3%
+  - 9. ORCL — 2022-04-22 — dropped 4.1%
+  - 10. PLTR — 2022-04-22 — dropped 3.0%
+  - 11. TMO — 2022-04-22 — dropped 3.3%
+  - 12. SPG — 2022-04-22 — dropped 3.8%
+  - 13. T — 2022-04-22 — dropped 3.4%
+  - 14. UNH — 2022-04-22 — dropped 3.1%
+  - 15. UNP — 2022-04-22 — dropped 4.1%
+  - 16. USB — 2022-04-22 — dropped 3.4%
+  - 17. V — 2022-04-22 — dropped 3.8%
+  - 18. VZ — 2022-04-22 — dropped 5.6%
+  - 19. LOW — 2022-04-22 — dropped 3.9%
+  - 20. WFC — 2022-04-22 — dropped 3.0%
+
+- [ ] **Batch 185** (20 events, 2022-04-22 to 2022-04-22)
+  - 1. LLY — 2022-04-22 — dropped 3.8%
+  - 2. SCHW — 2022-04-22 — dropped 4.0%
+  - 3. INTU — 2022-04-22 — dropped 4.8%
+  - 4. LIN — 2022-04-22 — dropped 4.5%
+  - 5. ABT — 2022-04-22 — dropped 3.0%
+  - 6. ACN — 2022-04-22 — dropped 3.6%
+  - 7. BAC — 2022-04-22 — dropped 3.5%
+  - 8. BK — 2022-04-22 — dropped 4.2%
+  - 9. CAT — 2022-04-22 — dropped 7.0%
+  - 10. CMCSA — 2022-04-22 — dropped 3.3%
+  - 11. COF — 2022-04-22 — dropped 3.4%
+  - 12. COST — 2022-04-22 — dropped 3.4%
+  - 13. CVS — 2022-04-22 — dropped 3.3%
+  - 14. DE — 2022-04-22 — dropped 4.9%
+  - 15. DHR — 2022-04-22 — dropped 4.9%
+  - 16. EMR — 2022-04-22 — dropped 3.2%
+  - 17. GOOG — 2022-04-22 — dropped 4.3%
+  - 18. GOOGL — 2022-04-22 — dropped 4.1%
+  - 19. GS — 2022-04-22 — dropped 4.3%
+  - 20. HD — 2022-04-22 — dropped 3.3%
+
+- [ ] **Batch 186** (20 events, 2022-04-22 to 2022-04-26)
+  - 1. CRM — 2022-04-22 — dropped 3.3%
+  - 2. XOM — 2022-04-25 — dropped 3.4%
+  - 3. VZ — 2022-04-25 — dropped 3.1%
+  - 4. TMO — 2022-04-25 — dropped 3.1%
+  - 5. DE — 2022-04-25 — dropped 4.5%
+  - 6. COP — 2022-04-25 — dropped 4.5%
+  - 7. META — 2022-04-26 — dropped 3.2%
+  - 8. MS — 2022-04-26 — dropped 3.2%
+  - 9. MSFT — 2022-04-26 — dropped 3.7%
+  - 10. MU — 2022-04-26 — dropped 4.3%
+  - 11. NFLX — 2022-04-26 — dropped 5.5%
+  - 12. NKE — 2022-04-26 — dropped 5.8%
+  - 13. NOW — 2022-04-26 — dropped 3.4%
+  - 14. V — 2022-04-26 — dropped 4.2%
+  - 15. NVDA — 2022-04-26 — dropped 5.6%
+  - 16. ORCL — 2022-04-26 — dropped 3.2%
+  - 17. PLTR — 2022-04-26 — dropped 8.2%
+  - 18. SBUX — 2022-04-26 — dropped 3.0%
+  - 19. TMO — 2022-04-26 — dropped 5.1%
+  - 20. TSLA — 2022-04-26 — dropped 12.2%
+
+- [ ] **Batch 187** (20 events, 2022-04-26 to 2022-04-26)
+  - 1. TXN — 2022-04-26 — dropped 3.1%
+  - 2. UBER — 2022-04-26 — dropped 3.4%
+  - 3. UPS — 2022-04-26 — dropped 3.5%
+  - 4. LRCX — 2022-04-26 — dropped 4.0%
+  - 5. LIN — 2022-04-26 — dropped 3.3%
+  - 6. BLK — 2022-04-26 — dropped 3.2%
+  - 7. INTU — 2022-04-26 — dropped 5.7%
+  - 8. AAPL — 2022-04-26 — dropped 3.7%
+  - 9. ACN — 2022-04-26 — dropped 4.3%
+  - 10. ADBE — 2022-04-26 — dropped 3.6%
+  - 11. AMAT — 2022-04-26 — dropped 4.8%
+  - 12. AMD — 2022-04-26 — dropped 6.1%
+  - 13. AMZN — 2022-04-26 — dropped 4.6%
+  - 14. ISRG — 2022-04-26 — dropped 4.2%
+  - 15. BA — 2022-04-26 — dropped 5.0%
+  - 16. AVGO — 2022-04-26 — dropped 4.7%
+  - 17. COF — 2022-04-26 — dropped 3.1%
+  - 18. DHR — 2022-04-26 — dropped 3.6%
+  - 19. DIS — 2022-04-26 — dropped 3.5%
+  - 20. GE — 2022-04-26 — dropped 10.3%
+
+- [ ] **Batch 188** (20 events, 2022-04-26 to 2022-04-29)
+  - 1. GM — 2022-04-26 — dropped 4.5%
+  - 2. GOOG — 2022-04-26 — dropped 3.0%
+  - 3. GOOGL — 2022-04-26 — dropped 3.6%
+  - 4. INTC — 2022-04-26 — dropped 3.3%
+  - 5. BKNG — 2022-04-26 — dropped 3.8%
+  - 6. META — 2022-04-27 — dropped 3.3%
+  - 7. PLTR — 2022-04-27 — dropped 5.0%
+  - 8. NFLX — 2022-04-27 — dropped 5.0%
+  - 9. ISRG — 2022-04-27 — dropped 3.8%
+  - 10. GOOG — 2022-04-27 — dropped 3.8%
+  - 11. GOOGL — 2022-04-27 — dropped 3.7%
+  - 12. CSCO — 2022-04-27 — dropped 3.1%
+  - 13. COF — 2022-04-27 — dropped 6.0%
+  - 14. AMGN — 2022-04-28 — dropped 4.3%
+  - 15. CMCSA — 2022-04-28 — dropped 6.2%
+  - 16. NOW — 2022-04-29 — dropped 5.1%
+  - 17. NFLX — 2022-04-29 — dropped 4.6%
+  - 18. NEE — 2022-04-29 — dropped 3.4%
+  - 19. MSFT — 2022-04-29 — dropped 4.2%
+  - 20. MA — 2022-04-29 — dropped 4.1%
+
+- [ ] **Batch 189** (20 events, 2022-04-29 to 2022-04-29)
+  - 1. JPM — 2022-04-29 — dropped 3.2%
+  - 2. LOW — 2022-04-29 — dropped 3.6%
+  - 3. NVDA — 2022-04-29 — dropped 6.2%
+  - 4. INTU — 2022-04-29 — dropped 5.8%
+  - 5. INTC — 2022-04-29 — dropped 6.9%
+  - 6. HD — 2022-04-29 — dropped 3.6%
+  - 7. LRCX — 2022-04-29 — dropped 3.9%
+  - 8. ORCL — 2022-04-29 — dropped 3.6%
+  - 9. QCOM — 2022-04-29 — dropped 5.7%
+  - 10. PLTR — 2022-04-29 — dropped 5.0%
+  - 11. GS — 2022-04-29 — dropped 4.1%
+  - 12. RTX — 2022-04-29 — dropped 3.2%
+  - 13. SCHW — 2022-04-29 — dropped 4.0%
+  - 14. SPG — 2022-04-29 — dropped 5.2%
+  - 15. TMUS — 2022-04-29 — dropped 6.9%
+  - 16. TXN — 2022-04-29 — dropped 3.2%
+  - 17. UBER — 2022-04-29 — dropped 4.1%
+  - 18. UNH — 2022-04-29 — dropped 3.0%
+  - 19. UPS — 2022-04-29 — dropped 5.4%
+  - 20. V — 2022-04-29 — dropped 3.4%
+
+- [ ] **Batch 190** (20 events, 2022-04-29 to 2022-04-29)
+  - 1. VZ — 2022-04-29 — dropped 4.3%
+  - 2. WFC — 2022-04-29 — dropped 3.4%
+  - 3. PEP — 2022-04-29 — dropped 3.3%
+  - 4. GOOGL — 2022-04-29 — dropped 3.7%
+  - 5. MS — 2022-04-29 — dropped 3.4%
+  - 6. GILD — 2022-04-29 — dropped 3.6%
+  - 7. AAPL — 2022-04-29 — dropped 3.7%
+  - 8. ABBV — 2022-04-29 — dropped 6.0%
+  - 9. ABT — 2022-04-29 — dropped 3.8%
+  - 10. GOOG — 2022-04-29 — dropped 3.7%
+  - 11. ADBE — 2022-04-29 — dropped 3.6%
+  - 12. AMAT — 2022-04-29 — dropped 3.7%
+  - 13. AMD — 2022-04-29 — dropped 4.6%
+  - 14. AMT — 2022-04-29 — dropped 4.4%
+  - 15. AVGO — 2022-04-29 — dropped 4.2%
+  - 16. AXP — 2022-04-29 — dropped 4.0%
+  - 17. BA — 2022-04-29 — dropped 3.5%
+  - 18. BAC — 2022-04-29 — dropped 3.1%
+  - 19. BK — 2022-04-29 — dropped 3.2%
+  - 20. BKNG — 2022-04-29 — dropped 4.6%
+
+- [ ] **Batch 191** (20 events, 2022-04-29 to 2022-05-05)
+  - 1. ACN — 2022-04-29 — dropped 4.3%
+  - 2. C — 2022-04-29 — dropped 3.6%
+  - 3. BLK — 2022-04-29 — dropped 4.0%
+  - 4. FDX — 2022-04-29 — dropped 3.9%
+  - 5. DUK — 2022-04-29 — dropped 3.2%
+  - 6. DIS — 2022-04-29 — dropped 3.2%
+  - 7. CVX — 2022-04-29 — dropped 3.2%
+  - 8. CVS — 2022-04-29 — dropped 4.7%
+  - 9. GE — 2022-04-29 — dropped 4.1%
+  - 10. CRM — 2022-04-29 — dropped 5.3%
+  - 11. CL — 2022-04-29 — dropped 5.1%
+  - 12. COST — 2022-04-29 — dropped 5.4%
+  - 13. COF — 2022-04-29 — dropped 3.7%
+  - 14. CMCSA — 2022-04-29 — dropped 4.7%
+  - 15. CSCO — 2022-04-29 — dropped 3.3%
+  - 16. UBER — 2022-05-02 — dropped 3.5%
+  - 17. BKNG — 2022-05-03 — dropped 4.0%
+  - 18. UBER — 2022-05-03 — dropped 3.0%
+  - 19. UBER — 2022-05-04 — dropped 4.6%
+  - 20. LOW — 2022-05-05 — dropped 5.4%
+
+- [ ] **Batch 192** (20 events, 2022-05-05 to 2022-05-05)
+  - 1. LRCX — 2022-05-05 — dropped 4.9%
+  - 2. MA — 2022-05-05 — dropped 4.1%
+  - 3. META — 2022-05-05 — dropped 6.8%
+  - 4. MMM — 2022-05-05 — dropped 3.1%
+  - 5. MSFT — 2022-05-05 — dropped 4.4%
+  - 6. MU — 2022-05-05 — dropped 3.2%
+  - 7. NFLX — 2022-05-05 — dropped 7.7%
+  - 8. NKE — 2022-05-05 — dropped 5.9%
+  - 9. V — 2022-05-05 — dropped 4.3%
+  - 10. NVDA — 2022-05-05 — dropped 7.3%
+  - 11. ORCL — 2022-05-05 — dropped 3.2%
+  - 12. PLTR — 2022-05-05 — dropped 7.8%
+  - 13. QCOM — 2022-05-05 — dropped 5.0%
+  - 14. SBUX — 2022-05-05 — dropped 5.1%
+  - 15. TSLA — 2022-05-05 — dropped 8.3%
+  - 16. UBER — 2022-05-05 — dropped 4.5%
+  - 17. ISRG — 2022-05-05 — dropped 5.0%
+  - 18. NOW — 2022-05-05 — dropped 6.0%
+  - 19. INTU — 2022-05-05 — dropped 8.5%
+  - 20. TXN — 2022-05-05 — dropped 3.4%
+
+- [ ] **Batch 193** (20 events, 2022-05-05 to 2022-05-05)
+  - 1. HON — 2022-05-05 — dropped 3.9%
+  - 2. AAPL — 2022-05-05 — dropped 5.6%
+  - 3. ACN — 2022-05-05 — dropped 5.1%
+  - 4. INTC — 2022-05-05 — dropped 4.2%
+  - 5. ADBE — 2022-05-05 — dropped 5.4%
+  - 6. AMAT — 2022-05-05 — dropped 4.5%
+  - 7. AMD — 2022-05-05 — dropped 5.6%
+  - 8. AMZN — 2022-05-05 — dropped 7.6%
+  - 9. AVGO — 2022-05-05 — dropped 3.9%
+  - 10. AXP — 2022-05-05 — dropped 3.8%
+  - 11. BA — 2022-05-05 — dropped 4.1%
+  - 12. COST — 2022-05-05 — dropped 5.0%
+  - 13. CRM — 2022-05-05 — dropped 7.1%
+  - 14. CSCO — 2022-05-05 — dropped 3.8%
+  - 15. DE — 2022-05-05 — dropped 3.4%
+  - 16. DIS — 2022-05-05 — dropped 3.1%
+  - 17. GOOG — 2022-05-05 — dropped 4.8%
+  - 18. GOOGL — 2022-05-05 — dropped 4.7%
+  - 19. GS — 2022-05-05 — dropped 3.4%
+  - 20. HD — 2022-05-05 — dropped 5.1%
+
+- [ ] **Batch 194** (20 events, 2022-05-05 to 2022-05-09)
+  - 1. BLK — 2022-05-05 — dropped 4.7%
+  - 2. SCHW — 2022-05-06 — dropped 3.5%
+  - 3. PLTR — 2022-05-06 — dropped 6.3%
+  - 4. NKE — 2022-05-06 — dropped 3.5%
+  - 5. ISRG — 2022-05-06 — dropped 3.9%
+  - 6. INTU — 2022-05-06 — dropped 3.5%
+  - 7. NFLX — 2022-05-06 — dropped 3.9%
+  - 8. INTU — 2022-05-09 — dropped 7.3%
+  - 9. ISRG — 2022-05-09 — dropped 7.2%
+  - 10. LRCX — 2022-05-09 — dropped 6.5%
+  - 11. MA — 2022-05-09 — dropped 5.5%
+  - 12. MDT — 2022-05-09 — dropped 3.7%
+  - 13. META — 2022-05-09 — dropped 3.7%
+  - 14. MS — 2022-05-09 — dropped 3.7%
+  - 15. MSFT — 2022-05-09 — dropped 3.7%
+  - 16. MU — 2022-05-09 — dropped 3.4%
+  - 17. NFLX — 2022-05-09 — dropped 4.3%
+  - 18. NOW — 2022-05-09 — dropped 6.8%
+  - 19. XOM — 2022-05-09 — dropped 7.9%
+  - 20. QCOM — 2022-05-09 — dropped 4.0%
+
+- [ ] **Batch 195** (20 events, 2022-05-09 to 2022-05-09)
+  - 1. RTX — 2022-05-09 — dropped 3.7%
+  - 2. SBUX — 2022-05-09 — dropped 4.0%
+  - 3. SCHW — 2022-05-09 — dropped 4.9%
+  - 4. TMO — 2022-05-09 — dropped 5.4%
+  - 5. TMUS — 2022-05-09 — dropped 4.0%
+  - 6. TSLA — 2022-05-09 — dropped 9.1%
+  - 7. UBER — 2022-05-09 — dropped 11.6%
+  - 8. V — 2022-05-09 — dropped 4.8%
+  - 9. NVDA — 2022-05-09 — dropped 9.2%
+  - 10. GM — 2022-05-09 — dropped 3.3%
+  - 11. PLTR — 2022-05-09 — dropped 21.3%
+  - 12. GD — 2022-05-09 — dropped 4.3%
+  - 13. GE — 2022-05-09 — dropped 6.7%
+  - 14. AAPL — 2022-05-09 — dropped 3.3%
+  - 15. ABT — 2022-05-09 — dropped 4.3%
+  - 16. ADBE — 2022-05-09 — dropped 3.6%
+  - 17. AMAT — 2022-05-09 — dropped 6.0%
+  - 18. AMD — 2022-05-09 — dropped 9.4%
+  - 19. AMT — 2022-05-09 — dropped 5.3%
+  - 20. AXP — 2022-05-09 — dropped 3.7%
+
+- [ ] **Batch 196** (20 events, 2022-05-09 to 2022-05-11)
+  - 1. BA — 2022-05-09 — dropped 10.5%
+  - 2. BKNG — 2022-05-09 — dropped 7.8%
+  - 3. AMZN — 2022-05-09 — dropped 5.2%
+  - 4. C — 2022-05-09 — dropped 3.4%
+  - 5. EMR — 2022-05-09 — dropped 4.1%
+  - 6. BLK — 2022-05-09 — dropped 3.7%
+  - 7. DHR — 2022-05-09 — dropped 4.0%
+  - 8. DE — 2022-05-09 — dropped 3.4%
+  - 9. CVX — 2022-05-09 — dropped 6.7%
+  - 10. DIS — 2022-05-09 — dropped 3.0%
+  - 11. COP — 2022-05-09 — dropped 9.7%
+  - 12. COF — 2022-05-09 — dropped 3.0%
+  - 13. CAT — 2022-05-09 — dropped 3.9%
+  - 14. CRM — 2022-05-09 — dropped 3.6%
+  - 15. IBM — 2022-05-10 — dropped 3.9%
+  - 16. MO — 2022-05-10 — dropped 6.7%
+  - 17. MSFT — 2022-05-11 — dropped 3.3%
+  - 18. SPG — 2022-05-11 — dropped 5.1%
+  - 19. QCOM — 2022-05-11 — dropped 3.3%
+  - 20. NVDA — 2022-05-11 — dropped 5.5%
+
+- [ ] **Batch 197** (20 events, 2022-05-11 to 2022-05-16)
+  - 1. NFLX — 2022-05-11 — dropped 6.4%
+  - 2. META — 2022-05-11 — dropped 4.5%
+  - 3. UBER — 2022-05-11 — dropped 4.6%
+  - 4. GM — 2022-05-11 — dropped 3.7%
+  - 5. CRM — 2022-05-11 — dropped 3.5%
+  - 6. AMZN — 2022-05-11 — dropped 3.2%
+  - 7. AMAT — 2022-05-11 — dropped 3.0%
+  - 8. ADBE — 2022-05-11 — dropped 3.5%
+  - 9. AAPL — 2022-05-11 — dropped 5.2%
+  - 10. INTU — 2022-05-11 — dropped 4.0%
+  - 11. AXP — 2022-05-12 — dropped 3.8%
+  - 12. BA — 2022-05-12 — dropped 4.8%
+  - 13. COF — 2022-05-12 — dropped 4.5%
+  - 14. GM — 2022-05-12 — dropped 4.6%
+  - 15. UBER — 2022-05-16 — dropped 3.3%
+  - 16. TSLA — 2022-05-16 — dropped 5.9%
+  - 17. SBUX — 2022-05-16 — dropped 4.2%
+  - 18. NOW — 2022-05-16 — dropped 4.4%
+  - 19. INTU — 2022-05-16 — dropped 3.3%
+  - 20. PLTR — 2022-05-16 — dropped 3.6%
+
+- [ ] **Batch 198** (20 events, 2022-05-18 to 2022-05-18)
+  - 1. NVDA — 2022-05-18 — dropped 6.8%
+  - 2. KO — 2022-05-18 — dropped 7.0%
+  - 3. LOW — 2022-05-18 — dropped 5.3%
+  - 4. LRCX — 2022-05-18 — dropped 6.8%
+  - 5. MCD — 2022-05-18 — dropped 4.4%
+  - 6. MDLZ — 2022-05-18 — dropped 7.3%
+  - 7. ISRG — 2022-05-18 — dropped 4.4%
+  - 8. META — 2022-05-18 — dropped 5.1%
+  - 9. MSFT — 2022-05-18 — dropped 4.8%
+  - 10. MU — 2022-05-18 — dropped 4.6%
+  - 11. NKE — 2022-05-18 — dropped 5.6%
+  - 12. NOW — 2022-05-18 — dropped 4.8%
+  - 13. ORCL — 2022-05-18 — dropped 5.0%
+  - 14. UBER — 2022-05-18 — dropped 7.2%
+  - 15. PG — 2022-05-18 — dropped 6.2%
+  - 16. PLTR — 2022-05-18 — dropped 4.2%
+  - 17. QCOM — 2022-05-18 — dropped 6.6%
+  - 18. SBUX — 2022-05-18 — dropped 3.3%
+  - 19. SPG — 2022-05-18 — dropped 5.9%
+  - 20. TSLA — 2022-05-18 — dropped 6.8%
+
+- [ ] **Batch 199** (20 events, 2022-05-18 to 2022-05-18)
+  - 1. UNH — 2022-05-18 — dropped 4.3%
+  - 2. UNP — 2022-05-18 — dropped 3.1%
+  - 3. UPS — 2022-05-18 — dropped 6.0%
+  - 4. WFC — 2022-05-18 — dropped 3.7%
+  - 5. WMT — 2022-05-18 — dropped 6.8%
+  - 6. INTU — 2022-05-18 — dropped 5.0%
+  - 7. PEP — 2022-05-18 — dropped 6.2%
+  - 8. INTC — 2022-05-18 — dropped 4.6%
+  - 9. NFLX — 2022-05-18 — dropped 7.0%
+  - 10. HD — 2022-05-18 — dropped 5.2%
+  - 11. AAPL — 2022-05-18 — dropped 5.6%
+  - 12. ACN — 2022-05-18 — dropped 5.8%
+  - 13. AMAT — 2022-05-18 — dropped 4.7%
+  - 14. AMD — 2022-05-18 — dropped 6.0%
+  - 15. AMZN — 2022-05-18 — dropped 7.2%
+  - 16. AVGO — 2022-05-18 — dropped 6.2%
+  - 17. AXP — 2022-05-18 — dropped 3.6%
+  - 18. BA — 2022-05-18 — dropped 4.9%
+  - 19. BAC — 2022-05-18 — dropped 3.1%
+  - 20. BKNG — 2022-05-18 — dropped 4.5%
+
+- [ ] **Batch 200** (20 events, 2022-05-18 to 2022-05-19)
+  - 1. BLK — 2022-05-18 — dropped 3.2%
+  - 2. C — 2022-05-18 — dropped 3.4%
+  - 3. COF — 2022-05-18 — dropped 5.0%
+  - 4. CL — 2022-05-18 — dropped 3.9%
+  - 5. CRM — 2022-05-18 — dropped 3.9%
+  - 6. CSCO — 2022-05-18 — dropped 4.4%
+  - 7. IBM — 2022-05-18 — dropped 3.9%
+  - 8. CVS — 2022-05-18 — dropped 5.4%
+  - 9. CVX — 2022-05-18 — dropped 3.4%
+  - 10. DE — 2022-05-18 — dropped 4.1%
+  - 11. DIS — 2022-05-18 — dropped 4.0%
+  - 12. EMR — 2022-05-18 — dropped 3.3%
+  - 13. FDX — 2022-05-18 — dropped 8.1%
+  - 14. GM — 2022-05-18 — dropped 6.0%
+  - 15. GOOG — 2022-05-18 — dropped 3.7%
+  - 16. GOOGL — 2022-05-18 — dropped 3.9%
+  - 17. COST — 2022-05-18 — dropped 12.5%
+  - 18. SPG — 2022-05-19 — dropped 3.2%
+  - 19. UNP — 2022-05-19 — dropped 3.8%
+  - 20. PM — 2022-05-19 — dropped 5.3%
+
+- [ ] **Batch 201** (20 events, 2022-05-19 to 2022-05-24)
+  - 1. LLY — 2022-05-19 — dropped 3.0%
+  - 2. GD — 2022-05-19 — dropped 3.6%
+  - 3. AVGO — 2022-05-19 — dropped 4.3%
+  - 4. MO — 2022-05-19 — dropped 4.0%
+  - 5. AMAT — 2022-05-20 — dropped 3.9%
+  - 6. AMD — 2022-05-20 — dropped 3.3%
+  - 7. BA — 2022-05-20 — dropped 5.1%
+  - 8. CAT — 2022-05-20 — dropped 4.3%
+  - 9. TSLA — 2022-05-20 — dropped 6.4%
+  - 10. AVGO — 2022-05-23 — dropped 3.1%
+  - 11. GOOG — 2022-05-24 — dropped 5.1%
+  - 12. TSLA — 2022-05-24 — dropped 6.9%
+  - 13. PLTR — 2022-05-24 — dropped 5.7%
+  - 14. NVDA — 2022-05-24 — dropped 4.4%
+  - 15. NFLX — 2022-05-24 — dropped 3.8%
+  - 16. MU — 2022-05-24 — dropped 4.3%
+  - 17. INTU — 2022-05-24 — dropped 3.3%
+  - 18. DIS — 2022-05-24 — dropped 4.0%
+  - 19. BA — 2022-05-24 — dropped 3.8%
+  - 20. AMZN — 2022-05-24 — dropped 3.2%
+
+- [ ] **Batch 202** (20 events, 2022-05-24 to 2022-06-08)
+  - 1. AMD — 2022-05-24 — dropped 4.1%
+  - 2. AMAT — 2022-05-24 — dropped 3.0%
+  - 3. GOOGL — 2022-05-24 — dropped 4.9%
+  - 4. MDT — 2022-05-26 — dropped 5.8%
+  - 5. LLY — 2022-05-31 — dropped 3.1%
+  - 6. SPG — 2022-06-01 — dropped 3.0%
+  - 7. ISRG — 2022-06-01 — dropped 4.9%
+  - 8. PLTR — 2022-06-03 — dropped 3.9%
+  - 9. NVDA — 2022-06-03 — dropped 4.5%
+  - 10. QCOM — 2022-06-03 — dropped 3.4%
+  - 11. META — 2022-06-03 — dropped 4.1%
+  - 12. MDT — 2022-06-03 — dropped 3.1%
+  - 13. INTU — 2022-06-03 — dropped 4.2%
+  - 14. INTC — 2022-06-03 — dropped 3.2%
+  - 15. GM — 2022-06-03 — dropped 3.2%
+  - 16. AAPL — 2022-06-03 — dropped 3.9%
+  - 17. ISRG — 2022-06-03 — dropped 4.1%
+  - 18. MU — 2022-06-08 — dropped 3.1%
+  - 19. AMD — 2022-06-08 — dropped 3.2%
+  - 20. DE — 2022-06-08 — dropped 3.5%
+
+- [ ] **Batch 203** (20 events, 2022-06-08 to 2022-06-09)
+  - 1. INTC — 2022-06-08 — dropped 5.3%
+  - 2. SPG — 2022-06-08 — dropped 3.9%
+  - 3. UNP — 2022-06-08 — dropped 3.1%
+  - 4. UPS — 2022-06-08 — dropped 3.3%
+  - 5. MU — 2022-06-09 — dropped 3.8%
+  - 6. NFLX — 2022-06-09 — dropped 5.0%
+  - 7. MA — 2022-06-09 — dropped 3.7%
+  - 8. NKE — 2022-06-09 — dropped 3.1%
+  - 9. META — 2022-06-09 — dropped 6.4%
+  - 10. NVDA — 2022-06-09 — dropped 3.2%
+  - 11. WFC — 2022-06-09 — dropped 4.4%
+  - 12. PFE — 2022-06-09 — dropped 3.2%
+  - 13. PLTR — 2022-06-09 — dropped 5.4%
+  - 14. SPG — 2022-06-09 — dropped 3.7%
+  - 15. V — 2022-06-09 — dropped 3.5%
+  - 16. LRCX — 2022-06-09 — dropped 3.6%
+  - 17. ORCL — 2022-06-09 — dropped 3.0%
+  - 18. LLY — 2022-06-09 — dropped 3.3%
+  - 19. LIN — 2022-06-09 — dropped 3.0%
+  - 20. ISRG — 2022-06-09 — dropped 4.0%
+
+- [ ] **Batch 204** (20 events, 2022-06-09 to 2022-06-10)
+  - 1. AAPL — 2022-06-09 — dropped 3.6%
+  - 2. AMD — 2022-06-09 — dropped 3.0%
+  - 3. AMZN — 2022-06-09 — dropped 4.2%
+  - 4. AXP — 2022-06-09 — dropped 3.0%
+  - 5. BA — 2022-06-09 — dropped 4.2%
+  - 6. AMAT — 2022-06-09 — dropped 4.6%
+  - 7. COF — 2022-06-09 — dropped 4.7%
+  - 8. DIS — 2022-06-09 — dropped 3.8%
+  - 9. GE — 2022-06-09 — dropped 3.1%
+  - 10. GS — 2022-06-09 — dropped 3.3%
+  - 11. INTU — 2022-06-09 — dropped 3.4%
+  - 12. BAC — 2022-06-09 — dropped 3.8%
+  - 13. MU — 2022-06-10 — dropped 5.1%
+  - 14. MSFT — 2022-06-10 — dropped 4.5%
+  - 15. MS — 2022-06-10 — dropped 4.6%
+  - 16. WFC — 2022-06-10 — dropped 6.1%
+  - 17. MA — 2022-06-10 — dropped 4.1%
+  - 18. META — 2022-06-10 — dropped 4.6%
+  - 19. LRCX — 2022-06-10 — dropped 3.9%
+  - 20. LOW — 2022-06-10 — dropped 4.1%
+
+- [ ] **Batch 205** (20 events, 2022-06-10 to 2022-06-10)
+  - 1. NFLX — 2022-06-10 — dropped 5.1%
+  - 2. MMM — 2022-06-10 — dropped 4.5%
+  - 3. NKE — 2022-06-10 — dropped 3.3%
+  - 4. JPM — 2022-06-10 — dropped 4.6%
+  - 5. NVDA — 2022-06-10 — dropped 6.0%
+  - 6. ORCL — 2022-06-10 — dropped 3.0%
+  - 7. PFE — 2022-06-10 — dropped 3.5%
+  - 8. PLTR — 2022-06-10 — dropped 4.8%
+  - 9. SBUX — 2022-06-10 — dropped 4.1%
+  - 10. SCHW — 2022-06-10 — dropped 3.2%
+  - 11. TSLA — 2022-06-10 — dropped 3.1%
+  - 12. UBER — 2022-06-10 — dropped 6.8%
+  - 13. USB — 2022-06-10 — dropped 3.2%
+  - 14. V — 2022-06-10 — dropped 3.2%
+  - 15. NOW — 2022-06-10 — dropped 3.9%
+  - 16. INTU — 2022-06-10 — dropped 4.8%
+  - 17. EMR — 2022-06-10 — dropped 3.2%
+  - 18. GS — 2022-06-10 — dropped 5.7%
+  - 19. AAPL — 2022-06-10 — dropped 3.9%
+  - 20. ACN — 2022-06-10 — dropped 3.2%
+
+- [ ] **Batch 206** (20 events, 2022-06-10 to 2022-06-10)
+  - 1. AMAT — 2022-06-10 — dropped 5.0%
+  - 2. AMD — 2022-06-10 — dropped 4.0%
+  - 3. AMT — 2022-06-10 — dropped 3.5%
+  - 4. AMZN — 2022-06-10 — dropped 5.6%
+  - 5. AXP — 2022-06-10 — dropped 4.1%
+  - 6. BA — 2022-06-10 — dropped 5.0%
+  - 7. BAC — 2022-06-10 — dropped 3.9%
+  - 8. BLK — 2022-06-10 — dropped 6.4%
+  - 9. HD — 2022-06-10 — dropped 3.5%
+  - 10. C — 2022-06-10 — dropped 4.5%
+  - 11. BRK-B — 2022-06-10 — dropped 3.0%
+  - 12. GOOGL — 2022-06-10 — dropped 3.2%
+  - 13. GM — 2022-06-10 — dropped 4.5%
+  - 14. GE — 2022-06-10 — dropped 4.7%
+  - 15. GOOG — 2022-06-10 — dropped 3.0%
+  - 16. DIS — 2022-06-10 — dropped 3.8%
+  - 17. CRM — 2022-06-10 — dropped 4.6%
+  - 18. COF — 2022-06-10 — dropped 5.7%
+  - 19. CAT — 2022-06-10 — dropped 3.8%
+  - 20. FDX — 2022-06-10 — dropped 4.7%
+
+- [ ] **Batch 207** (20 events, 2022-06-13 to 2022-06-13)
+  - 1. NEE — 2022-06-13 — dropped 4.6%
+  - 2. NVDA — 2022-06-13 — dropped 7.8%
+  - 3. NOW — 2022-06-13 — dropped 6.9%
+  - 4. NKE — 2022-06-13 — dropped 3.7%
+  - 5. NFLX — 2022-06-13 — dropped 7.2%
+  - 6. MU — 2022-06-13 — dropped 6.0%
+  - 7. LRCX — 2022-06-13 — dropped 5.8%
+  - 8. MO — 2022-06-13 — dropped 3.6%
+  - 9. META — 2022-06-13 — dropped 6.4%
+  - 10. MA — 2022-06-13 — dropped 4.5%
+  - 11. ORCL — 2022-06-13 — dropped 4.6%
+  - 12. LIN — 2022-06-13 — dropped 3.1%
+  - 13. ISRG — 2022-06-13 — dropped 5.0%
+  - 14. MSFT — 2022-06-13 — dropped 4.2%
+  - 15. PFE — 2022-06-13 — dropped 4.1%
+  - 16. SBUX — 2022-06-13 — dropped 4.4%
+  - 17. PM — 2022-06-13 — dropped 3.7%
+  - 18. QCOM — 2022-06-13 — dropped 3.4%
+  - 19. RTX — 2022-06-13 — dropped 3.7%
+  - 20. SCHW — 2022-06-13 — dropped 3.2%
+
+- [ ] **Batch 208** (20 events, 2022-06-13 to 2022-06-13)
+  - 1. SO — 2022-06-13 — dropped 4.7%
+  - 2. SPG — 2022-06-13 — dropped 4.1%
+  - 3. T — 2022-06-13 — dropped 4.5%
+  - 4. TMUS — 2022-06-13 — dropped 4.5%
+  - 5. INTU — 2022-06-13 — dropped 4.5%
+  - 6. UBER — 2022-06-13 — dropped 9.1%
+  - 7. UNH — 2022-06-13 — dropped 3.1%
+  - 8. USB — 2022-06-13 — dropped 3.4%
+  - 9. V — 2022-06-13 — dropped 3.6%
+  - 10. XOM — 2022-06-13 — dropped 4.6%
+  - 11. PLTR — 2022-06-13 — dropped 7.5%
+  - 12. TSLA — 2022-06-13 — dropped 7.1%
+  - 13. INTC — 2022-06-13 — dropped 3.6%
+  - 14. GOOG — 2022-06-13 — dropped 4.1%
+  - 15. AAPL — 2022-06-13 — dropped 3.8%
+  - 16. ABT — 2022-06-13 — dropped 3.4%
+  - 17. ACN — 2022-06-13 — dropped 3.3%
+  - 18. GOOGL — 2022-06-13 — dropped 4.3%
+  - 19. AMAT — 2022-06-13 — dropped 5.5%
+  - 20. AMD — 2022-06-13 — dropped 8.3%
+
+- [ ] **Batch 209** (20 events, 2022-06-13 to 2022-06-13)
+  - 1. AMT — 2022-06-13 — dropped 4.4%
+  - 2. AMZN — 2022-06-13 — dropped 5.5%
+  - 3. AVGO — 2022-06-13 — dropped 4.4%
+  - 4. AXP — 2022-06-13 — dropped 5.3%
+  - 5. BA — 2022-06-13 — dropped 8.8%
+  - 6. BAC — 2022-06-13 — dropped 3.5%
+  - 7. BK — 2022-06-13 — dropped 3.1%
+  - 8. BKNG — 2022-06-13 — dropped 6.0%
+  - 9. BLK — 2022-06-13 — dropped 3.1%
+  - 10. ADBE — 2022-06-13 — dropped 5.6%
+  - 11. C — 2022-06-13 — dropped 4.2%
+  - 12. BRK-B — 2022-06-13 — dropped 3.5%
+  - 13. GE — 2022-06-13 — dropped 4.9%
+  - 14. GD — 2022-06-13 — dropped 3.2%
+  - 15. DUK — 2022-06-13 — dropped 4.0%
+  - 16. DIS — 2022-06-13 — dropped 3.7%
+  - 17. DHR — 2022-06-13 — dropped 3.0%
+  - 18. GM — 2022-06-13 — dropped 7.8%
+  - 19. CVX — 2022-06-13 — dropped 4.6%
+  - 20. CRM — 2022-06-13 — dropped 7.0%
+
+- [ ] **Batch 210** (20 events, 2022-06-13 to 2022-06-16)
+  - 1. COP — 2022-06-13 — dropped 4.3%
+  - 2. COF — 2022-06-13 — dropped 4.9%
+  - 3. CMCSA — 2022-06-13 — dropped 3.4%
+  - 4. CAT — 2022-06-13 — dropped 3.9%
+  - 5. DE — 2022-06-13 — dropped 3.1%
+  - 6. PG — 2022-06-14 — dropped 3.1%
+  - 7. WFC — 2022-06-14 — dropped 4.0%
+  - 8. KO — 2022-06-14 — dropped 3.4%
+  - 9. INTC — 2022-06-16 — dropped 3.4%
+  - 10. INTU — 2022-06-16 — dropped 5.0%
+  - 11. MU — 2022-06-16 — dropped 7.0%
+  - 12. LIN — 2022-06-16 — dropped 3.4%
+  - 13. LOW — 2022-06-16 — dropped 4.1%
+  - 14. LRCX — 2022-06-16 — dropped 7.8%
+  - 15. MA — 2022-06-16 — dropped 5.1%
+  - 16. META — 2022-06-16 — dropped 5.0%
+  - 17. NFLX — 2022-06-16 — dropped 3.8%
+  - 18. V — 2022-06-16 — dropped 3.6%
+  - 19. NOW — 2022-06-16 — dropped 8.1%
+  - 20. NVDA — 2022-06-16 — dropped 5.6%
+
+- [ ] **Batch 211** (20 events, 2022-06-16 to 2022-06-16)
+  - 1. PLTR — 2022-06-16 — dropped 5.5%
+  - 2. QCOM — 2022-06-16 — dropped 7.8%
+  - 3. SBUX — 2022-06-16 — dropped 4.4%
+  - 4. TSLA — 2022-06-16 — dropped 8.5%
+  - 5. UBER — 2022-06-16 — dropped 7.1%
+  - 6. XOM — 2022-06-16 — dropped 3.7%
+  - 7. GOOGL — 2022-06-16 — dropped 3.4%
+  - 8. NKE — 2022-06-16 — dropped 5.6%
+  - 9. GOOG — 2022-06-16 — dropped 3.4%
+  - 10. NEE — 2022-06-16 — dropped 4.5%
+  - 11. GE — 2022-06-16 — dropped 5.5%
+  - 12. AAPL — 2022-06-16 — dropped 4.0%
+  - 13. ACN — 2022-06-16 — dropped 3.7%
+  - 14. ADBE — 2022-06-16 — dropped 3.1%
+  - 15. AMAT — 2022-06-16 — dropped 8.0%
+  - 16. AMD — 2022-06-16 — dropped 8.1%
+  - 17. AMZN — 2022-06-16 — dropped 3.7%
+  - 18. AVGO — 2022-06-16 — dropped 5.6%
+  - 19. AXP — 2022-06-16 — dropped 6.0%
+  - 20. BKNG — 2022-06-16 — dropped 6.4%
+
+- [ ] **Batch 212** (20 events, 2022-06-16 to 2022-06-22)
+  - 1. BRK-B — 2022-06-16 — dropped 3.7%
+  - 2. GM — 2022-06-16 — dropped 8.1%
+  - 3. CMCSA — 2022-06-16 — dropped 5.5%
+  - 4. COF — 2022-06-16 — dropped 5.6%
+  - 5. COP — 2022-06-16 — dropped 6.3%
+  - 6. CRM — 2022-06-16 — dropped 5.2%
+  - 7. CVX — 2022-06-16 — dropped 5.3%
+  - 8. DE — 2022-06-16 — dropped 3.9%
+  - 9. EMR — 2022-06-16 — dropped 5.2%
+  - 10. FDX — 2022-06-16 — dropped 3.2%
+  - 11. CAT — 2022-06-16 — dropped 5.4%
+  - 12. CVX — 2022-06-17 — dropped 4.6%
+  - 13. XOM — 2022-06-17 — dropped 5.8%
+  - 14. META — 2022-06-21 — dropped 4.1%
+  - 15. CAT — 2022-06-22 — dropped 4.3%
+  - 16. COP — 2022-06-22 — dropped 6.3%
+  - 17. CVX — 2022-06-22 — dropped 4.3%
+  - 18. DE — 2022-06-22 — dropped 3.4%
+  - 19. NKE — 2022-06-22 — dropped 3.5%
+  - 20. XOM — 2022-06-22 — dropped 4.0%
+
+- [ ] **Batch 213** (20 events, 2022-06-23 to 2022-06-28)
+  - 1. CAT — 2022-06-23 — dropped 4.9%
+  - 2. COP — 2022-06-23 — dropped 5.6%
+  - 3. CVX — 2022-06-23 — dropped 3.7%
+  - 4. DE — 2022-06-23 — dropped 6.4%
+  - 5. XOM — 2022-06-23 — dropped 3.0%
+  - 6. PLTR — 2022-06-27 — dropped 5.6%
+  - 7. INTU — 2022-06-27 — dropped 3.1%
+  - 8. TSLA — 2022-06-28 — dropped 5.0%
+  - 9. PLTR — 2022-06-28 — dropped 3.2%
+  - 10. NVDA — 2022-06-28 — dropped 5.3%
+  - 11. NOW — 2022-06-28 — dropped 4.7%
+  - 12. NKE — 2022-06-28 — dropped 7.0%
+  - 13. NFLX — 2022-06-28 — dropped 5.0%
+  - 14. MSFT — 2022-06-28 — dropped 3.2%
+  - 15. META — 2022-06-28 — dropped 5.2%
+  - 16. MA — 2022-06-28 — dropped 3.2%
+  - 17. LOW — 2022-06-28 — dropped 5.2%
+  - 18. UBER — 2022-06-28 — dropped 3.4%
+  - 19. HD — 2022-06-28 — dropped 4.4%
+  - 20. GOOGL — 2022-06-28 — dropped 3.3%
+
+- [ ] **Batch 214** (20 events, 2022-06-28 to 2022-06-30)
+  - 1. GOOG — 2022-06-28 — dropped 3.5%
+  - 2. CRM — 2022-06-28 — dropped 5.4%
+  - 3. BKNG — 2022-06-28 — dropped 3.0%
+  - 4. AMZN — 2022-06-28 — dropped 5.1%
+  - 5. AMD — 2022-06-28 — dropped 6.2%
+  - 6. ADBE — 2022-06-28 — dropped 4.1%
+  - 7. ACN — 2022-06-28 — dropped 3.0%
+  - 8. INTU — 2022-06-28 — dropped 4.6%
+  - 9. XOM — 2022-06-29 — dropped 3.7%
+  - 10. MU — 2022-06-29 — dropped 3.2%
+  - 11. GE — 2022-06-29 — dropped 3.3%
+  - 12. MO — 2022-06-29 — dropped 3.3%
+  - 13. AMD — 2022-06-29 — dropped 3.5%
+  - 14. AMAT — 2022-06-29 — dropped 3.2%
+  - 15. COP — 2022-06-29 — dropped 3.9%
+  - 16. BKNG — 2022-06-30 — dropped 3.4%
+  - 17. CRM — 2022-06-30 — dropped 3.3%
+  - 18. FDX — 2022-06-30 — dropped 3.0%
+  - 19. GM — 2022-06-30 — dropped 5.1%
+  - 20. UBER — 2022-06-30 — dropped 4.7%
+
+- [ ] **Batch 215** (20 events, 2022-07-01 to 2022-07-11)
+  - 1. AMAT — 2022-07-01 — dropped 5.2%
+  - 2. AMD — 2022-07-01 — dropped 3.7%
+  - 3. NVDA — 2022-07-01 — dropped 4.2%
+  - 4. QCOM — 2022-07-01 — dropped 3.3%
+  - 5. TXN — 2022-07-01 — dropped 3.3%
+  - 6. RTX — 2022-07-05 — dropped 4.2%
+  - 7. XOM — 2022-07-05 — dropped 3.1%
+  - 8. LMT — 2022-07-05 — dropped 4.2%
+  - 9. SO — 2022-07-05 — dropped 3.2%
+  - 10. GD — 2022-07-05 — dropped 4.2%
+  - 11. DE — 2022-07-05 — dropped 3.1%
+  - 12. COP — 2022-07-05 — dropped 7.0%
+  - 13. LIN — 2022-07-05 — dropped 5.2%
+  - 14. GM — 2022-07-06 — dropped 3.4%
+  - 15. PM — 2022-07-06 — dropped 3.1%
+  - 16. UBER — 2022-07-06 — dropped 4.5%
+  - 17. UBER — 2022-07-11 — dropped 5.1%
+  - 18. TSLA — 2022-07-11 — dropped 6.5%
+  - 19. NVDA — 2022-07-11 — dropped 4.3%
+  - 20. NFLX — 2022-07-11 — dropped 5.2%
+
+- [ ] **Batch 216** (20 events, 2022-07-11 to 2022-07-14)
+  - 1. META — 2022-07-11 — dropped 4.7%
+  - 2. LRCX — 2022-07-11 — dropped 3.1%
+  - 3. PLTR — 2022-07-11 — dropped 6.0%
+  - 4. GOOG — 2022-07-11 — dropped 3.0%
+  - 5. GM — 2022-07-11 — dropped 4.5%
+  - 6. AVGO — 2022-07-11 — dropped 3.2%
+  - 7. AMZN — 2022-07-11 — dropped 3.3%
+  - 8. AMD — 2022-07-11 — dropped 3.0%
+  - 9. GOOGL — 2022-07-11 — dropped 3.1%
+  - 10. MSFT — 2022-07-12 — dropped 4.1%
+  - 11. INTU — 2022-07-12 — dropped 4.1%
+  - 12. TMO — 2022-07-12 — dropped 4.9%
+  - 13. CRM — 2022-07-12 — dropped 4.6%
+  - 14. DHR — 2022-07-12 — dropped 4.7%
+  - 15. FDX — 2022-07-13 — dropped 3.1%
+  - 16. PM — 2022-07-13 — dropped 3.4%
+  - 17. BKNG — 2022-07-14 — dropped 3.7%
+  - 18. JPM — 2022-07-14 — dropped 3.5%
+  - 19. META — 2022-07-14 — dropped 3.3%
+  - 20. PLTR — 2022-07-14 — dropped 4.1%
+
+- [ ] **Batch 217** (20 events, 2022-07-14 to 2022-07-26)
+  - 1. UBER — 2022-07-14 — dropped 4.0%
+  - 2. TMO — 2022-07-18 — dropped 3.4%
+  - 3. AMT — 2022-07-18 — dropped 3.1%
+  - 4. DHR — 2022-07-18 — dropped 3.4%
+  - 5. IBM — 2022-07-19 — dropped 5.2%
+  - 6. TMUS — 2022-07-21 — dropped 3.1%
+  - 7. AMD — 2022-07-22 — dropped 3.3%
+  - 8. VZ — 2022-07-22 — dropped 6.7%
+  - 9. UBER — 2022-07-22 — dropped 3.8%
+  - 10. NVDA — 2022-07-22 — dropped 4.0%
+  - 11. MU — 2022-07-22 — dropped 3.7%
+  - 12. PLTR — 2022-07-22 — dropped 6.2%
+  - 13. INTC — 2022-07-22 — dropped 3.5%
+  - 14. GOOGL — 2022-07-22 — dropped 5.6%
+  - 15. GOOG — 2022-07-22 — dropped 5.8%
+  - 16. COF — 2022-07-22 — dropped 4.7%
+  - 17. ISRG — 2022-07-22 — dropped 5.7%
+  - 18. NOW — 2022-07-26 — dropped 3.9%
+  - 19. UPS — 2022-07-26 — dropped 3.4%
+  - 20. UBER — 2022-07-26 — dropped 3.4%
+
+- [ ] **Batch 218** (20 events, 2022-07-26 to 2022-08-02)
+  - 1. TSLA — 2022-07-26 — dropped 3.6%
+  - 2. SCHW — 2022-07-26 — dropped 3.9%
+  - 3. RTX — 2022-07-26 — dropped 4.6%
+  - 4. NKE — 2022-07-26 — dropped 3.7%
+  - 5. COST — 2022-07-26 — dropped 3.3%
+  - 6. LOW — 2022-07-26 — dropped 3.2%
+  - 7. GM — 2022-07-26 — dropped 3.4%
+  - 8. CRM — 2022-07-26 — dropped 3.9%
+  - 9. COF — 2022-07-26 — dropped 4.1%
+  - 10. AMZN — 2022-07-26 — dropped 5.2%
+  - 11. ADBE — 2022-07-26 — dropped 3.2%
+  - 12. META — 2022-07-26 — dropped 4.5%
+  - 13. USB — 2022-07-28 — dropped 4.3%
+  - 14. META — 2022-07-28 — dropped 5.2%
+  - 15. QCOM — 2022-07-28 — dropped 4.5%
+  - 16. PG — 2022-07-29 — dropped 6.2%
+  - 17. CMCSA — 2022-07-29 — dropped 4.8%
+  - 18. ABBV — 2022-07-29 — dropped 4.2%
+  - 19. BA — 2022-08-02 — dropped 3.4%
+  - 20. CAT — 2022-08-02 — dropped 5.8%
+
+- [ ] **Batch 219** (20 events, 2022-08-02 to 2022-08-17)
+  - 1. LOW — 2022-08-02 — dropped 3.2%
+  - 2. COP — 2022-08-03 — dropped 3.6%
+  - 3. XOM — 2022-08-03 — dropped 3.2%
+  - 4. WMT — 2022-08-04 — dropped 3.8%
+  - 5. XOM — 2022-08-04 — dropped 4.2%
+  - 6. MU — 2022-08-05 — dropped 3.7%
+  - 7. TSLA — 2022-08-05 — dropped 6.6%
+  - 8. NVDA — 2022-08-08 — dropped 6.3%
+  - 9. QCOM — 2022-08-09 — dropped 3.6%
+  - 10. PLTR — 2022-08-09 — dropped 5.8%
+  - 11. NVDA — 2022-08-09 — dropped 4.0%
+  - 12. NKE — 2022-08-09 — dropped 3.4%
+  - 13. MU — 2022-08-09 — dropped 3.7%
+  - 14. LOW — 2022-08-09 — dropped 3.3%
+  - 15. EMR — 2022-08-09 — dropped 3.8%
+  - 16. CRM — 2022-08-09 — dropped 4.0%
+  - 17. AMD — 2022-08-09 — dropped 4.5%
+  - 18. NOW — 2022-08-11 — dropped 3.2%
+  - 19. PFE — 2022-08-11 — dropped 3.3%
+  - 20. MU — 2022-08-17 — dropped 3.5%
+
+- [ ] **Batch 220** (20 events, 2022-08-17 to 2022-08-22)
+  - 1. PLTR — 2022-08-17 — dropped 3.2%
+  - 2. TXN — 2022-08-17 — dropped 3.6%
+  - 3. UBER — 2022-08-17 — dropped 5.1%
+  - 4. UBER — 2022-08-19 — dropped 3.8%
+  - 5. PLTR — 2022-08-19 — dropped 7.0%
+  - 6. NVDA — 2022-08-19 — dropped 4.9%
+  - 7. MU — 2022-08-19 — dropped 3.9%
+  - 8. META — 2022-08-19 — dropped 3.8%
+  - 9. ADBE — 2022-08-19 — dropped 3.2%
+  - 10. BLK — 2022-08-19 — dropped 4.2%
+  - 11. BA — 2022-08-19 — dropped 3.4%
+  - 12. AMD — 2022-08-19 — dropped 4.5%
+  - 13. AMAT — 2022-08-19 — dropped 3.4%
+  - 14. LRCX — 2022-08-19 — dropped 5.2%
+  - 15. QCOM — 2022-08-22 — dropped 4.1%
+  - 16. PLTR — 2022-08-22 — dropped 5.2%
+  - 17. NVDA — 2022-08-22 — dropped 4.6%
+  - 18. NOW — 2022-08-22 — dropped 3.5%
+  - 19. NFLX — 2022-08-22 — dropped 6.1%
+  - 20. MU — 2022-08-22 — dropped 3.6%
+
+- [ ] **Batch 221** (20 events, 2022-08-22 to 2022-08-26)
+  - 1. LRCX — 2022-08-22 — dropped 4.0%
+  - 2. INTU — 2022-08-22 — dropped 3.8%
+  - 3. INTC — 2022-08-22 — dropped 4.4%
+  - 4. DIS — 2022-08-22 — dropped 3.5%
+  - 5. FDX — 2022-08-22 — dropped 3.5%
+  - 6. SPG — 2022-08-22 — dropped 3.8%
+  - 7. CRM — 2022-08-22 — dropped 3.7%
+  - 8. BKNG — 2022-08-22 — dropped 5.5%
+  - 9. AVGO — 2022-08-22 — dropped 3.6%
+  - 10. AMZN — 2022-08-22 — dropped 3.6%
+  - 11. AMD — 2022-08-22 — dropped 3.2%
+  - 12. AMAT — 2022-08-22 — dropped 3.7%
+  - 13. ADBE — 2022-08-22 — dropped 3.2%
+  - 14. GE — 2022-08-22 — dropped 3.8%
+  - 15. UBER — 2022-08-22 — dropped 3.5%
+  - 16. MDT — 2022-08-23 — dropped 3.1%
+  - 17. CRM — 2022-08-25 — dropped 3.4%
+  - 18. ISRG — 2022-08-26 — dropped 6.2%
+  - 19. JPM — 2022-08-26 — dropped 3.3%
+  - 20. LIN — 2022-08-26 — dropped 3.7%
+
+- [ ] **Batch 222** (20 events, 2022-08-26 to 2022-08-26)
+  - 1. LOW — 2022-08-26 — dropped 4.7%
+  - 2. WMT — 2022-08-26 — dropped 3.1%
+  - 3. MA — 2022-08-26 — dropped 3.7%
+  - 4. META — 2022-08-26 — dropped 4.1%
+  - 5. MS — 2022-08-26 — dropped 3.4%
+  - 6. MSFT — 2022-08-26 — dropped 3.9%
+  - 7. MU — 2022-08-26 — dropped 5.8%
+  - 8. NFLX — 2022-08-26 — dropped 4.6%
+  - 9. NKE — 2022-08-26 — dropped 4.4%
+  - 10. NOW — 2022-08-26 — dropped 4.6%
+  - 11. PLTR — 2022-08-26 — dropped 5.7%
+  - 12. QCOM — 2022-08-26 — dropped 5.4%
+  - 13. SBUX — 2022-08-26 — dropped 3.8%
+  - 14. SPG — 2022-08-26 — dropped 3.1%
+  - 15. TMO — 2022-08-26 — dropped 3.7%
+  - 16. TXN — 2022-08-26 — dropped 4.4%
+  - 17. UBER — 2022-08-26 — dropped 3.5%
+  - 18. UNP — 2022-08-26 — dropped 3.3%
+  - 19. V — 2022-08-26 — dropped 3.3%
+  - 20. WFC — 2022-08-26 — dropped 3.1%
+
+- [ ] **Batch 223** (20 events, 2022-08-26 to 2022-08-26)
+  - 1. INTU — 2022-08-26 — dropped 3.7%
+  - 2. INTC — 2022-08-26 — dropped 4.4%
+  - 3. LRCX — 2022-08-26 — dropped 5.2%
+  - 4. HD — 2022-08-26 — dropped 3.8%
+  - 5. HON — 2022-08-26 — dropped 3.7%
+  - 6. AAPL — 2022-08-26 — dropped 3.8%
+  - 7. ABT — 2022-08-26 — dropped 3.8%
+  - 8. ACN — 2022-08-26 — dropped 3.8%
+  - 9. ADBE — 2022-08-26 — dropped 5.7%
+  - 10. AMAT — 2022-08-26 — dropped 5.9%
+  - 11. AMD — 2022-08-26 — dropped 6.2%
+  - 12. AVGO — 2022-08-26 — dropped 5.3%
+  - 13. AXP — 2022-08-26 — dropped 3.0%
+  - 14. BAC — 2022-08-26 — dropped 3.2%
+  - 15. BK — 2022-08-26 — dropped 3.4%
+  - 16. BKNG — 2022-08-26 — dropped 4.9%
+  - 17. AMZN — 2022-08-26 — dropped 4.8%
+  - 18. C — 2022-08-26 — dropped 4.4%
+  - 19. BLK — 2022-08-26 — dropped 4.8%
+  - 20. GOOG — 2022-08-26 — dropped 5.4%
+
+- [ ] **Batch 224** (20 events, 2022-08-26 to 2022-09-06)
+  - 1. GE — 2022-08-26 — dropped 3.7%
+  - 2. FDX — 2022-08-26 — dropped 4.3%
+  - 3. EMR — 2022-08-26 — dropped 3.8%
+  - 4. GOOGL — 2022-08-26 — dropped 5.4%
+  - 5. CRM — 2022-08-26 — dropped 5.0%
+  - 6. COST — 2022-08-26 — dropped 3.4%
+  - 7. COF — 2022-08-26 — dropped 3.4%
+  - 8. CAT — 2022-08-26 — dropped 3.5%
+  - 9. DHR — 2022-08-26 — dropped 3.7%
+  - 10. BMY — 2022-08-29 — dropped 6.2%
+  - 11. CRM — 2022-08-29 — dropped 3.0%
+  - 12. DE — 2022-08-30 — dropped 3.1%
+  - 13. UNP — 2022-08-30 — dropped 3.1%
+  - 14. XOM — 2022-08-30 — dropped 3.8%
+  - 15. BA — 2022-09-01 — dropped 4.1%
+  - 16. CMCSA — 2022-09-02 — dropped 3.1%
+  - 17. META — 2022-09-02 — dropped 3.0%
+  - 18. MMM — 2022-09-02 — dropped 3.2%
+  - 19. MMM — 2022-09-06 — dropped 4.2%
+  - 20. NFLX — 2022-09-06 — dropped 3.4%
+
+- [ ] **Batch 225** (20 events, 2022-09-12 to 2022-09-13)
+  - 1. AMGN — 2022-09-12 — dropped 4.1%
+  - 2. V — 2022-09-13 — dropped 3.4%
+  - 3. NFLX — 2022-09-13 — dropped 7.8%
+  - 4. MU — 2022-09-13 — dropped 7.5%
+  - 5. WFC — 2022-09-13 — dropped 5.1%
+  - 6. MSFT — 2022-09-13 — dropped 5.5%
+  - 7. MS — 2022-09-13 — dropped 3.4%
+  - 8. MO — 2022-09-13 — dropped 4.8%
+  - 9. MMM — 2022-09-13 — dropped 3.0%
+  - 10. META — 2022-09-13 — dropped 9.4%
+  - 11. MDLZ — 2022-09-13 — dropped 3.3%
+  - 12. MA — 2022-09-13 — dropped 3.8%
+  - 13. LRCX — 2022-09-13 — dropped 6.0%
+  - 14. LOW — 2022-09-13 — dropped 6.2%
+  - 15. LIN — 2022-09-13 — dropped 3.0%
+  - 16. KO — 2022-09-13 — dropped 3.2%
+  - 17. JPM — 2022-09-13 — dropped 3.5%
+  - 18. NKE — 2022-09-13 — dropped 5.9%
+  - 19. NOW — 2022-09-13 — dropped 5.0%
+  - 20. NVDA — 2022-09-13 — dropped 9.5%
+
+- [ ] **Batch 226** (20 events, 2022-09-13 to 2022-09-13)
+  - 1. PEP — 2022-09-13 — dropped 3.7%
+  - 2. USB — 2022-09-13 — dropped 5.0%
+  - 3. UPS — 2022-09-13 — dropped 3.7%
+  - 4. UNP — 2022-09-13 — dropped 3.4%
+  - 5. UNH — 2022-09-13 — dropped 3.3%
+  - 6. UBER — 2022-09-13 — dropped 3.6%
+  - 7. TXN — 2022-09-13 — dropped 4.6%
+  - 8. TSLA — 2022-09-13 — dropped 4.0%
+  - 9. ISRG — 2022-09-13 — dropped 4.8%
+  - 10. TMUS — 2022-09-13 — dropped 5.1%
+  - 11. T — 2022-09-13 — dropped 3.2%
+  - 12. SPG — 2022-09-13 — dropped 4.6%
+  - 13. RTX — 2022-09-13 — dropped 4.6%
+  - 14. QCOM — 2022-09-13 — dropped 6.1%
+  - 15. PM — 2022-09-13 — dropped 3.7%
+  - 16. PLTR — 2022-09-13 — dropped 6.6%
+  - 17. PFE — 2022-09-13 — dropped 3.3%
+  - 18. TMO — 2022-09-13 — dropped 3.3%
+  - 19. INTU — 2022-09-13 — dropped 5.7%
+  - 20. CSCO — 2022-09-13 — dropped 4.9%
+
+- [ ] **Batch 227** (20 events, 2022-09-13 to 2022-09-13)
+  - 1. HON — 2022-09-13 — dropped 3.7%
+  - 2. BLK — 2022-09-13 — dropped 7.4%
+  - 3. BKNG — 2022-09-13 — dropped 4.6%
+  - 4. INTC — 2022-09-13 — dropped 7.2%
+  - 5. BA — 2022-09-13 — dropped 7.2%
+  - 6. AXP — 2022-09-13 — dropped 4.4%
+  - 7. AVGO — 2022-09-13 — dropped 4.8%
+  - 8. AMZN — 2022-09-13 — dropped 7.1%
+  - 9. AMT — 2022-09-13 — dropped 3.9%
+  - 10. AMGN — 2022-09-13 — dropped 4.5%
+  - 11. AMD — 2022-09-13 — dropped 9.0%
+  - 12. AMAT — 2022-09-13 — dropped 6.1%
+  - 13. ADBE — 2022-09-13 — dropped 7.1%
+  - 14. ACN — 2022-09-13 — dropped 4.7%
+  - 15. ABT — 2022-09-13 — dropped 3.2%
+  - 16. AAPL — 2022-09-13 — dropped 5.9%
+  - 17. BRK-B — 2022-09-13 — dropped 3.5%
+  - 18. C — 2022-09-13 — dropped 3.7%
+  - 19. BAC — 2022-09-13 — dropped 3.6%
+  - 20. CL — 2022-09-13 — dropped 3.2%
+
+- [ ] **Batch 228** (20 events, 2022-09-13 to 2022-09-15)
+  - 1. HD — 2022-09-13 — dropped 6.6%
+  - 2. GS — 2022-09-13 — dropped 4.1%
+  - 3. GOOGL — 2022-09-13 — dropped 5.9%
+  - 4. CAT — 2022-09-13 — dropped 4.2%
+  - 5. GM — 2022-09-13 — dropped 3.6%
+  - 6. GILD — 2022-09-13 — dropped 4.3%
+  - 7. GE — 2022-09-13 — dropped 5.9%
+  - 8. GD — 2022-09-13 — dropped 3.2%
+  - 9. GOOG — 2022-09-13 — dropped 5.9%
+  - 10. EMR — 2022-09-13 — dropped 3.6%
+  - 11. DIS — 2022-09-13 — dropped 4.0%
+  - 12. DHR — 2022-09-13 — dropped 4.0%
+  - 13. CRM — 2022-09-13 — dropped 4.5%
+  - 14. COST — 2022-09-13 — dropped 5.4%
+  - 15. COF — 2022-09-13 — dropped 8.0%
+  - 16. CMCSA — 2022-09-13 — dropped 6.2%
+  - 17. FDX — 2022-09-13 — dropped 4.0%
+  - 18. UNP — 2022-09-14 — dropped 3.7%
+  - 19. ORCL — 2022-09-14 — dropped 5.2%
+  - 20. CRM — 2022-09-15 — dropped 3.4%
+
+- [ ] **Batch 229** (20 events, 2022-09-15 to 2022-09-21)
+  - 1. INTU — 2022-09-15 — dropped 3.4%
+  - 2. NEE — 2022-09-15 — dropped 3.2%
+  - 3. NOW — 2022-09-15 — dropped 4.8%
+  - 4. UPS — 2022-09-15 — dropped 3.1%
+  - 5. UBER — 2022-09-16 — dropped 3.6%
+  - 6. UPS — 2022-09-16 — dropped 4.5%
+  - 7. GE — 2022-09-16 — dropped 3.7%
+  - 8. BA — 2022-09-16 — dropped 3.7%
+  - 9. ADBE — 2022-09-16 — dropped 3.1%
+  - 10. BKNG — 2022-09-16 — dropped 4.1%
+  - 11. AMT — 2022-09-20 — dropped 3.9%
+  - 12. FDX — 2022-09-20 — dropped 3.4%
+  - 13. GM — 2022-09-20 — dropped 5.6%
+  - 14. NKE — 2022-09-20 — dropped 4.5%
+  - 15. NOW — 2022-09-20 — dropped 3.3%
+  - 16. PLTR — 2022-09-20 — dropped 3.1%
+  - 17. UBER — 2022-09-21 — dropped 3.2%
+  - 18. MDT — 2022-09-21 — dropped 3.1%
+  - 19. GM — 2022-09-21 — dropped 3.5%
+  - 20. CAT — 2022-09-21 — dropped 3.4%
+
+- [ ] **Batch 230** (20 events, 2022-09-21 to 2022-09-23)
+  - 1. BKNG — 2022-09-21 — dropped 4.7%
+  - 2. AXP — 2022-09-21 — dropped 3.1%
+  - 3. CMCSA — 2022-09-21 — dropped 3.4%
+  - 4. PLTR — 2022-09-22 — dropped 4.2%
+  - 5. UBER — 2022-09-22 — dropped 6.2%
+  - 6. TSLA — 2022-09-22 — dropped 4.1%
+  - 7. SPG — 2022-09-22 — dropped 3.6%
+  - 8. SBUX — 2022-09-22 — dropped 4.4%
+  - 9. NVDA — 2022-09-22 — dropped 5.3%
+  - 10. UPS — 2022-09-22 — dropped 3.4%
+  - 11. COF — 2022-09-22 — dropped 4.0%
+  - 12. BKNG — 2022-09-22 — dropped 4.8%
+  - 13. BK — 2022-09-22 — dropped 3.2%
+  - 14. BA — 2022-09-22 — dropped 3.2%
+  - 15. AXP — 2022-09-22 — dropped 3.8%
+  - 16. AMD — 2022-09-22 — dropped 6.7%
+  - 17. NOW — 2022-09-22 — dropped 3.6%
+  - 18. XOM — 2022-09-23 — dropped 5.3%
+  - 19. TSLA — 2022-09-23 — dropped 4.6%
+  - 20. PM — 2022-09-23 — dropped 4.2%
+
+- [ ] **Batch 231** (20 events, 2022-09-23 to 2022-09-29)
+  - 1. NFLX — 2022-09-23 — dropped 4.5%
+  - 2. MO — 2022-09-23 — dropped 3.7%
+  - 3. GS — 2022-09-23 — dropped 3.5%
+  - 4. GM — 2022-09-23 — dropped 5.1%
+  - 5. MS — 2022-09-23 — dropped 3.8%
+  - 6. DE — 2022-09-23 — dropped 3.4%
+  - 7. CVX — 2022-09-23 — dropped 6.5%
+  - 8. COST — 2022-09-23 — dropped 4.3%
+  - 9. CAT — 2022-09-23 — dropped 3.7%
+  - 10. BA — 2022-09-23 — dropped 5.4%
+  - 11. AMZN — 2022-09-23 — dropped 3.0%
+  - 12. FDX — 2022-09-23 — dropped 3.4%
+  - 13. SPG — 2022-09-26 — dropped 3.1%
+  - 14. UBER — 2022-09-26 — dropped 3.3%
+  - 15. AMT — 2022-09-26 — dropped 3.3%
+  - 16. FDX — 2022-09-26 — dropped 4.3%
+  - 17. CL — 2022-09-27 — dropped 3.2%
+  - 18. PM — 2022-09-27 — dropped 3.5%
+  - 19. META — 2022-09-29 — dropped 3.7%
+  - 20. TSLA — 2022-09-29 — dropped 6.8%
+
+- [ ] **Batch 232** (20 events, 2022-09-29 to 2022-09-30)
+  - 1. SPG — 2022-09-29 — dropped 3.7%
+  - 2. SO — 2022-09-29 — dropped 4.3%
+  - 3. QCOM — 2022-09-29 — dropped 3.4%
+  - 4. NVDA — 2022-09-29 — dropped 4.1%
+  - 5. UBER — 2022-09-29 — dropped 5.8%
+  - 6. INTU — 2022-09-29 — dropped 3.0%
+  - 7. NKE — 2022-09-29 — dropped 3.4%
+  - 8. DUK — 2022-09-29 — dropped 4.5%
+  - 9. BLK — 2022-09-29 — dropped 3.7%
+  - 10. BA — 2022-09-29 — dropped 6.1%
+  - 11. AVGO — 2022-09-29 — dropped 3.4%
+  - 12. AMT — 2022-09-29 — dropped 3.3%
+  - 13. AMD — 2022-09-29 — dropped 6.2%
+  - 14. AAPL — 2022-09-29 — dropped 4.9%
+  - 15. GM — 2022-09-29 — dropped 5.6%
+  - 16. PM — 2022-09-30 — dropped 3.6%
+  - 17. MDLZ — 2022-09-30 — dropped 3.2%
+  - 18. GM — 2022-09-30 — dropped 3.5%
+  - 19. DIS — 2022-09-30 — dropped 3.2%
+  - 20. BA — 2022-09-30 — dropped 3.4%
+
+- [ ] **Batch 233** (20 events, 2022-09-30 to 2022-10-07)
+  - 1. ABBV — 2022-09-30 — dropped 6.0%
+  - 2. AAPL — 2022-09-30 — dropped 3.0%
+  - 3. CMCSA — 2022-09-30 — dropped 3.6%
+  - 4. DUK — 2022-10-05 — dropped 3.2%
+  - 5. TSLA — 2022-10-05 — dropped 3.5%
+  - 6. T — 2022-10-06 — dropped 3.8%
+  - 7. VZ — 2022-10-06 — dropped 4.0%
+  - 8. SO — 2022-10-06 — dropped 4.4%
+  - 9. MMM — 2022-10-06 — dropped 3.5%
+  - 10. DUK — 2022-10-06 — dropped 3.5%
+  - 11. AMT — 2022-10-06 — dropped 5.2%
+  - 12. NEE — 2022-10-06 — dropped 3.5%
+  - 13. MMM — 2022-10-07 — dropped 3.2%
+  - 14. MSFT — 2022-10-07 — dropped 5.1%
+  - 15. MU — 2022-10-07 — dropped 3.1%
+  - 16. NFLX — 2022-10-07 — dropped 6.4%
+  - 17. NKE — 2022-10-07 — dropped 3.3%
+  - 18. NOW — 2022-10-07 — dropped 4.1%
+  - 19. NVDA — 2022-10-07 — dropped 8.0%
+  - 20. PLTR — 2022-10-07 — dropped 3.8%
+
+- [ ] **Batch 234** (20 events, 2022-10-07 to 2022-10-07)
+  - 1. UPS — 2022-10-07 — dropped 3.9%
+  - 2. QCOM — 2022-10-07 — dropped 3.5%
+  - 3. TMO — 2022-10-07 — dropped 3.1%
+  - 4. TSLA — 2022-10-07 — dropped 6.3%
+  - 5. TXN — 2022-10-07 — dropped 4.4%
+  - 6. UBER — 2022-10-07 — dropped 5.6%
+  - 7. ORCL — 2022-10-07 — dropped 3.1%
+  - 8. META — 2022-10-07 — dropped 4.0%
+  - 9. AMT — 2022-10-07 — dropped 4.2%
+  - 10. ISRG — 2022-10-07 — dropped 4.6%
+  - 11. AAPL — 2022-10-07 — dropped 3.7%
+  - 12. ACN — 2022-10-07 — dropped 3.6%
+  - 13. ADBE — 2022-10-07 — dropped 3.2%
+  - 14. AMAT — 2022-10-07 — dropped 6.3%
+  - 15. AMD — 2022-10-07 — dropped 13.9%
+  - 16. LRCX — 2022-10-07 — dropped 5.7%
+  - 17. AVGO — 2022-10-07 — dropped 4.0%
+  - 18. AMZN — 2022-10-07 — dropped 4.8%
+  - 19. CRM — 2022-10-07 — dropped 3.3%
+  - 20. CSCO — 2022-10-07 — dropped 3.0%
+
+- [ ] **Batch 235** (20 events, 2022-10-07 to 2022-10-12)
+  - 1. CVS — 2022-10-07 — dropped 10.5%
+  - 2. DHR — 2022-10-07 — dropped 3.4%
+  - 3. INTC — 2022-10-07 — dropped 5.4%
+  - 4. INTU — 2022-10-07 — dropped 4.5%
+  - 5. BLK — 2022-10-07 — dropped 3.7%
+  - 6. NOW — 2022-10-10 — dropped 4.8%
+  - 7. QCOM — 2022-10-10 — dropped 5.2%
+  - 8. NVDA — 2022-10-10 — dropped 3.4%
+  - 9. LRCX — 2022-10-10 — dropped 6.4%
+  - 10. AMAT — 2022-10-10 — dropped 4.1%
+  - 11. CRM — 2022-10-10 — dropped 3.1%
+  - 12. AVGO — 2022-10-10 — dropped 4.9%
+  - 13. GM — 2022-10-10 — dropped 4.0%
+  - 14. AMAT — 2022-10-11 — dropped 3.6%
+  - 15. LRCX — 2022-10-11 — dropped 6.7%
+  - 16. META — 2022-10-11 — dropped 3.9%
+  - 17. NFLX — 2022-10-11 — dropped 6.8%
+  - 18. QCOM — 2022-10-11 — dropped 4.0%
+  - 19. TMUS — 2022-10-12 — dropped 3.1%
+  - 20. SO — 2022-10-12 — dropped 3.4%
+
+- [ ] **Batch 236** (20 events, 2022-10-12 to 2022-10-14)
+  - 1. NEE — 2022-10-12 — dropped 4.3%
+  - 2. DUK — 2022-10-12 — dropped 4.0%
+  - 3. BK — 2022-10-12 — dropped 3.1%
+  - 4. LMT — 2022-10-12 — dropped 3.3%
+  - 5. UBER — 2022-10-13 — dropped 3.8%
+  - 6. LMT — 2022-10-14 — dropped 4.1%
+  - 7. TXN — 2022-10-14 — dropped 3.9%
+  - 8. SCHW — 2022-10-14 — dropped 6.9%
+  - 9. SBUX — 2022-10-14 — dropped 3.4%
+  - 10. PLTR — 2022-10-14 — dropped 6.8%
+  - 11. NVDA — 2022-10-14 — dropped 6.1%
+  - 12. NOW — 2022-10-14 — dropped 5.6%
+  - 13. MU — 2022-10-14 — dropped 3.9%
+  - 14. ISRG — 2022-10-14 — dropped 3.8%
+  - 15. MS — 2022-10-14 — dropped 5.1%
+  - 16. GD — 2022-10-14 — dropped 3.5%
+  - 17. EMR — 2022-10-14 — dropped 3.2%
+  - 18. CVX — 2022-10-14 — dropped 3.1%
+  - 19. COP — 2022-10-14 — dropped 3.9%
+  - 20. AXP — 2022-10-14 — dropped 3.3%
+
+- [ ] **Batch 237** (20 events, 2022-10-14 to 2022-10-20)
+  - 1. AMZN — 2022-10-14 — dropped 5.0%
+  - 2. AMD — 2022-10-14 — dropped 5.1%
+  - 3. AMAT — 2022-10-14 — dropped 5.8%
+  - 4. AAPL — 2022-10-14 — dropped 3.2%
+  - 5. INTU — 2022-10-14 — dropped 4.0%
+  - 6. USB — 2022-10-19 — dropped 3.6%
+  - 7. TMO — 2022-10-19 — dropped 3.6%
+  - 8. LOW — 2022-10-19 — dropped 4.8%
+  - 9. PLTR — 2022-10-19 — dropped 3.1%
+  - 10. COF — 2022-10-19 — dropped 4.4%
+  - 11. AMT — 2022-10-19 — dropped 3.2%
+  - 12. ABT — 2022-10-19 — dropped 6.5%
+  - 13. HD — 2022-10-19 — dropped 3.4%
+  - 14. USB — 2022-10-20 — dropped 3.0%
+  - 15. UNP — 2022-10-20 — dropped 6.8%
+  - 16. TMO — 2022-10-20 — dropped 3.7%
+  - 17. TSLA — 2022-10-20 — dropped 6.6%
+  - 18. LOW — 2022-10-20 — dropped 3.1%
+  - 19. DHR — 2022-10-20 — dropped 5.7%
+  - 20. NEE — 2022-10-20 — dropped 4.1%
+
+- [ ] **Batch 238** (20 events, 2022-10-21 to 2022-11-01)
+  - 1. VZ — 2022-10-21 — dropped 4.5%
+  - 2. LIN — 2022-10-24 — dropped 3.5%
+  - 3. SBUX — 2022-10-24 — dropped 5.5%
+  - 4. META — 2022-10-26 — dropped 5.6%
+  - 5. MSFT — 2022-10-26 — dropped 7.7%
+  - 6. GOOG — 2022-10-26 — dropped 9.6%
+  - 7. GOOGL — 2022-10-26 — dropped 9.1%
+  - 8. CRM — 2022-10-26 — dropped 3.2%
+  - 9. BA — 2022-10-26 — dropped 8.8%
+  - 10. AMZN — 2022-10-26 — dropped 4.1%
+  - 11. AAPL — 2022-10-27 — dropped 3.0%
+  - 12. AMZN — 2022-10-27 — dropped 4.1%
+  - 13. INTC — 2022-10-27 — dropped 3.5%
+  - 14. MU — 2022-10-27 — dropped 5.8%
+  - 15. ABBV — 2022-10-28 — dropped 3.8%
+  - 16. AMZN — 2022-10-28 — dropped 6.8%
+  - 17. AMD — 2022-10-31 — dropped 3.1%
+  - 18. META — 2022-10-31 — dropped 6.1%
+  - 19. UBER — 2022-10-31 — dropped 3.4%
+  - 20. GOOG — 2022-11-01 — dropped 4.4%
+
+- [ ] **Batch 239** (20 events, 2022-11-01 to 2022-11-02)
+  - 1. GOOGL — 2022-11-01 — dropped 4.3%
+  - 2. AMZN — 2022-11-01 — dropped 5.5%
+  - 3. LOW — 2022-11-02 — dropped 4.1%
+  - 4. UBER — 2022-11-02 — dropped 3.2%
+  - 5. TSLA — 2022-11-02 — dropped 5.6%
+  - 6. TMO — 2022-11-02 — dropped 5.2%
+  - 7. QCOM — 2022-11-02 — dropped 4.1%
+  - 8. PLTR — 2022-11-02 — dropped 5.0%
+  - 9. NOW — 2022-11-02 — dropped 6.2%
+  - 10. NKE — 2022-11-02 — dropped 3.7%
+  - 11. NFLX — 2022-11-02 — dropped 4.8%
+  - 12. MSFT — 2022-11-02 — dropped 3.5%
+  - 13. META — 2022-11-02 — dropped 4.9%
+  - 14. MA — 2022-11-02 — dropped 4.0%
+  - 15. LRCX — 2022-11-02 — dropped 4.2%
+  - 16. ISRG — 2022-11-02 — dropped 4.3%
+  - 17. GOOGL — 2022-11-02 — dropped 3.9%
+  - 18. AAPL — 2022-11-02 — dropped 3.7%
+  - 19. INTC — 2022-11-02 — dropped 3.1%
+  - 20. ACN — 2022-11-02 — dropped 3.2%
+
+- [ ] **Batch 240** (20 events, 2022-11-02 to 2022-11-03)
+  - 1. ADBE — 2022-11-02 — dropped 4.7%
+  - 2. BKNG — 2022-11-02 — dropped 5.9%
+  - 3. COF — 2022-11-02 — dropped 3.4%
+  - 4. AMZN — 2022-11-02 — dropped 4.8%
+  - 5. CRM — 2022-11-02 — dropped 6.1%
+  - 6. DHR — 2022-11-02 — dropped 5.2%
+  - 7. DIS — 2022-11-02 — dropped 3.9%
+  - 8. GOOG — 2022-11-02 — dropped 3.8%
+  - 9. COST — 2022-11-02 — dropped 3.3%
+  - 10. GOOGL — 2022-11-03 — dropped 4.1%
+  - 11. MA — 2022-11-03 — dropped 3.3%
+  - 12. LOW — 2022-11-03 — dropped 3.2%
+  - 13. INTU — 2022-11-03 — dropped 5.2%
+  - 14. GOOG — 2022-11-03 — dropped 4.1%
+  - 15. V — 2022-11-03 — dropped 3.1%
+  - 16. AMZN — 2022-11-03 — dropped 3.1%
+  - 17. ADBE — 2022-11-03 — dropped 5.1%
+  - 18. ACN — 2022-11-03 — dropped 5.7%
+  - 19. AAPL — 2022-11-03 — dropped 4.2%
+  - 20. COF — 2022-11-03 — dropped 4.3%
+
+- [ ] **Batch 241** (20 events, 2022-11-04 to 2022-11-09)
+  - 1. NOW — 2022-11-04 — dropped 6.2%
+  - 2. TSLA — 2022-11-04 — dropped 3.6%
+  - 3. CRM — 2022-11-04 — dropped 4.5%
+  - 4. NFLX — 2022-11-04 — dropped 3.1%
+  - 5. TSLA — 2022-11-07 — dropped 5.0%
+  - 6. MDT — 2022-11-08 — dropped 6.3%
+  - 7. AAPL — 2022-11-09 — dropped 3.3%
+  - 8. XOM — 2022-11-09 — dropped 4.5%
+  - 9. V — 2022-11-09 — dropped 3.9%
+  - 10. UBER — 2022-11-09 — dropped 3.2%
+  - 11. PLTR — 2022-11-09 — dropped 3.2%
+  - 12. NVDA — 2022-11-09 — dropped 5.7%
+  - 13. NFLX — 2022-11-09 — dropped 3.3%
+  - 14. MA — 2022-11-09 — dropped 3.1%
+  - 15. INTU — 2022-11-09 — dropped 3.7%
+  - 16. CVX — 2022-11-09 — dropped 4.0%
+  - 17. CRM — 2022-11-09 — dropped 3.4%
+  - 18. COP — 2022-11-09 — dropped 6.8%
+  - 19. COF — 2022-11-09 — dropped 3.9%
+  - 20. AMZN — 2022-11-09 — dropped 4.3%
+
+- [ ] **Batch 242** (20 events, 2022-11-09 to 2022-11-16)
+  - 1. AMD — 2022-11-09 — dropped 6.2%
+  - 2. AMAT — 2022-11-09 — dropped 3.2%
+  - 3. INTC — 2022-11-09 — dropped 3.4%
+  - 4. RTX — 2022-11-11 — dropped 4.3%
+  - 5. UNH — 2022-11-11 — dropped 4.1%
+  - 6. MRK — 2022-11-11 — dropped 3.9%
+  - 7. GD — 2022-11-11 — dropped 4.1%
+  - 8. LLY — 2022-11-11 — dropped 4.5%
+  - 9. BMY — 2022-11-11 — dropped 4.3%
+  - 10. LMT — 2022-11-11 — dropped 5.5%
+  - 11. AMT — 2022-11-14 — dropped 3.5%
+  - 12. BLK — 2022-11-14 — dropped 4.3%
+  - 13. COF — 2022-11-14 — dropped 4.0%
+  - 14. LRCX — 2022-11-14 — dropped 4.0%
+  - 15. PLTR — 2022-11-14 — dropped 3.7%
+  - 16. MU — 2022-11-16 — dropped 6.7%
+  - 17. UBER — 2022-11-16 — dropped 4.8%
+  - 18. TSLA — 2022-11-16 — dropped 3.9%
+  - 19. SPG — 2022-11-16 — dropped 3.8%
+  - 20. QCOM — 2022-11-16 — dropped 4.2%
+
+- [ ] **Batch 243** (20 events, 2022-11-16 to 2022-11-21)
+  - 1. PLTR — 2022-11-16 — dropped 3.4%
+  - 2. NVDA — 2022-11-16 — dropped 4.5%
+  - 3. META — 2022-11-16 — dropped 3.3%
+  - 4. AMAT — 2022-11-16 — dropped 5.6%
+  - 5. INTC — 2022-11-16 — dropped 3.8%
+  - 6. GM — 2022-11-16 — dropped 4.4%
+  - 7. FDX — 2022-11-16 — dropped 3.1%
+  - 8. CRM — 2022-11-16 — dropped 4.3%
+  - 9. COP — 2022-11-16 — dropped 3.6%
+  - 10. AMD — 2022-11-16 — dropped 4.8%
+  - 11. INTU — 2022-11-16 — dropped 3.3%
+  - 12. UBER — 2022-11-17 — dropped 3.9%
+  - 13. PLTR — 2022-11-17 — dropped 5.5%
+  - 14. NFLX — 2022-11-17 — dropped 3.5%
+  - 15. CRM — 2022-11-17 — dropped 3.5%
+  - 16. BKNG — 2022-11-17 — dropped 3.6%
+  - 17. LOW — 2022-11-17 — dropped 3.1%
+  - 18. PLTR — 2022-11-18 — dropped 3.0%
+  - 19. INTC — 2022-11-21 — dropped 3.1%
+  - 20. NOW — 2022-11-21 — dropped 3.0%
+
+- [ ] **Batch 244** (20 events, 2022-11-21 to 2022-12-05)
+  - 1. TSLA — 2022-11-21 — dropped 6.8%
+  - 2. MDT — 2022-11-22 — dropped 5.3%
+  - 3. QCOM — 2022-11-28 — dropped 3.2%
+  - 4. XOM — 2022-11-28 — dropped 3.0%
+  - 5. SPG — 2022-11-28 — dropped 4.1%
+  - 6. MU — 2022-11-28 — dropped 4.6%
+  - 7. DIS — 2022-11-28 — dropped 3.2%
+  - 8. MDT — 2022-11-28 — dropped 3.8%
+  - 9. BA — 2022-11-28 — dropped 3.7%
+  - 10. MMM — 2022-11-28 — dropped 3.4%
+  - 11. GE — 2022-11-28 — dropped 3.0%
+  - 12. BAC — 2022-12-01 — dropped 3.4%
+  - 13. COF — 2022-12-01 — dropped 3.8%
+  - 14. COST — 2022-12-01 — dropped 6.6%
+  - 15. MU — 2022-12-01 — dropped 3.7%
+  - 16. AMD — 2022-12-02 — dropped 3.2%
+  - 17. WFC — 2022-12-05 — dropped 5.0%
+  - 18. USB — 2022-12-05 — dropped 3.8%
+  - 19. UPS — 2022-12-05 — dropped 4.3%
+  - 20. UBER — 2022-12-05 — dropped 3.7%
+
+- [ ] **Batch 245** (20 events, 2022-12-05 to 2022-12-07)
+  - 1. TSLA — 2022-12-05 — dropped 6.4%
+  - 2. PLTR — 2022-12-05 — dropped 6.1%
+  - 3. ORCL — 2022-12-05 — dropped 4.7%
+  - 4. LOW — 2022-12-05 — dropped 4.0%
+  - 5. DIS — 2022-12-05 — dropped 3.5%
+  - 6. C — 2022-12-05 — dropped 3.4%
+  - 7. BAC — 2022-12-05 — dropped 4.5%
+  - 8. AMZN — 2022-12-05 — dropped 3.3%
+  - 9. NOW — 2022-12-05 — dropped 5.0%
+  - 10. INTU — 2022-12-05 — dropped 3.1%
+  - 11. UPS — 2022-12-06 — dropped 3.3%
+  - 12. DIS — 2022-12-06 — dropped 3.8%
+  - 13. NVDA — 2022-12-06 — dropped 3.8%
+  - 14. META — 2022-12-06 — dropped 6.8%
+  - 15. COP — 2022-12-06 — dropped 3.1%
+  - 16. BA — 2022-12-06 — dropped 3.6%
+  - 17. AMZN — 2022-12-06 — dropped 3.0%
+  - 18. AMD — 2022-12-06 — dropped 4.6%
+  - 19. BAC — 2022-12-06 — dropped 4.3%
+  - 20. BKNG — 2022-12-07 — dropped 4.2%
+
+- [ ] **Batch 246** (20 events, 2022-12-07 to 2022-12-15)
+  - 1. TSLA — 2022-12-07 — dropped 3.2%
+  - 2. TMUS — 2022-12-08 — dropped 3.3%
+  - 3. CVX — 2022-12-09 — dropped 3.2%
+  - 4. TSLA — 2022-12-12 — dropped 6.3%
+  - 5. TSLA — 2022-12-13 — dropped 4.1%
+  - 6. SCHW — 2022-12-13 — dropped 3.2%
+  - 7. AMD — 2022-12-14 — dropped 3.8%
+  - 8. CMCSA — 2022-12-14 — dropped 3.7%
+  - 9. LIN — 2022-12-15 — dropped 3.3%
+  - 10. LRCX — 2022-12-15 — dropped 4.7%
+  - 11. MA — 2022-12-15 — dropped 3.1%
+  - 12. META — 2022-12-15 — dropped 4.5%
+  - 13. MSFT — 2022-12-15 — dropped 3.2%
+  - 14. MU — 2022-12-15 — dropped 4.7%
+  - 15. UBER — 2022-12-15 — dropped 4.5%
+  - 16. NVDA — 2022-12-15 — dropped 4.1%
+  - 17. PLTR — 2022-12-15 — dropped 4.6%
+  - 18. QCOM — 2022-12-15 — dropped 4.2%
+  - 19. TXN — 2022-12-15 — dropped 3.3%
+  - 20. INTU — 2022-12-15 — dropped 5.3%
+
+- [ ] **Batch 247** (20 events, 2022-12-15 to 2022-12-16)
+  - 1. NOW — 2022-12-15 — dropped 4.2%
+  - 2. INTC — 2022-12-15 — dropped 3.9%
+  - 3. ISRG — 2022-12-15 — dropped 4.8%
+  - 4. GOOGL — 2022-12-15 — dropped 4.4%
+  - 5. AAPL — 2022-12-15 — dropped 4.7%
+  - 6. ACN — 2022-12-15 — dropped 3.5%
+  - 7. ADBE — 2022-12-15 — dropped 3.3%
+  - 8. AMAT — 2022-12-15 — dropped 4.6%
+  - 9. AMD — 2022-12-15 — dropped 3.5%
+  - 10. AMZN — 2022-12-15 — dropped 3.4%
+  - 11. IBM — 2022-12-15 — dropped 5.0%
+  - 12. CRM — 2022-12-15 — dropped 3.2%
+  - 13. GOOG — 2022-12-15 — dropped 4.3%
+  - 14. GE — 2022-12-15 — dropped 3.3%
+  - 15. COST — 2022-12-15 — dropped 4.1%
+  - 16. CVS — 2022-12-15 — dropped 3.1%
+  - 17. DIS — 2022-12-15 — dropped 3.9%
+  - 18. TMO — 2022-12-16 — dropped 3.1%
+  - 19. PFE — 2022-12-16 — dropped 4.1%
+  - 20. TSLA — 2022-12-16 — dropped 4.7%
+
+- [ ] **Batch 248** (20 events, 2022-12-16 to 2022-12-22)
+  - 1. COF — 2022-12-16 — dropped 4.0%
+  - 2. ACN — 2022-12-16 — dropped 5.9%
+  - 3. GM — 2022-12-16 — dropped 3.9%
+  - 4. ACN — 2022-12-19 — dropped 3.4%
+  - 5. DIS — 2022-12-19 — dropped 4.8%
+  - 6. META — 2022-12-19 — dropped 4.1%
+  - 7. NOW — 2022-12-19 — dropped 3.1%
+  - 8. T — 2022-12-19 — dropped 3.4%
+  - 9. UBER — 2022-12-19 — dropped 3.9%
+  - 10. AMZN — 2022-12-19 — dropped 3.3%
+  - 11. MU — 2022-12-22 — dropped 3.4%
+  - 12. TSLA — 2022-12-22 — dropped 8.9%
+  - 13. QCOM — 2022-12-22 — dropped 3.4%
+  - 14. NVDA — 2022-12-22 — dropped 7.0%
+  - 15. NOW — 2022-12-22 — dropped 3.1%
+  - 16. LRCX — 2022-12-22 — dropped 8.7%
+  - 17. GM — 2022-12-22 — dropped 6.6%
+  - 18. BA — 2022-12-22 — dropped 4.0%
+  - 19. AMZN — 2022-12-22 — dropped 3.4%
+  - 20. AMD — 2022-12-22 — dropped 5.6%
+
+- [ ] **Batch 249** (20 events, 2022-12-22 to 2023-01-05)
+  - 1. AMAT — 2022-12-22 — dropped 7.8%
+  - 2. INTC — 2022-12-22 — dropped 3.2%
+  - 3. NFLX — 2022-12-27 — dropped 3.7%
+  - 4. PLTR — 2022-12-27 — dropped 4.6%
+  - 5. AAPL — 2022-12-28 — dropped 3.1%
+  - 6. AAPL — 2023-01-03 — dropped 3.7%
+  - 7. COP — 2023-01-03 — dropped 4.1%
+  - 8. CVX — 2023-01-03 — dropped 3.1%
+  - 9. XOM — 2023-01-03 — dropped 3.4%
+  - 10. MSFT — 2023-01-04 — dropped 4.4%
+  - 11. ADBE — 2023-01-05 — dropped 3.8%
+  - 12. AMD — 2023-01-05 — dropped 3.6%
+  - 13. AMT — 2023-01-05 — dropped 3.1%
+  - 14. DHR — 2023-01-05 — dropped 4.2%
+  - 15. INTU — 2023-01-05 — dropped 4.1%
+  - 16. LIN — 2023-01-05 — dropped 3.6%
+  - 17. NOW — 2023-01-05 — dropped 7.0%
+  - 18. NVDA — 2023-01-05 — dropped 3.3%
+  - 19. PLTR — 2023-01-05 — dropped 4.0%
+  - 20. SPG — 2023-01-05 — dropped 3.1%
+
+- [ ] **Batch 250** (20 events, 2023-01-06 to 2023-01-18)
+  - 1. TMO — 2023-01-06 — dropped 3.9%
+  - 2. PFE — 2023-01-09 — dropped 5.0%
+  - 3. MDT — 2023-01-09 — dropped 4.1%
+  - 4. MRK — 2023-01-09 — dropped 3.9%
+  - 5. LLY — 2023-01-09 — dropped 3.6%
+  - 6. LMT — 2023-01-09 — dropped 3.0%
+  - 7. GILD — 2023-01-09 — dropped 3.4%
+  - 8. ISRG — 2023-01-11 — dropped 4.2%
+  - 9. ABBV — 2023-01-12 — dropped 3.1%
+  - 10. GM — 2023-01-13 — dropped 4.7%
+  - 11. EMR — 2023-01-17 — dropped 6.8%
+  - 12. GS — 2023-01-17 — dropped 6.4%
+  - 13. PFE — 2023-01-17 — dropped 3.7%
+  - 14. USB — 2023-01-18 — dropped 3.4%
+  - 15. SO — 2023-01-18 — dropped 3.3%
+  - 16. MMM — 2023-01-18 — dropped 3.0%
+  - 17. MDLZ — 2023-01-18 — dropped 3.7%
+  - 18. KO — 2023-01-18 — dropped 3.0%
+  - 19. JPM — 2023-01-18 — dropped 3.0%
+  - 20. IBM — 2023-01-18 — dropped 3.3%
+
+- [ ] **Batch 251** (20 events, 2023-01-18 to 2023-01-25)
+  - 1. HON — 2023-01-18 — dropped 3.8%
+  - 2. SCHW — 2023-01-19 — dropped 6.2%
+  - 3. NVDA — 2023-01-19 — dropped 3.5%
+  - 4. NFLX — 2023-01-19 — dropped 3.2%
+  - 5. MMM — 2023-01-19 — dropped 3.5%
+  - 6. LOW — 2023-01-19 — dropped 3.1%
+  - 7. QCOM — 2023-01-19 — dropped 3.7%
+  - 8. GE — 2023-01-19 — dropped 3.0%
+  - 9. DE — 2023-01-19 — dropped 4.1%
+  - 10. COF — 2023-01-19 — dropped 3.9%
+  - 11. AMD — 2023-01-19 — dropped 4.0%
+  - 12. HD — 2023-01-19 — dropped 4.0%
+  - 13. AMAT — 2023-01-19 — dropped 3.2%
+  - 14. UNP — 2023-01-24 — dropped 3.3%
+  - 15. TMO — 2023-01-24 — dropped 4.0%
+  - 16. MMM — 2023-01-24 — dropped 6.2%
+  - 17. PLTR — 2023-01-24 — dropped 4.9%
+  - 18. DHR — 2023-01-25 — dropped 3.2%
+  - 19. GD — 2023-01-25 — dropped 3.6%
+  - 20. ISRG — 2023-01-25 — dropped 5.5%
+
+- [ ] **Batch 252** (20 events, 2023-01-26 to 2023-02-02)
+  - 1. IBM — 2023-01-26 — dropped 4.5%
+  - 2. INTC — 2023-01-27 — dropped 6.4%
+  - 3. CL — 2023-01-27 — dropped 5.2%
+  - 4. CVX — 2023-01-27 — dropped 4.4%
+  - 5. SCHW — 2023-01-27 — dropped 4.3%
+  - 6. TSLA — 2023-01-30 — dropped 6.3%
+  - 7. NVDA — 2023-01-30 — dropped 5.9%
+  - 8. NOW — 2023-01-30 — dropped 3.6%
+  - 9. MU — 2023-01-30 — dropped 3.4%
+  - 10. META — 2023-01-30 — dropped 3.1%
+  - 11. FDX — 2023-01-30 — dropped 3.4%
+  - 12. GM — 2023-01-30 — dropped 4.4%
+  - 13. AMD — 2023-01-30 — dropped 3.9%
+  - 14. AMAT — 2023-01-30 — dropped 3.8%
+  - 15. JNJ — 2023-01-30 — dropped 3.7%
+  - 16. CAT — 2023-01-31 — dropped 3.5%
+  - 17. COP — 2023-02-01 — dropped 3.4%
+  - 18. MRK — 2023-02-02 — dropped 3.3%
+  - 19. UNH — 2023-02-02 — dropped 5.3%
+  - 20. XOM — 2023-02-02 — dropped 3.1%
+
+- [ ] **Batch 253** (20 events, 2023-02-02 to 2023-02-08)
+  - 1. LLY — 2023-02-02 — dropped 3.5%
+  - 2. DE — 2023-02-02 — dropped 4.8%
+  - 3. COP — 2023-02-02 — dropped 5.4%
+  - 4. GILD — 2023-02-02 — dropped 3.1%
+  - 5. ADBE — 2023-02-03 — dropped 3.3%
+  - 6. AMAT — 2023-02-03 — dropped 3.4%
+  - 7. GOOG — 2023-02-03 — dropped 3.3%
+  - 8. INTU — 2023-02-03 — dropped 6.3%
+  - 9. NOW — 2023-02-03 — dropped 3.9%
+  - 10. PLTR — 2023-02-03 — dropped 6.5%
+  - 11. SBUX — 2023-02-03 — dropped 4.4%
+  - 12. MU — 2023-02-06 — dropped 3.9%
+  - 13. NOW — 2023-02-06 — dropped 3.6%
+  - 14. COF — 2023-02-06 — dropped 3.1%
+  - 15. INTC — 2023-02-06 — dropped 5.4%
+  - 16. AMAT — 2023-02-08 — dropped 3.8%
+  - 17. EMR — 2023-02-08 — dropped 5.7%
+  - 18. META — 2023-02-08 — dropped 4.3%
+  - 19. MU — 2023-02-08 — dropped 3.0%
+  - 20. QCOM — 2023-02-08 — dropped 3.3%
+
+- [ ] **Batch 254** (20 events, 2023-02-08 to 2023-02-16)
+  - 1. TXN — 2023-02-08 — dropped 3.8%
+  - 2. GOOG — 2023-02-09 — dropped 4.5%
+  - 3. GOOGL — 2023-02-09 — dropped 4.4%
+  - 4. META — 2023-02-09 — dropped 3.0%
+  - 5. PLTR — 2023-02-09 — dropped 3.3%
+  - 6. TSLA — 2023-02-10 — dropped 5.0%
+  - 7. UBER — 2023-02-10 — dropped 4.4%
+  - 8. PLTR — 2023-02-10 — dropped 5.5%
+  - 9. CRM — 2023-02-10 — dropped 3.8%
+  - 10. NFLX — 2023-02-10 — dropped 4.2%
+  - 11. NVDA — 2023-02-10 — dropped 4.8%
+  - 12. BKNG — 2023-02-10 — dropped 3.6%
+  - 13. LLY — 2023-02-15 — dropped 3.6%
+  - 14. PLTR — 2023-02-16 — dropped 4.0%
+  - 15. NVDA — 2023-02-16 — dropped 3.3%
+  - 16. LRCX — 2023-02-16 — dropped 3.6%
+  - 17. TSLA — 2023-02-16 — dropped 5.7%
+  - 18. DIS — 2023-02-16 — dropped 3.1%
+  - 19. AMD — 2023-02-16 — dropped 6.0%
+  - 20. AMAT — 2023-02-16 — dropped 3.4%
+
+- [ ] **Batch 255** (20 events, 2023-02-16 to 2023-02-21)
+  - 1. INTU — 2023-02-16 — dropped 3.1%
+  - 2. COP — 2023-02-17 — dropped 3.9%
+  - 3. NOW — 2023-02-17 — dropped 3.2%
+  - 4. PLTR — 2023-02-17 — dropped 5.3%
+  - 5. UBER — 2023-02-17 — dropped 4.0%
+  - 6. XOM — 2023-02-17 — dropped 3.8%
+  - 7. MMM — 2023-02-21 — dropped 3.3%
+  - 8. UNP — 2023-02-21 — dropped 3.9%
+  - 9. QCOM — 2023-02-21 — dropped 3.1%
+  - 10. NVDA — 2023-02-21 — dropped 3.4%
+  - 11. NFLX — 2023-02-21 — dropped 3.0%
+  - 12. NEE — 2023-02-21 — dropped 3.2%
+  - 13. LRCX — 2023-02-21 — dropped 3.5%
+  - 14. TSLA — 2023-02-21 — dropped 5.3%
+  - 15. INTC — 2023-02-21 — dropped 5.6%
+  - 16. GM — 2023-02-21 — dropped 4.7%
+  - 17. EMR — 2023-02-21 — dropped 4.0%
+  - 18. CMCSA — 2023-02-21 — dropped 3.3%
+  - 19. C — 2023-02-21 — dropped 3.1%
+  - 20. AMAT — 2023-02-21 — dropped 3.6%
+
+- [ ] **Batch 256** (20 events, 2023-02-21 to 2023-03-07)
+  - 1. LOW — 2023-02-21 — dropped 5.1%
+  - 2. GM — 2023-02-23 — dropped 4.0%
+  - 3. NFLX — 2023-02-23 — dropped 3.4%
+  - 4. UBER — 2023-02-24 — dropped 3.1%
+  - 5. NOW — 2023-02-24 — dropped 3.6%
+  - 6. BA — 2023-02-24 — dropped 4.8%
+  - 7. AMT — 2023-02-24 — dropped 3.1%
+  - 8. SCHW — 2023-02-27 — dropped 3.4%
+  - 9. GS — 2023-02-28 — dropped 3.8%
+  - 10. LOW — 2023-03-01 — dropped 5.6%
+  - 11. TSLA — 2023-03-02 — dropped 5.9%
+  - 12. WFC — 2023-03-07 — dropped 4.7%
+  - 13. USB — 2023-03-07 — dropped 3.2%
+  - 14. TSLA — 2023-03-07 — dropped 3.1%
+  - 15. GS — 2023-03-07 — dropped 3.1%
+  - 16. BAC — 2023-03-07 — dropped 3.2%
+  - 17. CAT — 2023-03-07 — dropped 3.1%
+  - 18. BK — 2023-03-07 — dropped 3.2%
+  - 19. AMT — 2023-03-07 — dropped 3.1%
+  - 20. CVS — 2023-03-07 — dropped 3.0%
+
+- [ ] **Batch 257** (20 events, 2023-03-08 to 2023-03-09)
+  - 1. TSLA — 2023-03-08 — dropped 3.0%
+  - 2. NFLX — 2023-03-09 — dropped 4.5%
+  - 3. UBER — 2023-03-09 — dropped 5.0%
+  - 4. TSLA — 2023-03-09 — dropped 5.0%
+  - 5. SPG — 2023-03-09 — dropped 4.0%
+  - 6. QCOM — 2023-03-09 — dropped 3.3%
+  - 7. PLTR — 2023-03-09 — dropped 5.4%
+  - 8. WFC — 2023-03-09 — dropped 6.2%
+  - 9. NVDA — 2023-03-09 — dropped 3.1%
+  - 10. NOW — 2023-03-09 — dropped 4.1%
+  - 11. MS — 2023-03-09 — dropped 3.9%
+  - 12. COF — 2023-03-09 — dropped 3.8%
+  - 13. GM — 2023-03-09 — dropped 4.9%
+  - 14. DIS — 2023-03-09 — dropped 3.2%
+  - 15. CVS — 2023-03-09 — dropped 3.5%
+  - 16. CAT — 2023-03-09 — dropped 3.1%
+  - 17. C — 2023-03-09 — dropped 4.1%
+  - 18. BLK — 2023-03-09 — dropped 3.4%
+  - 19. BK — 2023-03-09 — dropped 3.6%
+  - 20. BAC — 2023-03-09 — dropped 6.2%
+
+- [ ] **Batch 258** (20 events, 2023-03-09 to 2023-03-13)
+  - 1. JPM — 2023-03-09 — dropped 5.4%
+  - 2. USB — 2023-03-10 — dropped 4.0%
+  - 3. UBER — 2023-03-10 — dropped 3.7%
+  - 4. SPG — 2023-03-10 — dropped 4.9%
+  - 5. PLTR — 2023-03-10 — dropped 4.4%
+  - 6. ORCL — 2023-03-10 — dropped 3.2%
+  - 7. NOW — 2023-03-10 — dropped 3.1%
+  - 8. FDX — 2023-03-10 — dropped 3.2%
+  - 9. GM — 2023-03-10 — dropped 3.4%
+  - 10. DE — 2023-03-10 — dropped 6.0%
+  - 11. CRM — 2023-03-10 — dropped 3.1%
+  - 12. CAT — 2023-03-10 — dropped 5.8%
+  - 13. AXP — 2023-03-10 — dropped 3.7%
+  - 14. GS — 2023-03-10 — dropped 4.2%
+  - 15. GS — 2023-03-13 — dropped 3.7%
+  - 16. USB — 2023-03-13 — dropped 10.0%
+  - 17. WFC — 2023-03-13 — dropped 7.1%
+  - 18. SCHW — 2023-03-13 — dropped 11.6%
+  - 19. COP — 2023-03-13 — dropped 3.4%
+  - 20. BAC — 2023-03-13 — dropped 5.8%
+
+- [ ] **Batch 259** (20 events, 2023-03-13 to 2023-03-15)
+  - 1. C — 2023-03-13 — dropped 7.4%
+  - 2. BK — 2023-03-13 — dropped 6.7%
+  - 3. AXP — 2023-03-13 — dropped 4.9%
+  - 4. COF — 2023-03-13 — dropped 5.0%
+  - 5. XOM — 2023-03-15 — dropped 5.0%
+  - 6. WFC — 2023-03-15 — dropped 3.3%
+  - 7. USB — 2023-03-15 — dropped 5.5%
+  - 8. MS — 2023-03-15 — dropped 5.1%
+  - 9. LIN — 2023-03-15 — dropped 3.4%
+  - 10. JPM — 2023-03-15 — dropped 4.7%
+  - 11. GS — 2023-03-15 — dropped 3.1%
+  - 12. GM — 2023-03-15 — dropped 3.6%
+  - 13. CVX — 2023-03-15 — dropped 4.3%
+  - 14. COP — 2023-03-15 — dropped 6.0%
+  - 15. COF — 2023-03-15 — dropped 3.3%
+  - 16. CAT — 2023-03-15 — dropped 3.7%
+  - 17. C — 2023-03-15 — dropped 5.4%
+  - 18. BK — 2023-03-15 — dropped 3.8%
+  - 19. BA — 2023-03-15 — dropped 4.4%
+  - 20. EMR — 2023-03-15 — dropped 3.1%
+
+- [ ] **Batch 260** (20 events, 2023-03-17 to 2023-03-22)
+  - 1. META — 2023-03-17 — dropped 4.5%
+  - 2. WFC — 2023-03-17 — dropped 3.9%
+  - 3. SPG — 2023-03-17 — dropped 4.5%
+  - 4. MS — 2023-03-17 — dropped 3.3%
+  - 5. MRK — 2023-03-17 — dropped 3.0%
+  - 6. GS — 2023-03-17 — dropped 3.7%
+  - 7. JPM — 2023-03-17 — dropped 3.8%
+  - 8. GILD — 2023-03-17 — dropped 3.2%
+  - 9. COF — 2023-03-17 — dropped 4.1%
+  - 10. C — 2023-03-17 — dropped 3.0%
+  - 11. BK — 2023-03-17 — dropped 4.1%
+  - 12. BAC — 2023-03-17 — dropped 4.0%
+  - 13. GM — 2023-03-17 — dropped 3.6%
+  - 14. PM — 2023-03-22 — dropped 3.5%
+  - 15. WFC — 2023-03-22 — dropped 3.3%
+  - 16. UBER — 2023-03-22 — dropped 4.1%
+  - 17. TSLA — 2023-03-22 — dropped 3.3%
+  - 18. SPG — 2023-03-22 — dropped 4.4%
+  - 19. SCHW — 2023-03-22 — dropped 5.4%
+  - 20. NKE — 2023-03-22 — dropped 4.9%
+
+- [ ] **Batch 261** (20 events, 2023-03-22 to 2023-04-05)
+  - 1. COF — 2023-03-22 — dropped 3.8%
+  - 2. C — 2023-03-22 — dropped 3.0%
+  - 3. BAC — 2023-03-22 — dropped 3.3%
+  - 4. BA — 2023-03-22 — dropped 4.2%
+  - 5. AMT — 2023-03-22 — dropped 3.1%
+  - 6. ADBE — 2023-03-22 — dropped 3.3%
+  - 7. NFLX — 2023-03-22 — dropped 3.9%
+  - 8. MO — 2023-03-23 — dropped 3.7%
+  - 9. SCHW — 2023-03-23 — dropped 6.0%
+  - 10. LRCX — 2023-03-24 — dropped 4.1%
+  - 11. AMT — 2023-03-27 — dropped 3.2%
+  - 12. SCHW — 2023-03-30 — dropped 5.0%
+  - 13. MU — 2023-03-31 — dropped 4.4%
+  - 14. TSLA — 2023-04-03 — dropped 6.1%
+  - 15. SCHW — 2023-04-04 — dropped 3.0%
+  - 16. LRCX — 2023-04-04 — dropped 3.3%
+  - 17. MU — 2023-04-04 — dropped 3.9%
+  - 18. DE — 2023-04-04 — dropped 4.2%
+  - 19. CAT — 2023-04-04 — dropped 5.4%
+  - 20. AMD — 2023-04-05 — dropped 3.5%
+
+- [ ] **Batch 262** (20 events, 2023-04-05 to 2023-04-25)
+  - 1. DE — 2023-04-05 — dropped 6.0%
+  - 2. PLTR — 2023-04-05 — dropped 4.4%
+  - 3. TSLA — 2023-04-05 — dropped 3.7%
+  - 4. PLTR — 2023-04-12 — dropped 3.3%
+  - 5. TSLA — 2023-04-12 — dropped 3.3%
+  - 6. NOW — 2023-04-14 — dropped 4.2%
+  - 7. BA — 2023-04-14 — dropped 5.6%
+  - 8. BK — 2023-04-17 — dropped 4.6%
+  - 9. CSCO — 2023-04-19 — dropped 4.5%
+  - 10. NFLX — 2023-04-19 — dropped 3.2%
+  - 11. UNH — 2023-04-19 — dropped 3.6%
+  - 12. VZ — 2023-04-20 — dropped 3.7%
+  - 13. USB — 2023-04-20 — dropped 3.5%
+  - 14. PM — 2023-04-20 — dropped 4.7%
+  - 15. CSCO — 2023-04-20 — dropped 3.0%
+  - 16. GM — 2023-04-20 — dropped 3.0%
+  - 17. PLTR — 2023-04-20 — dropped 4.0%
+  - 18. USB — 2023-04-21 — dropped 3.6%
+  - 19. T — 2023-04-24 — dropped 3.8%
+  - 20. PLTR — 2023-04-25 — dropped 4.4%
+
+- [ ] **Batch 263** (20 events, 2023-04-25 to 2023-05-01)
+  - 1. USB — 2023-04-25 — dropped 3.1%
+  - 2. UBER — 2023-04-25 — dropped 3.6%
+  - 3. TXN — 2023-04-25 — dropped 3.7%
+  - 4. TMO — 2023-04-25 — dropped 4.5%
+  - 5. SCHW — 2023-04-25 — dropped 3.9%
+  - 6. NOW — 2023-04-25 — dropped 6.5%
+  - 7. INTU — 2023-04-25 — dropped 5.1%
+  - 8. GM — 2023-04-25 — dropped 4.0%
+  - 9. BK — 2023-04-25 — dropped 3.1%
+  - 10. BAC — 2023-04-25 — dropped 3.1%
+  - 11. AMZN — 2023-04-25 — dropped 3.4%
+  - 12. AMD — 2023-04-25 — dropped 4.3%
+  - 13. BMY — 2023-04-26 — dropped 3.2%
+  - 14. GD — 2023-04-26 — dropped 3.6%
+  - 15. NEE — 2023-04-26 — dropped 4.8%
+  - 16. RTX — 2023-04-26 — dropped 3.4%
+  - 17. TSLA — 2023-04-26 — dropped 4.3%
+  - 18. AMZN — 2023-04-28 — dropped 4.0%
+  - 19. TMUS — 2023-04-28 — dropped 4.0%
+  - 20. XOM — 2023-05-01 — dropped 3.1%
+
+- [ ] **Batch 264** (20 events, 2023-05-01 to 2023-05-04)
+  - 1. USB — 2023-05-01 — dropped 3.9%
+  - 2. AMZN — 2023-05-01 — dropped 3.2%
+  - 3. COF — 2023-05-01 — dropped 4.2%
+  - 4. MU — 2023-05-01 — dropped 3.1%
+  - 5. WFC — 2023-05-02 — dropped 3.8%
+  - 6. AVGO — 2023-05-02 — dropped 4.0%
+  - 7. AXP — 2023-05-02 — dropped 3.8%
+  - 8. BAC — 2023-05-02 — dropped 3.0%
+  - 9. COF — 2023-05-02 — dropped 3.9%
+  - 10. COP — 2023-05-02 — dropped 3.8%
+  - 11. CVX — 2023-05-02 — dropped 4.3%
+  - 12. SCHW — 2023-05-02 — dropped 3.3%
+  - 13. XOM — 2023-05-02 — dropped 4.0%
+  - 14. SPG — 2023-05-03 — dropped 4.0%
+  - 15. SCHW — 2023-05-03 — dropped 4.1%
+  - 16. CVS — 2023-05-03 — dropped 3.7%
+  - 17. ADBE — 2023-05-03 — dropped 6.4%
+  - 18. ACN — 2023-05-04 — dropped 3.2%
+  - 19. BAC — 2023-05-04 — dropped 3.1%
+  - 20. DIS — 2023-05-04 — dropped 3.4%
+
+- [ ] **Batch 265** (20 events, 2023-05-04 to 2023-05-25)
+  - 1. QCOM — 2023-05-04 — dropped 5.5%
+  - 2. WFC — 2023-05-04 — dropped 5.0%
+  - 3. SCHW — 2023-05-08 — dropped 3.3%
+  - 4. USB — 2023-05-08 — dropped 3.3%
+  - 5. AXP — 2023-05-10 — dropped 3.1%
+  - 6. INTC — 2023-05-11 — dropped 3.7%
+  - 7. PLTR — 2023-05-12 — dropped 3.8%
+  - 8. USB — 2023-05-16 — dropped 3.3%
+  - 9. NKE — 2023-05-19 — dropped 3.5%
+  - 10. NKE — 2023-05-22 — dropped 4.0%
+  - 11. ORCL — 2023-05-23 — dropped 3.2%
+  - 12. ISRG — 2023-05-23 — dropped 3.9%
+  - 13. LIN — 2023-05-23 — dropped 3.4%
+  - 14. C — 2023-05-24 — dropped 3.1%
+  - 15. GM — 2023-05-24 — dropped 3.4%
+  - 16. MMM — 2023-05-24 — dropped 3.7%
+  - 17. PLTR — 2023-05-24 — dropped 3.2%
+  - 18. INTC — 2023-05-25 — dropped 5.5%
+  - 19. MDT — 2023-05-25 — dropped 4.5%
+  - 20. T — 2023-05-25 — dropped 5.0%
+
+- [ ] **Batch 266** (20 events, 2023-05-25 to 2023-06-07)
+  - 1. TMUS — 2023-05-25 — dropped 3.0%
+  - 2. MDLZ — 2023-05-30 — dropped 3.7%
+  - 3. MU — 2023-05-30 — dropped 3.0%
+  - 4. NVDA — 2023-05-31 — dropped 5.7%
+  - 5. MU — 2023-05-31 — dropped 4.9%
+  - 6. FDX — 2023-05-31 — dropped 3.6%
+  - 7. AMD — 2023-05-31 — dropped 5.6%
+  - 8. HD — 2023-05-31 — dropped 3.1%
+  - 9. ABBV — 2023-06-01 — dropped 3.3%
+  - 10. CRM — 2023-06-01 — dropped 4.7%
+  - 11. T — 2023-06-02 — dropped 3.8%
+  - 12. TMUS — 2023-06-02 — dropped 5.6%
+  - 13. VZ — 2023-06-02 — dropped 3.2%
+  - 14. INTC — 2023-06-05 — dropped 4.6%
+  - 15. MMM — 2023-06-05 — dropped 4.4%
+  - 16. GOOG — 2023-06-07 — dropped 3.9%
+  - 17. UBER — 2023-06-07 — dropped 3.1%
+  - 18. PLTR — 2023-06-07 — dropped 5.0%
+  - 19. NVDA — 2023-06-07 — dropped 3.1%
+  - 20. NOW — 2023-06-07 — dropped 4.9%
+
+- [ ] **Batch 267** (20 events, 2023-06-07 to 2023-06-21)
+  - 1. MSFT — 2023-06-07 — dropped 3.1%
+  - 2. CRM — 2023-06-07 — dropped 3.3%
+  - 3. GOOGL — 2023-06-07 — dropped 3.8%
+  - 4. AMZN — 2023-06-07 — dropped 4.2%
+  - 5. AMD — 2023-06-07 — dropped 5.2%
+  - 6. ADBE — 2023-06-07 — dropped 3.4%
+  - 7. INTU — 2023-06-07 — dropped 5.8%
+  - 8. AMD — 2023-06-13 — dropped 3.6%
+  - 9. UNH — 2023-06-14 — dropped 6.4%
+  - 10. MO — 2023-06-14 — dropped 4.0%
+  - 11. AMD — 2023-06-16 — dropped 3.3%
+  - 12. UBER — 2023-06-20 — dropped 3.1%
+  - 13. PLTR — 2023-06-20 — dropped 3.1%
+  - 14. INTC — 2023-06-20 — dropped 3.8%
+  - 15. NKE — 2023-06-20 — dropped 3.6%
+  - 16. BA — 2023-06-20 — dropped 3.5%
+  - 17. AMD — 2023-06-21 — dropped 5.7%
+  - 18. CRM — 2023-06-21 — dropped 3.4%
+  - 19. INTC — 2023-06-21 — dropped 6.0%
+  - 20. QCOM — 2023-06-21 — dropped 3.4%
+
+- [ ] **Batch 268** (20 events, 2023-06-21 to 2023-07-06)
+  - 1. TSLA — 2023-06-21 — dropped 5.5%
+  - 2. BA — 2023-06-22 — dropped 3.1%
+  - 3. PLTR — 2023-06-22 — dropped 4.0%
+  - 4. USB — 2023-06-22 — dropped 3.6%
+  - 5. TSLA — 2023-06-23 — dropped 3.0%
+  - 6. TSLA — 2023-06-26 — dropped 6.1%
+  - 7. PFE — 2023-06-26 — dropped 3.7%
+  - 8. NVDA — 2023-06-26 — dropped 3.7%
+  - 9. META — 2023-06-26 — dropped 3.6%
+  - 10. GOOGL — 2023-06-26 — dropped 3.3%
+  - 11. GOOG — 2023-06-26 — dropped 3.2%
+  - 12. MU — 2023-06-29 — dropped 4.1%
+  - 13. UBER — 2023-06-29 — dropped 3.8%
+  - 14. INTC — 2023-07-05 — dropped 3.3%
+  - 15. LRCX — 2023-07-05 — dropped 3.4%
+  - 16. C — 2023-07-06 — dropped 3.0%
+  - 17. COP — 2023-07-06 — dropped 3.5%
+  - 18. MS — 2023-07-06 — dropped 3.0%
+  - 19. PLTR — 2023-07-06 — dropped 3.6%
+  - 20. UBER — 2023-07-06 — dropped 3.6%
+
+- [ ] **Batch 269** (20 events, 2023-07-06 to 2023-07-20)
+  - 1. XOM — 2023-07-06 — dropped 3.7%
+  - 2. VZ — 2023-07-07 — dropped 3.3%
+  - 3. LLY — 2023-07-11 — dropped 3.0%
+  - 4. BK — 2023-07-14 — dropped 6.7%
+  - 5. C — 2023-07-14 — dropped 4.0%
+  - 6. COP — 2023-07-14 — dropped 3.1%
+  - 7. T — 2023-07-14 — dropped 4.1%
+  - 8. XOM — 2023-07-14 — dropped 3.4%
+  - 9. AMT — 2023-07-17 — dropped 4.0%
+  - 10. DIS — 2023-07-17 — dropped 3.5%
+  - 11. GM — 2023-07-17 — dropped 3.1%
+  - 12. T — 2023-07-17 — dropped 6.7%
+  - 13. LMT — 2023-07-18 — dropped 3.0%
+  - 14. PLTR — 2023-07-20 — dropped 5.1%
+  - 15. NVDA — 2023-07-20 — dropped 3.3%
+  - 16. NOW — 2023-07-20 — dropped 4.0%
+  - 17. META — 2023-07-20 — dropped 4.3%
+  - 18. AMD — 2023-07-20 — dropped 5.3%
+  - 19. INTC — 2023-07-20 — dropped 3.2%
+  - 20. AMZN — 2023-07-20 — dropped 4.0%
+
+- [ ] **Batch 270** (20 events, 2023-07-20 to 2023-08-02)
+  - 1. AMAT — 2023-07-20 — dropped 5.5%
+  - 2. LRCX — 2023-07-20 — dropped 3.8%
+  - 3. AXP — 2023-07-21 — dropped 3.9%
+  - 4. ISRG — 2023-07-21 — dropped 3.2%
+  - 5. PLTR — 2023-07-21 — dropped 4.1%
+  - 6. GILD — 2023-07-24 — dropped 3.7%
+  - 7. ISRG — 2023-07-24 — dropped 3.9%
+  - 8. GM — 2023-07-25 — dropped 3.5%
+  - 9. USB — 2023-07-25 — dropped 3.6%
+  - 10. TXN — 2023-07-26 — dropped 5.4%
+  - 11. MSFT — 2023-07-26 — dropped 3.8%
+  - 12. BMY — 2023-07-27 — dropped 4.2%
+  - 13. DHR — 2023-07-27 — dropped 3.6%
+  - 14. HON — 2023-07-27 — dropped 5.7%
+  - 15. NOW — 2023-07-27 — dropped 3.0%
+  - 16. TSLA — 2023-07-27 — dropped 3.3%
+  - 17. JNJ — 2023-07-31 — dropped 4.0%
+  - 18. UBER — 2023-08-01 — dropped 5.7%
+  - 19. TXN — 2023-08-02 — dropped 3.3%
+  - 20. PLTR — 2023-08-02 — dropped 5.1%
+
+- [ ] **Batch 271** (20 events, 2023-08-02 to 2023-08-11)
+  - 1. NVDA — 2023-08-02 — dropped 4.8%
+  - 2. NOW — 2023-08-02 — dropped 4.6%
+  - 3. MU — 2023-08-02 — dropped 3.7%
+  - 4. LRCX — 2023-08-02 — dropped 4.2%
+  - 5. ISRG — 2023-08-02 — dropped 3.1%
+  - 6. INTC — 2023-08-02 — dropped 3.9%
+  - 7. DIS — 2023-08-02 — dropped 3.1%
+  - 8. AVGO — 2023-08-02 — dropped 3.0%
+  - 9. AMAT — 2023-08-02 — dropped 3.5%
+  - 10. ADBE — 2023-08-02 — dropped 3.4%
+  - 11. SO — 2023-08-03 — dropped 3.3%
+  - 12. SPG — 2023-08-03 — dropped 4.6%
+  - 13. AAPL — 2023-08-04 — dropped 4.8%
+  - 14. AMD — 2023-08-08 — dropped 3.1%
+  - 15. PLTR — 2023-08-08 — dropped 5.3%
+  - 16. AVGO — 2023-08-09 — dropped 3.7%
+  - 17. NVDA — 2023-08-09 — dropped 4.7%
+  - 18. TSLA — 2023-08-09 — dropped 3.0%
+  - 19. GM — 2023-08-10 — dropped 5.8%
+  - 20. AMAT — 2023-08-11 — dropped 4.0%
+
+- [ ] **Batch 272** (20 events, 2023-08-11 to 2023-08-24)
+  - 1. LRCX — 2023-08-11 — dropped 5.0%
+  - 2. NVDA — 2023-08-11 — dropped 3.6%
+  - 3. SCHW — 2023-08-14 — dropped 3.6%
+  - 4. BAC — 2023-08-15 — dropped 3.2%
+  - 5. MU — 2023-08-15 — dropped 4.3%
+  - 6. XOM — 2023-08-15 — dropped 3.4%
+  - 7. AMD — 2023-08-16 — dropped 3.7%
+  - 8. AMT — 2023-08-16 — dropped 4.1%
+  - 9. INTC — 2023-08-16 — dropped 3.6%
+  - 10. TSLA — 2023-08-16 — dropped 3.2%
+  - 11. ISRG — 2023-08-17 — dropped 3.1%
+  - 12. META — 2023-08-17 — dropped 3.1%
+  - 13. DE — 2023-08-18 — dropped 5.3%
+  - 14. SCHW — 2023-08-22 — dropped 4.9%
+  - 15. COF — 2023-08-22 — dropped 3.9%
+  - 16. ADBE — 2023-08-24 — dropped 3.4%
+  - 17. AMAT — 2023-08-24 — dropped 3.7%
+  - 18. AMD — 2023-08-24 — dropped 7.0%
+  - 19. BA — 2023-08-24 — dropped 4.9%
+  - 20. DIS — 2023-08-24 — dropped 3.9%
+
+- [ ] **Batch 273** (20 events, 2023-08-24 to 2023-09-15)
+  - 1. INTC — 2023-08-24 — dropped 4.1%
+  - 2. LRCX — 2023-08-24 — dropped 3.3%
+  - 3. MDT — 2023-08-24 — dropped 3.1%
+  - 4. NFLX — 2023-08-24 — dropped 4.8%
+  - 5. NOW — 2023-08-24 — dropped 3.3%
+  - 6. ORCL — 2023-08-24 — dropped 4.2%
+  - 7. UNH — 2023-08-31 — dropped 3.0%
+  - 8. TSLA — 2023-09-01 — dropped 5.1%
+  - 9. AVGO — 2023-09-01 — dropped 5.5%
+  - 10. AAPL — 2023-09-06 — dropped 3.6%
+  - 11. LMT — 2023-09-06 — dropped 4.8%
+  - 12. NVDA — 2023-09-06 — dropped 3.1%
+  - 13. AMAT — 2023-09-07 — dropped 3.2%
+  - 14. ISRG — 2023-09-07 — dropped 3.4%
+  - 15. ACN — 2023-09-12 — dropped 3.4%
+  - 16. ADBE — 2023-09-12 — dropped 3.9%
+  - 17. MMM — 2023-09-13 — dropped 5.7%
+  - 18. NFLX — 2023-09-13 — dropped 5.2%
+  - 19. USB — 2023-09-13 — dropped 5.0%
+  - 20. PLTR — 2023-09-15 — dropped 3.2%
+
+- [ ] **Batch 274** (20 events, 2023-09-15 to 2023-09-21)
+  - 1. NVDA — 2023-09-15 — dropped 3.7%
+  - 2. META — 2023-09-15 — dropped 3.7%
+  - 3. LRCX — 2023-09-15 — dropped 5.1%
+  - 4. AMD — 2023-09-15 — dropped 4.8%
+  - 5. AMAT — 2023-09-15 — dropped 4.4%
+  - 6. ADBE — 2023-09-15 — dropped 4.2%
+  - 7. LOW — 2023-09-15 — dropped 4.7%
+  - 8. TSLA — 2023-09-18 — dropped 3.3%
+  - 9. DIS — 2023-09-19 — dropped 3.6%
+  - 10. INTC — 2023-09-19 — dropped 4.3%
+  - 11. GOOG — 2023-09-20 — dropped 3.1%
+  - 12. GOOGL — 2023-09-20 — dropped 3.1%
+  - 13. INTC — 2023-09-20 — dropped 4.5%
+  - 14. LLY — 2023-09-21 — dropped 3.4%
+  - 15. UBER — 2023-09-21 — dropped 4.2%
+  - 16. PLTR — 2023-09-21 — dropped 5.0%
+  - 17. ORCL — 2023-09-21 — dropped 3.0%
+  - 18. NOW — 2023-09-21 — dropped 3.7%
+  - 19. INTU — 2023-09-21 — dropped 3.7%
+  - 20. CSCO — 2023-09-21 — dropped 3.9%
+
+- [ ] **Batch 275** (20 events, 2023-09-21 to 2023-10-03)
+  - 1. AMZN — 2023-09-21 — dropped 4.4%
+  - 2. AMT — 2023-09-21 — dropped 4.6%
+  - 3. AMD — 2023-09-21 — dropped 4.2%
+  - 4. ADBE — 2023-09-21 — dropped 4.1%
+  - 5. DE — 2023-09-21 — dropped 3.7%
+  - 6. TSLA — 2023-09-22 — dropped 4.2%
+  - 7. AMZN — 2023-09-26 — dropped 4.0%
+  - 8. NEE — 2023-09-26 — dropped 3.2%
+  - 9. ORCL — 2023-09-26 — dropped 3.2%
+  - 10. SO — 2023-09-26 — dropped 3.1%
+  - 11. NEE — 2023-09-28 — dropped 4.8%
+  - 12. MU — 2023-09-28 — dropped 4.4%
+  - 13. ACN — 2023-09-28 — dropped 4.3%
+  - 14. DUK — 2023-10-02 — dropped 3.2%
+  - 15. MMM — 2023-10-02 — dropped 3.6%
+  - 16. SO — 2023-10-02 — dropped 3.1%
+  - 17. SPG — 2023-10-02 — dropped 3.1%
+  - 18. WFC — 2023-10-02 — dropped 3.1%
+  - 19. AMD — 2023-10-03 — dropped 3.1%
+  - 20. AMZN — 2023-10-03 — dropped 3.7%
+
+- [ ] **Batch 276** (20 events, 2023-10-03 to 2023-10-12)
+  - 1. GM — 2023-10-03 — dropped 3.4%
+  - 2. GS — 2023-10-03 — dropped 3.9%
+  - 3. PLTR — 2023-10-03 — dropped 6.2%
+  - 4. SCHW — 2023-10-03 — dropped 4.2%
+  - 5. XOM — 2023-10-04 — dropped 3.7%
+  - 6. NEE — 2023-10-04 — dropped 4.1%
+  - 7. COP — 2023-10-04 — dropped 3.6%
+  - 8. KO — 2023-10-05 — dropped 4.8%
+  - 9. MDLZ — 2023-10-05 — dropped 5.3%
+  - 10. PEP — 2023-10-05 — dropped 5.2%
+  - 11. VZ — 2023-10-06 — dropped 3.0%
+  - 12. NFLX — 2023-10-10 — dropped 3.3%
+  - 13. ABT — 2023-10-11 — dropped 5.0%
+  - 14. CVX — 2023-10-11 — dropped 3.3%
+  - 15. ISRG — 2023-10-11 — dropped 5.4%
+  - 16. MDT — 2023-10-11 — dropped 4.3%
+  - 17. XOM — 2023-10-11 — dropped 3.6%
+  - 18. DHR — 2023-10-12 — dropped 3.2%
+  - 19. ISRG — 2023-10-12 — dropped 5.6%
+  - 20. LOW — 2023-10-12 — dropped 3.1%
+
+- [ ] **Batch 277** (20 events, 2023-10-13 to 2023-10-18)
+  - 1. UBER — 2023-10-13 — dropped 5.4%
+  - 2. PLTR — 2023-10-13 — dropped 3.2%
+  - 3. NVDA — 2023-10-13 — dropped 3.2%
+  - 4. AMD — 2023-10-13 — dropped 3.4%
+  - 5. BKNG — 2023-10-13 — dropped 3.2%
+  - 6. BA — 2023-10-13 — dropped 3.3%
+  - 7. FDX — 2023-10-13 — dropped 3.7%
+  - 8. NVDA — 2023-10-17 — dropped 4.7%
+  - 9. SCHW — 2023-10-18 — dropped 3.4%
+  - 10. USB — 2023-10-18 — dropped 4.4%
+  - 11. UBER — 2023-10-18 — dropped 3.1%
+  - 12. TSLA — 2023-10-18 — dropped 4.8%
+  - 13. TMO — 2023-10-18 — dropped 3.6%
+  - 14. PLTR — 2023-10-18 — dropped 3.6%
+  - 15. PFE — 2023-10-18 — dropped 4.1%
+  - 16. NOW — 2023-10-18 — dropped 3.1%
+  - 17. MS — 2023-10-18 — dropped 6.8%
+  - 18. DHR — 2023-10-18 — dropped 3.4%
+  - 19. CAT — 2023-10-18 — dropped 4.9%
+  - 20. BLK — 2023-10-18 — dropped 3.1%
+
+- [ ] **Batch 278** (20 events, 2023-10-18 to 2023-10-25)
+  - 1. BKNG — 2023-10-18 — dropped 4.3%
+  - 2. NVDA — 2023-10-18 — dropped 4.0%
+  - 3. AMAT — 2023-10-19 — dropped 5.0%
+  - 4. COF — 2023-10-19 — dropped 3.4%
+  - 5. LRCX — 2023-10-19 — dropped 6.3%
+  - 6. TSLA — 2023-10-20 — dropped 3.7%
+  - 7. USB — 2023-10-20 — dropped 5.6%
+  - 8. PLTR — 2023-10-20 — dropped 5.6%
+  - 9. NOW — 2023-10-20 — dropped 3.1%
+  - 10. AXP — 2023-10-20 — dropped 5.4%
+  - 11. ORCL — 2023-10-20 — dropped 6.0%
+  - 12. CVX — 2023-10-23 — dropped 3.7%
+  - 13. INTC — 2023-10-23 — dropped 3.1%
+  - 14. SCHW — 2023-10-23 — dropped 3.0%
+  - 15. DHR — 2023-10-24 — dropped 3.5%
+  - 16. NVDA — 2023-10-25 — dropped 4.3%
+  - 17. NOW — 2023-10-25 — dropped 4.4%
+  - 18. PLTR — 2023-10-25 — dropped 6.3%
+  - 19. META — 2023-10-25 — dropped 4.2%
+  - 20. TMO — 2023-10-25 — dropped 5.5%
+
+- [ ] **Batch 279** (20 events, 2023-10-25 to 2023-10-26)
+  - 1. TXN — 2023-10-25 — dropped 3.5%
+  - 2. UBER — 2023-10-25 — dropped 4.2%
+  - 3. QCOM — 2023-10-25 — dropped 4.2%
+  - 4. LRCX — 2023-10-25 — dropped 3.4%
+  - 5. INTU — 2023-10-25 — dropped 4.5%
+  - 6. INTC — 2023-10-25 — dropped 5.1%
+  - 7. CRM — 2023-10-25 — dropped 3.5%
+  - 8. AVGO — 2023-10-25 — dropped 3.6%
+  - 9. AMZN — 2023-10-25 — dropped 5.6%
+  - 10. AMD — 2023-10-25 — dropped 5.5%
+  - 11. AMAT — 2023-10-25 — dropped 3.6%
+  - 12. ADBE — 2023-10-25 — dropped 3.4%
+  - 13. ISRG — 2023-10-25 — dropped 3.9%
+  - 14. MA — 2023-10-26 — dropped 5.6%
+  - 15. TSLA — 2023-10-26 — dropped 3.1%
+  - 16. NVDA — 2023-10-26 — dropped 3.5%
+  - 17. NKE — 2023-10-26 — dropped 3.4%
+  - 18. MSFT — 2023-10-26 — dropped 3.8%
+  - 19. FDX — 2023-10-26 — dropped 3.1%
+  - 20. LLY — 2023-10-26 — dropped 3.1%
+
+- [ ] **Batch 280** (20 events, 2023-10-26 to 2023-11-09)
+  - 1. UBER — 2023-10-26 — dropped 4.1%
+  - 2. BMY — 2023-10-26 — dropped 6.4%
+  - 3. META — 2023-10-26 — dropped 3.7%
+  - 4. UPS — 2023-10-26 — dropped 5.9%
+  - 5. PFE — 2023-10-27 — dropped 3.4%
+  - 6. GM — 2023-10-27 — dropped 4.7%
+  - 7. USB — 2023-10-27 — dropped 3.6%
+  - 8. CVX — 2023-10-27 — dropped 6.7%
+  - 9. JPM — 2023-10-27 — dropped 3.6%
+  - 10. BAC — 2023-10-27 — dropped 3.6%
+  - 11. AMGN — 2023-10-27 — dropped 3.0%
+  - 12. ABBV — 2023-10-27 — dropped 4.3%
+  - 13. BMY — 2023-10-27 — dropped 3.7%
+  - 14. TSLA — 2023-10-30 — dropped 4.8%
+  - 15. CAT — 2023-10-31 — dropped 6.7%
+  - 16. GILD — 2023-11-08 — dropped 3.4%
+  - 17. TSLA — 2023-11-09 — dropped 5.5%
+  - 18. NEE — 2023-11-09 — dropped 4.8%
+  - 19. LLY — 2023-11-09 — dropped 4.5%
+  - 20. PFE — 2023-11-09 — dropped 3.7%
+
+- [ ] **Batch 281** (20 events, 2023-11-09 to 2023-12-13)
+  - 1. GILD — 2023-11-09 — dropped 3.7%
+  - 2. BMY — 2023-11-09 — dropped 3.8%
+  - 3. AMGN — 2023-11-09 — dropped 3.4%
+  - 4. GM — 2023-11-09 — dropped 3.3%
+  - 5. LLY — 2023-11-15 — dropped 3.6%
+  - 6. COST — 2023-11-16 — dropped 3.0%
+  - 7. TSLA — 2023-11-16 — dropped 3.8%
+  - 8. AMAT — 2023-11-17 — dropped 4.0%
+  - 9. BMY — 2023-11-20 — dropped 3.8%
+  - 10. LOW — 2023-11-21 — dropped 3.1%
+  - 11. DE — 2023-11-22 — dropped 3.1%
+  - 12. CVS — 2023-11-29 — dropped 3.5%
+  - 13. PFE — 2023-12-01 — dropped 5.1%
+  - 14. CRM — 2023-12-04 — dropped 3.6%
+  - 15. INTC — 2023-12-04 — dropped 3.2%
+  - 16. CMCSA — 2023-12-05 — dropped 3.4%
+  - 17. PG — 2023-12-05 — dropped 3.5%
+  - 18. PLTR — 2023-12-06 — dropped 6.4%
+  - 19. PFE — 2023-12-13 — dropped 6.7%
+  - 20. LIN — 2023-12-13 — dropped 4.2%
+
+- [ ] **Batch 282** (20 events, 2023-12-14 to 2024-01-02)
+  - 1. NOW — 2023-12-14 — dropped 4.9%
+  - 2. MDLZ — 2023-12-14 — dropped 3.3%
+  - 3. LLY — 2023-12-14 — dropped 4.0%
+  - 4. ADBE — 2023-12-14 — dropped 6.3%
+  - 5. CL — 2023-12-14 — dropped 3.9%
+  - 6. TSLA — 2023-12-20 — dropped 3.9%
+  - 7. SCHW — 2023-12-20 — dropped 3.8%
+  - 8. SBUX — 2023-12-20 — dropped 3.1%
+  - 9. PM — 2023-12-20 — dropped 3.4%
+  - 10. PLTR — 2023-12-20 — dropped 3.9%
+  - 11. NVDA — 2023-12-20 — dropped 3.0%
+  - 12. USB — 2023-12-20 — dropped 4.0%
+  - 13. MO — 2023-12-20 — dropped 5.0%
+  - 14. LRCX — 2023-12-20 — dropped 3.3%
+  - 15. ISRG — 2023-12-20 — dropped 3.1%
+  - 16. AMD — 2023-12-20 — dropped 3.3%
+  - 17. AMAT — 2023-12-20 — dropped 3.3%
+  - 18. MU — 2023-12-20 — dropped 4.2%
+  - 19. TSLA — 2023-12-28 — dropped 3.2%
+  - 20. QCOM — 2024-01-02 — dropped 3.0%
+
+- [ ] **Batch 283** (20 events, 2024-01-02 to 2024-01-12)
+  - 1. PLTR — 2024-01-02 — dropped 3.4%
+  - 2. NFLX — 2024-01-02 — dropped 3.8%
+  - 3. MU — 2024-01-02 — dropped 3.5%
+  - 4. LRCX — 2024-01-02 — dropped 4.3%
+  - 5. AMD — 2024-01-02 — dropped 6.0%
+  - 6. INTC — 2024-01-02 — dropped 4.9%
+  - 7. BA — 2024-01-02 — dropped 3.4%
+  - 8. AMAT — 2024-01-02 — dropped 4.8%
+  - 9. AAPL — 2024-01-02 — dropped 3.6%
+  - 10. UBER — 2024-01-02 — dropped 5.2%
+  - 11. INTU — 2024-01-02 — dropped 3.4%
+  - 12. TSLA — 2024-01-03 — dropped 4.0%
+  - 13. BA — 2024-01-03 — dropped 3.1%
+  - 14. COF — 2024-01-10 — dropped 3.0%
+  - 15. T — 2024-01-11 — dropped 3.8%
+  - 16. VZ — 2024-01-11 — dropped 3.0%
+  - 17. CVS — 2024-01-12 — dropped 3.0%
+  - 18. TSLA — 2024-01-12 — dropped 3.7%
+  - 19. UNH — 2024-01-12 — dropped 3.4%
+  - 20. WFC — 2024-01-12 — dropped 3.3%
+
+- [ ] **Batch 284** (20 events, 2024-01-16 to 2024-01-31)
+  - 1. MS — 2024-01-16 — dropped 4.2%
+  - 2. NKE — 2024-01-16 — dropped 3.2%
+  - 3. NEE — 2024-01-17 — dropped 3.4%
+  - 4. CVS — 2024-01-18 — dropped 4.0%
+  - 5. AMD — 2024-01-22 — dropped 3.5%
+  - 6. BKNG — 2024-01-22 — dropped 3.1%
+  - 7. LMT — 2024-01-23 — dropped 4.2%
+  - 8. PLTR — 2024-01-24 — dropped 3.3%
+  - 9. BA — 2024-01-25 — dropped 5.7%
+  - 10. PFE — 2024-01-25 — dropped 3.0%
+  - 11. UNH — 2024-01-25 — dropped 3.9%
+  - 12. AMAT — 2024-01-26 — dropped 3.3%
+  - 13. LRCX — 2024-01-26 — dropped 3.1%
+  - 14. AMD — 2024-01-30 — dropped 3.2%
+  - 15. MU — 2024-01-30 — dropped 3.3%
+  - 16. CSCO — 2024-01-31 — dropped 3.9%
+  - 17. EMR — 2024-01-31 — dropped 3.2%
+  - 18. PLTR — 2024-01-31 — dropped 3.9%
+  - 19. TMO — 2024-01-31 — dropped 5.0%
+  - 20. USB — 2024-01-31 — dropped 4.2%
+
+- [ ] **Batch 285** (20 events, 2024-02-01 to 2024-02-13)
+  - 1. QCOM — 2024-02-01 — dropped 5.0%
+  - 2. CMCSA — 2024-02-02 — dropped 3.5%
+  - 3. MCD — 2024-02-05 — dropped 3.7%
+  - 4. META — 2024-02-05 — dropped 3.3%
+  - 5. NEE — 2024-02-05 — dropped 3.7%
+  - 6. TSLA — 2024-02-05 — dropped 3.6%
+  - 7. ADBE — 2024-02-06 — dropped 3.7%
+  - 8. AMD — 2024-02-06 — dropped 3.6%
+  - 9. AMGN — 2024-02-07 — dropped 6.4%
+  - 10. CMCSA — 2024-02-07 — dropped 3.5%
+  - 11. GILD — 2024-02-07 — dropped 4.2%
+  - 12. CMCSA — 2024-02-08 — dropped 3.8%
+  - 13. PEP — 2024-02-09 — dropped 3.6%
+  - 14. NOW — 2024-02-12 — dropped 3.1%
+  - 15. BK — 2024-02-13 — dropped 3.1%
+  - 16. FDX — 2024-02-13 — dropped 3.3%
+  - 17. GS — 2024-02-13 — dropped 3.5%
+  - 18. MS — 2024-02-13 — dropped 3.3%
+  - 19. MU — 2024-02-13 — dropped 4.9%
+  - 20. NEE — 2024-02-13 — dropped 4.0%
+
+- [ ] **Batch 286** (20 events, 2024-02-13 to 2024-03-05)
+  - 1. PLTR — 2024-02-13 — dropped 4.2%
+  - 2. DE — 2024-02-15 — dropped 5.2%
+  - 3. PLTR — 2024-02-16 — dropped 3.8%
+  - 4. UBER — 2024-02-16 — dropped 3.7%
+  - 5. TSLA — 2024-02-20 — dropped 3.1%
+  - 6. NVDA — 2024-02-20 — dropped 4.4%
+  - 7. MA — 2024-02-20 — dropped 3.5%
+  - 8. PLTR — 2024-02-20 — dropped 4.3%
+  - 9. AMD — 2024-02-20 — dropped 4.7%
+  - 10. LLY — 2024-02-20 — dropped 3.4%
+  - 11. AMAT — 2024-02-20 — dropped 5.2%
+  - 12. GOOG — 2024-02-26 — dropped 4.5%
+  - 13. GOOGL — 2024-02-26 — dropped 4.4%
+  - 14. PLTR — 2024-03-04 — dropped 3.6%
+  - 15. QCOM — 2024-03-05 — dropped 3.1%
+  - 16. NOW — 2024-03-05 — dropped 4.6%
+  - 17. ISRG — 2024-03-05 — dropped 3.3%
+  - 18. INTU — 2024-03-05 — dropped 4.3%
+  - 19. TSLA — 2024-03-05 — dropped 3.9%
+  - 20. CRM — 2024-03-05 — dropped 5.1%
+
+- [ ] **Batch 287** (20 events, 2024-03-05 to 2024-03-13)
+  - 1. AVGO — 2024-03-05 — dropped 4.2%
+  - 2. ADBE — 2024-03-05 — dropped 4.1%
+  - 3. INTC — 2024-03-05 — dropped 5.4%
+  - 4. MS — 2024-03-06 — dropped 3.9%
+  - 5. LRCX — 2024-03-08 — dropped 3.8%
+  - 6. INTC — 2024-03-08 — dropped 4.7%
+  - 7. NVDA — 2024-03-08 — dropped 5.5%
+  - 8. AMAT — 2024-03-08 — dropped 3.3%
+  - 9. AVGO — 2024-03-08 — dropped 7.0%
+  - 10. AMD — 2024-03-11 — dropped 4.3%
+  - 11. BA — 2024-03-11 — dropped 3.0%
+  - 12. ISRG — 2024-03-11 — dropped 3.3%
+  - 13. LLY — 2024-03-11 — dropped 3.6%
+  - 14. META — 2024-03-11 — dropped 4.4%
+  - 15. MU — 2024-03-11 — dropped 3.2%
+  - 16. BA — 2024-03-12 — dropped 4.3%
+  - 17. TSLA — 2024-03-13 — dropped 4.5%
+  - 18. MU — 2024-03-13 — dropped 3.3%
+  - 19. MCD — 2024-03-13 — dropped 3.9%
+  - 20. BMY — 2024-03-13 — dropped 3.2%
+
+- [ ] **Batch 288** (20 events, 2024-03-13 to 2024-04-04)
+  - 1. AMD — 2024-03-13 — dropped 3.9%
+  - 2. INTC — 2024-03-13 — dropped 4.4%
+  - 3. AMD — 2024-03-14 — dropped 4.0%
+  - 4. NVDA — 2024-03-14 — dropped 3.2%
+  - 5. TSLA — 2024-03-14 — dropped 4.1%
+  - 6. INTU — 2024-03-15 — dropped 3.8%
+  - 7. NOW — 2024-03-15 — dropped 4.6%
+  - 8. PLTR — 2024-03-15 — dropped 3.8%
+  - 9. AMD — 2024-03-19 — dropped 4.8%
+  - 10. AAPL — 2024-03-21 — dropped 4.1%
+  - 11. MO — 2024-03-22 — dropped 4.4%
+  - 12. NKE — 2024-03-22 — dropped 6.9%
+  - 13. PLTR — 2024-03-28 — dropped 6.1%
+  - 14. HD — 2024-04-01 — dropped 4.1%
+  - 15. FDX — 2024-04-01 — dropped 3.3%
+  - 16. ISRG — 2024-04-02 — dropped 3.2%
+  - 17. TSLA — 2024-04-02 — dropped 4.9%
+  - 18. UNH — 2024-04-02 — dropped 6.4%
+  - 19. DIS — 2024-04-03 — dropped 3.1%
+  - 20. GM — 2024-04-04 — dropped 3.3%
+
+- [ ] **Batch 289** (20 events, 2024-04-04 to 2024-04-12)
+  - 1. MU — 2024-04-04 — dropped 3.1%
+  - 2. CRM — 2024-04-04 — dropped 3.5%
+  - 3. NVDA — 2024-04-04 — dropped 3.4%
+  - 4. AXP — 2024-04-04 — dropped 3.1%
+  - 5. AVGO — 2024-04-04 — dropped 3.4%
+  - 6. ABBV — 2024-04-04 — dropped 5.3%
+  - 7. BKNG — 2024-04-04 — dropped 3.0%
+  - 8. TSLA — 2024-04-05 — dropped 3.6%
+  - 9. USB — 2024-04-10 — dropped 4.3%
+  - 10. SPG — 2024-04-10 — dropped 3.1%
+  - 11. HD — 2024-04-10 — dropped 3.0%
+  - 12. AMT — 2024-04-10 — dropped 5.6%
+  - 13. ACN — 2024-04-10 — dropped 3.0%
+  - 14. CVS — 2024-04-10 — dropped 3.0%
+  - 15. MS — 2024-04-11 — dropped 5.2%
+  - 16. ABBV — 2024-04-12 — dropped 3.1%
+  - 17. ACN — 2024-04-12 — dropped 3.0%
+  - 18. AMD — 2024-04-12 — dropped 4.2%
+  - 19. DE — 2024-04-12 — dropped 3.8%
+  - 20. INTC — 2024-04-12 — dropped 5.2%
+
+- [ ] **Batch 290** (20 events, 2024-04-12 to 2024-04-19)
+  - 1. JPM — 2024-04-12 — dropped 6.5%
+  - 2. MU — 2024-04-12 — dropped 3.9%
+  - 3. TSLA — 2024-04-15 — dropped 5.6%
+  - 4. PLTR — 2024-04-15 — dropped 3.4%
+  - 5. NOW — 2024-04-15 — dropped 4.3%
+  - 6. AMT — 2024-04-16 — dropped 3.3%
+  - 7. BAC — 2024-04-16 — dropped 3.5%
+  - 8. NVDA — 2024-04-17 — dropped 3.9%
+  - 9. ABT — 2024-04-17 — dropped 3.0%
+  - 10. AMAT — 2024-04-17 — dropped 4.6%
+  - 11. AMD — 2024-04-17 — dropped 5.8%
+  - 12. AVGO — 2024-04-17 — dropped 3.5%
+  - 13. LRCX — 2024-04-17 — dropped 5.3%
+  - 14. MU — 2024-04-17 — dropped 4.5%
+  - 15. USB — 2024-04-17 — dropped 3.6%
+  - 16. TSLA — 2024-04-18 — dropped 3.6%
+  - 17. MU — 2024-04-18 — dropped 3.8%
+  - 18. PLTR — 2024-04-19 — dropped 3.1%
+  - 19. MU — 2024-04-19 — dropped 4.6%
+  - 20. META — 2024-04-19 — dropped 4.1%
+
+- [ ] **Batch 291** (20 events, 2024-04-19 to 2024-04-30)
+  - 1. AMD — 2024-04-19 — dropped 5.4%
+  - 2. AVGO — 2024-04-19 — dropped 4.3%
+  - 3. GE — 2024-04-19 — dropped 3.2%
+  - 4. TSLA — 2024-04-22 — dropped 3.4%
+  - 5. VZ — 2024-04-22 — dropped 4.7%
+  - 6. GD — 2024-04-24 — dropped 4.0%
+  - 7. NFLX — 2024-04-24 — dropped 3.9%
+  - 8. NVDA — 2024-04-24 — dropped 3.3%
+  - 9. PFE — 2024-04-25 — dropped 3.8%
+  - 10. NOW — 2024-04-25 — dropped 4.0%
+  - 11. IBM — 2024-04-25 — dropped 8.3%
+  - 12. META — 2024-04-25 — dropped 10.6%
+  - 13. CAT — 2024-04-25 — dropped 7.0%
+  - 14. BMY — 2024-04-25 — dropped 8.5%
+  - 15. CMCSA — 2024-04-25 — dropped 5.8%
+  - 16. ABBV — 2024-04-26 — dropped 4.6%
+  - 17. GOOG — 2024-04-29 — dropped 3.3%
+  - 18. GOOGL — 2024-04-29 — dropped 3.4%
+  - 19. GM — 2024-04-30 — dropped 3.3%
+  - 20. PLTR — 2024-04-30 — dropped 3.8%
+
+- [ ] **Batch 292** (20 events, 2024-04-30 to 2024-05-08)
+  - 1. NOW — 2024-04-30 — dropped 3.9%
+  - 2. TSLA — 2024-04-30 — dropped 5.6%
+  - 3. LRCX — 2024-04-30 — dropped 3.7%
+  - 4. GEV — 2024-04-30 — dropped 3.3%
+  - 5. MSFT — 2024-04-30 — dropped 3.2%
+  - 6. COP — 2024-04-30 — dropped 3.5%
+  - 7. CAT — 2024-04-30 — dropped 4.4%
+  - 8. BA — 2024-04-30 — dropped 3.3%
+  - 9. AMZN — 2024-04-30 — dropped 3.3%
+  - 10. AMAT — 2024-04-30 — dropped 3.2%
+  - 11. CVX — 2024-04-30 — dropped 3.0%
+  - 12. AMD — 2024-05-01 — dropped 8.9%
+  - 13. AVGO — 2024-05-01 — dropped 4.4%
+  - 14. CVS — 2024-05-01 — dropped 16.8%
+  - 15. NVDA — 2024-05-01 — dropped 3.9%
+  - 16. SBUX — 2024-05-01 — dropped 15.9%
+  - 17. LIN — 2024-05-02 — dropped 5.2%
+  - 18. AMGN — 2024-05-06 — dropped 3.8%
+  - 19. TSLA — 2024-05-07 — dropped 3.8%
+  - 20. UBER — 2024-05-08 — dropped 5.7%
+
+- [ ] **Batch 293** (20 events, 2024-05-13 to 2024-05-30)
+  - 1. GEV — 2024-05-13 — dropped 3.4%
+  - 2. DE — 2024-05-16 — dropped 4.7%
+  - 3. LRCX — 2024-05-17 — dropped 3.3%
+  - 4. JPM — 2024-05-20 — dropped 4.5%
+  - 5. UNP — 2024-05-21 — dropped 3.6%
+  - 6. SCHW — 2024-05-22 — dropped 4.6%
+  - 7. TSLA — 2024-05-22 — dropped 3.5%
+  - 8. AMD — 2024-05-23 — dropped 3.1%
+  - 9. CVS — 2024-05-23 — dropped 3.1%
+  - 10. INTC — 2024-05-23 — dropped 4.3%
+  - 11. MDT — 2024-05-23 — dropped 5.1%
+  - 12. PFE — 2024-05-23 — dropped 3.1%
+  - 13. SCHW — 2024-05-23 — dropped 3.9%
+  - 14. TSLA — 2024-05-23 — dropped 3.5%
+  - 15. UPS — 2024-05-23 — dropped 3.2%
+  - 16. CVS — 2024-05-28 — dropped 3.4%
+  - 17. COP — 2024-05-29 — dropped 3.1%
+  - 18. UNH — 2024-05-29 — dropped 3.8%
+  - 19. AMD — 2024-05-29 — dropped 3.8%
+  - 20. ACN — 2024-05-30 — dropped 3.1%
+
+- [ ] **Batch 294** (20 events, 2024-05-30 to 2024-06-14)
+  - 1. ADBE — 2024-05-30 — dropped 6.6%
+  - 2. INTU — 2024-05-30 — dropped 5.9%
+  - 3. MSFT — 2024-05-30 — dropped 3.4%
+  - 4. MU — 2024-05-30 — dropped 4.0%
+  - 5. NVDA — 2024-05-30 — dropped 3.8%
+  - 6. ORCL — 2024-05-30 — dropped 5.4%
+  - 7. GEV — 2024-06-03 — dropped 3.1%
+  - 8. GEV — 2024-06-04 — dropped 4.3%
+  - 9. PEP — 2024-06-10 — dropped 3.0%
+  - 10. AMD — 2024-06-10 — dropped 4.5%
+  - 11. AXP — 2024-06-11 — dropped 3.4%
+  - 12. BK — 2024-06-11 — dropped 3.3%
+  - 13. C — 2024-06-11 — dropped 3.7%
+  - 14. COF — 2024-06-11 — dropped 4.1%
+  - 15. NEE — 2024-06-11 — dropped 5.5%
+  - 16. DHR — 2024-06-13 — dropped 3.6%
+  - 17. GE — 2024-06-13 — dropped 3.3%
+  - 18. UBER — 2024-06-13 — dropped 3.1%
+  - 19. GEV — 2024-06-14 — dropped 3.4%
+  - 20. MO — 2024-06-14 — dropped 3.1%
+
+- [ ] **Batch 295** (20 events, 2024-06-20 to 2024-06-27)
+  - 1. QCOM — 2024-06-20 — dropped 5.1%
+  - 2. MU — 2024-06-20 — dropped 6.0%
+  - 3. NVDA — 2024-06-20 — dropped 3.5%
+  - 4. AVGO — 2024-06-20 — dropped 3.8%
+  - 5. AMAT — 2024-06-20 — dropped 3.2%
+  - 6. DHR — 2024-06-20 — dropped 3.5%
+  - 7. AVGO — 2024-06-21 — dropped 4.4%
+  - 8. MU — 2024-06-21 — dropped 3.2%
+  - 9. NVDA — 2024-06-21 — dropped 3.2%
+  - 10. PLTR — 2024-06-21 — dropped 6.7%
+  - 11. AVGO — 2024-06-24 — dropped 4.0%
+  - 12. NVDA — 2024-06-24 — dropped 6.7%
+  - 13. QCOM — 2024-06-24 — dropped 5.5%
+  - 14. RTX — 2024-06-24 — dropped 3.5%
+  - 15. WFC — 2024-06-25 — dropped 3.1%
+  - 16. UPS — 2024-06-25 — dropped 3.1%
+  - 17. LOW — 2024-06-25 — dropped 4.9%
+  - 18. HD — 2024-06-25 — dropped 3.6%
+  - 19. GM — 2024-06-25 — dropped 3.5%
+  - 20. CVS — 2024-06-27 — dropped 3.7%
+
+- [ ] **Batch 296** (20 events, 2024-06-28 to 2024-07-17)
+  - 1. MRK — 2024-06-28 — dropped 4.6%
+  - 2. NEE — 2024-06-28 — dropped 3.9%
+  - 3. DE — 2024-07-01 — dropped 3.4%
+  - 4. LOW — 2024-07-01 — dropped 3.1%
+  - 5. SPG — 2024-07-01 — dropped 3.5%
+  - 6. MU — 2024-07-05 — dropped 3.8%
+  - 7. NOW — 2024-07-08 — dropped 5.0%
+  - 8. NKE — 2024-07-08 — dropped 3.2%
+  - 9. QCOM — 2024-07-11 — dropped 4.3%
+  - 10. NVDA — 2024-07-11 — dropped 5.6%
+  - 11. NFLX — 2024-07-11 — dropped 3.7%
+  - 12. MU — 2024-07-11 — dropped 4.5%
+  - 13. INTC — 2024-07-11 — dropped 3.9%
+  - 14. LRCX — 2024-07-11 — dropped 6.0%
+  - 15. META — 2024-07-11 — dropped 4.1%
+  - 16. COST — 2024-07-11 — dropped 4.3%
+  - 17. AMAT — 2024-07-11 — dropped 5.4%
+  - 18. WFC — 2024-07-12 — dropped 6.0%
+  - 19. NEE — 2024-07-15 — dropped 6.6%
+  - 20. TSLA — 2024-07-17 — dropped 3.1%
+
+- [ ] **Batch 297** (20 events, 2024-07-17 to 2024-07-18)
+  - 1. SCHW — 2024-07-17 — dropped 5.4%
+  - 2. QCOM — 2024-07-17 — dropped 8.6%
+  - 3. NVDA — 2024-07-17 — dropped 6.6%
+  - 4. NOW — 2024-07-17 — dropped 3.2%
+  - 5. MU — 2024-07-17 — dropped 6.3%
+  - 6. META — 2024-07-17 — dropped 5.7%
+  - 7. UBER — 2024-07-17 — dropped 7.6%
+  - 8. LLY — 2024-07-17 — dropped 3.8%
+  - 9. GEV — 2024-07-17 — dropped 9.3%
+  - 10. GE — 2024-07-17 — dropped 3.8%
+  - 11. BKNG — 2024-07-17 — dropped 3.1%
+  - 12. AVGO — 2024-07-17 — dropped 7.9%
+  - 13. AMD — 2024-07-17 — dropped 10.2%
+  - 14. AMAT — 2024-07-17 — dropped 10.5%
+  - 15. LRCX — 2024-07-17 — dropped 10.1%
+  - 16. LLY — 2024-07-18 — dropped 6.3%
+  - 17. JPM — 2024-07-18 — dropped 3.2%
+  - 18. INTU — 2024-07-18 — dropped 3.3%
+  - 19. UBER — 2024-07-18 — dropped 3.4%
+  - 20. C — 2024-07-18 — dropped 4.0%
+
+- [ ] **Batch 298** (20 events, 2024-07-18 to 2024-07-24)
+  - 1. ABT — 2024-07-18 — dropped 4.4%
+  - 2. GS — 2024-07-18 — dropped 3.2%
+  - 3. AMAT — 2024-07-19 — dropped 3.4%
+  - 4. INTC — 2024-07-19 — dropped 5.4%
+  - 5. LRCX — 2024-07-19 — dropped 3.7%
+  - 6. TSLA — 2024-07-19 — dropped 4.0%
+  - 7. TXN — 2024-07-19 — dropped 3.3%
+  - 8. VZ — 2024-07-22 — dropped 6.1%
+  - 9. SBUX — 2024-07-22 — dropped 3.4%
+  - 10. DIS — 2024-07-23 — dropped 3.4%
+  - 11. GM — 2024-07-23 — dropped 6.4%
+  - 12. TXN — 2024-07-23 — dropped 3.7%
+  - 13. NOW — 2024-07-24 — dropped 4.5%
+  - 14. NKE — 2024-07-24 — dropped 3.1%
+  - 15. MU — 2024-07-24 — dropped 3.5%
+  - 16. NVDA — 2024-07-24 — dropped 6.8%
+  - 17. V — 2024-07-24 — dropped 4.0%
+  - 18. PLTR — 2024-07-24 — dropped 7.7%
+  - 19. QCOM — 2024-07-24 — dropped 6.4%
+  - 20. SPG — 2024-07-24 — dropped 4.4%
+
+- [ ] **Batch 299** (20 events, 2024-07-24 to 2024-07-25)
+  - 1. MSFT — 2024-07-24 — dropped 3.6%
+  - 2. ORCL — 2024-07-24 — dropped 3.0%
+  - 3. META — 2024-07-24 — dropped 5.6%
+  - 4. TSLA — 2024-07-24 — dropped 12.3%
+  - 5. INTC — 2024-07-24 — dropped 3.8%
+  - 6. AMAT — 2024-07-24 — dropped 6.0%
+  - 7. LRCX — 2024-07-24 — dropped 5.2%
+  - 8. AVGO — 2024-07-24 — dropped 7.6%
+  - 9. BA — 2024-07-24 — dropped 3.4%
+  - 10. EMR — 2024-07-24 — dropped 3.0%
+  - 11. AMD — 2024-07-24 — dropped 6.1%
+  - 12. GE — 2024-07-24 — dropped 5.6%
+  - 13. GEV — 2024-07-24 — dropped 4.5%
+  - 14. GOOG — 2024-07-24 — dropped 5.0%
+  - 15. GOOGL — 2024-07-24 — dropped 5.0%
+  - 16. GD — 2024-07-24 — dropped 3.3%
+  - 17. LLY — 2024-07-25 — dropped 4.5%
+  - 18. AMD — 2024-07-25 — dropped 4.4%
+  - 19. BKNG — 2024-07-25 — dropped 3.8%
+  - 20. GM — 2024-07-25 — dropped 5.1%
+
+- [ ] **Batch 300** (20 events, 2024-07-25 to 2024-08-01)
+  - 1. GOOGL — 2024-07-25 — dropped 3.1%
+  - 2. HON — 2024-07-25 — dropped 5.2%
+  - 3. ISRG — 2024-07-25 — dropped 3.8%
+  - 4. QCOM — 2024-07-25 — dropped 3.1%
+  - 5. NOW — 2024-07-29 — dropped 3.4%
+  - 6. AMAT — 2024-07-30 — dropped 4.3%
+  - 7. AVGO — 2024-07-30 — dropped 4.5%
+  - 8. GEV — 2024-07-30 — dropped 5.4%
+  - 9. LRCX — 2024-07-30 — dropped 4.2%
+  - 10. MU — 2024-07-30 — dropped 4.9%
+  - 11. PG — 2024-07-30 — dropped 4.8%
+  - 12. QCOM — 2024-07-30 — dropped 6.5%
+  - 13. TSLA — 2024-07-30 — dropped 4.1%
+  - 14. CVS — 2024-07-31 — dropped 4.5%
+  - 15. MO — 2024-07-31 — dropped 3.0%
+  - 16. BMY — 2024-07-31 — dropped 3.0%
+  - 17. NVDA — 2024-08-01 — dropped 6.7%
+  - 18. WFC — 2024-08-01 — dropped 4.1%
+  - 19. USB — 2024-08-01 — dropped 3.1%
+  - 20. UBER — 2024-08-01 — dropped 5.4%
+
+- [ ] **Batch 301** (20 events, 2024-08-01 to 2024-08-02)
+  - 1. TXN — 2024-08-01 — dropped 5.1%
+  - 2. TSLA — 2024-08-01 — dropped 6.6%
+  - 3. SBUX — 2024-08-01 — dropped 3.6%
+  - 4. QCOM — 2024-08-01 — dropped 9.4%
+  - 5. PLTR — 2024-08-01 — dropped 3.0%
+  - 6. MU — 2024-08-01 — dropped 7.6%
+  - 7. AMD — 2024-08-01 — dropped 8.3%
+  - 8. INTC — 2024-08-01 — dropped 5.5%
+  - 9. EMR — 2024-08-01 — dropped 3.4%
+  - 10. DE — 2024-08-01 — dropped 3.8%
+  - 11. CVX — 2024-08-01 — dropped 4.9%
+  - 12. COF — 2024-08-01 — dropped 5.0%
+  - 13. CAT — 2024-08-01 — dropped 4.2%
+  - 14. BA — 2024-08-01 — dropped 6.4%
+  - 15. AVGO — 2024-08-01 — dropped 8.5%
+  - 16. AMAT — 2024-08-01 — dropped 7.5%
+  - 17. LRCX — 2024-08-01 — dropped 9.9%
+  - 18. INTC — 2024-08-02 — dropped 26.1%
+  - 19. WFC — 2024-08-02 — dropped 6.4%
+  - 20. JPM — 2024-08-02 — dropped 4.2%
+
+- [ ] **Batch 302** (20 events, 2024-08-02 to 2024-08-02)
+  - 1. LLY — 2024-08-02 — dropped 3.4%
+  - 2. LRCX — 2024-08-02 — dropped 8.1%
+  - 3. MS — 2024-08-02 — dropped 5.8%
+  - 4. TXN — 2024-08-02 — dropped 3.0%
+  - 5. ORCL — 2024-08-02 — dropped 3.1%
+  - 6. PLTR — 2024-08-02 — dropped 5.1%
+  - 7. TSLA — 2024-08-02 — dropped 4.2%
+  - 8. UBER — 2024-08-02 — dropped 3.3%
+  - 9. GS — 2024-08-02 — dropped 5.9%
+  - 10. MU — 2024-08-02 — dropped 8.7%
+  - 11. GM — 2024-08-02 — dropped 5.1%
+  - 12. CRM — 2024-08-02 — dropped 3.6%
+  - 13. GE — 2024-08-02 — dropped 5.6%
+  - 14. GEV — 2024-08-02 — dropped 5.3%
+  - 15. ADBE — 2024-08-02 — dropped 3.7%
+  - 16. AMAT — 2024-08-02 — dropped 7.4%
+  - 17. AMZN — 2024-08-02 — dropped 8.8%
+  - 18. BA — 2024-08-02 — dropped 4.7%
+  - 19. BAC — 2024-08-02 — dropped 4.9%
+  - 20. AXP — 2024-08-02 — dropped 6.6%
+
+- [ ] **Batch 303** (20 events, 2024-08-02 to 2024-08-05)
+  - 1. C — 2024-08-02 — dropped 7.1%
+  - 2. CAT — 2024-08-02 — dropped 3.2%
+  - 3. COF — 2024-08-02 — dropped 5.4%
+  - 4. DIS — 2024-08-02 — dropped 3.7%
+  - 5. EMR — 2024-08-02 — dropped 3.4%
+  - 6. BKNG — 2024-08-02 — dropped 9.2%
+  - 7. NKE — 2024-08-05 — dropped 3.5%
+  - 8. MO — 2024-08-05 — dropped 3.4%
+  - 9. MS — 2024-08-05 — dropped 3.9%
+  - 10. MSFT — 2024-08-05 — dropped 3.3%
+  - 11. NEE — 2024-08-05 — dropped 3.2%
+  - 12. NVDA — 2024-08-05 — dropped 6.4%
+  - 13. V — 2024-08-05 — dropped 3.8%
+  - 14. PM — 2024-08-05 — dropped 3.6%
+  - 15. TSLA — 2024-08-05 — dropped 4.2%
+  - 16. TXN — 2024-08-05 — dropped 3.3%
+  - 17. UNH — 2024-08-05 — dropped 3.4%
+  - 18. USB — 2024-08-05 — dropped 3.7%
+  - 19. ORCL — 2024-08-05 — dropped 4.1%
+  - 20. LLY — 2024-08-05 — dropped 3.6%
+
+- [ ] **Batch 304** (20 events, 2024-08-05 to 2024-08-07)
+  - 1. MA — 2024-08-05 — dropped 4.3%
+  - 2. INTC — 2024-08-05 — dropped 6.4%
+  - 3. IBM — 2024-08-05 — dropped 3.1%
+  - 4. GOOGL — 2024-08-05 — dropped 4.4%
+  - 5. GOOG — 2024-08-05 — dropped 4.6%
+  - 6. FDX — 2024-08-05 — dropped 3.2%
+  - 7. CSCO — 2024-08-05 — dropped 4.1%
+  - 8. COF — 2024-08-05 — dropped 3.5%
+  - 9. C — 2024-08-05 — dropped 4.3%
+  - 10. BRK-B — 2024-08-05 — dropped 3.4%
+  - 11. AMZN — 2024-08-05 — dropped 4.1%
+  - 12. AMT — 2024-08-05 — dropped 3.6%
+  - 13. ADBE — 2024-08-05 — dropped 3.2%
+  - 14. AAPL — 2024-08-05 — dropped 4.8%
+  - 15. INTU — 2024-08-05 — dropped 3.4%
+  - 16. AMD — 2024-08-06 — dropped 3.4%
+  - 17. AMGN — 2024-08-07 — dropped 5.0%
+  - 18. AVGO — 2024-08-07 — dropped 5.3%
+  - 19. BKNG — 2024-08-07 — dropped 3.3%
+  - 20. CVS — 2024-08-07 — dropped 3.2%
+
+- [ ] **Batch 305** (20 events, 2024-08-07 to 2024-08-26)
+  - 1. DIS — 2024-08-07 — dropped 4.5%
+  - 2. HD — 2024-08-07 — dropped 3.3%
+  - 3. INTC — 2024-08-07 — dropped 4.2%
+  - 4. LOW — 2024-08-07 — dropped 3.8%
+  - 5. NVDA — 2024-08-07 — dropped 5.1%
+  - 6. TSLA — 2024-08-07 — dropped 4.4%
+  - 7. INTC — 2024-08-09 — dropped 3.8%
+  - 8. SPG — 2024-08-12 — dropped 3.5%
+  - 9. TSLA — 2024-08-14 — dropped 3.1%
+  - 10. BA — 2024-08-20 — dropped 4.2%
+  - 11. XOM — 2024-08-20 — dropped 3.3%
+  - 12. NVDA — 2024-08-22 — dropped 3.7%
+  - 13. TSLA — 2024-08-22 — dropped 5.6%
+  - 14. MU — 2024-08-22 — dropped 3.8%
+  - 15. AMAT — 2024-08-22 — dropped 4.3%
+  - 16. INTC — 2024-08-22 — dropped 6.1%
+  - 17. LRCX — 2024-08-22 — dropped 4.3%
+  - 18. AMD — 2024-08-22 — dropped 3.9%
+  - 19. INTU — 2024-08-23 — dropped 6.8%
+  - 20. AMAT — 2024-08-26 — dropped 3.2%
+
+- [ ] **Batch 306** (20 events, 2024-08-26 to 2024-09-03)
+  - 1. AMD — 2024-08-26 — dropped 3.2%
+  - 2. AVGO — 2024-08-26 — dropped 4.1%
+  - 3. LRCX — 2024-08-26 — dropped 3.4%
+  - 4. MU — 2024-08-26 — dropped 3.8%
+  - 5. TSLA — 2024-08-26 — dropped 3.2%
+  - 6. MU — 2024-08-28 — dropped 3.1%
+  - 7. SBUX — 2024-08-28 — dropped 3.3%
+  - 8. NVDA — 2024-08-29 — dropped 6.4%
+  - 9. TXN — 2024-09-03 — dropped 5.8%
+  - 10. QCOM — 2024-09-03 — dropped 6.9%
+  - 11. PLTR — 2024-09-03 — dropped 3.1%
+  - 12. NVDA — 2024-09-03 — dropped 9.5%
+  - 13. MU — 2024-09-03 — dropped 8.0%
+  - 14. MS — 2024-09-03 — dropped 4.2%
+  - 15. LRCX — 2024-09-03 — dropped 6.7%
+  - 16. INTC — 2024-09-03 — dropped 8.8%
+  - 17. GS — 2024-09-03 — dropped 4.5%
+  - 18. GOOGL — 2024-09-03 — dropped 3.7%
+  - 19. NFLX — 2024-09-03 — dropped 3.7%
+  - 20. GEV — 2024-09-03 — dropped 4.2%
+
+- [ ] **Batch 307** (20 events, 2024-09-03 to 2024-09-06)
+  - 1. GOOG — 2024-09-03 — dropped 3.9%
+  - 2. AMD — 2024-09-03 — dropped 7.8%
+  - 3. AVGO — 2024-09-03 — dropped 6.2%
+  - 4. BA — 2024-09-03 — dropped 7.3%
+  - 5. AMAT — 2024-09-03 — dropped 7.0%
+  - 6. CAT — 2024-09-03 — dropped 4.5%
+  - 7. COP — 2024-09-03 — dropped 3.5%
+  - 8. EMR — 2024-09-03 — dropped 3.2%
+  - 9. GE — 2024-09-03 — dropped 6.0%
+  - 10. INTC — 2024-09-04 — dropped 3.3%
+  - 11. VZ — 2024-09-04 — dropped 3.4%
+  - 12. LLY — 2024-09-05 — dropped 3.5%
+  - 13. META — 2024-09-06 — dropped 3.2%
+  - 14. QCOM — 2024-09-06 — dropped 3.4%
+  - 15. NVDA — 2024-09-06 — dropped 4.1%
+  - 16. MU — 2024-09-06 — dropped 3.4%
+  - 17. WFC — 2024-09-06 — dropped 5.0%
+  - 18. GOOGL — 2024-09-06 — dropped 4.0%
+  - 19. AXP — 2024-09-06 — dropped 3.1%
+  - 20. BAC — 2024-09-06 — dropped 3.4%
+
+- [ ] **Batch 308** (20 events, 2024-09-06 to 2024-09-25)
+  - 1. AMZN — 2024-09-06 — dropped 3.7%
+  - 2. AMD — 2024-09-06 — dropped 3.7%
+  - 3. AMAT — 2024-09-06 — dropped 3.0%
+  - 4. GOOG — 2024-09-06 — dropped 4.1%
+  - 5. COF — 2024-09-10 — dropped 3.2%
+  - 6. GM — 2024-09-10 — dropped 5.4%
+  - 7. GS — 2024-09-10 — dropped 4.4%
+  - 8. JPM — 2024-09-10 — dropped 5.2%
+  - 9. XOM — 2024-09-10 — dropped 3.6%
+  - 10. WFC — 2024-09-12 — dropped 4.0%
+  - 11. MU — 2024-09-12 — dropped 3.8%
+  - 12. TXN — 2024-09-12 — dropped 3.2%
+  - 13. BA — 2024-09-13 — dropped 3.7%
+  - 14. MU — 2024-09-16 — dropped 4.4%
+  - 15. ACN — 2024-09-17 — dropped 4.8%
+  - 16. INTC — 2024-09-18 — dropped 3.3%
+  - 17. V — 2024-09-24 — dropped 5.5%
+  - 18. AMGN — 2024-09-25 — dropped 5.5%
+  - 19. GM — 2024-09-25 — dropped 4.9%
+  - 20. NOW — 2024-09-25 — dropped 3.6%
+
+- [ ] **Batch 309** (20 events, 2024-09-26 to 2024-10-10)
+  - 1. COP — 2024-09-26 — dropped 3.2%
+  - 2. AVGO — 2024-09-27 — dropped 3.0%
+  - 3. LLY — 2024-09-27 — dropped 3.5%
+  - 4. GM — 2024-09-30 — dropped 3.5%
+  - 5. MU — 2024-09-30 — dropped 3.5%
+  - 6. NVDA — 2024-10-01 — dropped 3.7%
+  - 7. NOW — 2024-10-01 — dropped 3.0%
+  - 8. MU — 2024-10-01 — dropped 3.3%
+  - 9. INTC — 2024-10-01 — dropped 3.3%
+  - 10. NKE — 2024-10-02 — dropped 6.8%
+  - 11. TSLA — 2024-10-02 — dropped 3.5%
+  - 12. TSLA — 2024-10-03 — dropped 3.4%
+  - 13. ADBE — 2024-10-07 — dropped 3.9%
+  - 14. AMZN — 2024-10-07 — dropped 3.1%
+  - 15. DUK — 2024-10-07 — dropped 3.3%
+  - 16. NEE — 2024-10-07 — dropped 4.2%
+  - 17. TSLA — 2024-10-07 — dropped 3.7%
+  - 18. COP — 2024-10-08 — dropped 3.4%
+  - 19. BA — 2024-10-09 — dropped 3.4%
+  - 20. T — 2024-10-10 — dropped 3.2%
+
+- [ ] **Batch 310** (20 events, 2024-10-10 to 2024-10-21)
+  - 1. AMD — 2024-10-10 — dropped 4.0%
+  - 2. UNH — 2024-10-15 — dropped 8.1%
+  - 3. XOM — 2024-10-15 — dropped 3.0%
+  - 4. NVDA — 2024-10-15 — dropped 4.7%
+  - 5. MU — 2024-10-15 — dropped 3.7%
+  - 6. LRCX — 2024-10-15 — dropped 10.9%
+  - 7. INTC — 2024-10-15 — dropped 3.3%
+  - 8. TXN — 2024-10-15 — dropped 4.2%
+  - 9. CVS — 2024-10-15 — dropped 3.6%
+  - 10. COP — 2024-10-15 — dropped 3.9%
+  - 11. C — 2024-10-15 — dropped 5.1%
+  - 12. AVGO — 2024-10-15 — dropped 3.5%
+  - 13. AMD — 2024-10-15 — dropped 5.2%
+  - 14. AMAT — 2024-10-15 — dropped 10.7%
+  - 15. EMR — 2024-10-15 — dropped 3.0%
+  - 16. AMAT — 2024-10-16 — dropped 3.4%
+  - 17. CVS — 2024-10-18 — dropped 5.2%
+  - 18. AXP — 2024-10-18 — dropped 3.1%
+  - 19. CMCSA — 2024-10-21 — dropped 3.3%
+  - 20. CVS — 2024-10-21 — dropped 3.6%
+
+- [ ] **Batch 311** (20 events, 2024-10-21 to 2024-10-30)
+  - 1. UPS — 2024-10-21 — dropped 3.4%
+  - 2. DHR — 2024-10-22 — dropped 4.0%
+  - 3. LMT — 2024-10-22 — dropped 6.1%
+  - 4. VZ — 2024-10-22 — dropped 5.0%
+  - 5. MCD — 2024-10-23 — dropped 5.1%
+  - 6. META — 2024-10-23 — dropped 3.1%
+  - 7. AVGO — 2024-10-23 — dropped 3.3%
+  - 8. QCOM — 2024-10-23 — dropped 3.8%
+  - 9. UNP — 2024-10-24 — dropped 4.4%
+  - 10. IBM — 2024-10-24 — dropped 6.2%
+  - 11. TMO — 2024-10-24 — dropped 3.3%
+  - 12. HON — 2024-10-24 — dropped 5.1%
+  - 13. DHR — 2024-10-24 — dropped 3.1%
+  - 14. CL — 2024-10-25 — dropped 4.1%
+  - 15. TMUS — 2024-10-25 — dropped 3.1%
+  - 16. AMT — 2024-10-29 — dropped 4.2%
+  - 17. NEE — 2024-10-29 — dropped 4.0%
+  - 18. ACN — 2024-10-30 — dropped 4.5%
+  - 19. LLY — 2024-10-30 — dropped 6.3%
+  - 20. MU — 2024-10-30 — dropped 3.8%
+
+- [ ] **Batch 312** (20 events, 2024-10-30 to 2024-11-06)
+  - 1. QCOM — 2024-10-30 — dropped 4.8%
+  - 2. PLTR — 2024-10-31 — dropped 4.9%
+  - 3. ORCL — 2024-10-31 — dropped 3.8%
+  - 4. NVDA — 2024-10-31 — dropped 4.7%
+  - 5. MU — 2024-10-31 — dropped 4.3%
+  - 6. MSFT — 2024-10-31 — dropped 6.1%
+  - 7. META — 2024-10-31 — dropped 4.1%
+  - 8. AVGO — 2024-10-31 — dropped 3.9%
+  - 9. INTC — 2024-10-31 — dropped 3.5%
+  - 10. GD — 2024-10-31 — dropped 3.2%
+  - 11. BA — 2024-10-31 — dropped 3.2%
+  - 12. AMZN — 2024-10-31 — dropped 3.3%
+  - 13. AMD — 2024-10-31 — dropped 3.0%
+  - 14. LIN — 2024-10-31 — dropped 3.6%
+  - 15. NKE — 2024-11-06 — dropped 3.4%
+  - 16. NEE — 2024-11-06 — dropped 5.3%
+  - 17. PM — 2024-11-06 — dropped 5.2%
+  - 18. LLY — 2024-11-06 — dropped 3.7%
+  - 19. CL — 2024-11-06 — dropped 4.3%
+  - 20. MDLZ — 2024-11-06 — dropped 3.9%
+
+- [ ] **Batch 313** (20 events, 2024-11-07 to 2024-11-14)
+  - 1. COF — 2024-11-07 — dropped 3.2%
+  - 2. JPM — 2024-11-07 — dropped 4.3%
+  - 3. SCHW — 2024-11-07 — dropped 3.4%
+  - 4. USB — 2024-11-07 — dropped 3.3%
+  - 5. WFC — 2024-11-07 — dropped 3.7%
+  - 6. DE — 2024-11-08 — dropped 4.2%
+  - 7. CAT — 2024-11-08 — dropped 3.6%
+  - 8. INTC — 2024-11-11 — dropped 4.4%
+  - 9. CVS — 2024-11-12 — dropped 3.2%
+  - 10. INTC — 2024-11-12 — dropped 3.6%
+  - 11. MU — 2024-11-12 — dropped 4.2%
+  - 12. TSLA — 2024-11-12 — dropped 6.1%
+  - 13. TXN — 2024-11-13 — dropped 3.3%
+  - 14. MU — 2024-11-13 — dropped 4.0%
+  - 15. AMD — 2024-11-13 — dropped 3.0%
+  - 16. BA — 2024-11-13 — dropped 3.6%
+  - 17. GD — 2024-11-14 — dropped 6.9%
+  - 18. LLY — 2024-11-14 — dropped 3.2%
+  - 19. LMT — 2024-11-14 — dropped 3.4%
+  - 20. RTX — 2024-11-14 — dropped 3.9%
+
+- [ ] **Batch 314** (20 events, 2024-11-14 to 2024-11-19)
+  - 1. TSLA — 2024-11-14 — dropped 5.8%
+  - 2. LRCX — 2024-11-15 — dropped 6.3%
+  - 3. TMO — 2024-11-15 — dropped 3.7%
+  - 4. PFE — 2024-11-15 — dropped 4.7%
+  - 5. PEP — 2024-11-15 — dropped 4.0%
+  - 6. NVDA — 2024-11-15 — dropped 3.3%
+  - 7. META — 2024-11-15 — dropped 4.0%
+  - 8. LLY — 2024-11-15 — dropped 5.1%
+  - 9. GILD — 2024-11-15 — dropped 4.0%
+  - 10. DHR — 2024-11-15 — dropped 3.7%
+  - 11. CVS — 2024-11-15 — dropped 3.4%
+  - 12. BMY — 2024-11-15 — dropped 3.9%
+  - 13. AVGO — 2024-11-15 — dropped 3.3%
+  - 14. AMZN — 2024-11-15 — dropped 4.2%
+  - 15. AMGN — 2024-11-15 — dropped 4.2%
+  - 16. ADBE — 2024-11-15 — dropped 5.0%
+  - 17. PLTR — 2024-11-18 — dropped 6.9%
+  - 18. UBER — 2024-11-18 — dropped 5.4%
+  - 19. INTU — 2024-11-19 — dropped 5.1%
+  - 20. LOW — 2024-11-19 — dropped 4.6%
+
+- [ ] **Batch 315** (20 events, 2024-11-20 to 2024-12-03)
+  - 1. QCOM — 2024-11-20 — dropped 6.3%
+  - 2. GOOG — 2024-11-21 — dropped 4.6%
+  - 3. GOOGL — 2024-11-21 — dropped 4.7%
+  - 4. NVDA — 2024-11-22 — dropped 3.2%
+  - 5. INTU — 2024-11-22 — dropped 5.7%
+  - 6. COP — 2024-11-25 — dropped 5.1%
+  - 7. GEV — 2024-11-25 — dropped 5.8%
+  - 8. LMT — 2024-11-25 — dropped 3.7%
+  - 9. NFLX — 2024-11-25 — dropped 3.6%
+  - 10. NVDA — 2024-11-25 — dropped 4.2%
+  - 11. TSLA — 2024-11-25 — dropped 4.0%
+  - 12. AMGN — 2024-11-26 — dropped 4.8%
+  - 13. INTC — 2024-11-26 — dropped 3.3%
+  - 14. AVGO — 2024-11-27 — dropped 3.1%
+  - 15. CRM — 2024-11-27 — dropped 3.8%
+  - 16. MU — 2024-11-27 — dropped 3.5%
+  - 17. ORCL — 2024-11-27 — dropped 4.0%
+  - 18. UPS — 2024-12-03 — dropped 3.2%
+  - 19. FDX — 2024-12-03 — dropped 4.7%
+  - 20. INTC — 2024-12-03 — dropped 6.1%
+
+- [ ] **Batch 316** (20 events, 2024-12-05 to 2024-12-11)
+  - 1. AMAT — 2024-12-05 — dropped 5.0%
+  - 2. DHR — 2024-12-05 — dropped 3.6%
+  - 3. GE — 2024-12-05 — dropped 5.3%
+  - 4. INTC — 2024-12-05 — dropped 5.3%
+  - 5. LRCX — 2024-12-05 — dropped 3.9%
+  - 6. UNH — 2024-12-05 — dropped 5.2%
+  - 7. UNH — 2024-12-06 — dropped 5.1%
+  - 8. PLTR — 2024-12-09 — dropped 5.1%
+  - 9. AMD — 2024-12-09 — dropped 5.6%
+  - 10. GEV — 2024-12-09 — dropped 3.2%
+  - 11. IBM — 2024-12-09 — dropped 3.4%
+  - 12. TMUS — 2024-12-09 — dropped 6.1%
+  - 13. ORCL — 2024-12-10 — dropped 6.7%
+  - 14. MU — 2024-12-10 — dropped 4.6%
+  - 15. AMT — 2024-12-10 — dropped 4.5%
+  - 16. AVGO — 2024-12-10 — dropped 4.0%
+  - 17. INTC — 2024-12-10 — dropped 3.1%
+  - 18. CVS — 2024-12-11 — dropped 6.1%
+  - 19. UBER — 2024-12-11 — dropped 5.8%
+  - 20. UNH — 2024-12-11 — dropped 5.6%
+
+- [ ] **Batch 317** (20 events, 2024-12-12 to 2024-12-18)
+  - 1. MU — 2024-12-12 — dropped 3.7%
+  - 2. LRCX — 2024-12-12 — dropped 3.4%
+  - 3. UNH — 2024-12-12 — dropped 3.3%
+  - 4. CVS — 2024-12-12 — dropped 4.2%
+  - 5. GEV — 2024-12-12 — dropped 4.0%
+  - 6. SCHW — 2024-12-13 — dropped 4.0%
+  - 7. UNH — 2024-12-16 — dropped 4.2%
+  - 8. VZ — 2024-12-16 — dropped 3.3%
+  - 9. SBUX — 2024-12-16 — dropped 4.4%
+  - 10. CVS — 2024-12-16 — dropped 5.6%
+  - 11. T — 2024-12-16 — dropped 3.3%
+  - 12. AVGO — 2024-12-17 — dropped 3.9%
+  - 13. CVS — 2024-12-17 — dropped 5.5%
+  - 14. TMUS — 2024-12-17 — dropped 3.8%
+  - 15. IBM — 2024-12-18 — dropped 3.8%
+  - 16. INTC — 2024-12-18 — dropped 5.6%
+  - 17. INTU — 2024-12-18 — dropped 4.1%
+  - 18. ISRG — 2024-12-18 — dropped 3.4%
+  - 19. LRCX — 2024-12-18 — dropped 3.4%
+  - 20. META — 2024-12-18 — dropped 3.6%
+
+- [ ] **Batch 318** (20 events, 2024-12-18 to 2024-12-18)
+  - 1. MS — 2024-12-18 — dropped 5.2%
+  - 2. MSFT — 2024-12-18 — dropped 3.8%
+  - 3. MU — 2024-12-18 — dropped 4.3%
+  - 4. NFLX — 2024-12-18 — dropped 3.2%
+  - 5. NOW — 2024-12-18 — dropped 4.8%
+  - 6. PLTR — 2024-12-18 — dropped 3.9%
+  - 7. QCOM — 2024-12-18 — dropped 3.1%
+  - 8. SCHW — 2024-12-18 — dropped 3.6%
+  - 9. SPG — 2024-12-18 — dropped 4.7%
+  - 10. USB — 2024-12-18 — dropped 4.7%
+  - 11. HD — 2024-12-18 — dropped 3.6%
+  - 12. GS — 2024-12-18 — dropped 4.3%
+  - 13. LOW — 2024-12-18 — dropped 3.1%
+  - 14. GOOG — 2024-12-18 — dropped 3.5%
+  - 15. ADBE — 2024-12-18 — dropped 3.1%
+  - 16. GOOGL — 2024-12-18 — dropped 3.6%
+  - 17. AMZN — 2024-12-18 — dropped 4.6%
+  - 18. AVGO — 2024-12-18 — dropped 6.9%
+  - 19. AXP — 2024-12-18 — dropped 4.5%
+  - 20. BAC — 2024-12-18 — dropped 3.4%
+
+- [ ] **Batch 319** (20 events, 2024-12-18 to 2024-12-31)
+  - 1. BK — 2024-12-18 — dropped 3.4%
+  - 2. BKNG — 2024-12-18 — dropped 4.1%
+  - 3. C — 2024-12-18 — dropped 4.2%
+  - 4. AMT — 2024-12-18 — dropped 4.4%
+  - 5. COF — 2024-12-18 — dropped 3.7%
+  - 6. CAT — 2024-12-18 — dropped 3.2%
+  - 7. GEV — 2024-12-18 — dropped 3.4%
+  - 8. GE — 2024-12-18 — dropped 3.5%
+  - 9. EMR — 2024-12-18 — dropped 4.5%
+  - 10. JPM — 2024-12-18 — dropped 3.4%
+  - 11. DE — 2024-12-18 — dropped 4.0%
+  - 12. CRM — 2024-12-18 — dropped 3.9%
+  - 13. CVS — 2024-12-19 — dropped 3.3%
+  - 14. LRCX — 2024-12-19 — dropped 5.3%
+  - 15. TSLA — 2024-12-20 — dropped 3.5%
+  - 16. PLTR — 2024-12-27 — dropped 3.7%
+  - 17. TSLA — 2024-12-27 — dropped 4.9%
+  - 18. TSLA — 2024-12-30 — dropped 3.3%
+  - 19. MU — 2024-12-30 — dropped 3.7%
+  - 20. TSLA — 2024-12-31 — dropped 3.3%
+
+- [ ] **Batch 320** (20 events, 2025-01-02 to 2025-01-10)
+  - 1. GM — 2025-01-02 — dropped 3.6%
+  - 2. TSLA — 2025-01-02 — dropped 6.1%
+  - 3. INTC — 2025-01-06 — dropped 3.4%
+  - 4. LMT — 2025-01-06 — dropped 3.3%
+  - 5. PLTR — 2025-01-06 — dropped 5.0%
+  - 6. TMUS — 2025-01-06 — dropped 3.1%
+  - 7. TSLA — 2025-01-07 — dropped 4.1%
+  - 8. NVDA — 2025-01-07 — dropped 6.2%
+  - 9. BLK — 2025-01-07 — dropped 3.2%
+  - 10. AVGO — 2025-01-07 — dropped 3.3%
+  - 11. AMD — 2025-01-08 — dropped 4.3%
+  - 12. PM — 2025-01-10 — dropped 3.9%
+  - 13. ORCL — 2025-01-10 — dropped 5.3%
+  - 14. NFLX — 2025-01-10 — dropped 4.3%
+  - 15. NEE — 2025-01-10 — dropped 4.6%
+  - 16. MDLZ — 2025-01-10 — dropped 3.5%
+  - 17. LRCX — 2025-01-10 — dropped 3.1%
+  - 18. INTC — 2025-01-10 — dropped 3.7%
+  - 19. MS — 2025-01-10 — dropped 3.4%
+  - 20. BLK — 2025-01-10 — dropped 3.1%
+
+- [ ] **Batch 321** (20 events, 2025-01-10 to 2025-01-23)
+  - 1. BK — 2025-01-10 — dropped 3.2%
+  - 2. AXP — 2025-01-10 — dropped 3.2%
+  - 3. AMT — 2025-01-10 — dropped 3.2%
+  - 4. AMD — 2025-01-10 — dropped 4.8%
+  - 5. AMAT — 2025-01-10 — dropped 3.0%
+  - 6. ADBE — 2025-01-10 — dropped 3.3%
+  - 7. GS — 2025-01-10 — dropped 3.5%
+  - 8. PLTR — 2025-01-13 — dropped 3.4%
+  - 9. MU — 2025-01-13 — dropped 4.3%
+  - 10. LLY — 2025-01-14 — dropped 6.6%
+  - 11. AAPL — 2025-01-16 — dropped 4.0%
+  - 12. TSLA — 2025-01-16 — dropped 3.4%
+  - 13. TXN — 2025-01-16 — dropped 5.1%
+  - 14. UNH — 2025-01-16 — dropped 6.0%
+  - 15. USB — 2025-01-16 — dropped 5.6%
+  - 16. LLY — 2025-01-17 — dropped 4.2%
+  - 17. BKNG — 2025-01-21 — dropped 4.9%
+  - 18. AAPL — 2025-01-21 — dropped 3.2%
+  - 19. NEE — 2025-01-22 — dropped 3.3%
+  - 20. MU — 2025-01-23 — dropped 4.0%
+
+- [ ] **Batch 322** (20 events, 2025-01-24 to 2025-01-28)
+  - 1. GEV — 2025-01-24 — dropped 3.9%
+  - 2. INTC — 2025-01-24 — dropped 3.4%
+  - 3. ISRG — 2025-01-24 — dropped 4.0%
+  - 4. NVDA — 2025-01-24 — dropped 3.1%
+  - 5. PLTR — 2025-01-27 — dropped 4.5%
+  - 6. ORCL — 2025-01-27 — dropped 13.8%
+  - 7. NVDA — 2025-01-27 — dropped 17.0%
+  - 8. MU — 2025-01-27 — dropped 11.7%
+  - 9. LRCX — 2025-01-27 — dropped 5.1%
+  - 10. GOOGL — 2025-01-27 — dropped 4.2%
+  - 11. GOOG — 2025-01-27 — dropped 4.0%
+  - 12. GEV — 2025-01-27 — dropped 21.5%
+  - 13. CSCO — 2025-01-27 — dropped 5.1%
+  - 14. CAT — 2025-01-27 — dropped 3.1%
+  - 15. AVGO — 2025-01-27 — dropped 17.4%
+  - 16. AMD — 2025-01-27 — dropped 6.4%
+  - 17. AMAT — 2025-01-27 — dropped 6.5%
+  - 18. BMY — 2025-01-28 — dropped 3.0%
+  - 19. MU — 2025-01-28 — dropped 3.1%
+  - 20. NEE — 2025-01-28 — dropped 4.5%
+
+- [ ] **Batch 323** (20 events, 2025-01-28 to 2025-02-05)
+  - 1. SO — 2025-01-28 — dropped 3.4%
+  - 2. TXN — 2025-01-28 — dropped 3.5%
+  - 3. GD — 2025-01-29 — dropped 4.2%
+  - 4. NVDA — 2025-01-29 — dropped 4.1%
+  - 5. UPS — 2025-01-30 — dropped 14.1%
+  - 6. NOW — 2025-01-30 — dropped 11.4%
+  - 7. CAT — 2025-01-30 — dropped 4.6%
+  - 8. CMCSA — 2025-01-30 — dropped 11.0%
+  - 9. MSFT — 2025-01-30 — dropped 6.2%
+  - 10. CL — 2025-01-31 — dropped 4.6%
+  - 11. CVX — 2025-01-31 — dropped 4.6%
+  - 12. NVDA — 2025-01-31 — dropped 3.7%
+  - 13. AAPL — 2025-02-03 — dropped 3.4%
+  - 14. BLK — 2025-02-03 — dropped 5.7%
+  - 15. DHR — 2025-02-03 — dropped 3.8%
+  - 16. FDX — 2025-02-03 — dropped 6.6%
+  - 17. GM — 2025-02-03 — dropped 3.2%
+  - 18. TSLA — 2025-02-03 — dropped 5.2%
+  - 19. PEP — 2025-02-04 — dropped 4.5%
+  - 20. AMD — 2025-02-05 — dropped 6.3%
+
+- [ ] **Batch 324** (20 events, 2025-02-05 to 2025-02-12)
+  - 1. GOOG — 2025-02-05 — dropped 6.9%
+  - 2. TSLA — 2025-02-05 — dropped 3.6%
+  - 3. AMGN — 2025-02-06 — dropped 3.3%
+  - 4. BMY — 2025-02-06 — dropped 3.8%
+  - 5. CRM — 2025-02-06 — dropped 4.9%
+  - 6. HON — 2025-02-06 — dropped 5.6%
+  - 7. IBM — 2025-02-06 — dropped 3.7%
+  - 8. NKE — 2025-02-06 — dropped 3.8%
+  - 9. QCOM — 2025-02-06 — dropped 3.7%
+  - 10. NKE — 2025-02-07 — dropped 4.3%
+  - 11. GOOGL — 2025-02-07 — dropped 3.3%
+  - 12. TSLA — 2025-02-07 — dropped 3.4%
+  - 13. AMZN — 2025-02-07 — dropped 4.1%
+  - 14. GOOG — 2025-02-07 — dropped 3.2%
+  - 15. TMO — 2025-02-10 — dropped 3.3%
+  - 16. TSLA — 2025-02-10 — dropped 3.0%
+  - 17. GEV — 2025-02-11 — dropped 3.1%
+  - 18. PLTR — 2025-02-11 — dropped 3.5%
+  - 19. TSLA — 2025-02-11 — dropped 6.3%
+  - 20. XOM — 2025-02-12 — dropped 3.9%
+
+- [ ] **Batch 325** (20 events, 2025-02-12 to 2025-02-21)
+  - 1. COP — 2025-02-12 — dropped 3.3%
+  - 2. BMY — 2025-02-14 — dropped 3.7%
+  - 3. LLY — 2025-02-14 — dropped 3.2%
+  - 4. PG — 2025-02-14 — dropped 4.8%
+  - 5. UNH — 2025-02-18 — dropped 4.4%
+  - 6. INTC — 2025-02-19 — dropped 6.1%
+  - 7. ORCL — 2025-02-20 — dropped 3.0%
+  - 8. WMT — 2025-02-20 — dropped 6.5%
+  - 9. PLTR — 2025-02-20 — dropped 5.2%
+  - 10. MS — 2025-02-20 — dropped 4.5%
+  - 11. C — 2025-02-20 — dropped 3.1%
+  - 12. GS — 2025-02-20 — dropped 3.9%
+  - 13. GEV — 2025-02-20 — dropped 4.1%
+  - 14. JPM — 2025-02-20 — dropped 4.5%
+  - 15. MU — 2025-02-21 — dropped 4.2%
+  - 16. QCOM — 2025-02-21 — dropped 4.8%
+  - 17. PLTR — 2025-02-21 — dropped 4.6%
+  - 18. ORCL — 2025-02-21 — dropped 4.7%
+  - 19. NVDA — 2025-02-21 — dropped 4.1%
+  - 20. TSLA — 2025-02-21 — dropped 4.7%
+
+- [ ] **Batch 326** (20 events, 2025-02-21 to 2025-02-25)
+  - 1. LRCX — 2025-02-21 — dropped 3.4%
+  - 2. NOW — 2025-02-21 — dropped 3.1%
+  - 3. GM — 2025-02-21 — dropped 3.3%
+  - 4. GE — 2025-02-21 — dropped 4.3%
+  - 5. FDX — 2025-02-21 — dropped 5.3%
+  - 6. COP — 2025-02-21 — dropped 4.0%
+  - 7. AVGO — 2025-02-21 — dropped 3.6%
+  - 8. ACN — 2025-02-21 — dropped 5.3%
+  - 9. INTC — 2025-02-21 — dropped 4.7%
+  - 10. AVGO — 2025-02-24 — dropped 4.9%
+  - 11. GEV — 2025-02-24 — dropped 3.7%
+  - 12. LRCX — 2025-02-24 — dropped 3.1%
+  - 13. MU — 2025-02-24 — dropped 3.5%
+  - 14. NVDA — 2025-02-24 — dropped 3.1%
+  - 15. UBER — 2025-02-24 — dropped 3.1%
+  - 16. PLTR — 2025-02-25 — dropped 3.1%
+  - 17. LRCX — 2025-02-25 — dropped 3.7%
+  - 18. AMD — 2025-02-25 — dropped 3.8%
+  - 19. COF — 2025-02-25 — dropped 3.0%
+  - 20. INTC — 2025-02-25 — dropped 5.3%
+
+- [ ] **Batch 327** (20 events, 2025-02-26 to 2025-03-03)
+  - 1. MDLZ — 2025-02-26 — dropped 3.7%
+  - 2. PEP — 2025-02-26 — dropped 3.1%
+  - 3. TSLA — 2025-02-26 — dropped 4.0%
+  - 4. NVDA — 2025-02-27 — dropped 8.5%
+  - 5. TSLA — 2025-02-27 — dropped 3.0%
+  - 6. QCOM — 2025-02-27 — dropped 4.7%
+  - 7. PLTR — 2025-02-27 — dropped 5.1%
+  - 8. TXN — 2025-02-27 — dropped 3.5%
+  - 9. MU — 2025-02-27 — dropped 6.0%
+  - 10. ORCL — 2025-02-27 — dropped 4.5%
+  - 11. INTU — 2025-02-27 — dropped 4.0%
+  - 12. CRM — 2025-02-27 — dropped 4.0%
+  - 13. AVGO — 2025-02-27 — dropped 7.1%
+  - 14. AMD — 2025-02-27 — dropped 5.0%
+  - 15. AMAT — 2025-02-27 — dropped 7.0%
+  - 16. LRCX — 2025-02-27 — dropped 6.3%
+  - 17. XOM — 2025-03-03 — dropped 3.2%
+  - 18. MU — 2025-03-03 — dropped 3.3%
+  - 19. INTC — 2025-03-03 — dropped 4.2%
+  - 20. GM — 2025-03-03 — dropped 3.6%
+
+- [ ] **Batch 328** (20 events, 2025-03-03 to 2025-03-04)
+  - 1. EMR — 2025-03-03 — dropped 3.7%
+  - 2. DE — 2025-03-03 — dropped 3.1%
+  - 3. GEV — 2025-03-03 — dropped 5.7%
+  - 4. COP — 2025-03-03 — dropped 6.6%
+  - 5. CAT — 2025-03-03 — dropped 3.5%
+  - 6. C — 2025-03-03 — dropped 3.5%
+  - 7. AVGO — 2025-03-03 — dropped 6.0%
+  - 8. AMZN — 2025-03-03 — dropped 3.4%
+  - 9. AMAT — 2025-03-03 — dropped 3.8%
+  - 10. CVX — 2025-03-03 — dropped 3.5%
+  - 11. MMM — 2025-03-04 — dropped 4.9%
+  - 12. MS — 2025-03-04 — dropped 5.7%
+  - 13. PM — 2025-03-04 — dropped 3.0%
+  - 14. RTX — 2025-03-04 — dropped 3.8%
+  - 15. TSLA — 2025-03-04 — dropped 4.4%
+  - 16. SCHW — 2025-03-04 — dropped 3.8%
+  - 17. T — 2025-03-04 — dropped 5.4%
+  - 18. USB — 2025-03-04 — dropped 3.5%
+  - 19. MA — 2025-03-04 — dropped 3.5%
+  - 20. WFC — 2025-03-04 — dropped 4.8%
+
+- [ ] **Batch 329** (20 events, 2025-03-04 to 2025-03-06)
+  - 1. JPM — 2025-03-04 — dropped 4.0%
+  - 2. C — 2025-03-04 — dropped 6.2%
+  - 3. GS — 2025-03-04 — dropped 4.0%
+  - 4. AXP — 2025-03-04 — dropped 4.1%
+  - 5. BA — 2025-03-04 — dropped 6.6%
+  - 6. BAC — 2025-03-04 — dropped 6.3%
+  - 7. BK — 2025-03-04 — dropped 3.2%
+  - 8. INTC — 2025-03-04 — dropped 6.2%
+  - 9. DIS — 2025-03-04 — dropped 3.4%
+  - 10. FDX — 2025-03-04 — dropped 4.3%
+  - 11. GM — 2025-03-04 — dropped 4.6%
+  - 12. COF — 2025-03-04 — dropped 5.7%
+  - 13. TXN — 2025-03-06 — dropped 3.2%
+  - 14. SPG — 2025-03-06 — dropped 4.8%
+  - 15. SBUX — 2025-03-06 — dropped 5.6%
+  - 16. PLTR — 2025-03-06 — dropped 10.7%
+  - 17. ORCL — 2025-03-06 — dropped 6.6%
+  - 18. NVDA — 2025-03-06 — dropped 5.7%
+  - 19. NOW — 2025-03-06 — dropped 5.3%
+  - 20. NFLX — 2025-03-06 — dropped 8.5%
+
+- [ ] **Batch 330** (20 events, 2025-03-06 to 2025-03-07)
+  - 1. MU — 2025-03-06 — dropped 5.4%
+  - 2. MS — 2025-03-06 — dropped 3.5%
+  - 3. META — 2025-03-06 — dropped 4.3%
+  - 4. TSLA — 2025-03-06 — dropped 5.6%
+  - 5. ISRG — 2025-03-06 — dropped 5.2%
+  - 6. GS — 2025-03-06 — dropped 4.3%
+  - 7. GEV — 2025-03-06 — dropped 7.4%
+  - 8. GE — 2025-03-06 — dropped 3.2%
+  - 9. DIS — 2025-03-06 — dropped 3.5%
+  - 10. COF — 2025-03-06 — dropped 5.3%
+  - 11. C — 2025-03-06 — dropped 3.3%
+  - 12. BKNG — 2025-03-06 — dropped 4.5%
+  - 13. AXP — 2025-03-06 — dropped 3.0%
+  - 14. AVGO — 2025-03-06 — dropped 6.3%
+  - 15. LRCX — 2025-03-06 — dropped 3.3%
+  - 16. AMZN — 2025-03-06 — dropped 3.7%
+  - 17. WMT — 2025-03-07 — dropped 3.1%
+  - 18. LLY — 2025-03-07 — dropped 4.7%
+  - 19. COST — 2025-03-07 — dropped 6.1%
+  - 20. ISRG — 2025-03-07 — dropped 3.8%
+
+- [ ] **Batch 331** (20 events, 2025-03-10 to 2025-03-10)
+  - 1. NVDA — 2025-03-10 — dropped 5.1%
+  - 2. LLY — 2025-03-10 — dropped 4.6%
+  - 3. LRCX — 2025-03-10 — dropped 6.6%
+  - 4. JPM — 2025-03-10 — dropped 4.2%
+  - 5. META — 2025-03-10 — dropped 4.4%
+  - 6. MS — 2025-03-10 — dropped 6.4%
+  - 7. MSFT — 2025-03-10 — dropped 3.3%
+  - 8. NOW — 2025-03-10 — dropped 7.9%
+  - 9. ORCL — 2025-03-10 — dropped 4.1%
+  - 10. USB — 2025-03-10 — dropped 5.3%
+  - 11. QCOM — 2025-03-10 — dropped 3.9%
+  - 12. SBUX — 2025-03-10 — dropped 5.0%
+  - 13. SCHW — 2025-03-10 — dropped 4.5%
+  - 14. SPG — 2025-03-10 — dropped 3.4%
+  - 15. TSLA — 2025-03-10 — dropped 15.4%
+  - 16. UBER — 2025-03-10 — dropped 4.2%
+  - 17. WFC — 2025-03-10 — dropped 6.0%
+  - 18. WMT — 2025-03-10 — dropped 4.3%
+  - 19. ISRG — 2025-03-10 — dropped 6.9%
+  - 20. PLTR — 2025-03-10 — dropped 10.0%
+
+- [ ] **Batch 332** (20 events, 2025-03-10 to 2025-03-10)
+  - 1. INTU — 2025-03-10 — dropped 4.9%
+  - 2. MU — 2025-03-10 — dropped 6.3%
+  - 3. GS — 2025-03-10 — dropped 5.0%
+  - 4. INTC — 2025-03-10 — dropped 3.4%
+  - 5. AAPL — 2025-03-10 — dropped 4.8%
+  - 6. ADBE — 2025-03-10 — dropped 3.2%
+  - 7. AMAT — 2025-03-10 — dropped 3.7%
+  - 8. AMD — 2025-03-10 — dropped 3.7%
+  - 9. AVGO — 2025-03-10 — dropped 5.4%
+  - 10. AXP — 2025-03-10 — dropped 4.4%
+  - 11. BA — 2025-03-10 — dropped 3.9%
+  - 12. BKNG — 2025-03-10 — dropped 4.8%
+  - 13. BLK — 2025-03-10 — dropped 3.3%
+  - 14. BAC — 2025-03-10 — dropped 3.8%
+  - 15. CMCSA — 2025-03-10 — dropped 3.9%
+  - 16. GOOGL — 2025-03-10 — dropped 4.6%
+  - 17. GOOG — 2025-03-10 — dropped 4.5%
+  - 18. C — 2025-03-10 — dropped 4.3%
+  - 19. EMR — 2025-03-10 — dropped 5.7%
+  - 20. DHR — 2025-03-10 — dropped 3.2%
+
+- [ ] **Batch 333** (20 events, 2025-03-10 to 2025-03-11)
+  - 1. GEV — 2025-03-10 — dropped 6.6%
+  - 2. COST — 2025-03-10 — dropped 3.1%
+  - 3. COF — 2025-03-10 — dropped 5.4%
+  - 4. CRM — 2025-03-10 — dropped 3.5%
+  - 5. VZ — 2025-03-11 — dropped 6.6%
+  - 6. T — 2025-03-11 — dropped 4.7%
+  - 7. UPS — 2025-03-11 — dropped 3.5%
+  - 8. UBER — 2025-03-11 — dropped 3.3%
+  - 9. TXN — 2025-03-11 — dropped 4.9%
+  - 10. TMUS — 2025-03-11 — dropped 3.7%
+  - 11. SO — 2025-03-11 — dropped 3.1%
+  - 12. UNP — 2025-03-11 — dropped 4.2%
+  - 13. MCD — 2025-03-11 — dropped 3.3%
+  - 14. ABT — 2025-03-11 — dropped 3.4%
+  - 15. BK — 2025-03-11 — dropped 3.8%
+  - 16. CL — 2025-03-11 — dropped 3.5%
+  - 17. ORCL — 2025-03-11 — dropped 3.1%
+  - 18. IBM — 2025-03-11 — dropped 3.1%
+  - 19. LOW — 2025-03-11 — dropped 4.0%
+  - 20. DIS — 2025-03-11 — dropped 5.0%
+
+- [ ] **Batch 334** (20 events, 2025-03-12 to 2025-03-19)
+  - 1. CL — 2025-03-12 — dropped 3.5%
+  - 2. MDLZ — 2025-03-12 — dropped 4.2%
+  - 3. SPG — 2025-03-13 — dropped 3.8%
+  - 4. COST — 2025-03-13 — dropped 3.9%
+  - 5. CRM — 2025-03-13 — dropped 4.5%
+  - 6. HD — 2025-03-13 — dropped 4.8%
+  - 7. ISRG — 2025-03-13 — dropped 4.1%
+  - 8. META — 2025-03-13 — dropped 4.7%
+  - 9. NFLX — 2025-03-13 — dropped 3.2%
+  - 10. NOW — 2025-03-13 — dropped 3.7%
+  - 11. PLTR — 2025-03-13 — dropped 4.8%
+  - 12. AAPL — 2025-03-13 — dropped 3.4%
+  - 13. TSLA — 2025-03-17 — dropped 4.8%
+  - 14. COF — 2025-03-17 — dropped 3.8%
+  - 15. GEV — 2025-03-18 — dropped 3.9%
+  - 16. META — 2025-03-18 — dropped 3.7%
+  - 17. NVDA — 2025-03-18 — dropped 3.4%
+  - 18. PLTR — 2025-03-18 — dropped 4.0%
+  - 19. TSLA — 2025-03-18 — dropped 5.3%
+  - 20. INTC — 2025-03-19 — dropped 6.9%
+
+- [ ] **Batch 335** (20 events, 2025-03-20 to 2025-03-26)
+  - 1. IBM — 2025-03-20 — dropped 3.6%
+  - 2. LMT — 2025-03-21 — dropped 5.8%
+  - 3. NKE — 2025-03-21 — dropped 5.5%
+  - 4. FDX — 2025-03-21 — dropped 6.4%
+  - 5. ABBV — 2025-03-25 — dropped 3.7%
+  - 6. BMY — 2025-03-25 — dropped 3.0%
+  - 7. MRK — 2025-03-25 — dropped 4.8%
+  - 8. UPS — 2025-03-25 — dropped 5.1%
+  - 9. WMT — 2025-03-25 — dropped 3.1%
+  - 10. LLY — 2025-03-26 — dropped 3.0%
+  - 11. PLTR — 2025-03-26 — dropped 4.4%
+  - 12. ORCL — 2025-03-26 — dropped 4.0%
+  - 13. NVDA — 2025-03-26 — dropped 5.7%
+  - 14. INTC — 2025-03-26 — dropped 3.2%
+  - 15. TSLA — 2025-03-26 — dropped 5.6%
+  - 16. GOOG — 2025-03-26 — dropped 3.3%
+  - 17. GM — 2025-03-26 — dropped 3.1%
+  - 18. GEV — 2025-03-26 — dropped 5.5%
+  - 19. AVGO — 2025-03-26 — dropped 4.8%
+  - 20. AMD — 2025-03-26 — dropped 4.0%
+
+- [ ] **Batch 336** (20 events, 2025-03-26 to 2025-03-28)
+  - 1. GOOGL — 2025-03-26 — dropped 3.2%
+  - 2. AVGO — 2025-03-27 — dropped 4.1%
+  - 3. GEV — 2025-03-27 — dropped 4.6%
+  - 4. AMD — 2025-03-27 — dropped 3.2%
+  - 5. META — 2025-03-28 — dropped 4.3%
+  - 6. PLTR — 2025-03-28 — dropped 4.7%
+  - 7. ORCL — 2025-03-28 — dropped 3.4%
+  - 8. NOW — 2025-03-28 — dropped 3.6%
+  - 9. NKE — 2025-03-28 — dropped 3.8%
+  - 10. NFLX — 2025-03-28 — dropped 4.4%
+  - 11. MSFT — 2025-03-28 — dropped 3.0%
+  - 12. MS — 2025-03-28 — dropped 3.1%
+  - 13. MA — 2025-03-28 — dropped 3.0%
+  - 14. EMR — 2025-03-28 — dropped 3.1%
+  - 15. INTC — 2025-03-28 — dropped 3.9%
+  - 16. GOOGL — 2025-03-28 — dropped 4.9%
+  - 17. GOOG — 2025-03-28 — dropped 4.9%
+  - 18. QCOM — 2025-03-28 — dropped 3.3%
+  - 19. DE — 2025-03-28 — dropped 3.0%
+  - 20. BAC — 2025-03-28 — dropped 3.1%
+
+- [ ] **Batch 337** (20 events, 2025-03-28 to 2025-04-03)
+  - 1. BA — 2025-03-28 — dropped 3.2%
+  - 2. AMZN — 2025-03-28 — dropped 4.3%
+  - 3. AMD — 2025-03-28 — dropped 3.2%
+  - 4. ISRG — 2025-03-28 — dropped 3.2%
+  - 5. TSLA — 2025-03-28 — dropped 3.5%
+  - 6. PFE — 2025-04-01 — dropped 3.2%
+  - 7. WFC — 2025-04-03 — dropped 9.1%
+  - 8. HON — 2025-04-03 — dropped 4.3%
+  - 9. INTU — 2025-04-03 — dropped 3.6%
+  - 10. JPM — 2025-04-03 — dropped 7.0%
+  - 11. LLY — 2025-04-03 — dropped 3.6%
+  - 12. LOW — 2025-04-03 — dropped 5.4%
+  - 13. LRCX — 2025-04-03 — dropped 11.6%
+  - 14. XOM — 2025-04-03 — dropped 5.3%
+  - 15. META — 2025-04-03 — dropped 9.0%
+  - 16. MMM — 2025-04-03 — dropped 5.4%
+  - 17. MS — 2025-04-03 — dropped 9.5%
+  - 18. MU — 2025-04-03 — dropped 16.1%
+  - 19. NKE — 2025-04-03 — dropped 14.4%
+  - 20. NOW — 2025-04-03 — dropped 6.1%
+
+- [ ] **Batch 338** (20 events, 2025-04-03 to 2025-04-03)
+  - 1. NVDA — 2025-04-03 — dropped 7.8%
+  - 2. ORCL — 2025-04-03 — dropped 5.9%
+  - 3. PLTR — 2025-04-03 — dropped 4.4%
+  - 4. QCOM — 2025-04-03 — dropped 9.5%
+  - 5. SBUX — 2025-04-03 — dropped 11.2%
+  - 6. SCHW — 2025-04-03 — dropped 4.7%
+  - 7. SPG — 2025-04-03 — dropped 10.1%
+  - 8. TMO — 2025-04-03 — dropped 3.9%
+  - 9. TSLA — 2025-04-03 — dropped 5.5%
+  - 10. TXN — 2025-04-03 — dropped 7.9%
+  - 11. UBER — 2025-04-03 — dropped 6.2%
+  - 12. UNP — 2025-04-03 — dropped 6.1%
+  - 13. UPS — 2025-04-03 — dropped 9.1%
+  - 14. USB — 2025-04-03 — dropped 9.8%
+  - 15. HD — 2025-04-03 — dropped 4.0%
+  - 16. GS — 2025-04-03 — dropped 9.2%
+  - 17. MA — 2025-04-03 — dropped 3.1%
+  - 18. GOOG — 2025-04-03 — dropped 3.9%
+  - 19. GOOGL — 2025-04-03 — dropped 4.0%
+  - 20. AAPL — 2025-04-03 — dropped 9.2%
+
+- [ ] **Batch 339** (20 events, 2025-04-03 to 2025-04-03)
+  - 1. ACN — 2025-04-03 — dropped 4.7%
+  - 2. ADBE — 2025-04-03 — dropped 4.8%
+  - 3. AMD — 2025-04-03 — dropped 8.9%
+  - 4. AMZN — 2025-04-03 — dropped 9.0%
+  - 5. AVGO — 2025-04-03 — dropped 10.5%
+  - 6. AXP — 2025-04-03 — dropped 10.0%
+  - 7. BA — 2025-04-03 — dropped 10.5%
+  - 8. BAC — 2025-04-03 — dropped 11.1%
+  - 9. BK — 2025-04-03 — dropped 5.1%
+  - 10. BKNG — 2025-04-03 — dropped 5.1%
+  - 11. BLK — 2025-04-03 — dropped 7.7%
+  - 12. C — 2025-04-03 — dropped 12.1%
+  - 13. AMAT — 2025-04-03 — dropped 8.3%
+  - 14. COF — 2025-04-03 — dropped 10.0%
+  - 15. CAT — 2025-04-03 — dropped 8.6%
+  - 16. GEV — 2025-04-03 — dropped 10.0%
+  - 17. GM — 2025-04-03 — dropped 4.3%
+  - 18. FDX — 2025-04-03 — dropped 12.0%
+  - 19. EMR — 2025-04-03 — dropped 8.7%
+  - 20. DIS — 2025-04-03 — dropped 9.2%
+
+- [ ] **Batch 340** (20 events, 2025-04-03 to 2025-04-04)
+  - 1. GE — 2025-04-03 — dropped 6.1%
+  - 2. DE — 2025-04-03 — dropped 5.0%
+  - 3. CVX — 2025-04-03 — dropped 6.2%
+  - 4. CSCO — 2025-04-03 — dropped 7.3%
+  - 5. CRM — 2025-04-03 — dropped 6.0%
+  - 6. COP — 2025-04-03 — dropped 10.2%
+  - 7. DHR — 2025-04-03 — dropped 3.5%
+  - 8. NVDA — 2025-04-04 — dropped 7.4%
+  - 9. NOW — 2025-04-04 — dropped 6.8%
+  - 10. NFLX — 2025-04-04 — dropped 6.7%
+  - 11. NEE — 2025-04-04 — dropped 7.2%
+  - 12. MU — 2025-04-04 — dropped 12.9%
+  - 13. MSFT — 2025-04-04 — dropped 3.6%
+  - 14. MS — 2025-04-04 — dropped 7.5%
+  - 15. MRK — 2025-04-04 — dropped 5.7%
+  - 16. MO — 2025-04-04 — dropped 3.1%
+  - 17. MMM — 2025-04-04 — dropped 9.2%
+  - 18. LMT — 2025-04-04 — dropped 5.0%
+  - 19. MDT — 2025-04-04 — dropped 5.7%
+  - 20. MCD — 2025-04-04 — dropped 5.7%
+
+- [ ] **Batch 341** (20 events, 2025-04-04 to 2025-04-04)
+  - 1. MA — 2025-04-04 — dropped 7.7%
+  - 2. LRCX — 2025-04-04 — dropped 9.4%
+  - 3. LLY — 2025-04-04 — dropped 6.4%
+  - 4. LIN — 2025-04-04 — dropped 6.3%
+  - 5. KO — 2025-04-04 — dropped 4.4%
+  - 6. JPM — 2025-04-04 — dropped 8.1%
+  - 7. ORCL — 2025-04-04 — dropped 6.5%
+  - 8. META — 2025-04-04 — dropped 5.1%
+  - 9. PEP — 2025-04-04 — dropped 3.1%
+  - 10. XOM — 2025-04-04 — dropped 7.2%
+  - 11. PG — 2025-04-04 — dropped 5.0%
+  - 12. JNJ — 2025-04-04 — dropped 4.1%
+  - 13. WMT — 2025-04-04 — dropped 4.7%
+  - 14. WFC — 2025-04-04 — dropped 7.1%
+  - 15. VZ — 2025-04-04 — dropped 5.7%
+  - 16. V — 2025-04-04 — dropped 7.7%
+  - 17. USB — 2025-04-04 — dropped 5.1%
+  - 18. UNP — 2025-04-04 — dropped 4.8%
+  - 19. UBER — 2025-04-04 — dropped 7.5%
+  - 20. TXN — 2025-04-04 — dropped 7.8%
+
+- [ ] **Batch 342** (20 events, 2025-04-04 to 2025-04-04)
+  - 1. TSLA — 2025-04-04 — dropped 10.4%
+  - 2. TMUS — 2025-04-04 — dropped 7.4%
+  - 3. TMO — 2025-04-04 — dropped 6.8%
+  - 4. T — 2025-04-04 — dropped 6.9%
+  - 5. SPG — 2025-04-04 — dropped 4.7%
+  - 6. SO — 2025-04-04 — dropped 3.9%
+  - 7. SCHW — 2025-04-04 — dropped 7.8%
+  - 8. SBUX — 2025-04-04 — dropped 7.0%
+  - 9. RTX — 2025-04-04 — dropped 9.8%
+  - 10. QCOM — 2025-04-04 — dropped 8.6%
+  - 11. PM — 2025-04-04 — dropped 7.1%
+  - 12. PLTR — 2025-04-04 — dropped 11.5%
+  - 13. PFE — 2025-04-04 — dropped 5.4%
+  - 14. ISRG — 2025-04-04 — dropped 8.7%
+  - 15. AMT — 2025-04-04 — dropped 3.5%
+  - 16. INTC — 2025-04-04 — dropped 11.5%
+  - 17. CAT — 2025-04-04 — dropped 5.8%
+  - 18. C — 2025-04-04 — dropped 7.8%
+  - 19. BRK-B — 2025-04-04 — dropped 6.9%
+  - 20. BMY — 2025-04-04 — dropped 4.4%
+
+- [ ] **Batch 343** (20 events, 2025-04-04 to 2025-04-04)
+  - 1. BLK — 2025-04-04 — dropped 7.3%
+  - 2. BKNG — 2025-04-04 — dropped 3.7%
+  - 3. BK — 2025-04-04 — dropped 8.3%
+  - 4. BAC — 2025-04-04 — dropped 7.6%
+  - 5. BA — 2025-04-04 — dropped 9.5%
+  - 6. CL — 2025-04-04 — dropped 4.5%
+  - 7. AXP — 2025-04-04 — dropped 5.7%
+  - 8. AMZN — 2025-04-04 — dropped 4.2%
+  - 9. AMGN — 2025-04-04 — dropped 5.0%
+  - 10. AMD — 2025-04-04 — dropped 8.6%
+  - 11. ADBE — 2025-04-04 — dropped 5.0%
+  - 12. ACN — 2025-04-04 — dropped 5.4%
+  - 13. ABT — 2025-04-04 — dropped 5.5%
+  - 14. ABBV — 2025-04-04 — dropped 7.3%
+  - 15. AAPL — 2025-04-04 — dropped 7.3%
+  - 16. INTU — 2025-04-04 — dropped 6.2%
+  - 17. AVGO — 2025-04-04 — dropped 5.0%
+  - 18. CMCSA — 2025-04-04 — dropped 6.6%
+  - 19. AMAT — 2025-04-04 — dropped 6.3%
+  - 20. COP — 2025-04-04 — dropped 9.4%
+
+- [ ] **Batch 344** (20 events, 2025-04-04 to 2025-04-04)
+  - 1. COF — 2025-04-04 — dropped 8.2%
+  - 2. HON — 2025-04-04 — dropped 7.6%
+  - 3. GS — 2025-04-04 — dropped 7.9%
+  - 4. GOOGL — 2025-04-04 — dropped 3.4%
+  - 5. GOOG — 2025-04-04 — dropped 3.2%
+  - 6. IBM — 2025-04-04 — dropped 6.6%
+  - 7. GILD — 2025-04-04 — dropped 4.6%
+  - 8. GEV — 2025-04-04 — dropped 8.8%
+  - 9. GE — 2025-04-04 — dropped 11.1%
+  - 10. GD — 2025-04-04 — dropped 7.3%
+  - 11. GM — 2025-04-04 — dropped 3.7%
+  - 12. DUK — 2025-04-04 — dropped 4.1%
+  - 13. DIS — 2025-04-04 — dropped 6.0%
+  - 14. DHR — 2025-04-04 — dropped 8.2%
+  - 15. DE — 2025-04-04 — dropped 3.9%
+  - 16. CVX — 2025-04-04 — dropped 8.2%
+  - 17. CVS — 2025-04-04 — dropped 5.7%
+  - 18. CSCO — 2025-04-04 — dropped 4.8%
+  - 19. CRM — 2025-04-04 — dropped 5.7%
+  - 20. COST — 2025-04-04 — dropped 5.2%
+
+- [ ] **Batch 345** (20 events, 2025-04-04 to 2025-04-08)
+  - 1. EMR — 2025-04-04 — dropped 7.2%
+  - 2. HD — 2025-04-07 — dropped 3.5%
+  - 3. AAPL — 2025-04-07 — dropped 3.7%
+  - 4. AMT — 2025-04-07 — dropped 3.1%
+  - 5. MU — 2025-04-08 — dropped 4.1%
+  - 6. UPS — 2025-04-08 — dropped 3.8%
+  - 7. TXN — 2025-04-08 — dropped 5.2%
+  - 8. TSLA — 2025-04-08 — dropped 4.9%
+  - 9. TMO — 2025-04-08 — dropped 4.2%
+  - 10. QCOM — 2025-04-08 — dropped 3.9%
+  - 11. PFE — 2025-04-08 — dropped 3.5%
+  - 12. LRCX — 2025-04-08 — dropped 3.1%
+  - 13. NKE — 2025-04-08 — dropped 4.2%
+  - 14. DHR — 2025-04-08 — dropped 3.3%
+  - 15. COP — 2025-04-08 — dropped 3.5%
+  - 16. BMY — 2025-04-08 — dropped 3.8%
+  - 17. AMT — 2025-04-08 — dropped 4.1%
+  - 18. AMGN — 2025-04-08 — dropped 3.3%
+  - 19. AMD — 2025-04-08 — dropped 6.5%
+  - 20. ABBV — 2025-04-08 — dropped 5.8%
+
+- [ ] **Batch 346** (20 events, 2025-04-08 to 2025-04-10)
+  - 1. AAPL — 2025-04-08 — dropped 5.0%
+  - 2. FDX — 2025-04-08 — dropped 3.5%
+  - 3. MMM — 2025-04-10 — dropped 3.9%
+  - 4. META — 2025-04-10 — dropped 6.7%
+  - 5. MDT — 2025-04-10 — dropped 3.2%
+  - 6. MA — 2025-04-10 — dropped 3.1%
+  - 7. WFC — 2025-04-10 — dropped 4.9%
+  - 8. ISRG — 2025-04-10 — dropped 6.4%
+  - 9. LIN — 2025-04-10 — dropped 3.2%
+  - 10. JPM — 2025-04-10 — dropped 3.1%
+  - 11. MRK — 2025-04-10 — dropped 5.3%
+  - 12. INTU — 2025-04-10 — dropped 3.2%
+  - 13. XOM — 2025-04-10 — dropped 5.5%
+  - 14. INTC — 2025-04-10 — dropped 7.7%
+  - 15. LLY — 2025-04-10 — dropped 4.4%
+  - 16. MS — 2025-04-10 — dropped 4.6%
+  - 17. ORCL — 2025-04-10 — dropped 4.5%
+  - 18. NKE — 2025-04-10 — dropped 8.3%
+  - 19. NOW — 2025-04-10 — dropped 5.1%
+  - 20. NVDA — 2025-04-10 — dropped 5.9%
+
+- [ ] **Batch 347** (20 events, 2025-04-10 to 2025-04-10)
+  - 1. PFE — 2025-04-10 — dropped 4.0%
+  - 2. PLTR — 2025-04-10 — dropped 3.7%
+  - 3. QCOM — 2025-04-10 — dropped 6.4%
+  - 4. SBUX — 2025-04-10 — dropped 4.6%
+  - 5. SPG — 2025-04-10 — dropped 3.6%
+  - 6. TMO — 2025-04-10 — dropped 5.8%
+  - 7. TSLA — 2025-04-10 — dropped 7.3%
+  - 8. TXN — 2025-04-10 — dropped 7.6%
+  - 9. UPS — 2025-04-10 — dropped 3.1%
+  - 10. USB — 2025-04-10 — dropped 5.2%
+  - 11. GS — 2025-04-10 — dropped 5.2%
+  - 12. MU — 2025-04-10 — dropped 10.0%
+  - 13. GOOGL — 2025-04-10 — dropped 3.7%
+  - 14. LRCX — 2025-04-10 — dropped 6.6%
+  - 15. GM — 2025-04-10 — dropped 4.4%
+  - 16. GOOG — 2025-04-10 — dropped 3.5%
+  - 17. AAPL — 2025-04-10 — dropped 4.2%
+  - 18. ABBV — 2025-04-10 — dropped 3.1%
+  - 19. ACN — 2025-04-10 — dropped 4.9%
+  - 20. ADBE — 2025-04-10 — dropped 4.0%
+
+- [ ] **Batch 348** (20 events, 2025-04-10 to 2025-04-10)
+  - 1. AMAT — 2025-04-10 — dropped 7.7%
+  - 2. AMD — 2025-04-10 — dropped 8.4%
+  - 3. AMGN — 2025-04-10 — dropped 3.3%
+  - 4. AMZN — 2025-04-10 — dropped 5.2%
+  - 5. AVGO — 2025-04-10 — dropped 6.9%
+  - 6. AXP — 2025-04-10 — dropped 5.9%
+  - 7. BA — 2025-04-10 — dropped 3.3%
+  - 8. BAC — 2025-04-10 — dropped 3.5%
+  - 9. BK — 2025-04-10 — dropped 3.5%
+  - 10. GEV — 2025-04-10 — dropped 5.2%
+  - 11. BMY — 2025-04-10 — dropped 6.1%
+  - 12. GILD — 2025-04-10 — dropped 3.7%
+  - 13. BLK — 2025-04-10 — dropped 4.3%
+  - 14. GE — 2025-04-10 — dropped 3.1%
+  - 15. EMR — 2025-04-10 — dropped 4.5%
+  - 16. DIS — 2025-04-10 — dropped 6.8%
+  - 17. DHR — 2025-04-10 — dropped 5.8%
+  - 18. FDX — 2025-04-10 — dropped 5.3%
+  - 19. CRM — 2025-04-10 — dropped 3.8%
+  - 20. COP — 2025-04-10 — dropped 9.0%
+
+- [ ] **Batch 349** (20 events, 2025-04-10 to 2025-04-16)
+  - 1. COF — 2025-04-10 — dropped 7.3%
+  - 2. CMCSA — 2025-04-10 — dropped 4.3%
+  - 3. CAT — 2025-04-10 — dropped 3.9%
+  - 4. C — 2025-04-10 — dropped 4.0%
+  - 5. CVX — 2025-04-10 — dropped 7.6%
+  - 6. TXN — 2025-04-11 — dropped 5.7%
+  - 7. MSFT — 2025-04-16 — dropped 3.7%
+  - 8. TXN — 2025-04-16 — dropped 3.1%
+  - 9. TSLA — 2025-04-16 — dropped 4.9%
+  - 10. PLTR — 2025-04-16 — dropped 5.8%
+  - 11. ORCL — 2025-04-16 — dropped 3.1%
+  - 12. NVDA — 2025-04-16 — dropped 6.9%
+  - 13. MMM — 2025-04-16 — dropped 3.5%
+  - 14. SBUX — 2025-04-16 — dropped 3.5%
+  - 15. LRCX — 2025-04-16 — dropped 4.8%
+  - 16. INTC — 2025-04-16 — dropped 3.1%
+  - 17. C — 2025-04-16 — dropped 3.5%
+  - 18. AMGN — 2025-04-16 — dropped 4.3%
+  - 19. AMAT — 2025-04-16 — dropped 5.0%
+  - 20. AAPL — 2025-04-16 — dropped 3.9%
+
+- [ ] **Batch 350** (20 events, 2025-04-16 to 2025-04-21)
+  - 1. META — 2025-04-16 — dropped 3.7%
+  - 2. NOW — 2025-04-17 — dropped 3.1%
+  - 3. NVDA — 2025-04-21 — dropped 4.5%
+  - 4. ORCL — 2025-04-21 — dropped 4.5%
+  - 5. PLTR — 2025-04-21 — dropped 3.2%
+  - 6. UBER — 2025-04-21 — dropped 3.1%
+  - 7. TSLA — 2025-04-21 — dropped 5.7%
+  - 8. MMM — 2025-04-21 — dropped 3.2%
+  - 9. UNH — 2025-04-21 — dropped 6.3%
+  - 10. T — 2025-04-21 — dropped 3.0%
+  - 11. META — 2025-04-21 — dropped 3.4%
+  - 12. TMUS — 2025-04-21 — dropped 3.3%
+  - 13. EMR — 2025-04-21 — dropped 3.2%
+  - 14. GEV — 2025-04-21 — dropped 3.2%
+  - 15. AMZN — 2025-04-21 — dropped 3.1%
+  - 16. AXP — 2025-04-21 — dropped 3.5%
+  - 17. BK — 2025-04-21 — dropped 3.0%
+  - 18. COST — 2025-04-21 — dropped 3.7%
+  - 19. CRM — 2025-04-21 — dropped 4.4%
+  - 20. CVS — 2025-04-21 — dropped 3.2%
+
+- [ ] **Batch 351** (20 events, 2025-04-21 to 2025-05-05)
+  - 1. CVX — 2025-04-21 — dropped 3.0%
+  - 2. CAT — 2025-04-21 — dropped 3.2%
+  - 3. AMT — 2025-04-23 — dropped 3.8%
+  - 4. GD — 2025-04-23 — dropped 3.3%
+  - 5. PG — 2025-04-24 — dropped 3.7%
+  - 6. CMCSA — 2025-04-24 — dropped 3.7%
+  - 7. IBM — 2025-04-24 — dropped 6.6%
+  - 8. PEP — 2025-04-24 — dropped 4.9%
+  - 9. INTC — 2025-04-25 — dropped 6.7%
+  - 10. CL — 2025-04-28 — dropped 3.1%
+  - 11. TSLA — 2025-04-30 — dropped 3.4%
+  - 12. SBUX — 2025-04-30 — dropped 5.7%
+  - 13. COP — 2025-04-30 — dropped 3.0%
+  - 14. GM — 2025-04-30 — dropped 3.6%
+  - 15. GILD — 2025-05-01 — dropped 3.1%
+  - 16. AAPL — 2025-05-02 — dropped 3.7%
+  - 17. AAPL — 2025-05-05 — dropped 3.1%
+  - 18. BRK-B — 2025-05-05 — dropped 5.1%
+  - 19. COP — 2025-05-05 — dropped 4.2%
+  - 20. SBUX — 2025-05-05 — dropped 3.6%
+
+- [ ] **Batch 352** (20 events, 2025-05-06 to 2025-05-13)
+  - 1. LLY — 2025-05-06 — dropped 5.6%
+  - 2. PFE — 2025-05-06 — dropped 4.1%
+  - 3. MRK — 2025-05-06 — dropped 4.6%
+  - 4. TMO — 2025-05-06 — dropped 3.6%
+  - 5. GILD — 2025-05-06 — dropped 4.8%
+  - 6. BMY — 2025-05-06 — dropped 5.0%
+  - 7. ABBV — 2025-05-06 — dropped 4.5%
+  - 8. DHR — 2025-05-06 — dropped 3.7%
+  - 9. AMGN — 2025-05-06 — dropped 3.4%
+  - 10. GEV — 2025-05-08 — dropped 3.1%
+  - 11. LLY — 2025-05-08 — dropped 3.3%
+  - 12. PFE — 2025-05-09 — dropped 3.0%
+  - 13. AMT — 2025-05-12 — dropped 5.5%
+  - 14. CVS — 2025-05-12 — dropped 3.2%
+  - 15. DUK — 2025-05-12 — dropped 3.7%
+  - 16. MO — 2025-05-12 — dropped 4.2%
+  - 17. SPG — 2025-05-13 — dropped 6.2%
+  - 18. MRK — 2025-05-13 — dropped 4.7%
+  - 19. BMY — 2025-05-13 — dropped 3.3%
+  - 20. CVS — 2025-05-13 — dropped 6.7%
+
+- [ ] **Batch 353** (20 events, 2025-05-13 to 2025-05-21)
+  - 1. JNJ — 2025-05-13 — dropped 3.7%
+  - 2. LLY — 2025-05-14 — dropped 4.1%
+  - 3. TMO — 2025-05-14 — dropped 5.3%
+  - 4. PFE — 2025-05-14 — dropped 3.7%
+  - 5. MRK — 2025-05-14 — dropped 4.1%
+  - 6. INTC — 2025-05-14 — dropped 4.6%
+  - 7. BMY — 2025-05-14 — dropped 5.3%
+  - 8. DHR — 2025-05-14 — dropped 4.5%
+  - 9. AMGN — 2025-05-14 — dropped 3.0%
+  - 10. ABBV — 2025-05-14 — dropped 5.6%
+  - 11. GILD — 2025-05-14 — dropped 3.0%
+  - 12. AMAT — 2025-05-16 — dropped 5.3%
+  - 13. SBUX — 2025-05-21 — dropped 3.0%
+  - 14. WFC — 2025-05-21 — dropped 3.1%
+  - 15. USB — 2025-05-21 — dropped 3.4%
+  - 16. UNH — 2025-05-21 — dropped 5.8%
+  - 17. UBER — 2025-05-21 — dropped 3.5%
+  - 18. TMO — 2025-05-21 — dropped 3.7%
+  - 19. PLTR — 2025-05-21 — dropped 4.0%
+  - 20. COF — 2025-05-21 — dropped 4.6%
+
+- [ ] **Batch 354** (20 events, 2025-05-21 to 2025-06-05)
+  - 1. NEE — 2025-05-21 — dropped 3.9%
+  - 2. MMM — 2025-05-21 — dropped 3.1%
+  - 3. DHR — 2025-05-21 — dropped 5.5%
+  - 4. NKE — 2025-05-21 — dropped 4.1%
+  - 5. C — 2025-05-21 — dropped 3.3%
+  - 6. BAC — 2025-05-21 — dropped 3.2%
+  - 7. AXP — 2025-05-21 — dropped 3.4%
+  - 8. CVS — 2025-05-22 — dropped 3.0%
+  - 9. MDT — 2025-05-22 — dropped 4.1%
+  - 10. NEE — 2025-05-22 — dropped 6.4%
+  - 11. CRM — 2025-05-23 — dropped 3.6%
+  - 12. AAPL — 2025-05-23 — dropped 3.0%
+  - 13. CRM — 2025-05-29 — dropped 3.3%
+  - 14. UBER — 2025-05-29 — dropped 4.5%
+  - 15. INTC — 2025-05-30 — dropped 3.5%
+  - 16. LRCX — 2025-05-30 — dropped 4.0%
+  - 17. TSLA — 2025-05-30 — dropped 3.3%
+  - 18. GM — 2025-06-02 — dropped 3.9%
+  - 19. TSLA — 2025-06-04 — dropped 3.5%
+  - 20. COST — 2025-06-05 — dropped 3.9%
+
+- [ ] **Batch 355** (20 events, 2025-06-06 to 2025-06-17)
+  - 1. AVGO — 2025-06-06 — dropped 5.0%
+  - 2. ISRG — 2025-06-09 — dropped 5.6%
+  - 3. TMUS — 2025-06-09 — dropped 3.2%
+  - 4. GEV — 2025-06-10 — dropped 3.1%
+  - 5. GE — 2025-06-10 — dropped 3.7%
+  - 6. INTC — 2025-06-11 — dropped 6.3%
+  - 7. LMT — 2025-06-11 — dropped 4.3%
+  - 8. BA — 2025-06-12 — dropped 4.8%
+  - 9. V — 2025-06-13 — dropped 5.0%
+  - 10. TMO — 2025-06-13 — dropped 3.0%
+  - 11. NKE — 2025-06-13 — dropped 3.6%
+  - 12. MA — 2025-06-13 — dropped 4.6%
+  - 13. INTC — 2025-06-13 — dropped 3.0%
+  - 14. CRM — 2025-06-13 — dropped 3.2%
+  - 15. CL — 2025-06-13 — dropped 3.1%
+  - 16. AXP — 2025-06-13 — dropped 3.4%
+  - 17. ADBE — 2025-06-13 — dropped 5.3%
+  - 18. LMT — 2025-06-16 — dropped 4.0%
+  - 19. TSLA — 2025-06-17 — dropped 3.9%
+  - 20. TMUS — 2025-06-17 — dropped 4.1%
+
+- [ ] **Batch 356** (20 events, 2025-06-17 to 2025-07-01)
+  - 1. TMO — 2025-06-17 — dropped 3.7%
+  - 2. ADBE — 2025-06-17 — dropped 4.7%
+  - 3. MRK — 2025-06-17 — dropped 3.3%
+  - 4. NKE — 2025-06-17 — dropped 3.1%
+  - 5. MA — 2025-06-18 — dropped 5.4%
+  - 6. V — 2025-06-18 — dropped 4.9%
+  - 7. ACN — 2025-06-20 — dropped 6.9%
+  - 8. GOOG — 2025-06-20 — dropped 3.6%
+  - 9. GOOGL — 2025-06-20 — dropped 3.9%
+  - 10. AMGN — 2025-06-23 — dropped 5.8%
+  - 11. COP — 2025-06-23 — dropped 3.1%
+  - 12. XOM — 2025-06-24 — dropped 3.0%
+  - 13. TSLA — 2025-06-25 — dropped 3.8%
+  - 14. FDX — 2025-06-25 — dropped 3.3%
+  - 15. AMD — 2025-07-01 — dropped 4.1%
+  - 16. AVGO — 2025-07-01 — dropped 4.0%
+  - 17. GE — 2025-07-01 — dropped 3.3%
+  - 18. GEV — 2025-07-01 — dropped 4.4%
+  - 19. NFLX — 2025-07-01 — dropped 3.4%
+  - 20. PLTR — 2025-07-01 — dropped 4.1%
+
+- [ ] **Batch 357** (20 events, 2025-07-01 to 2025-07-15)
+  - 1. TSLA — 2025-07-01 — dropped 5.3%
+  - 2. ADBE — 2025-07-02 — dropped 3.5%
+  - 3. CVS — 2025-07-02 — dropped 4.3%
+  - 4. INTC — 2025-07-02 — dropped 4.2%
+  - 5. UNH — 2025-07-02 — dropped 5.7%
+  - 6. UPS — 2025-07-07 — dropped 3.1%
+  - 7. TSLA — 2025-07-07 — dropped 6.8%
+  - 8. BAC — 2025-07-08 — dropped 3.1%
+  - 9. JPM — 2025-07-08 — dropped 3.1%
+  - 10. NEE — 2025-07-08 — dropped 3.1%
+  - 11. NKE — 2025-07-08 — dropped 3.4%
+  - 12. MO — 2025-07-09 — dropped 3.0%
+  - 13. ACN — 2025-07-10 — dropped 3.0%
+  - 14. NOW — 2025-07-10 — dropped 4.5%
+  - 15. BMY — 2025-07-11 — dropped 3.4%
+  - 16. GILD — 2025-07-11 — dropped 4.3%
+  - 17. NOW — 2025-07-11 — dropped 3.0%
+  - 18. DHR — 2025-07-14 — dropped 3.5%
+  - 19. MU — 2025-07-14 — dropped 4.8%
+  - 20. LOW — 2025-07-15 — dropped 3.3%
+
+- [ ] **Batch 358** (20 events, 2025-07-15 to 2025-07-24)
+  - 1. WFC — 2025-07-15 — dropped 5.5%
+  - 2. HD — 2025-07-15 — dropped 3.1%
+  - 3. BLK — 2025-07-15 — dropped 5.9%
+  - 4. LLY — 2025-07-15 — dropped 3.5%
+  - 5. AXP — 2025-07-15 — dropped 3.2%
+  - 6. MU — 2025-07-16 — dropped 3.1%
+  - 7. LLY — 2025-07-17 — dropped 3.6%
+  - 8. MMM — 2025-07-18 — dropped 3.7%
+  - 9. NFLX — 2025-07-18 — dropped 5.1%
+  - 10. XOM — 2025-07-18 — dropped 3.5%
+  - 11. AVGO — 2025-07-22 — dropped 3.3%
+  - 12. GM — 2025-07-22 — dropped 8.1%
+  - 13. LMT — 2025-07-22 — dropped 10.8%
+  - 14. LRCX — 2025-07-22 — dropped 4.0%
+  - 15. MU — 2025-07-22 — dropped 3.5%
+  - 16. NFLX — 2025-07-22 — dropped 3.5%
+  - 17. PM — 2025-07-22 — dropped 8.4%
+  - 18. NEE — 2025-07-23 — dropped 6.1%
+  - 19. COF — 2025-07-24 — dropped 3.7%
+  - 20. CVS — 2025-07-24 — dropped 5.0%
+
+- [ ] **Batch 359** (20 events, 2025-07-24 to 2025-07-31)
+  - 1. HON — 2025-07-24 — dropped 6.2%
+  - 2. INTC — 2025-07-24 — dropped 3.7%
+  - 3. UNH — 2025-07-24 — dropped 4.8%
+  - 4. UNP — 2025-07-24 — dropped 4.5%
+  - 5. CMCSA — 2025-07-25 — dropped 4.8%
+  - 6. AMT — 2025-07-29 — dropped 4.2%
+  - 7. BA — 2025-07-29 — dropped 4.4%
+  - 8. FDX — 2025-07-29 — dropped 3.2%
+  - 9. LLY — 2025-07-29 — dropped 5.6%
+  - 10. UBER — 2025-07-29 — dropped 3.9%
+  - 11. UPS — 2025-07-30 — dropped 4.0%
+  - 12. MDLZ — 2025-07-30 — dropped 6.6%
+  - 13. FDX — 2025-07-30 — dropped 4.6%
+  - 14. MMM — 2025-07-30 — dropped 3.4%
+  - 15. TXN — 2025-07-31 — dropped 4.5%
+  - 16. UNH — 2025-07-31 — dropped 6.2%
+  - 17. TSLA — 2025-07-31 — dropped 3.4%
+  - 18. SBUX — 2025-07-31 — dropped 3.9%
+  - 19. PEP — 2025-07-31 — dropped 3.5%
+  - 20. MU — 2025-07-31 — dropped 4.9%
+
+- [ ] **Batch 360** (20 events, 2025-07-31 to 2025-08-06)
+  - 1. NOW — 2025-07-31 — dropped 3.5%
+  - 2. LRCX — 2025-07-31 — dropped 4.3%
+  - 3. ISRG — 2025-07-31 — dropped 3.9%
+  - 4. DHR — 2025-07-31 — dropped 3.3%
+  - 5. BMY — 2025-07-31 — dropped 5.8%
+  - 6. AMAT — 2025-07-31 — dropped 4.9%
+  - 7. MRK — 2025-07-31 — dropped 4.4%
+  - 8. MU — 2025-08-01 — dropped 3.9%
+  - 9. ORCL — 2025-08-01 — dropped 3.7%
+  - 10. NOW — 2025-08-01 — dropped 3.0%
+  - 11. MMM — 2025-08-01 — dropped 3.2%
+  - 12. UNH — 2025-08-01 — dropped 4.7%
+  - 13. DE — 2025-08-01 — dropped 4.5%
+  - 14. COF — 2025-08-01 — dropped 3.5%
+  - 15. BAC — 2025-08-01 — dropped 3.4%
+  - 16. ACN — 2025-08-01 — dropped 4.4%
+  - 17. META — 2025-08-01 — dropped 3.0%
+  - 18. WFC — 2025-08-01 — dropped 3.5%
+  - 19. ACN — 2025-08-05 — dropped 4.5%
+  - 20. TMO — 2025-08-06 — dropped 3.7%
+
+- [ ] **Batch 361** (20 events, 2025-08-06 to 2025-08-19)
+  - 1. PFE — 2025-08-06 — dropped 3.3%
+  - 2. AMD — 2025-08-06 — dropped 6.4%
+  - 3. AMGN — 2025-08-06 — dropped 5.1%
+  - 4. EMR — 2025-08-06 — dropped 4.7%
+  - 5. CRM — 2025-08-07 — dropped 3.3%
+  - 6. INTC — 2025-08-07 — dropped 3.1%
+  - 7. NOW — 2025-08-07 — dropped 4.2%
+  - 8. IBM — 2025-08-08 — dropped 3.2%
+  - 9. UBER — 2025-08-08 — dropped 3.4%
+  - 10. CRM — 2025-08-11 — dropped 3.3%
+  - 11. INTU — 2025-08-11 — dropped 5.7%
+  - 12. SCHW — 2025-08-13 — dropped 3.1%
+  - 13. ORCL — 2025-08-13 — dropped 3.8%
+  - 14. GE — 2025-08-13 — dropped 3.9%
+  - 15. GEV — 2025-08-13 — dropped 3.5%
+  - 16. DE — 2025-08-14 — dropped 6.8%
+  - 17. CSCO — 2025-08-15 — dropped 4.5%
+  - 18. MU — 2025-08-15 — dropped 3.5%
+  - 19. INTC — 2025-08-18 — dropped 3.7%
+  - 20. NVDA — 2025-08-19 — dropped 3.5%
+
+- [ ] **Batch 362** (20 events, 2025-08-19 to 2025-09-02)
+  - 1. AMD — 2025-08-19 — dropped 5.4%
+  - 2. AVGO — 2025-08-19 — dropped 3.5%
+  - 3. BA — 2025-08-19 — dropped 3.2%
+  - 4. GEV — 2025-08-19 — dropped 3.5%
+  - 5. MDT — 2025-08-19 — dropped 3.1%
+  - 6. ORCL — 2025-08-19 — dropped 5.8%
+  - 7. MU — 2025-08-20 — dropped 4.0%
+  - 8. INTC — 2025-08-20 — dropped 7.0%
+  - 9. DHR — 2025-08-21 — dropped 3.5%
+  - 10. WMT — 2025-08-21 — dropped 4.5%
+  - 11. INTU — 2025-08-22 — dropped 5.0%
+  - 12. TSLA — 2025-08-29 — dropped 3.5%
+  - 13. AMD — 2025-08-29 — dropped 3.5%
+  - 14. AVGO — 2025-08-29 — dropped 3.6%
+  - 15. CAT — 2025-08-29 — dropped 3.6%
+  - 16. GEV — 2025-08-29 — dropped 3.3%
+  - 17. LRCX — 2025-08-29 — dropped 3.8%
+  - 18. NVDA — 2025-08-29 — dropped 3.3%
+  - 19. ORCL — 2025-08-29 — dropped 5.9%
+  - 20. NKE — 2025-09-02 — dropped 4.0%
+
+- [ ] **Batch 363** (20 events, 2025-09-02 to 2025-09-11)
+  - 1. LRCX — 2025-09-02 — dropped 3.1%
+  - 2. GEV — 2025-09-02 — dropped 5.4%
+  - 3. ADBE — 2025-09-02 — dropped 3.1%
+  - 4. COP — 2025-09-03 — dropped 4.4%
+  - 5. ISRG — 2025-09-03 — dropped 5.9%
+  - 6. CRM — 2025-09-04 — dropped 4.9%
+  - 7. TXN — 2025-09-04 — dropped 4.3%
+  - 8. SCHW — 2025-09-05 — dropped 5.7%
+  - 9. AMD — 2025-09-05 — dropped 6.6%
+  - 10. JPM — 2025-09-05 — dropped 3.1%
+  - 11. WFC — 2025-09-05 — dropped 3.5%
+  - 12. PEP — 2025-09-08 — dropped 3.2%
+  - 13. CVS — 2025-09-08 — dropped 4.8%
+  - 14. TMUS — 2025-09-08 — dropped 3.9%
+  - 15. CRM — 2025-09-10 — dropped 3.8%
+  - 16. ISRG — 2025-09-10 — dropped 3.8%
+  - 17. ACN — 2025-09-10 — dropped 3.5%
+  - 18. AAPL — 2025-09-10 — dropped 3.2%
+  - 19. AMZN — 2025-09-10 — dropped 3.3%
+  - 20. BA — 2025-09-11 — dropped 3.3%
+
+- [ ] **Batch 364** (20 events, 2025-09-11 to 2025-10-01)
+  - 1. NFLX — 2025-09-11 — dropped 3.5%
+  - 2. ORCL — 2025-09-11 — dropped 6.2%
+  - 3. ORCL — 2025-09-12 — dropped 5.1%
+  - 4. PFE — 2025-09-12 — dropped 4.0%
+  - 5. ISRG — 2025-09-15 — dropped 3.5%
+  - 6. EMR — 2025-09-16 — dropped 4.9%
+  - 7. AVGO — 2025-09-17 — dropped 3.8%
+  - 8. UBER — 2025-09-17 — dropped 5.0%
+  - 9. MU — 2025-09-19 — dropped 3.6%
+  - 10. INTC — 2025-09-19 — dropped 3.2%
+  - 11. AMZN — 2025-09-23 — dropped 3.0%
+  - 12. ORCL — 2025-09-23 — dropped 4.4%
+  - 13. GEV — 2025-09-25 — dropped 3.4%
+  - 14. LLY — 2025-09-25 — dropped 3.7%
+  - 15. MU — 2025-09-25 — dropped 3.0%
+  - 16. ORCL — 2025-09-25 — dropped 5.6%
+  - 17. TSLA — 2025-09-25 — dropped 4.4%
+  - 18. COF — 2025-09-30 — dropped 4.9%
+  - 19. CRM — 2025-09-30 — dropped 3.3%
+  - 20. WFC — 2025-10-01 — dropped 3.5%
+
+- [ ] **Batch 365** (20 events, 2025-10-01 to 2025-10-09)
+  - 1. SCHW — 2025-10-01 — dropped 3.4%
+  - 2. GM — 2025-10-02 — dropped 3.2%
+  - 3. TSLA — 2025-10-02 — dropped 5.1%
+  - 4. ABBV — 2025-10-02 — dropped 3.2%
+  - 5. BMY — 2025-10-02 — dropped 3.6%
+  - 6. NKE — 2025-10-03 — dropped 3.5%
+  - 7. GM — 2025-10-06 — dropped 3.2%
+  - 8. PFE — 2025-10-06 — dropped 3.4%
+  - 9. SBUX — 2025-10-06 — dropped 5.0%
+  - 10. SPG — 2025-10-06 — dropped 3.3%
+  - 11. T — 2025-10-06 — dropped 4.4%
+  - 12. VZ — 2025-10-06 — dropped 5.1%
+  - 13. AMAT — 2025-10-07 — dropped 5.5%
+  - 14. BKNG — 2025-10-07 — dropped 3.3%
+  - 15. LRCX — 2025-10-07 — dropped 5.9%
+  - 16. NKE — 2025-10-07 — dropped 3.2%
+  - 17. TSLA — 2025-10-07 — dropped 4.4%
+  - 18. UBER — 2025-10-09 — dropped 3.3%
+  - 19. BA — 2025-10-09 — dropped 4.1%
+  - 20. RTX — 2025-10-09 — dropped 3.8%
+
+- [ ] **Batch 366** (20 events, 2025-10-10 to 2025-10-10)
+  - 1. ISRG — 2025-10-10 — dropped 3.2%
+  - 2. USB — 2025-10-10 — dropped 3.9%
+  - 3. UNH — 2025-10-10 — dropped 3.6%
+  - 4. TXN — 2025-10-10 — dropped 4.1%
+  - 5. TSLA — 2025-10-10 — dropped 5.1%
+  - 6. PLTR — 2025-10-10 — dropped 5.4%
+  - 7. NVDA — 2025-10-10 — dropped 4.9%
+  - 8. NOW — 2025-10-10 — dropped 3.2%
+  - 9. NKE — 2025-10-10 — dropped 4.2%
+  - 10. MU — 2025-10-10 — dropped 5.6%
+  - 11. LRCX — 2025-10-10 — dropped 6.8%
+  - 12. INTC — 2025-10-10 — dropped 3.8%
+  - 13. META — 2025-10-10 — dropped 3.8%
+  - 14. GEV — 2025-10-10 — dropped 4.7%
+  - 15. AAPL — 2025-10-10 — dropped 3.5%
+  - 16. ACN — 2025-10-10 — dropped 4.4%
+  - 17. AMAT — 2025-10-10 — dropped 4.7%
+  - 18. AMZN — 2025-10-10 — dropped 5.0%
+  - 19. AVGO — 2025-10-10 — dropped 5.9%
+  - 20. IBM — 2025-10-10 — dropped 3.6%
+
+- [ ] **Batch 367** (20 events, 2025-10-10 to 2025-10-22)
+  - 1. COF — 2025-10-10 — dropped 3.9%
+  - 2. COP — 2025-10-10 — dropped 4.7%
+  - 3. EMR — 2025-10-10 — dropped 4.2%
+  - 4. BLK — 2025-10-10 — dropped 3.0%
+  - 5. FDX — 2025-10-10 — dropped 5.2%
+  - 6. INTC — 2025-10-14 — dropped 4.3%
+  - 7. NVDA — 2025-10-14 — dropped 4.4%
+  - 8. AVGO — 2025-10-14 — dropped 3.5%
+  - 9. CRM — 2025-10-14 — dropped 3.6%
+  - 10. BKNG — 2025-10-15 — dropped 3.8%
+  - 11. GEV — 2025-10-15 — dropped 4.4%
+  - 12. COST — 2025-10-16 — dropped 3.1%
+  - 13. COF — 2025-10-16 — dropped 5.6%
+  - 14. BAC — 2025-10-16 — dropped 3.5%
+  - 15. C — 2025-10-16 — dropped 3.5%
+  - 16. ORCL — 2025-10-17 — dropped 6.9%
+  - 17. ORCL — 2025-10-20 — dropped 4.9%
+  - 18. LMT — 2025-10-21 — dropped 3.2%
+  - 19. PM — 2025-10-21 — dropped 3.8%
+  - 20. TXN — 2025-10-22 — dropped 5.6%
+
+- [ ] **Batch 368** (20 events, 2025-10-22 to 2025-10-30)
+  - 1. AMD — 2025-10-22 — dropped 3.3%
+  - 2. INTC — 2025-10-22 — dropped 3.1%
+  - 3. PLTR — 2025-10-22 — dropped 3.3%
+  - 4. VZ — 2025-10-23 — dropped 3.5%
+  - 5. T — 2025-10-23 — dropped 3.6%
+  - 6. TMUS — 2025-10-23 — dropped 3.3%
+  - 7. TSLA — 2025-10-24 — dropped 3.4%
+  - 8. AMT — 2025-10-28 — dropped 3.7%
+  - 9. QCOM — 2025-10-28 — dropped 3.5%
+  - 10. ADBE — 2025-10-29 — dropped 6.1%
+  - 11. BA — 2025-10-29 — dropped 4.4%
+  - 12. INTU — 2025-10-29 — dropped 3.4%
+  - 13. MDLZ — 2025-10-29 — dropped 3.9%
+  - 14. NKE — 2025-10-29 — dropped 3.1%
+  - 15. TXN — 2025-10-29 — dropped 4.0%
+  - 16. UNH — 2025-10-29 — dropped 3.4%
+  - 17. CMCSA — 2025-10-30 — dropped 4.2%
+  - 18. VZ — 2025-10-30 — dropped 3.1%
+  - 19. TSLA — 2025-10-30 — dropped 4.6%
+  - 20. ORCL — 2025-10-30 — dropped 6.7%
+
+- [ ] **Batch 369** (20 events, 2025-10-30 to 2025-11-04)
+  - 1. AMZN — 2025-10-30 — dropped 3.2%
+  - 2. BA — 2025-10-30 — dropped 6.3%
+  - 3. AMD — 2025-10-30 — dropped 3.6%
+  - 4. CVS — 2025-10-30 — dropped 4.9%
+  - 5. ABBV — 2025-10-31 — dropped 4.5%
+  - 6. CMCSA — 2025-11-03 — dropped 3.1%
+  - 7. MRK — 2025-11-03 — dropped 4.1%
+  - 8. NKE — 2025-11-03 — dropped 3.0%
+  - 9. TMUS — 2025-11-03 — dropped 3.2%
+  - 10. ORCL — 2025-11-04 — dropped 3.8%
+  - 11. UBER — 2025-11-04 — dropped 5.1%
+  - 12. NVDA — 2025-11-04 — dropped 4.0%
+  - 13. TSLA — 2025-11-04 — dropped 5.1%
+  - 14. QCOM — 2025-11-04 — dropped 4.4%
+  - 15. LRCX — 2025-11-04 — dropped 3.4%
+  - 16. BA — 2025-11-04 — dropped 3.2%
+  - 17. GEV — 2025-11-04 — dropped 5.7%
+  - 18. CAT — 2025-11-04 — dropped 4.0%
+  - 19. AMD — 2025-11-04 — dropped 3.7%
+  - 20. AMAT — 2025-11-04 — dropped 3.2%
+
+- [ ] **Batch 370** (20 events, 2025-11-04 to 2025-11-13)
+  - 1. INTC — 2025-11-04 — dropped 6.3%
+  - 2. EMR — 2025-11-05 — dropped 3.8%
+  - 3. AMAT — 2025-11-06 — dropped 3.1%
+  - 4. CRM — 2025-11-06 — dropped 5.3%
+  - 5. NVDA — 2025-11-06 — dropped 3.7%
+  - 6. PLTR — 2025-11-06 — dropped 6.8%
+  - 7. QCOM — 2025-11-06 — dropped 3.6%
+  - 8. TSLA — 2025-11-06 — dropped 3.5%
+  - 9. TSLA — 2025-11-07 — dropped 3.7%
+  - 10. GILD — 2025-11-07 — dropped 3.7%
+  - 11. FDX — 2025-11-10 — dropped 3.1%
+  - 12. UPS — 2025-11-10 — dropped 3.0%
+  - 13. LRCX — 2025-11-11 — dropped 4.3%
+  - 14. MU — 2025-11-11 — dropped 4.8%
+  - 15. ORCL — 2025-11-12 — dropped 3.9%
+  - 16. PLTR — 2025-11-12 — dropped 3.6%
+  - 17. JPM — 2025-11-13 — dropped 3.4%
+  - 18. TSLA — 2025-11-13 — dropped 6.6%
+  - 19. PLTR — 2025-11-13 — dropped 6.5%
+  - 20. ORCL — 2025-11-13 — dropped 4.1%
+
+- [ ] **Batch 371** (20 events, 2025-11-13 to 2025-11-17)
+  - 1. NVDA — 2025-11-13 — dropped 3.6%
+  - 2. MU — 2025-11-13 — dropped 3.2%
+  - 3. INTC — 2025-11-13 — dropped 5.2%
+  - 4. LRCX — 2025-11-13 — dropped 5.0%
+  - 5. GS — 2025-11-13 — dropped 4.0%
+  - 6. EMR — 2025-11-13 — dropped 3.0%
+  - 7. CAT — 2025-11-13 — dropped 3.4%
+  - 8. AVGO — 2025-11-13 — dropped 4.3%
+  - 9. AMD — 2025-11-13 — dropped 4.2%
+  - 10. AMAT — 2025-11-13 — dropped 3.3%
+  - 11. IBM — 2025-11-13 — dropped 3.2%
+  - 12. BMY — 2025-11-14 — dropped 4.1%
+  - 13. LRCX — 2025-11-14 — dropped 3.3%
+  - 14. NFLX — 2025-11-14 — dropped 3.6%
+  - 15. UNH — 2025-11-14 — dropped 3.2%
+  - 16. USB — 2025-11-17 — dropped 3.5%
+  - 17. QCOM — 2025-11-17 — dropped 4.2%
+  - 18. GM — 2025-11-17 — dropped 3.7%
+  - 19. COF — 2025-11-17 — dropped 4.8%
+  - 20. BKNG — 2025-11-17 — dropped 4.8%
+
+- [ ] **Batch 372** (20 events, 2025-11-17 to 2025-11-20)
+  - 1. BK — 2025-11-17 — dropped 3.4%
+  - 2. AXP — 2025-11-17 — dropped 4.5%
+  - 3. BLK — 2025-11-17 — dropped 3.2%
+  - 4. HD — 2025-11-18 — dropped 6.0%
+  - 5. GEV — 2025-11-18 — dropped 3.8%
+  - 6. MU — 2025-11-18 — dropped 5.6%
+  - 7. AMD — 2025-11-18 — dropped 4.3%
+  - 8. AMZN — 2025-11-18 — dropped 4.4%
+  - 9. NFLX — 2025-11-19 — dropped 3.6%
+  - 10. NFLX — 2025-11-20 — dropped 3.9%
+  - 11. QCOM — 2025-11-20 — dropped 3.9%
+  - 12. PLTR — 2025-11-20 — dropped 5.8%
+  - 13. UBER — 2025-11-20 — dropped 6.9%
+  - 14. ORCL — 2025-11-20 — dropped 6.6%
+  - 15. NVDA — 2025-11-20 — dropped 3.2%
+  - 16. LRCX — 2025-11-20 — dropped 6.2%
+  - 17. CSCO — 2025-11-20 — dropped 3.8%
+  - 18. GEV — 2025-11-20 — dropped 6.3%
+  - 19. GE — 2025-11-20 — dropped 3.4%
+  - 20. EMR — 2025-11-20 — dropped 3.5%
+
+- [ ] **Batch 373** (20 events, 2025-11-20 to 2025-12-08)
+  - 1. BA — 2025-11-20 — dropped 3.4%
+  - 2. AMAT — 2025-11-20 — dropped 6.3%
+  - 3. INTC — 2025-11-20 — dropped 4.2%
+  - 4. ORCL — 2025-11-21 — dropped 5.7%
+  - 5. ACN — 2025-11-24 — dropped 3.3%
+  - 6. CMCSA — 2025-11-24 — dropped 3.3%
+  - 7. AMD — 2025-11-25 — dropped 4.1%
+  - 8. DE — 2025-11-26 — dropped 5.7%
+  - 9. RTX — 2025-12-01 — dropped 3.9%
+  - 10. LMT — 2025-12-01 — dropped 4.1%
+  - 11. AVGO — 2025-12-01 — dropped 4.2%
+  - 12. GE — 2025-12-01 — dropped 3.4%
+  - 13. GEV — 2025-12-01 — dropped 3.8%
+  - 14. CVS — 2025-12-03 — dropped 3.4%
+  - 15. NFLX — 2025-12-03 — dropped 4.9%
+  - 16. MU — 2025-12-04 — dropped 3.2%
+  - 17. UPS — 2025-12-04 — dropped 3.5%
+  - 18. AMGN — 2025-12-05 — dropped 3.0%
+  - 19. TSLA — 2025-12-08 — dropped 3.4%
+  - 20. NKE — 2025-12-08 — dropped 3.5%
+
+- [ ] **Batch 374** (20 events, 2025-12-08 to 2025-12-16)
+  - 1. PG — 2025-12-08 — dropped 3.6%
+  - 2. NEE — 2025-12-08 — dropped 3.1%
+  - 3. NFLX — 2025-12-08 — dropped 3.4%
+  - 4. JPM — 2025-12-09 — dropped 4.7%
+  - 5. UBER — 2025-12-09 — dropped 3.8%
+  - 6. NFLX — 2025-12-10 — dropped 4.1%
+  - 7. UBER — 2025-12-10 — dropped 5.5%
+  - 8. INTC — 2025-12-11 — dropped 3.1%
+  - 9. ORCL — 2025-12-12 — dropped 4.5%
+  - 10. NVDA — 2025-12-12 — dropped 3.3%
+  - 11. MU — 2025-12-12 — dropped 6.7%
+  - 12. INTC — 2025-12-12 — dropped 4.3%
+  - 13. LRCX — 2025-12-12 — dropped 4.9%
+  - 14. CAT — 2025-12-12 — dropped 4.4%
+  - 15. AMD — 2025-12-12 — dropped 4.8%
+  - 16. AMAT — 2025-12-12 — dropped 4.0%
+  - 17. GEV — 2025-12-12 — dropped 4.6%
+  - 18. AVGO — 2025-12-15 — dropped 5.6%
+  - 19. UBER — 2025-12-15 — dropped 3.8%
+  - 20. COP — 2025-12-16 — dropped 3.8%
+
+- [ ] **Batch 375** (15 events, 2025-12-16 to 2025-12-29)
+  - 1. PFE — 2025-12-16 — dropped 3.4%
+  - 2. LRCX — 2025-12-17 — dropped 5.1%
+  - 3. PLTR — 2025-12-17 — dropped 5.6%
+  - 4. ORCL — 2025-12-17 — dropped 5.4%
+  - 5. NVDA — 2025-12-17 — dropped 3.8%
+  - 6. MU — 2025-12-17 — dropped 3.0%
+  - 7. INTC — 2025-12-17 — dropped 3.4%
+  - 8. TSLA — 2025-12-17 — dropped 4.6%
+  - 9. GOOG — 2025-12-17 — dropped 3.1%
+  - 10. CAT — 2025-12-17 — dropped 4.6%
+  - 11. AVGO — 2025-12-17 — dropped 4.5%
+  - 12. AMD — 2025-12-17 — dropped 5.3%
+  - 13. AMAT — 2025-12-17 — dropped 4.1%
+  - 14. GOOGL — 2025-12-17 — dropped 3.2%
+  - 15. TSLA — 2025-12-29 — dropped 3.3%
+

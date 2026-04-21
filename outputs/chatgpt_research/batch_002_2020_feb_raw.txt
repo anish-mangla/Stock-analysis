@@ -1,0 +1,24 @@
+BATCH 002 — 2020 Feb 4-24 (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+
+COP — Feb 4: Q4 adj EPS $0.76 vs ~$0.81 expected. GAAP EPS $0.65. YoY decline. Raised dividend 38% to $0.42, expanded buybacks to $25B, but earnings miss dominated. Confidence: High.
+UBER — Feb 5: No stock-specific catalyst. Pre-earnings positioning (Q4 report Feb 6). Still unprofitable, regulatory overhang. Q4 later showed $4.1B rev, $1.1B GAAP loss. Confidence: Medium-low.
+NOW — Feb 5: No stock-specific catalyst. Q4 reported Jan 29 already absorbed. High-multiple software valuation pressure. Confidence: Low.
+MU — Feb 7: No stock-specific catalyst. COVID China supply chain fears hitting semis. Dec earnings had been constructive. Confidence: Medium.
+QCOM — Feb 7: Post-earnings digestion (reported Feb 5 after close). COVID China smartphone demand fears. Confidence: Medium-low.
+UPS — Feb 7: No stock-specific catalyst. Transport/shipping volume fears from COVID. Late-Jan earnings already digested. Confidence: Medium-low.
+CSCO — Feb 13: CLEAR STOCK-SPECIFIC. Fiscal Q2: rev $12.0B (-4% YoY), non-GAAP EPS $0.77. Q3 guidance: rev decline 1.5-3.5% YoY, EPS $0.79-0.81. Guidance disappointed. Confidence: High.
+LRCX — Feb 18: No stock-specific catalyst. Semi equipment sector de-risking on COVID China fab fears. First trading day after Presidents Day. Confidence: Medium-low.
+MDT — Feb 18: Earnings reaction. Fiscal Q3: rev $7.7B (+2.3% reported, +2.6% organic). Timing confirms earnings-driven. Confidence: Medium.
+MS — Feb 20: No stock-specific catalyst. Financials pressure from falling Treasury yields + COVID risk-off. Confidence: Medium-low.
+NVDA — Feb 21: No stock-specific catalyst. Reported Feb 13, initially traded well. Semiconductor sector COVID selloff. High-beta. Confidence: Medium.
+UPS — Feb 21: No stock-specific catalyst. Transport/economic growth fears from COVID. Confidence: Medium-low.
+SCHW — Feb 21: No stock-specific catalyst. Rate-sensitive financial pressure. Treasury yields falling on COVID flight to safety. Confidence: Medium.
+MU — Feb 21: No stock-specific catalyst. Semiconductor sector COVID fears. Memory cyclical. Confidence: Medium.
+MSFT — Feb 21: No stock-specific catalyst. Broad tech risk-off. Actual COVID warning came Feb 26 (More Personal Computing segment miss). Confidence: Medium.
+LRCX — Feb 21: No stock-specific catalyst. Semi equipment sector selloff on COVID China fears. Confidence: Medium.
+AMD — Feb 21: No stock-specific catalyst despite 7% drop. High-beta semi selloff. Valuation/profit-taking amplified. Confidence: Medium.
+AMAT — Feb 21: No stock-specific catalyst. Semi equipment group selloff. Recent earnings had been strong. Confidence: Medium.
+INTU — Feb 24: Reported fiscal Q2 same day. Q3 guidance: non-GAAP EPS $5.90-5.95. Reiterated FY rev $7.44-7.54B, EPS $7.50-7.60. Not obviously bad. Feb 24 was major COVID panic day (S&P -3%+, Italy/Korea spread). Confidence: Medium.
+ISRG — Feb 24: No stock-specific catalyst. COVID elective procedure volume fears. High valuation medtech. Later confirmed procedure volumes fell sharply. Confidence: Medium.

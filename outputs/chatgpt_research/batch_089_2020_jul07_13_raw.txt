@@ -1,0 +1,25 @@
+BATCH 089 — 2020-07-07 to 2020-07-13 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: July 7-9 saw continued bank weakness from Fed stress-test payout restrictions, oil demand concerns from unexpected crude inventory builds, and COVID cases mounting across U.S. states. GM reported Q2 U.S. deliveries fell ~34%. July 13 saw Tesla profit-taking after extreme rally.
+
+C Jul07: Bank-sector weakness from Fed capital-distribution restrictions, COVID cases mounting. Confidence: Medium-high.
+GE Jul07: Aviation exposure, negative cash flow outlook. Confidence: Medium.
+COF Jul07: Bank selloff from Fed stress-test restrictions, consumer credit stress. Confidence: Medium-high.
+BA Jul07: Travel demand fears, 737 MAX overhang, $25B debt raise. Confidence: High.
+AXP Jul07: Reopening/travel-spend skepticism, financial sector fragile. Confidence: Medium.
+GS Jul07: Sector-wide bank weakness from Fed dividend/buyback restrictions. Confidence: Medium-high.
+GM Jul09: Q2 U.S. deliveries fell ~34% to 492,489 vehicles, China Q2 sales fell 5.3%. Reopening in limbo. Confidence: High.
+USB Jul09: Sector bank weakness from capital-return restrictions plus macro growth doubts. Confidence: Medium.
+T Jul09: No material AT&T-specific news. Broad risk-off. Confidence: Low-medium.
+XOM Jul09: API data showed unexpected U.S. crude inventory rise when market expected draw. Confidence: High.
+MO Jul09: No material Altria-specific headline. Broad market weakness. Confidence: Low.
+GE Jul09: Aviation exposure, negative cash flow. Confidence: Medium.
+RTX Jul09: Commercial-aerospace linkage, airline traffic/engine demand fears. Confidence: Medium.
+CVX Jul09: Unexpected crude build and demand worries. Confidence: High.
+COP Jul09: Oil-demand fears, pure upstream exposure more sensitive than integrated majors. Confidence: High.
+COF Jul09: Bank/consumer-credit exposure as reopening momentum weakened. Confidence: Medium-high.
+BK Jul09: Sector-wide bank weakness. Confidence: Medium.
+BA Jul09: Travel recovery fears, MAX overhang, heavy debt. Confidence: High.
+GD Jul09: Broad cyclical/industrial risk-off, no company catalyst. Confidence: Low-medium.
+TSLA Jul13: Profit-taking after extreme rally, no clear negative headline. Confidence: Low-medium.

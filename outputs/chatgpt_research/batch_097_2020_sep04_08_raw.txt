@@ -1,0 +1,25 @@
+BATCH 097 — 2020-09-04 to 2020-09-08 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-19
+Market context: Sept 4 saw continued tech selloff with Reuters noting U.S. job growth losing speed. Sept 8 was a broad risk-off session with Nasdaq falling about 2.7% intraday as September correction deepened. Key sector catalysts: SMIC sanctions fears pressured chip stocks per Reuters. Tesla was excluded from S&P 500 on Sept 4 shocking investors. SoftBank large tech-option bets were being unwound. Oil fell nearly 8% after Saudi Arabia cut October selling prices.
+
+GOOG Sep04: No major Alphabet-specific negative headline in prior 3 days. Broad megacap-tech selloff/momentum unwind from Sept 3 Nasdaq drop of 4.96%. Fading fiscal-stimulus hopes election uncertainty and renewed COVID concerns. Confidence: Medium.
+ISRG Sep08: No credible Intuitive Surgical-specific headline in prior 3 days. Sept 8 broad risk-off session with growth stocks hit hard. Correction in high-multiple names after overheated summer rally. Confidence: Low-Medium.
+JPM Sep08: No JPMorgan-specific negative catalyst in prior 3 days. Broad financials/market selloff. Cyclical-value weakness as investors questioned recovery backdrop. Fading stimulus hopes election uncertainty COVID resurgence fears. Confidence: Low-Medium.
+LRCX Sep08: Reuters explicitly said Sept 8 that fears over U.S. sanctions on SMIC pressured chip stocks during same session that Nasdaq selloff deepened. Semiconductor selloff tied to SMIC-sanctions fears on top of broader tech rout. Confidence: High.
+META Sep08: No Facebook-specific negative headline in prior 3 days. Broad big-tech selloff. Profit-taking after strong outperformance by internet platforms. Reversal in tech leadership trade. Confidence: Medium.
+MS Sep08: No Morgan Stanley-specific headline in prior 3 days. Broad market/financials weakness. Risk-off move away from economically sensitive sectors. Confidence: Low-Medium.
+MSFT Sep08: Reuters reported Aug 31 shares of TikTok U.S. suitors including Microsoft fell after China imposed export restrictions complicating deal. By Sept 8 dominant driver was wider Nasdaq selloff. Broad big-tech selloff with residual TikTok transaction uncertainty. Confidence: Medium.
+MU Sep08: Reuters said fears of U.S. sanctions on SMIC pressured chip stocks Sept 8. No separate Micron-specific negative headline. Sector-wide semiconductor weakness tied to SMIC-sanctions fears. Confidence: Medium-High.
+NVDA Sep08: Reuters flagged fears of sanctions on SMIC as drag on chip stocks. Broader FAANG/tech selloff resumed. No NVDA-specific negative announcement. Semiconductor selloff plus broad tech correction. Profit-taking after very strong pre-drop run. Confidence: High.
+QCOM Sep08: Reuters said chip stocks under pressure because of fears over U.S. sanctions on SMIC. No clear Qualcomm-specific headline. Broader Nasdaq correction. Confidence: Medium-High.
+SCHW Sep08: No Schwab-specific negative item in prior 3 days. Market in correction mode and cyclically exposed financial stocks were weak. Risk-off sentiment. Confidence: Low-Medium.
+TSLA Sep08: Reuters reported Sept 4 Tesla was excluded from S&P 500 during rebalance surprising investors who widely expected inclusion. Sept 8 Tesla tumbled after exclusion with stock down about 15% early and roughly $80 billion of market value wiped out. Short sellers made about $5.4 billion from Sept 8 plunge. Surprise exclusion from S&P 500. Confidence: Very High.
+TXN Sep08: Reuters tied chip weakness to fears of U.S. sanctions on SMIC. No Texas Instruments-specific bad news. Semiconductor-sector pressure plus broad tech correction. Confidence: Medium.
+USB Sep08: No U.S. Bancorp-specific negative headline in prior 3 days. Broad bank-stock weakness during market de-risking. Recovery concerns and risk-off rotation. Confidence: Low-Medium.
+WFC Sep08: No Wells Fargo-specific catalyst in prior 3 days. Broad financials selloff. Macro uncertainty and cyclical-risk aversion. Confidence: Low-Medium.
+WMT Sep08: Reuters reported Aug 31 shares of Walmart fell after China imposed export restrictions complicating TikTok deal. By Sept 8 broader market selloff was main force. Lingering uncertainty around Walmart's role in TikTok transaction. Confidence: Medium.
+RTX Sep08: No credible RTX-specific negative item in prior 3 days. Broad cyclicals/industrials weakness. General market risk-off. Confidence: Low-Medium.
+INTU Sep08: No Intuit-specific negative announcement in prior 3 days. Broader software/growth-stock correction. Valuation compression during Nasdaq correction. Confidence: Medium.
+BA Sep08: No strong Reuters-verified Boeing-specific negative catalyst in prior 3 days. Broad cyclicals selloff. Ongoing background caution around aviation recovery and Boeing execution. Confidence: Low.
+GOOGL Sep08: Same setup as GOOG but on Sept 8. No fresh Alphabet-specific negative catalyst. Reuters said sell-off in FAANG stocks resumed Sept 8 as Nasdaq rout deepened. Ongoing September correction fears and macro uncertainty. Confidence: Medium.

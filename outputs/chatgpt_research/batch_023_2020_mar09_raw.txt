@@ -1,0 +1,25 @@
+BATCH 023 — 2020-03-09 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Crash Monday — Saudi-Russia oil-price war, Brent -23.9%, WTI -25.1%, S&P 500 circuit breaker, 10-year ~0.32%. Italy locked down Lombardy. S&P energy index -20.1% (largest one-day drop on record). SOX -8.3%.
+
+AVGO Mar9: No major Broadcom-specific negative. Semiconductor-sector de-risking tied to COVID demand/supply fears. Handset, enterprise, industrial demand concerns. Confidence: Medium.
+AMZN Mar9: No major Amazon-specific negative. Business actually seeing demand changes from COVID but stock traded as part of broad growth selloff. Later reframed as relative beneficiary. Concern over logistics strain, seller disruption, labor/warehouse risk. Confidence: Medium.
+AMT Mar9: No meaningful American Tower-specific negative. Forced selling in REITs and defensive yield names during cross-asset panic. Liquidity-driven de-risking. Confidence: Medium-low.
+INTU Mar9: No major Intuit-specific news. Significant small-business exposure through QuickBooks — SMBs already becoming clear COVID stress point. Repricing of SMB-exposed companies. Confidence: Medium.
+AMGN Mar9: No material Amgen-specific negative. Broad biotech/large-cap healthcare selloff as investors sold liquid winners. Concern pandemic could disrupt physician visits, drug administration, clinical trials. Confidence: Medium-low.
+AMD Mar9: No fresh AMD-specific negative. Semiconductor selloff tied to COVID demand/supply uncertainty. High-beta multiple compression. Crowded growth name liquidation. Confidence: Medium-high.
+AMAT Mar9: No new Applied Materials-specific bad release. Chip-equipment sector selloff on expected slowdown in semiconductor capex. Lower fab spending if COVID weakened end demand. Confidence: Medium-high.
+ADBE Mar9: No Adobe-specific negative. High-multiple software selloff during liquidity shock. Fears of slower enterprise spending, SMB weakness, ad/creative customer pressure. Confidence: Medium.
+ABT Mar9: No major Abbott-specific negative. COVID test catalyst came later in March. Broad healthcare selloff. Fear elective procedure volumes and routine diagnostics disrupted. Confidence: Medium.
+ABBV Mar9: Actually POSITIVE news — Mar 3 received final European approval clearing path for Allergan deal. No meaningful bad news. Broad market risk-off. Deal-related leverage/integration uncertainty. Confidence: Medium-high.
+AAPL Mar9: STOCK-SPECIFIC context. Feb 28 Tim Cook said Apple closely watching COVID in South Korea and Italy where it had suppliers. Italy lockdown over weekend materially worsened that concern. Explicit supplier and end-market exposure to regions most visibly worsening. Confidence: High.
+CL Mar9: No company-specific negative. General market liquidation. Consumer staples held up better than most. FX and emerging-market exposure. Smaller 3.5% decline fits defensive profile. Confidence: Medium-high.
+CMCSA Mar9: No Comcast-specific announcement. Growing concern over NBCUniversal, theme parks, film, advertising exposure to COVID. Later confirmed COVID would materially hit results. Investors looking through stronger broadband to exposed assets. Confidence: Medium-high.
+ACN Mar9: No Accenture-specific bad news but later cut fiscal 2020 growth outlook to 3-6% from 6-8% on Mar 19 confirming fears. Anticipatory selloff on consulting/outsourcing demand risk. Travel-dependent consulting model. Confidence: High.
+COP Mar9: SECTOR-SPECIFIC. Saudi Arabia and Russia abandoned production pact. Oil-price war. Brent -23.9%, WTI -25.1%. S&P energy index -20.1% largest one-day drop on record. Confidence: Very high.
+COF Mar9: No Capital One-specific negative. Consumer-credit and recession fears hitting card lenders. Business mix especially sensitive to unemployment and consumer credit deterioration. Expected higher charge-offs weaker card spend. Confidence: High.
+IBM Mar9: No IBM-specific negative event. Broad enterprise IT and consulting de-rating amid recession fears. Legacy/hybrid business mix offered less safe haven than cloud peers. Confidence: Medium.
+HD Mar9: No major Home Depot-specific negative. Recession fears and discretionary retail selling. Before market recognized later stay-at-home home-improvement boom. Lower consumer confidence, weaker housing-related spend. Confidence: Medium-high.
+GS Mar9: No Goldman-specific negative. Violent financials selloff tied to recession fears and collapsing yields. Market-sensitive business mix made it more vulnerable than traditional banks. Confidence: High.
+GOOGL Mar9: No company-specific negative. Anticipatory selloff on digital advertising weakness and recession risk. Later reporting confirmed Google ad business slowed materially in March. Travel, local business, brand advertisers cutting budgets. Confidence: High.

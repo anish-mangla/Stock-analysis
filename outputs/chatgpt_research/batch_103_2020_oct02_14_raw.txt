@@ -1,0 +1,25 @@
+BATCH 103 — 2020-10-02 to 2020-10-14
+Source: ChatGPT
+Date researched: 2025-04-20
+Market context: Early October 2020 saw volatility driven by Trump's COVID-19 diagnosis (Oct 2), stimulus negotiation collapse (Oct 6), and Q3 bank earnings season beginning (Oct 13-14). The S&P 500 whipsawed as stimulus hopes rose and fell repeatedly.
+
+AMD Oct02: Broad tech/semiconductor risk-off triggered by Trump testing positive for COVID-19; no AMD-specific news. Sector rotation out of high-beta semis. Confidence: Medium.
+AMGN Oct02: Macro risk-off from Trump COVID diagnosis; no company-specific catalyst identified. Biotech/pharma sold off with broader market despite being traditionally defensive. Confidence: Low-Medium.
+AMAT Oct02: Semiconductor-sector selloff driven by macro uncertainty from Trump COVID news; no AMAT-specific catalyst. Confidence: Medium.
+ADBE Oct02: Broad software/tech de-risking on Trump COVID uncertainty; no Adobe-specific news. Stock had run up significantly post-earnings in September. Confidence: Medium.
+AAPL Oct02: Broad tech selloff on Trump COVID fears plus looming House antitrust report expected October 5 targeting Apple, Google, Amazon, Facebook. iPhone 12 launch delay concerns lingered. Confidence: Medium-High.
+AVGO Oct02: Chip-sector weakness driven by macro COVID uncertainty; no Broadcom-specific catalyst. Confidence: Medium.
+AMZN Oct06: Trump abruptly halted stimulus talks via tweet, triggering broad market selloff. Amazon also faced antitrust overhang with House Judiciary report released Oct 6 recommending structural separations. Confidence: High.
+BA Oct06: Boeing cut its 20-year demand forecast, lowering long-term traffic growth to 4.0% from 4.6%, and said it would take years for air travel to recover to 2019 levels. Stimulus collapse added pressure. Confidence: High.
+COF Oct06: Bank/consumer-credit sector weakness from halted stimulus talks. Pre-earnings caution with analysts expecting 30-60% profit decline for major banks. Consumer credit quality concerns elevated. Confidence: Medium-High.
+GE Oct06: Macro/cyclical selloff from Trump halting stimulus talks. GE's aviation exposure made it particularly sensitive to economic recovery timeline concerns. Confidence: Medium.
+AMGN Oct08: GALACTIC-HF Phase III topline data released: omecamtiv mecarbil met primary endpoint but hazard ratio of 0.92 was seen as underwhelming by Street. Stock fell ~7% as investors priced in limited commercial potential. Confidence: High.
+AMD Oct09: WSJ reported AMD in advanced talks to acquire Xilinx for ~$30 billion. Xilinx surged 16.2% while AMD fell ~1.9% on deal dilution and integration risk concerns typical of large semiconductor M&A. Confidence: High.
+SPG Oct09: No clear SPG-specific catalyst identified. Pandemic reopening skepticism continued to weigh on mall REITs; general risk-off sentiment in retail real estate. Confidence: Low-Medium.
+USB Oct13: Pre-earnings bank sector pressure as JPM results showed NII down 9% to $13.1 billion with NIM compressing to 1.82%, setting negative tone for regional banks. Confidence: Medium.
+WFC Oct13: Pre-earnings caution ahead of Oct 14 report. WFC ultimately reported profit plunged 57% with NII at $9.4 billion, down $512 million, confirming low-rate pressure on earnings power. Confidence: High.
+SPG Oct13: Worsening COVID restriction sentiment with European lockdown fears spreading; no SPG-specific catalyst. Mall REIT sector continued to face reopening skepticism. Confidence: Low-Medium.
+BA Oct13: WTO gave EU authority to impose tariffs on $4 billion of US goods in retaliation for Boeing subsidy case, creating new trade headwind for already-struggling aerospace giant. Confidence: High.
+BKNG Oct13: EU adopted traffic-light system imposing testing and quarantine requirements for cross-border tourists, directly threatening European travel recovery that Booking depends on. Confidence: Medium-High.
+C Oct13: Citigroup reported Q3 net income $3.2 billion / $1.40 EPS, beating estimates, but results were weaker than JPM with muted recovery outlook extending through 2022. Stock closed ~5% lower on cautious guidance. Confidence: High.
+BAC Oct14: Bank of America reported consumer bank revenue fell 17% to $8 billion on lower interest income and weaker card activity. Loan book shrank for first time since 2015, signaling weak credit demand. Confidence: High.

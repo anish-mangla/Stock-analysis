@@ -1,0 +1,25 @@
+BATCH 004 — 2020-02-24 continued (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: Same day as batch 3. S&P -3.3%, Dow -1,030, Nasdaq -3.7%. COVID Italy/Korea/Iran.
+
+UBER: No stock-specific catalyst. COVID mobility/ride-sharing demand shock. Confidence: Medium.
+UNH: STOCK-SPECIFIC. Bernie Sanders won Nevada caucuses Feb 22. Medicare for All risk repricing. One of worst days in years. Confidence: High.
+UPS: Had already canceled 22 China flights. COVID global shipping/supply chain fears. Confidence: Medium-High.
+V: No stock-specific filing. COVID cross-border payment/travel volume fears. Later cut revenue forecast. Confidence: Medium.
+XOM: OPEC cut 2020 demand view Feb 12 (-200k bpd). Oil fell sharply again Feb 24 on global demand fears. Confidence: High.
+ORCL: No stock-specific catalyst. Broad tech/software selloff. Confidence: Medium-Low.
+GOOGL: No stock-specific catalyst. Ad-sensitive mega-cap tech repricing. Confidence: Medium-Low.
+EMR: No stock-specific catalyst. Industrial/manufacturing recession fears. Confidence: Medium.
+GM: No stock-specific release. Auto sector China production/supply chain fears. Low production restart rates. Confidence: Medium.
+GOOG: Same as GOOGL. No stock-specific catalyst. Confidence: Medium-Low.
+AAPL: STOCK-SPECIFIC. Feb 17 Apple warned it would miss March-quarter revenue guidance ($63-67B) due to COVID slowing iPhone production and China demand. Confidence: High.
+ABT: No stock-specific catalyst. Broad market selloff. Smaller drop than most. Confidence: Low-Medium.
+ACN: No stock-specific catalyst. Enterprise spending/consulting proxy fears. Confidence: Medium-Low.
+ADBE: No stock-specific catalyst. High-multiple software valuation compression. Confidence: Medium-Low.
+AMAT: No stock-specific filing but Apple's Feb 17 warning hurt suppliers. Semi equipment sector fear. Confidence: Medium-High.
+AMD: No stock-specific filing. High-beta semi momentum unwind. Apple warning added credibility to supply chain fears. Confidence: Medium.
+AMZN: No stock-specific catalyst. Broad mega-cap growth/consumer selloff. Before stay-at-home narrative. Confidence: Medium-Low.
+AXP: No stock-specific release. Travel/T&E spending risk from COVID. Heavy travel exposure. Confidence: Medium-High.
+BA: No fresh filing. 737 MAX crisis + COVID airline demand shock stacked. Confidence: Medium-High.
+BAC: No stock-specific event. Falling yields/recession fears. Rates market drove it. Confidence: High.

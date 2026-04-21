@@ -1,0 +1,11 @@
+stock_event_type,-2 to 0,0 to 1%,1 to 2%,2 to 4%,4%+,<-2%
+capital_structure,,,,,8.0,5.0
+competitive_threat,,,,,8.0,
+demand_weakness,,,,,28.0,25.0
+earnings_miss,,,,,12.0,9.0
+guidance_cut,,,,,46.0,39.0
+management_change,,,,,,6.0
+no_clear_catalyst,,,,,52.0,39.0
+product_service_failure,,,,,8.0,8.0
+regulatory_legal,,,,,10.0,9.0
+unlabeled,37.0,5.0,9.0,30.0,3775.0,3330.0

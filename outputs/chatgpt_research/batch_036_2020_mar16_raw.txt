@@ -1,0 +1,24 @@
+BATCH 036 — 2020-03-16 (20 events)
+Source: ChatGPT. Date researched: 2026-04-18
+Market context: Mar 15 Fed cut to 0-0.25%, launched $700B QE. Mar 16 S&P 500 -12%, circuit breaker at open. CDC: cancel gatherings 50+ for 8 weeks. Worst U.S. equity day since 1987.
+
+SCHW Mar16: No major Schwab-specific headline. Fed emergency return to near-zero rates directly pressures brokers/banks with spread income. Rate-shock plus financial-sector panic. Confidence: Medium.
+SBUX Mar16: STOCK-SPECIFIC. Starbucks said Mar 16 closing dine-in areas for at least two weeks in U.S. and Canada, moving to to-go only. Already warned and shut 2000+ China stores. Confidence: High.
+RTX Mar16: No major RTX/Raytheon headline Mar 13-16. Collapse in air travel. Airlines seeking emergency aid. Commercial aerospace demand shock. Confidence: Medium-High.
+QCOM Mar16: No QCOM-specific headline Mar 13-16. Intensifying concern COVID would hit global smartphone demand and supply chains. Macro-driven selloff in cyclical semis. Confidence: Medium.
+PM Mar16: No major Philip Morris-specific item. Broad global COVID escalation. International-consumer-staples exposure to global disruption. EM/currency worries. Confidence: Medium-Low.
+PG Mar16: No major P&G-specific headline. Broad market liquidation. Held up better — staples relatively defensive. Smaller 4.9% drop. Confidence: Medium.
+TMUS Mar16: No TMUS-specific headline Mar 13-16. Sprint merger pending but not yet closed. Broad risk-off plus merger-execution uncertainty. Confidence: Medium-Low.
+JPM Mar16: STOCK-SPECIFIC context. JPMorgan said Mar 15 would halt share buybacks and redirect capital toward lending. Fed emergency zero-rate cut. Zero-rate shock to bank profitability. Buyback suspension. Confidence: High.
+COF Mar16: No Reuters Capital One-specific headline. Broader financial collapse, zero-rate shock, rapidly rising fear of consumer credit deterioration. Consumer-credit stress fears. Confidence: Medium-High.
+ISRG Mar16: STOCK-SPECIFIC context. Reuters Mar 16 reported U.S. hospitals postponing elective surgeries to free capacity for COVID. Directly relevant to da Vinci procedure volumes. Elective-procedure shutdown risk. Confidence: High.
+CAT Mar16: No major CAT-specific item. Escalating global shutdowns and recession fears. Global growth/recession shock. Commodity weakness, capex fears. Confidence: Medium.
+C Mar16: STOCK-SPECIFIC context. Big U.S. banks including Citi suspended buybacks Mar 15. Fed cut to 0-0.25%. Zero-rate shock plus recession-driven credit fears. Buyback suspension. Confidence: High.
+BRK-B Mar16: No Berkshire-specific item. Violent collapse across financials, industrials, travel, consumer names. Portfolio look-through exposure to market crash. Confidence: Medium.
+BMY Mar16: No major Bristol Myers-specific headline. Broad March 16 liquidation. Healthcare/pharma somewhat more defensive. Confidence: Medium.
+BLK Mar16: No BLK-specific report Mar 13-16. Historic collapse in global markets threatens asset values, fee bases, client risk appetite. Asset-manager exposure to collapsing markets. Confidence: Medium.
+BKNG Mar16: No company-specific BKNG headline in exact 3-day window. Trump Europe travel restriction Mar 11. Airlines seeking emergency aid. Collapse in global travel demand. Confidence: High.
+BK Mar16: BNY Mellon affected by industrywide buyback suspension Mar 15 alongside Fed emergency rate cut to zero. Zero-rate shock to custody/bank earnings plus sector panic. Confidence: Medium-High.
+BAC Mar16: STOCK-SPECIFIC context. Big U.S. banks including BofA suspended buybacks Mar 15. Fed cut to 0-0.25%. Bank earnings repricing from zero rates. Buyback halt. Confidence: High.
+BA Mar16: STOCK-SPECIFIC. Boeing already said Mar 11 would draw down $13.8B loan and freeze hiring/overtime. Airlines urgent appeals for government aid. Cash/liquidity fears on top of collapsing aviation market. 737 MAX crisis ongoing. Confidence: High.
+AXP Mar16: No Reuters AXP-specific Mar 13-16 headline. Travel-ban and travel-collapse news directly relevant. Collapse in T&E spending expectations. Consumer-credit worries. Confidence: High.

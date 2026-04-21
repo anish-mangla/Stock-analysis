@@ -1,0 +1,24 @@
+BATCH 032 — 2020-03-12 (20 events)
+Source: ChatGPT. Date researched: 2026-04-18
+Market context: Same as batches 030-031. S&P 500 -9.5%, worst day since 1987. WHO pandemic, Trump Europe travel ban, ECB disappointed. Oil still reeling from Saudi-Russia price war.
+
+BAC Mar12: Fed emergency 50bps cut Mar 3. Rapid worsening of recession fears into Mar 12. Collapsing rate expectations crushing NIM outlooks. Rising expected credit losses. Confidence: High.
+AXP Mar12: No major AXP-specific release. Europe travel ban and fast deterioration in travel/entertainment activity directly relevant. Investors pricing sharp hit to billed business and T&E spend. Later company commentary confirmed volumes falling. Confidence: High.
+AVGO Mar12: Broadcom reported after close Mar 12 — $5.9B Q1 revenue, $2.2B FCF, $6.4B cash. Same-day decline not driven by bad pre-drop earnings miss. Semiconductor-wide COVID demand/supply fears plus pre-earnings risk-off. Confidence: High.
+AMZN Mar12: No major Amazon-specific negative. Broad market panic. Not yet rewarding Amazon for e-commerce demand pull-forward. Logistics uncertainty, labor/disruption risk. Confidence: Medium.
+AMT Mar12: No clear AMT-specific negative. Indiscriminate REIT/equity deleveraging. Concern about tenants, EM currencies, financing conditions. Confidence: Medium.
+AMGN Mar12: No major Amgen-specific negative. Broad biotech/pharma de-risking. Concern about clinical-trial disruption, physician-visit slowdowns. Confidence: Medium.
+AMAT Mar12: No AMAT-specific pre-drop announcement. Severe semiconductor equipment selloff on fears of fab/customer spending delays. China exposure, export/supply logistics worries. Confidence: High.
+ADBE Mar12: Adobe reported after close Mar 12 — record Q1 revenue $3.09B, 19% YoY growth, $0.07/share hit from event cancellations. Daytime selloff not caused by weak reported quarter. Broad software multiple compression. Confidence: High.
+ACN Mar12: No Accenture-specific negative. Did not cut guidance until Mar 19. Investors anticipating weaker consulting demand. Preemptive rather than headline-driven. Confidence: Medium-High.
+ABT Mar12: Not yet received later March FDA emergency authorization for molecular COVID test. Broad-market healthcare selling partially offset by diagnostics demand possibility. Confidence: Medium.
+ABBV Mar12: No material AbbVie-specific negative. Broad pharma/biotech de-risking. Concern around pending Allergan integration and COVID disruption to physician-administered/aesthetics demand. Confidence: Medium.
+AAPL Mar12: Already warned Feb 17 COVID hurting supply and sales. Week of Mar 9 moved most staff to work from home. Mar 14 announced stores outside Greater China would close temporarily. Renewed fear of both supply disruption and global demand shock. Confidence: High.
+ISRG Mar12: Hospitals began preparing to postpone elective procedures. Reuters documented widespread elective-surgery postponements days later. Fear elective surgery volumes and da Vinci procedure growth would drop sharply. Confidence: Medium-High.
+CMCSA Mar12: No single Comcast headline dominated. NBCUniversal theme-park, film, advertising exposure highly vulnerable to shutdowns. Repricing of NBCUniversal/consumer-media exposure. Confidence: Medium-High.
+COF Mar12: No major COF-specific announcement. Fast-rising recession and consumer-credit concerns. Investors pricing higher credit-card/consumer loan losses. More directly tied to unsecured consumer credit. Confidence: High.
+BA Mar12: Boeing planned to draw down remainder of $13.8B loan on Mar 11. Airlines slashing capacity and raising liquidity. Still stuck in 737 MAX crisis. Combination of airline-demand shock and Boeing-specific liquidity/stress concerns. Confidence: Very High.
+COST Mar12: No major negative Costco-specific release. Visible pantry-loading demand. Broad market liquidation. Concern panic-buying would come with margin pressure, labor/sanitation costs. Relatively smaller drop. Confidence: Medium.
+INTC Mar12: Tech sector dealing with visible supply-chain disruption and uncertainty around hardware/component demand. Semiconductor repricing on COVID supply-chain and end-demand fears. Confidence: High.
+COP Mar12: Reuters Mar 9 oil plunged ~25% after Saudi-Russia price war. Oil-price collapse. Recession fears, possible capex cuts. Shale/equity cash flows at risk if crude stayed low. Confidence: Very High.
+HON Mar12: Honeywell reaffirmed 2020 outlook Mar 10 but reassurance did not hold. Airlines cutting capex and scrambling for liquidity. Investors repricing aerospace business for severe aviation downturn. Mar 10 reaffirmation quickly looked stale. Confidence: High.

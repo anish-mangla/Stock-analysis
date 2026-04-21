@@ -1,0 +1,23 @@
+BATCH 045 — 2020-03-20 (20 events). Source: ChatGPT. Date: 2026-04-18.
+Context: Same as batch 044. Mar 20 S&P/Dow down. NY stay-at-home. Worst week since 2008.
+
+DE Mar20: No major Deere-specific Mar 17-19 headline. Later withdrew 2020 guidance Mar 23. Recession fear hitting cyclical machinery and farm/construction equipment demand. Confidence: Medium.
+JNJ Mar20: No major negative JNJ-specific Mar 17-19 item. Vaccine manufacturing deal came later Mar 30. Broad de-risking in healthcare/defensives. Confidence: Low-Medium.
+AAPL Mar20: STOCK-SPECIFIC. Already said Mar 13 would close all retail stores outside Greater China through Mar 27. By Mar 17 shifted to "until further notice." Feb warning that revenue would miss guidance. Escalating evidence COVID hitting both retail channel and global device demand. Confidence: High.
+ABBV Mar20: No material AbbVie-specific negative Mar 17-19. Allergan deal still pending. General healthcare and pharma de-risking. Confidence: Low.
+ABT Mar20: STOCK-SPECIFIC context. Abbott received FDA EUA Mar 18 for molecular COVID-19 test — would ship 150,000 tests. Despite positive test headline, stock sold off — market focused on broader exposure to deferred non-COVID procedures and diagnostics volumes. Confidence: Medium.
+ACN Mar20: STOCK-SPECIFIC. Reuters Mar 19 reported Accenture lowered full-year revenue growth forecast because of coronavirus disruption. Revenue forecast cut. Confidence: High.
+KO Mar20: No company-specific Mar 17-19 KO headline. COVID rapidly shutting restaurants theaters stadiums away-from-home channels critical to Coke volume mix. Rising realization on-premise and out-of-home consumption collapsing. Confidence: Medium.
+AMAT Mar20: No discrete negative Applied Materials headline Mar 17-19. Semiconductor equipment sold off on fear of fab spending pauses logistics bottlenecks weaker end demand. Confidence: Medium.
+AMGN Mar20: No major Amgen-specific negative. Broad biotech/pharma selling and liquidity stress. Confidence: Low-Medium.
+AMT Mar20: No major AMT-specific negative. REIT/liquidity selling. Concern over leverage-sensitive yield vehicles during March funding squeeze. Confidence: Medium.
+AXP Mar20: STOCK-SPECIFIC. Reuters Mar 17 reported American Express said spending volumes fell at end of February and into March. Forecast only low-single-digit Q1 revenue growth. Could not forecast beyond Q1. Direct evidence card spending and travel-related volumes deteriorating fast. Confidence: High.
+BAC Mar20: STOCK-SPECIFIC context. Reuters Mar 15 biggest U.S. banks including BofA halting share buybacks. Worsening bank-sector outlook — recession rising credit losses pressure on profitability. Confidence: High.
+BK Mar20: BNY Mellon part of Mar 15 large-bank buyback suspension. Bank-sector capital preservation. Stress in custody/funding-sensitive financial infrastructure. Confidence: Medium-High.
+BLK Mar20: No single Mar 17-19 Reuters headline saying BlackRock had bad company news. March 2020 brutal for asset managers — volatility crushed AUM. Reuters later reported AUM shrank. Collapsing markets and AUM compression. Confidence: Medium.
+C Mar20: Citi announced Mar 15 joined major U.S. banks in suspending stock repurchases. Worsening recession/credit outlook for global banks. Buyback suspension. Confidence: High.
+CAT Mar20: No same-window CAT headline as direct as Accenture's. Reuters later reported Caterpillar withdrew 2020 guidance and suspended some operations Mar 26. Sharp repricing of global industrial demand. Confidence: Medium.
+CL Mar20: No significant CL-specific negative Mar 17-19. Broad consumer-staples liquidation. Supply-chain uncertainty EM/FX exposure. Confidence: Low-Medium.
+ADBE Mar20: STOCK-SPECIFIC context. Reported strong Q1 Mar 12 — record revenue $3.09B. But disclosed $0.07/share earnings hit from cancellation of corporate events including Adobe Summit. Market reassessment that even high-quality software names would face event cancellations and weaker enterprise spending. Confidence: Medium-High.
+COST Mar20: No meaningful negative Costco-specific Mar 17-19 item. Broad market liquidation. Underlying demand actually strong. Concern panic buying offset by margin pressure higher labor/sanitation costs. Confidence: Medium.
+CMCSA Mar20: Universal Studios Hollywood announced Mar 12 would temporarily close. Reuters later Mar 24 reported Comcast expected material COVID impact — theme-park closures delayed film distribution. Rising recognition parks and filmed-entertainment businesses hit hard by shutdowns. Confidence: Medium-High.

@@ -1,0 +1,25 @@
+BATCH 020 — 2020-03-06 to 2020-03-09 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 6 EMR only event. Mar 9 "Crash Monday" — Saudi Arabia launched oil-price war after OPEC+ breakdown, Brent/WTI collapsed ~24-25%, S&P 500 triggered circuit breaker, 10-year Treasury yield briefly fell to ~0.32%, 30-year to ~0.70%. Italy locked down large parts of country over weekend.
+
+EMR Mar6: No Emerson-specific press release or filing. Cyclical industrial exposure to worsening COVID demand and supply-chain fears. ISM later reported nearly 75% of U.S. companies seeing supply-chain disruption. Confidence: Medium.
+MO Mar9: No new Altria-specific catalyst in prior 3 days. Juul overhang from late Jan $4.1B impairment still lingering. Mostly broad market crash / defensive-stock selloff. Fell less than many cyclicals. Confidence: Medium-low.
+MRK Mar9: No material Merck-specific negative in prior 3 days. Later Reuters showed Merck more exposed because large share of drugs physician-administered. Broad market liquidation. Confidence: Medium-low.
+MS Mar9: 10-year Treasury yield collapsed to ~0.318%, 30-year to ~0.70%. Treasury-yield collapse plus recession fears crushing financials/banks. Among hardest hit in marketwide selloff. Confidence: High.
+NFLX Mar9: No Netflix-specific negative headline. Some commentary already framed Netflix as stay-at-home beneficiary. Broad Nasdaq/growth selloff — indiscriminate liquidation. Confidence: Medium.
+MU Mar9: Semis already under pressure — Reuters Feb 25 reported Philadelphia Semiconductor Index in correction territory. Later Micron confirmed shifting supply from smartphones to data-center. Semiconductor/cyclical selloff on COVID supply-chain and demand fears. Confidence: High.
+NEE Mar9: No NextEra-specific negative event. Utilities not hit as hard as cyclicals. Broad market liquidation — defensive utility dragged lower by disorderly session. Confidence: Medium-low.
+MMM Mar9: Actually positive operationally — Reuters Mar 5 reported 3M ramped N95 respirator production, no disruptions. But market focused on much larger cyclical industrial exposure amid recession fears. Industrial/recession re-rating not mask news. Confidence: High.
+MSFT Mar9: Had warned late Feb would miss More Personal Computing segment guidance due to China supply-chain issues. No new negative in immediate prior 3 days but concern still live. COVID supply-chain disruption plus broad megacap tech selloff. Confidence: High.
+META Mar9: No fresh Facebook-specific headline. Advertising slowdown fear — Reuters later reported major digital platforms saw March drop in ad spending. Broad market selloff with rising ad-revenue fears. Confidence: Medium.
+MA Mar9: Very clear COVID transmission — collapsing travel and cross-border spend. Italy lockdown over weekend reinforced thesis. Reuters later reported Visa transaction volumes deteriorating rapidly. Fear of collapsing travel and cross-border card volumes. Confidence: High.
+MDLZ Mar9: No fresh Mondelez-specific headline. Held up better than most cyclicals. Broad market liquidation. General concern about global distribution/logistics disruptions. Confidence: Medium-low.
+MCD Mar9: No specific McDonald's announcement before close. Italy locked down over weekend — direct warning for restaurant traffic globally. Fear of collapsing restaurant traffic and dining restrictions. Confidence: Medium-high.
+NKE Mar9: Already identified as COVID-hit in China — Reuters noted temporary store closures and rare sales decline in Greater China. No clear new Nike-only negative Mar 6-9. COVID disruption to stores demand and supply chain. Confidence: High.
+LRCX Mar9: Semiconductor complex already under pressure. Reuters: chip index in correction by Feb 25. Semiconductor-equipment selloff on COVID supply-chain/capex fears. Investors repricing equipment side for delayed capex. Confidence: High.
+LOW Mar9: No Lowe's-specific announcement. 10.5% drop suggests investors treating it as cyclical consumer/housing name vulnerable to recession. Consumer/housing recession fear not company-specific. Confidence: Medium.
+LMT Mar9: No Lockheed-specific negative headline. Later Reuters confirmed COVID disrupted F-35 supply chain and deliveries. Broad industrial/aerospace selloff with emerging supply-chain concern. Confidence: Medium.
+LLY Mar9: No new Eli Lilly-specific negative. Later Reuters showed Lilly delayed clinical trials but that came later in March. Broad market selloff. Early concerns COVID would disrupt clinical activity. Confidence: Medium-low.
+LIN Mar9: No Linde-specific announcement. Highly tied to industrial production refining chemicals manufacturing. Oil down ~25% in one day. Industrial-production and energy/refining demand fears. Confidence: High.
+KO Mar9: No fresh Coca-Cola headline. Later Reuters reported venues representing about half of Coke revenue hurt by closures. Heavy exposure to restaurants cinemas on-premise channels. Fear of away-from-home consumption collapsing. Confidence: High.

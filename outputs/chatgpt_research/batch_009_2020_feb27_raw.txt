@@ -1,0 +1,25 @@
+BATCH 009 — 2020-02-27 (20 events)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: S&P 500 fastest correction on record. Broad COVID panic. Feb 26 MSFT warned on More Personal Computing segment.
+
+NKE: No stock-specific catalyst. China retail/sourcing exposure. Broad consumer/discretionary de-risking. Confidence: Medium.
+NEE: No stock-specific catalyst. Broad liquidation even hitting utilities. 5.1% drop outsized. Confidence: Low-Medium.
+MU: No stock-specific catalyst. Semi supply chain/demand fears. Confidence: Medium.
+MSFT: STOCK-SPECIFIC. Feb 26 warned More Personal Computing segment would miss guidance. China supply chain recovering slower than expected. Windows OEM + Surface affected. Confidence: High.
+MS: No stock-specific catalyst. Bank sector selloff on collapsing yields/recession fears. Confidence: Medium.
+MO: No stock-specific catalyst. Broad selloff. JUUL overhang but not new. Confidence: Low-Medium.
+META: No stock-specific catalyst. Broad ad-tech/large-cap tech repricing. Banned misleading COVID ads but not economically negative. Confidence: Medium.
+MDT: No company-issued warning but COVID slowing/halting elective procedures in China. Device volume concerns. Confidence: Medium-High.
+MA: STOCK-SPECIFIC. Feb 24 outlook cut still weighing. Lowered 2020 revenue outlook on cross-border weakness. Confidence: High.
+LRCX: No stock-specific catalyst. Semi equipment supply chain fears. Confidence: Medium.
+LOW: No stock-specific catalyst. Broad market selloff. Consumer traffic/sourcing worries. Confidence: Low-Medium.
+LMT: No stock-specific catalyst. Broad market liquidation even hitting defense. Confidence: Low-Medium.
+JPM: No stock-specific catalyst. Bank sector selloff on falling yields/recession risk. Confidence: Medium.
+LLY: No stock-specific catalyst. Broad market selloff. Pharma held up better than cyclicals. Confidence: Low-Medium.
+LIN: No stock-specific catalyst. Industrial slowdown fears. Confidence: Medium.
+KO: STOCK-SPECIFIC. Feb 21 Coca-Cola warned COVID could affect China-sourced artificial sweetener supply. Diet Coke/Coke Zero supply concerns. Away-from-home demand risk. Confidence: High.
+NOW: No stock-specific catalyst. Broad software/tech multiple compression. Confidence: Low-Medium.
+MCD: No stock-specific catalyst. Restaurant/consumer traffic risk from COVID. International exposure. Confidence: Medium.
+NVDA: STOCK-SPECIFIC. Had already disclosed ~$100M revenue hit from COVID. Feb 27 coverage grouped NVDA among tech firms sounding alarm. Confidence: High.
+V: No Visa-specific warning. Sympathy with Mastercard's Feb 24 outlook cut. Cross-border travel spending fear. Confidence: Medium-High.

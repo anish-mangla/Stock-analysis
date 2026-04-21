@@ -1,0 +1,25 @@
+BATCH 016 — 2020-03-03 to 2020-03-05 (20 events)
+Source: ChatGPT
+Date researched: 2026-04-18
+Market context: Mar 3 emergency Fed 50bp cut initially lifted stocks but rally reversed hard. Mar 5 market sold off sharply again, 10-year Treasury yield fell to then-record low near 0.90%, especially hurting banks, travel-linked names, cyclicals, and high-multiple tech.
+
+GOOG Mar3: No stock-specific catalyst. Repricing of ad-exposed mega-cap tech after failed relief rally following emergency Fed cut. Growing fear COVID would hit advertising budgets especially brand and travel-related ads. Reuters later reported YouTube brand advertising weakened and U.S. ad market expected to lose nearly $26B in 2020. Confidence: Medium.
+GOOGL Mar3: Same as GOOG. No stock-specific catalyst. Ad-market repricing. Confidence: Medium.
+BRK-B Mar3: No stock-specific catalyst. COVID repricing of economically sensitive portfolio — airlines, financials, industrials, retail, manufacturing. Later Reuters confirmed airline investments became major pain point. Confidence: Medium-low.
+IBM Mar3: No stock-specific catalyst. Cyclical enterprise IT and consulting selloff. Reuters later reported IBM clients shifted priorities toward saving capital because of COVID. Confidence: Low-medium.
+NVDA Mar5: No stock-specific catalyst. Semiconductor/tech de-risking tied to virus spread and supply-chain worries. Record-low Treasury yields and worsening risk sentiment. Confidence: Low-medium.
+NOW Mar5: No stock-specific catalyst. Valuation-driven software selloff on renewed macro fear. Concern enterprise software deal cycles could slow. Confidence: Low.
+NKE Mar5: No Nike-specific headline but sector deteriorating fast. Reuters later reported Nike would close stores across U.S., Canada, Western Europe, Australia, New Zealand by March 27. Anticipation of COVID-driven retail traffic collapse. Confidence: Medium-low.
+MS Mar5: No Morgan Stanley-specific corporate event. Banks under direct pressure from emergency Fed cut and collapsing yields. Reuters: 10-year Treasury yield hit record low around 0.899% on Mar 5. Rate collapse and margin pressure. Confidence: High.
+META Mar5: No Facebook-specific headline. Ad-market risk — Reuters later reported pandemic threatened sharp ad spending contraction. Travel and brand advertisers pulling back. Confidence: Medium.
+LOW Mar5: No Lowe's-specific headline. Consumer-discretionary and retail-traffic fear. Housing/remodel demand uncertainty. Later proved relatively resilient but investors not yet differentiating. Confidence: Low-medium.
+MCD Mar5: No discrete McDonald's headline. Restaurant traffic and franchise-sales fears. Broad selloff in consumer names dependent on mobility and international traffic. Confidence: Low-medium.
+MA Mar5: No Mar 5 Mastercard-specific headline. Fear of collapse in cross-border and travel-related card spending. Reuters later confirmed rapid deterioration in cross-border travel-related spending. Confidence: Medium-high.
+LMT Mar5: No Lockheed-specific catalyst. Broad industrial selloff as COVID recession fears deepened. Indiscriminate selling in industrial and aerospace names. Confidence: Low.
+ORCL Mar5: No Oracle-specific catalyst. Enterprise IT/cyclical tech de-risking. Concern customer tech budgets would tighten. Confidence: Low-medium.
+LIN Mar5: No Linde-specific headline. Industrial-production and global manufacturing slowdown fears. Exposure to energy, chemicals, metals, cyclical end markets. Confidence: Medium-low.
+MDT Mar5: No Medtronic-specific headline. Medical-device derating on concern hospitals would defer procedures if COVID worsened. Anticipatory rather than reactive. Confidence: Low-medium.
+PEP Mar5: No PepsiCo-specific catalyst. Defensive staples still sold in renewed risk-off wave. Some exposure to foodservice and on-the-go consumption. Confidence: Low.
+UNP Mar5: No Union Pacific-specific headline but FT reported COVID already hitting U.S. rail volumes by Mar 5. Fear of falling rail volumes from weaker industrial output, trade, freight demand. Confidence: Medium.
+RTX Mar5: STOCK-SPECIFIC context. Heavy exposure to commercial aerospace via Pratt & Whitney and Collins amid fast-deteriorating air-travel outlook. 9.1% drop too severe for random beta. Later withdrew aerospace outlooks. Merger-related uncertainty as Raytheon/UTX nearing combination. Confidence: High-medium.
+SBUX Mar5: STOCK-SPECIFIC. Mar 5 Starbucks said China same-store sales would fall about 50% in the quarter. Said no perceptible signs of U.S. impact yet. Reuters Mar 6 noted the guidance. Confidence: High.

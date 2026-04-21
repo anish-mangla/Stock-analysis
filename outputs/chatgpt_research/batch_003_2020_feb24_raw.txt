@@ -1,0 +1,25 @@
+BATCH 003 — 2020-02-24 (20 events, all same day)
+Source: ChatGPT (improved prompt)
+Date researched: 2026-04-17
+Market context: Dow -1,030 pts, S&P -3.3%, Nasdaq -3.7%. COVID cases surging in Italy, South Korea, Iran.
+
+LIN: No stock-specific catalyst. Cyclical/industrial-gas exposure. Global manufacturing slowdown repricing. Confidence: Medium-low.
+LRCX: No stock-specific catalyst. Semi equipment sector selloff. Barron's cited Lam specifically as COVID supply chain victim. Confidence: Medium.
+MA: STOCK-SPECIFIC. Feb 24 guidance cut: Q1/FY2020 net revenue growth lowered to 9-10% currency-neutral ex-acquisitions, from prior 11-14%. Cross-border travel hurt by COVID. Confidence: High.
+META: No stock-specific catalyst. Broad tech/ad-exposure de-risking. Confidence: Medium.
+MO: No stock-specific catalyst. Broad liquidation. JUUL/vaping overhang but not new. Confidence: Low-medium.
+MS: No stock-specific catalyst. Financial sector selloff on falling yields. Confidence: Medium.
+MSFT: No stock-specific catalyst. Actual COVID warning came Feb 26 (More Personal Computing segment). Confidence: Medium.
+MU: No stock-specific catalyst. Semiconductor sector COVID selloff. Confidence: Medium.
+NKE: No stock-specific catalyst but meaningful China store exposure. Later estimates showed hundreds of millions profit impact. Confidence: Medium.
+NOW: No stock-specific catalyst. High-multiple software selloff. Confidence: Low-medium.
+NVDA: No stock-specific catalyst. Next day (Feb 25) Nomura downgraded to Reduce, target $230, citing COVID chip risk. Confidence: Medium-high.
+PM: No stock-specific catalyst. International consumer exposure. Confidence: Low-medium.
+INTC: No stock-specific catalyst. Semiconductor sector COVID repricing. Confidence: Medium.
+QCOM: Earlier Feb guidance cut + COVID smartphone warning still hanging over stock. Confidence: Medium-high.
+RTX: No stock-specific catalyst. Commercial aerospace/travel exposure. Confidence: Medium.
+SBUX: STOCK-SPECIFIC. Late Jan: closed 2,000+ of 4,292 China stores. Held back 2020 guidance. MarketWatch highlighted as most exposed. Confidence: High.
+SCHW: No stock-specific catalyst. Yield/rate collapse hurting NII outlook. Later confirmed as major 2020 headwind. Confidence: High.
+TMO: No stock-specific catalyst. Broad life-sciences/international derisking. Confidence: Low-medium.
+TSLA: No fresh filing but China production/delivery fears + extreme momentum unwind. Shanghai factory had been shut ~10 days. Confidence: Medium-high.
+TXN: No stock-specific catalyst. Semiconductor/industrial demand repricing. Confidence: Medium.

@@ -1,0 +1,56 @@
+INTRADAY INDICATORS — CORRELATION WITH SUCCESS
+
+                     Indicator     Corr
+------------------------------------------
+                     d1_return +0.3720
+             d1_close_in_range +0.3288
+              d1_close_vs_vwap +0.2599
+                  d1_obv_ratio +0.2527
+                       d2_rvol -0.1808
+             d1_first_hour_ret +0.1507
+                       d1_rvol -0.1500
+                  d2_obv_ratio +0.1317
+         d0_intraday_range_pct +0.0989
+             d2_first_hour_ret +0.0986
+            d0_first30_vol_pct +0.0642
+                 d0_upper_wick +0.0587
+             d0_last30_vol_pct +0.0540
+              d0_close_vs_vwap -0.0510
+                       d0_rvol -0.0495
+             d0_first_hour_ret +0.0469
+                      drop_pct +0.0453
+                  d0_obv_ratio +0.0449
+              d2_close_vs_vwap +0.0415
+                 d1_lower_wick +0.0386
+                  d0_rel_range -0.0333
+                 d0_lower_wick +0.0116
+             d0_rel_trade_size +0.0112
+             d0_close_in_range +0.0106
+
+
+CORRELATION WITH SPEED (days_to_hit)
+
+                     d1_return -0.4924
+             d1_close_in_range -0.4416
+              d1_close_vs_vwap -0.3160
+                  d1_obv_ratio -0.2904
+             d1_first_hour_ret -0.2133
+                 d0_upper_wick -0.1172
+         d0_intraday_range_pct -0.1137
+             d2_first_hour_ret -0.1121
+              d0_close_vs_vwap +0.1052
+                  d2_obv_ratio -0.0962
+                      drop_pct -0.0921
+             d0_first_hour_ret -0.0814
+                       d1_rvol +0.0482
+                       d2_rvol +0.0464
+             d0_rel_trade_size +0.0195
+             d0_last30_vol_pct -0.0182
+                  d0_rel_range -0.0155
+                 d1_lower_wick +0.0128
+                  d0_obv_ratio -0.0126
+                 d0_lower_wick +0.0102
+                       d0_rvol +0.0096
+            d0_first30_vol_pct +0.0095
+              d2_close_vs_vwap -0.0070
+             d0_close_in_range +0.0066
